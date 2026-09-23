@@ -1,0 +1,231 @@
+{
+ "run_id": "dinov3_c_blur_15_hr_insdet",
+ "kind": "calibration",
+ "step": "калибровка порога; пересчёт с ρ после отбора",
+ "code_commit": "0f246f105f9c743180370bfd95c79209e24168bf",
+ "code_dirty": false,
+ "written_utc": "2026-09-21T19:13:28+00:00",
+ "config": {
+  "dataset": "hr_insdet",
+  "encoder": "dinov3",
+  "variant": "c_blur_15",
+  "seg_long_side": 2048,
+  "crop_n_layers": 1,
+  "points_per_batch": 16,
+  "crop_size": 448,
+  "blur_sigma_frac": 0.05,
+  "blur_work_side": 1792,
+  "pool_long_side": 2048,
+  "debias_r": 500,
+  "debias_noise_seed": 20260918,
+  "encoder_batch": 16,
+  "batch_rule": "маски одного изображения в порядке записи кеша; батч не пересекает границу изображения",
+  "gallery_protocols": [
+   "full",
+   "one_per_class"
+  ],
+  "hnsw": {
+   "M": 32,
+   "efConstruction": 200,
+   "efSearch_min": 64
+  },
+  "eps": [
+   0.05,
+   0.01
+  ],
+  "delta": 0.1,
+  "max_dets": 1000,
+  "bootstrap": 1000,
+  "seed": 20260918
+ },
+ "calib_json": "gallery/dinov3/c_blur_15/hr_insdet/calib.json",
+ "calib_json_sha256": "aeb987ebf73676aa7ce6daad79b3993caf5fe0fe6b7923e447d2aa373344a079",
+ "gallery_emb_sha256": "4e1c9d1a8fa083b2a775eaf94736711e429167dade6bf63b5b9172d92183a66e",
+ "N0": 2400,
+ "insert_no_max": 2399,
+ "D_source": {
+  "masks": "M_star",
+  "rho": {
+   "theta": "9/10",
+   "gamma": "4/5",
+   "rule": "neardup_min_area_v1"
+  },
+  "rho_cache": "cache/rho/hr_insdet/auto_cnl1_ls2048_ppb16_sam2-2b90b9f_26872978__theta9-10_gamma4-5",
+  "rho_cache_sha256": "0879f8da2126cbf9c2606f7ce9dc3a72f61b430bb7809cf455bf5e3486cf2c07",
+  "rho_cache_sha256_of": "key.json и записи отбора 40 калибровочных сцен (имя файла, байты) в порядке сцен",
+  "dataset": "hr_insdet",
+  "split": "cal",
+  "n_scenes": 40,
+  "crop_n_layers": 1,
+  "distractor_rule": "IoU описывающей рамки < 0.1 с каждой размеченной рамкой (src.eval.oracle.distractors; истина — src.data.hr_insdet.scene_gt)",
+  "mask_cache": "auto_cnl1_ls2048_ppb16_sam2-2b90b9f_26872978",
+  "embeddings": "cache/run_emb/dinov3_c_blur_15_hr_insdet",
+  "embeddings_dtype": "float16 → float32"
+ },
+ "n_D_cal": 1552,
+ "n_pairs": 3724800,
+ "gallery": "gallery/dinov3/c_blur_15/hr_insdet",
+ "n_labels": 100,
+ "s_star_D_cal_min_median_max": [
+  0.09136050194501877,
+  0.21693364530801773,
+  0.7221882343292236
+ ],
+ "check_set": {
+  "size": 1552,
+  "rule": {
+   "set": "D_cal",
+   "test": "fraction_vs_limit",
+   "recalibrate_if": "k / |D_chk| > eps * (1 + delta), k = #{s* >= tau}"
+  }
+ },
+ "F": {
+  "n_pairs": 3724800,
+  "n_top": 200000,
+  "max": 0.7221882343292236,
+  "top_min": 0.11634469777345657,
+  "quantiles_0.5_0.9_0.99_0.999": [
+   0.03574757091701031,
+   0.09556105211377146,
+   0.18155214235186523,
+   0.36353895199298775
+  ]
+ },
+ "delta": 0.1,
+ "by_eps": {
+  "0.05": {
+   "kappa": 0.019091208289610907,
+   "tau_m": 0.34595818817650237,
+   "residual": 3.4783287361506154e-13,
+   "n_iter": 43,
+   "f_inv_path": "top",
+   "f_inv_path_at_bounds": [
+    "top",
+    "top"
+   ],
+   "tau_m_at_bounds": [
+    0.15023588849173727,
+    0.6196953013736292
+   ],
+   "p_single": 0.0011188525768576194,
+   "tau_q": 0.34595818817615454,
+   "n_cal_ge_tau_q": 78,
+   "check_at_N0": {
+    "tau_q": {
+     "n": 1552,
+     "n_ge_tau": 78,
+     "frac": 0.05025773195876289,
+     "limit": 0.055,
+     "k_trigger": 86,
+     "recalibrate": false
+    },
+    "tau_m": {
+     "n": 1552,
+     "n_ge_tau": 78,
+     "frac": 0.05025773195876289,
+     "limit": 0.055,
+     "k_trigger": 86,
+     "recalibrate": false
+    }
+   }
+  },
+  "0.01": {
+   "kappa": 0.016018246223566693,
+   "tau_m": 0.5185307055711852,
+   "residual": 1.0436096431476471e-14,
+   "n_iter": 43,
+   "f_inv_path": "top",
+   "f_inv_path_at_bounds": [
+    "top",
+    "top"
+   ],
+   "tau_m_at_bounds": [
+    0.22729005741640784,
+    0.6802775395073786
+   ],
+   "p_single": 0.0002613951953411377,
+   "tau_q": 0.5185307055711748,
+   "n_cal_ge_tau_q": 16,
+   "check_at_N0": {
+    "tau_q": {
+     "n": 1552,
+     "n_ge_tau": 16,
+     "frac": 0.010309278350515464,
+     "limit": 0.011,
+     "k_trigger": 18,
+     "recalibrate": false
+    },
+    "tau_m": {
+     "n": 1552,
+     "n_ge_tau": 16,
+     "frac": 0.010309278350515464,
+     "limit": 0.011,
+     "k_trigger": 18,
+     "recalibrate": false
+    }
+   }
+  }
+ },
+ "hnsw_crosscheck": {
+  "available": true,
+  "record": "experiments/runs/hnsw_dinov3_c_blur_15_hr_insdet.json",
+  "note": "запись замера HNSW — по дистракторам M(I); при D_cal из M* квантили обязаны различаться, сверкой не служит",
+  "0.05": {
+   "hnsw_q": 0.95,
+   "hnsw_exact": 0.41232751756906516,
+   "tau_q": 0.34595818817615454,
+   "abs_diff": 0.06636932939291063
+  },
+  "0.01": {
+   "hnsw_q": 0.99,
+   "hnsw_exact": 0.6300109970569612,
+   "tau_q": 0.5185307055711748,
+   "abs_diff": 0.11148029148578642
+  }
+ },
+ "sec": 4.6,
+ "verify": {
+  "code_commit": "0f246f105f9c743180370bfd95c79209e24168bf",
+  "code_dirty": false,
+  "written_utc": "2026-09-21T19:13:58+00:00",
+  "calib_json_bytes_identical": true,
+  "calib_json_sha256_matches_summary": true,
+  "control_check_from_check_set_ids_identical": true,
+  "control_check_recomputed": {
+   "0.05/tau_q": {
+    "n": 1552,
+    "n_ge_tau": 78,
+    "frac": 0.05025773195876289,
+    "limit": 0.055,
+    "k_trigger": 86,
+    "recalibrate": false
+   },
+   "0.05/tau_m": {
+    "n": 1552,
+    "n_ge_tau": 78,
+    "frac": 0.05025773195876289,
+    "limit": 0.055,
+    "k_trigger": 86,
+    "recalibrate": false
+   },
+   "0.01/tau_q": {
+    "n": 1552,
+    "n_ge_tau": 16,
+    "frac": 0.010309278350515464,
+    "limit": 0.011,
+    "k_trigger": 18,
+    "recalibrate": false
+   },
+   "0.01/tau_m": {
+    "n": 1552,
+    "n_ge_tau": 16,
+    "frac": 0.010309278350515464,
+    "limit": 0.011,
+    "k_trigger": 18,
+    "recalibrate": false
+   }
+  },
+  "s_star_chk_max_abs_diff_vs_full_search": 0.0,
+  "passed": true
+ }
+}

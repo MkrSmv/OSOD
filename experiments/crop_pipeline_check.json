@@ -1,0 +1,280 @@
+{
+ "written": "2026-09-19",
+ "code_commit": "cb344bc0f3fc15620e72aac21bb868fe8f0595e4",
+ "code_dirty": false,
+ "written_utc": "2026-09-19T19:26:46+00:00",
+ "split": "cal",
+ "scenes": [
+  "easy/meeting_room_001/rgb_001",
+  "easy/meeting_room_001/rgb_016",
+  "easy/sink/rgb_010"
+ ],
+ "crop_n_layers": 1,
+ "encoders": [
+  "encoder_dinov2",
+  "encoder_dinov3"
+ ],
+ "encoder_batch": 16,
+ "batch_rule": "маски одного изображения в порядке записи кеша; батч не пересекает границу изображения",
+ "crop_workers": [
+  6
+ ],
+ "crop_max_in_flight": 8,
+ "cv2_threads_per_worker": null,
+ "sequential_cv2_threads": 12,
+ "note": "код конвейера — src/encode/pipeline.py; первая сцена каждого пути включает чтение снимка; у конвейера снимок читает каждый процесс; замер прототипа (DINOv2; 2, 4, 6 процессов) — эта же запись в коммите f07eb48",
+ "rows": [
+  {
+   "encoder": "encoder_dinov2",
+   "variant": "C(0|1.0)",
+   "n_masks": 334,
+   "sequential_sec": 55.5,
+   "pipelined": {
+    "6": {
+     "sec": 22.2,
+     "speedup": 2.5,
+     "cv2_threads_per_worker": 2,
+     "bitwise_identical_to_sequential": true,
+     "max_abs_diff": 0.0
+    }
+   }
+  },
+  {
+   "encoder": "encoder_dinov2",
+   "variant": "C(blur|1.5)",
+   "n_masks": 334,
+   "sequential_sec": 255.4,
+   "pipelined": {
+    "6": {
+     "sec": 101.0,
+     "speedup": 2.53,
+     "cv2_threads_per_worker": 2,
+     "bitwise_identical_to_sequential": true,
+     "max_abs_diff": 0.0
+    }
+   }
+  },
+  {
+   "encoder": "encoder_dinov3",
+   "variant": "C(0|1.0)",
+   "n_masks": 334,
+   "sequential_sec": 52.6,
+   "pipelined": {
+    "6": {
+     "sec": 20.4,
+     "speedup": 2.58,
+     "cv2_threads_per_worker": 2,
+     "bitwise_identical_to_sequential": true,
+     "max_abs_diff": 0.0
+    }
+   }
+  },
+  {
+   "encoder": "encoder_dinov3",
+   "variant": "C(blur|1.5)",
+   "n_masks": 334,
+   "sequential_sec": 254.7,
+   "pipelined": {
+    "6": {
+     "sec": 101.6,
+     "speedup": 2.51,
+     "cv2_threads_per_worker": 2,
+     "bitwise_identical_to_sequential": true,
+     "max_abs_diff": 0.0
+    }
+   }
+  }
+ ],
+ "workers_scan": {
+  "written": "2026-09-19",
+  "encoder": "encoder_dinov2",
+  "workers": [
+   4,
+   6,
+   8
+  ],
+  "max_in_flight": 8,
+  "blur_work_side": 1792,
+  "rows": [
+   {
+    "encoder": "encoder_dinov2",
+    "variant": "C(0|1.0)",
+    "n_masks": 334,
+    "sequential_sec": 55.0,
+    "pipelined": {
+     "4": {
+      "sec": 22.6,
+      "speedup": 2.43,
+      "cv2_threads_per_worker": 3,
+      "bitwise_identical_to_sequential": true,
+      "max_abs_diff": 0.0
+     },
+     "6": {
+      "sec": 22.8,
+      "speedup": 2.42,
+      "cv2_threads_per_worker": 2,
+      "bitwise_identical_to_sequential": true,
+      "max_abs_diff": 0.0
+     },
+     "8": {
+      "sec": 22.2,
+      "speedup": 2.48,
+      "cv2_threads_per_worker": 1,
+      "bitwise_identical_to_sequential": true,
+      "max_abs_diff": 0.0
+     }
+    }
+   },
+   {
+    "encoder": "encoder_dinov2",
+    "variant": "C(blur|1.5)",
+    "n_masks": 334,
+    "sequential_sec": 256.7,
+    "pipelined": {
+     "4": {
+      "sec": 113.6,
+      "speedup": 2.26,
+      "cv2_threads_per_worker": 3,
+      "bitwise_identical_to_sequential": true,
+      "max_abs_diff": 0.0
+     },
+     "6": {
+      "sec": 101.6,
+      "speedup": 2.53,
+      "cv2_threads_per_worker": 2,
+      "bitwise_identical_to_sequential": true,
+      "max_abs_diff": 0.0
+     },
+     "8": {
+      "sec": 112.4,
+      "speedup": 2.28,
+      "cv2_threads_per_worker": 1,
+      "bitwise_identical_to_sequential": true,
+      "max_abs_diff": 0.0
+     }
+    }
+   }
+  ],
+  "ram_peak_mib": {
+   "one_crop_worker_max": 1429,
+   "main_process": 2960
+  }
+ },
+ "paired_encoders": {
+  "written": "2026-09-19",
+  "code_commit": "cb344bc0f3fc15620e72aac21bb868fe8f0595e4",
+  "code_dirty": false,
+  "written_utc": "2026-09-19T19:12:04+00:00",
+  "encoders": [
+   "encoder_dinov2",
+   "encoder_dinov3"
+  ],
+  "criterion": "побитовое совпадение с раздельным прогоном (модель в памяти GPU одна), все пять парных вариантов, оба энкодера; замер двух крайних вариантов, включая C(0|1.0), — коммит 6642c61",
+  "crop_workers": 6,
+  "blur_work_side": 1792,
+  "vram_peak_allocated_mib": 1635,
+  "passed": true,
+  "rows": [
+   {
+    "variant": "C(0|1.5)",
+    "n_masks": 334,
+    "separate_sec": {
+     "encoder_dinov2": 37.7,
+     "encoder_dinov3": 39.5
+    },
+    "separate_sec_sum": 77.3,
+    "paired_sec": 47.0,
+    "bitwise_identical_to_separate": {
+     "encoder_dinov2": true,
+     "encoder_dinov3": true
+    },
+    "max_abs_diff": {
+     "encoder_dinov2": 0.0,
+     "encoder_dinov3": 0.0
+    },
+    "saving": 0.39
+   },
+   {
+    "variant": "C(mean|1.0)",
+    "n_masks": 334,
+    "separate_sec": {
+     "encoder_dinov2": 22.9,
+     "encoder_dinov3": 20.4
+    },
+    "separate_sec_sum": 43.3,
+    "paired_sec": 39.3,
+    "bitwise_identical_to_separate": {
+     "encoder_dinov2": true,
+     "encoder_dinov3": true
+    },
+    "max_abs_diff": {
+     "encoder_dinov2": 0.0,
+     "encoder_dinov3": 0.0
+    },
+    "saving": 0.09
+   },
+   {
+    "variant": "C(mean|1.5)",
+    "n_masks": 334,
+    "separate_sec": {
+     "encoder_dinov2": 37.4,
+     "encoder_dinov3": 37.6
+    },
+    "separate_sec_sum": 75.0,
+    "paired_sec": 48.0,
+    "bitwise_identical_to_separate": {
+     "encoder_dinov2": true,
+     "encoder_dinov3": true
+    },
+    "max_abs_diff": {
+     "encoder_dinov2": 0.0,
+     "encoder_dinov3": 0.0
+    },
+    "saving": 0.36
+   },
+   {
+    "variant": "C(blur|1.0)",
+    "n_masks": 334,
+    "separate_sec": {
+     "encoder_dinov2": 77.5,
+     "encoder_dinov3": 77.9
+    },
+    "separate_sec_sum": 155.4,
+    "paired_sec": 80.5,
+    "bitwise_identical_to_separate": {
+     "encoder_dinov2": true,
+     "encoder_dinov3": true
+    },
+    "max_abs_diff": {
+     "encoder_dinov2": 0.0,
+     "encoder_dinov3": 0.0
+    },
+    "saving": 0.48
+   },
+   {
+    "variant": "C(blur|1.5)",
+    "n_masks": 334,
+    "separate_sec": {
+     "encoder_dinov2": 102.8,
+     "encoder_dinov3": 105.4
+    },
+    "separate_sec_sum": 208.3,
+    "paired_sec": 103.8,
+    "bitwise_identical_to_separate": {
+     "encoder_dinov2": true,
+     "encoder_dinov3": true
+    },
+    "max_abs_diff": {
+     "encoder_dinov2": 0.0,
+     "encoder_dinov3": 0.0
+    },
+    "saving": 0.5
+   }
+  ]
+ },
+ "ram_peak_mib": {
+  "one_crop_worker_max": 1431,
+  "main_process": 3397,
+  "note": "сцена meeting_room_001/rgb_001 содержит маски со стороной рамки 8 192 пикс. — крупнейшие на 10 сценах пилота; оценка сверху для конвейера — main + workers × max"
+ }
+}

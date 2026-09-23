@@ -1,0 +1,840 @@
+{
+  "written": "2026-09-18T22:33:10+00:00",
+  "root": "data/pku_market_pcb",
+  "files": {
+    "images": 693,
+    "xml": 693,
+    "pcb_used": 10,
+    "rotation_jpg": 693
+  },
+  "undecodable": [],
+  "duplicates_md5": [],
+  "problems": [],
+  "channels": {
+    "3": 703
+  },
+  "rotation_names_equal_to_images": 693,
+  "boards": {
+    "01": {
+      "images": 120,
+      "images_by_class": {
+        "Missing_hole": 20,
+        "Mouse_bite": 20,
+        "Open_circuit": 20,
+        "Short": 20,
+        "Spur": 20,
+        "Spurious_copper": 20
+      },
+      "boxes_by_class": {
+        "Missing_hole": 61,
+        "Mouse_bite": 53,
+        "Open_circuit": 59,
+        "Short": 72,
+        "Spur": 53,
+        "Spurious_copper": 60
+      },
+      "hw": [
+        [
+          1586,
+          3034
+        ]
+      ]
+    },
+    "04": {
+      "images": 120,
+      "images_by_class": {
+        "Missing_hole": 20,
+        "Mouse_bite": 20,
+        "Open_circuit": 20,
+        "Short": 20,
+        "Spur": 20,
+        "Spurious_copper": 20
+      },
+      "boxes_by_class": {
+        "Missing_hole": 60,
+        "Mouse_bite": 60,
+        "Open_circuit": 59,
+        "Short": 59,
+        "Spur": 60,
+        "Spurious_copper": 60
+      },
+      "hw": [
+        [
+          2464,
+          3056
+        ]
+      ]
+    },
+    "05": {
+      "images": 60,
+      "images_by_class": {
+        "Missing_hole": 10,
+        "Mouse_bite": 10,
+        "Open_circuit": 10,
+        "Short": 10,
+        "Spur": 10,
+        "Spurious_copper": 10
+      },
+      "boxes_by_class": {
+        "Missing_hole": 46,
+        "Mouse_bite": 51,
+        "Open_circuit": 32,
+        "Short": 30,
+        "Spur": 50,
+        "Spurious_copper": 50
+      },
+      "hw": [
+        [
+          2156,
+          2544
+        ]
+      ]
+    },
+    "06": {
+      "images": 61,
+      "images_by_class": {
+        "Missing_hole": 10,
+        "Mouse_bite": 10,
+        "Open_circuit": 10,
+        "Short": 11,
+        "Spur": 10,
+        "Spurious_copper": 10
+      },
+      "boxes_by_class": {
+        "Missing_hole": 51,
+        "Mouse_bite": 52,
+        "Open_circuit": 50,
+        "Short": 55,
+        "Spur": 49,
+        "Spurious_copper": 50
+      },
+      "hw": [
+        [
+          2316,
+          2868
+        ]
+      ]
+    },
+    "07": {
+      "images": 60,
+      "images_by_class": {
+        "Missing_hole": 10,
+        "Mouse_bite": 10,
+        "Open_circuit": 10,
+        "Short": 10,
+        "Spur": 10,
+        "Spurious_copper": 10
+      },
+      "boxes_by_class": {
+        "Missing_hole": 50,
+        "Mouse_bite": 50,
+        "Open_circuit": 50,
+        "Short": 50,
+        "Spur": 50,
+        "Spurious_copper": 50
+      },
+      "hw": [
+        [
+          1921,
+          2904
+        ]
+      ]
+    },
+    "08": {
+      "images": 60,
+      "images_by_class": {
+        "Missing_hole": 10,
+        "Mouse_bite": 10,
+        "Open_circuit": 10,
+        "Short": 10,
+        "Spur": 10,
+        "Spurious_copper": 10
+      },
+      "boxes_by_class": {
+        "Missing_hole": 49,
+        "Mouse_bite": 50,
+        "Open_circuit": 50,
+        "Short": 49,
+        "Spur": 50,
+        "Spurious_copper": 50
+      },
+      "hw": [
+        [
+          2154,
+          2759
+        ]
+      ]
+    },
+    "09": {
+      "images": 60,
+      "images_by_class": {
+        "Missing_hole": 10,
+        "Mouse_bite": 10,
+        "Open_circuit": 10,
+        "Short": 10,
+        "Spur": 10,
+        "Spurious_copper": 10
+      },
+      "boxes_by_class": {
+        "Missing_hole": 53,
+        "Mouse_bite": 50,
+        "Open_circuit": 51,
+        "Short": 50,
+        "Spur": 50,
+        "Spurious_copper": 51
+      },
+      "hw": [
+        [
+          2159,
+          2775
+        ]
+      ]
+    },
+    "10": {
+      "images": 32,
+      "images_by_class": {
+        "Missing_hole": 5,
+        "Mouse_bite": 5,
+        "Open_circuit": 6,
+        "Short": 5,
+        "Spur": 5,
+        "Spurious_copper": 6
+      },
+      "boxes_by_class": {
+        "Missing_hole": 25,
+        "Mouse_bite": 26,
+        "Open_circuit": 30,
+        "Short": 25,
+        "Spur": 25,
+        "Spurious_copper": 31
+      },
+      "hw": [
+        [
+          2016,
+          2240
+        ]
+      ]
+    },
+    "11": {
+      "images": 60,
+      "images_by_class": {
+        "Missing_hole": 10,
+        "Mouse_bite": 10,
+        "Open_circuit": 10,
+        "Short": 10,
+        "Spur": 10,
+        "Spurious_copper": 10
+      },
+      "boxes_by_class": {
+        "Missing_hole": 50,
+        "Mouse_bite": 50,
+        "Open_circuit": 51,
+        "Short": 51,
+        "Spur": 50,
+        "Spurious_copper": 51
+      },
+      "hw": [
+        [
+          2248,
+          2282
+        ]
+      ]
+    },
+    "12": {
+      "images": 60,
+      "images_by_class": {
+        "Missing_hole": 10,
+        "Mouse_bite": 10,
+        "Open_circuit": 10,
+        "Short": 10,
+        "Spur": 10,
+        "Spurious_copper": 10
+      },
+      "boxes_by_class": {
+        "Missing_hole": 52,
+        "Mouse_bite": 50,
+        "Open_circuit": 50,
+        "Short": 50,
+        "Spur": 51,
+        "Spurious_copper": 50
+      },
+      "hw": [
+        [
+          2530,
+          2529
+        ]
+      ]
+    }
+  },
+  "unlabeled_by_diff": {
+    "method": {
+      "thresh": 25,
+      "min_area": 60,
+      "max_regions": 20
+    },
+    "misaligned_images": [
+      "01_mouse_bite_11",
+      "06_spur_08",
+      "04_spurious_copper_11",
+      "06_spurious_copper_04"
+    ],
+    "template_artifacts": [
+      "01@1660,0: 77 снимков",
+      "04@1320,960: 2 снимков"
+    ],
+    "gt_boxes_without_change": {
+      "01_spur_19": [
+        0,
+        1
+      ],
+      "01_spurious_copper_01": [
+        0
+      ],
+      "01_spurious_copper_03": [
+        1
+      ],
+      "01_spurious_copper_07": [
+        2
+      ],
+      "01_spurious_copper_13": [
+        0
+      ],
+      "01_spurious_copper_17": [
+        0
+      ],
+      "01_spurious_copper_20": [
+        0
+      ]
+    },
+    "per_board": {
+      "01": 15,
+      "04": 2,
+      "05": 8,
+      "06": 8,
+      "07": 0,
+      "08": 11,
+      "09": 6,
+      "10": 0,
+      "11": 1,
+      "12": 4
+    },
+    "candidates": {
+      "01_missing_hole_05": [
+        [
+          1733,
+          373,
+          1756,
+          391
+        ]
+      ],
+      "09_missing_hole_05": [
+        [
+          922,
+          1071,
+          961,
+          1107
+        ]
+      ],
+      "09_missing_hole_07": [
+        [
+          474,
+          92,
+          513,
+          129
+        ]
+      ],
+      "01_mouse_bite_08": [
+        [
+          793,
+          687,
+          809,
+          711
+        ]
+      ],
+      "01_mouse_bite_10": [
+        [
+          1334,
+          797,
+          1349,
+          820
+        ]
+      ],
+      "01_mouse_bite_14": [
+        [
+          181,
+          1202,
+          195,
+          1229
+        ]
+      ],
+      "01_mouse_bite_15": [
+        [
+          1577,
+          822,
+          1605,
+          838
+        ]
+      ],
+      "01_mouse_bite_19": [
+        [
+          350,
+          1169,
+          373,
+          1193
+        ]
+      ],
+      "05_mouse_bite_06": [
+        [
+          2138,
+          1188,
+          2186,
+          1219
+        ]
+      ],
+      "05_mouse_bite_08": [
+        [
+          2359,
+          1469,
+          2409,
+          1492
+        ]
+      ],
+      "08_mouse_bite_01": [
+        [
+          256,
+          1781,
+          273,
+          1819
+        ]
+      ],
+      "08_mouse_bite_05": [
+        [
+          618,
+          1992,
+          657,
+          2009
+        ]
+      ],
+      "08_mouse_bite_06": [
+        [
+          2418,
+          1033,
+          2438,
+          1080
+        ]
+      ],
+      "09_mouse_bite_02": [
+        [
+          2580,
+          796,
+          2623,
+          839
+        ]
+      ],
+      "12_mouse_bite_06": [
+        [
+          2203,
+          1051,
+          2256,
+          1073
+        ]
+      ],
+      "01_open_circuit_16": [
+        [
+          1250,
+          892,
+          1273,
+          915
+        ]
+      ],
+      "04_open_circuit_18": [
+        [
+          264,
+          795,
+          325,
+          843
+        ]
+      ],
+      "05_open_circuit_04": [
+        [
+          2213,
+          1473,
+          2253,
+          1512
+        ]
+      ],
+      "06_open_circuit_01": [
+        [
+          1590,
+          1748,
+          1618,
+          1775
+        ]
+      ],
+      "06_open_circuit_10": [
+        [
+          1547,
+          731,
+          1572,
+          771
+        ]
+      ],
+      "08_open_circuit_01": [
+        [
+          1569,
+          1809,
+          1578,
+          1818
+        ]
+      ],
+      "08_open_circuit_03": [
+        [
+          1730,
+          1176,
+          1751,
+          1197
+        ]
+      ],
+      "08_open_circuit_07": [
+        [
+          1945,
+          1196,
+          1957,
+          1212
+        ]
+      ],
+      "11_open_circuit_02": [
+        [
+          316,
+          557,
+          372,
+          597
+        ]
+      ],
+      "12_open_circuit_03": [
+        [
+          1332,
+          1969,
+          1349,
+          1982
+        ]
+      ],
+      "01_short_13": [
+        [
+          2158,
+          258,
+          2176,
+          312
+        ]
+      ],
+      "04_short_16": [
+        [
+          2149,
+          1080,
+          2172,
+          1129
+        ]
+      ],
+      "05_short_10": [
+        [
+          1332,
+          1709,
+          1355,
+          1748
+        ]
+      ],
+      "06_short_04": [
+        [
+          1559,
+          1266,
+          1593,
+          1281
+        ]
+      ],
+      "06_short_06": [
+        [
+          1046,
+          919,
+          1081,
+          935
+        ]
+      ],
+      "08_short_04": [
+        [
+          1154,
+          1809,
+          1177,
+          1837
+        ]
+      ],
+      "08_short_05": [
+        [
+          2543,
+          1589,
+          2566,
+          1612
+        ]
+      ],
+      "08_short_09": [
+        [
+          2579,
+          1412,
+          2640,
+          1436
+        ]
+      ],
+      "09_short_01": [
+        [
+          1222,
+          891,
+          1246,
+          928
+        ]
+      ],
+      "09_short_09": [
+        [
+          2293,
+          513,
+          2316,
+          581
+        ]
+      ],
+      "01_spur_09": [
+        [
+          360,
+          1179,
+          382,
+          1201
+        ]
+      ],
+      "01_spur_12": [
+        [
+          435,
+          909,
+          453,
+          925
+        ]
+      ],
+      "01_spur_13": [
+        [
+          1404,
+          1227,
+          1413,
+          1236
+        ]
+      ],
+      "01_spur_15": [
+        [
+          194,
+          817,
+          208,
+          843
+        ]
+      ],
+      "01_spur_19": [
+        [
+          2360,
+          1395,
+          2372,
+          1407
+        ]
+      ],
+      "01_spur_20": [
+        [
+          1804,
+          1309,
+          1813,
+          1318
+        ]
+      ],
+      "05_spur_03": [
+        [
+          1243,
+          1754,
+          1284,
+          1790
+        ]
+      ],
+      "05_spur_04": [
+        [
+          1982,
+          378,
+          2055,
+          403
+        ]
+      ],
+      "05_spur_07": [
+        [
+          1959,
+          1803,
+          1980,
+          1859
+        ]
+      ],
+      "05_spur_10": [
+        [
+          666,
+          1360,
+          726,
+          1380
+        ]
+      ],
+      "06_spur_06": [
+        [
+          1084,
+          1088,
+          1152,
+          1104
+        ]
+      ],
+      "06_spur_09": [
+        [
+          1147,
+          2098,
+          1228,
+          2114
+        ]
+      ],
+      "08_spur_06": [
+        [
+          2091,
+          929,
+          2106,
+          1001
+        ]
+      ],
+      "08_spur_09": [
+        [
+          2607,
+          1605,
+          2625,
+          1679
+        ]
+      ],
+      "01_spurious_copper_01": [
+        [
+          2078,
+          1166,
+          2112,
+          1198
+        ]
+      ],
+      "06_spurious_copper_07": [
+        [
+          1523,
+          638,
+          1542,
+          717
+        ]
+      ],
+      "06_spurious_copper_09": [
+        [
+          1024,
+          500,
+          1041,
+          567
+        ]
+      ],
+      "09_spurious_copper_07": [
+        [
+          823,
+          1113,
+          843,
+          1175
+        ]
+      ],
+      "12_spurious_copper_08": [
+        [
+          2109,
+          207,
+          2129,
+          262
+        ]
+      ],
+      "12_spurious_copper_09": [
+        [
+          1075,
+          1223,
+          1094,
+          1289
+        ]
+      ]
+    }
+  },
+  "pcb_used_hw": {
+    "01.JPG": [
+      1586,
+      3034
+    ],
+    "04.JPG": [
+      2464,
+      3056
+    ],
+    "05.JPG": [
+      2156,
+      2544
+    ],
+    "06.JPG": [
+      2316,
+      2868
+    ],
+    "07.JPG": [
+      1921,
+      2904
+    ],
+    "08.JPG": [
+      2154,
+      2759
+    ],
+    "09.JPG": [
+      2159,
+      2775
+    ],
+    "10.JPG": [
+      2016,
+      2240
+    ],
+    "11.JPG": [
+      2248,
+      2282
+    ],
+    "12.JPG": [
+      2530,
+      2529
+    ]
+  },
+  "boxes": {
+    "n": 2953,
+    "names": {
+      "Missing_hole:missing_hole": 497,
+      "Mouse_bite:mouse_bite": 492,
+      "Open_circuit:open_circuit": 482,
+      "Short:short": 491,
+      "Spur:spur": 488,
+      "Spurious_copper:spurious_copper": 503
+    },
+    "difficult": {
+      "0": 2953
+    },
+    "outside_frame": [],
+    "per_image_min_median_max": [
+      1,
+      5,
+      6
+    ],
+    "images_with_mixed_classes": [],
+    "area_px": {
+      "min": 625.0,
+      "median": 4312.0,
+      "max": 37268.0,
+      "tertiles": [
+        3570.0,
+        5250.0
+      ],
+      "tertiles_sqrt": [
+        59.74947698515862,
+        72.4568837309472
+      ]
+    }
+  }
+}

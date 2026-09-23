@@ -1,0 +1,5192 @@
+{
+ "what": "аналитика §2.3: описание данных без критериев и порогов",
+ "dataset": "hr_insdet",
+ "split": "cal",
+ "scenes": [
+  "easy/meeting_room_001/rgb_000",
+  "easy/meeting_room_001/rgb_001",
+  "easy/meeting_room_001/rgb_002",
+  "easy/meeting_room_001/rgb_003",
+  "easy/meeting_room_001/rgb_004",
+  "easy/meeting_room_001/rgb_005",
+  "easy/meeting_room_001/rgb_006",
+  "easy/meeting_room_001/rgb_007",
+  "easy/meeting_room_001/rgb_008",
+  "easy/meeting_room_001/rgb_009",
+  "easy/meeting_room_001/rgb_010",
+  "easy/meeting_room_001/rgb_011",
+  "easy/meeting_room_001/rgb_012",
+  "easy/meeting_room_001/rgb_013",
+  "easy/meeting_room_001/rgb_014",
+  "easy/meeting_room_001/rgb_015",
+  "easy/meeting_room_001/rgb_016",
+  "easy/meeting_room_001/rgb_017",
+  "easy/meeting_room_001/rgb_018",
+  "easy/meeting_room_001/rgb_019",
+  "easy/sink/rgb_000",
+  "easy/sink/rgb_001",
+  "easy/sink/rgb_002",
+  "easy/sink/rgb_003",
+  "easy/sink/rgb_004",
+  "easy/sink/rgb_005",
+  "easy/sink/rgb_006",
+  "easy/sink/rgb_007",
+  "easy/sink/rgb_008",
+  "easy/sink/rgb_009",
+  "easy/sink/rgb_010",
+  "easy/sink/rgb_011",
+  "easy/sink/rgb_012",
+  "easy/sink/rgb_013",
+  "easy/sink/rgb_014",
+  "easy/sink/rgb_015",
+  "easy/sink/rgb_016",
+  "easy/sink/rgb_017",
+  "easy/sink/rgb_018",
+  "easy/sink/rgb_019"
+ ],
+ "thetas": [
+  0.8,
+  0.85,
+  0.9,
+  0.95,
+  0.99
+ ],
+ "best_variants": {
+  "dinov2": "c_mean_10",
+  "dinov3": "c_blur_15"
+ },
+ "runs": {
+  "dinov2": "dinov2_c_mean_10_hr_insdet",
+  "dinov3": "dinov3_c_blur_15_hr_insdet"
+ },
+ "mask_cache": "auto_cnl1_ls2048_ppb16_sam2-2b90b9f_26872978",
+ "code_commit": "0162e9ab90754444b2d0b35e8c62b8804bd1d242",
+ "code_dirty": false,
+ "written_utc": "2026-09-21T12:39:16+00:00",
+ "nesting": {
+  "n_scenes": 40,
+  "n_masks": 4534,
+  "n_pairs_overlapping": 5870,
+  "overlap_fraction_of_smaller": {
+   "n": 5870,
+   "mean": 0.5236037792086305,
+   "min": 1.6215550063889267e-06,
+   "max": 1.0,
+   "q": {
+    "0.05": 0.00010498483723844412,
+    "0.25": 0.001960533887152698,
+    "0.5": 0.9260253476595874,
+    "0.75": 0.9970109734691903,
+    "0.95": 1.0
+   },
+   "hist": {
+    "edges": [
+     0.0,
+     0.05,
+     0.1,
+     0.15000000000000002,
+     0.2,
+     0.25,
+     0.30000000000000004,
+     0.35000000000000003,
+     0.4,
+     0.45,
+     0.5,
+     0.55,
+     0.6000000000000001,
+     0.65,
+     0.7000000000000001,
+     0.75,
+     0.8,
+     0.8500000000000001,
+     0.9,
+     0.9500000000000001,
+     1.0
+    ],
+    "counts": [
+     2626,
+     80,
+     28,
+     12,
+     9,
+     12,
+     5,
+     2,
+     2,
+     6,
+     3,
+     8,
+     7,
+     3,
+     12,
+     12,
+     19,
+     38,
+     133,
+     2853
+    ]
+   }
+  },
+  "overlap_iou": {
+   "n": 5870,
+   "mean": 0.261557542612627,
+   "min": 6.291349897199343e-07,
+   "max": 0.9990317183847458,
+   "q": {
+    "0.05": 2.0542560211327015e-05,
+    "0.25": 0.00037772460839779755,
+    "0.5": 0.014158298246656747,
+    "0.75": 0.42857652936135693,
+    "0.95": 0.9900701330140013
+   },
+   "hist": {
+    "edges": [
+     0.0,
+     0.05,
+     0.1,
+     0.15000000000000002,
+     0.2,
+     0.25,
+     0.30000000000000004,
+     0.35000000000000003,
+     0.4,
+     0.45,
+     0.5,
+     0.55,
+     0.6000000000000001,
+     0.65,
+     0.7000000000000001,
+     0.75,
+     0.8,
+     0.8500000000000001,
+     0.9,
+     0.9500000000000001,
+     1.0
+    ],
+    "counts": [
+     3334,
+     299,
+     210,
+     153,
+     131,
+     98,
+     73,
+     70,
+     68,
+     44,
+     42,
+     30,
+     24,
+     26,
+     34,
+     39,
+     29,
+     29,
+     73,
+     1064
+    ]
+   }
+  },
+  "by_theta": {
+   "0.8": {
+    "pairs": {
+     "nested": 3041,
+     "crossing": 2827,
+     "duplicate": 2,
+     "triples": 1314,
+     "transitivity_violations": 9
+    },
+    "transitivity_violation_share": 0.00684931506849315,
+    "masks_by_depth": {
+     "0": 2467,
+     "1": 1363,
+     "2": 499,
+     "3": 153,
+     "4": 44,
+     "5": 6,
+     "6": 2
+    },
+    "masks_by_position": {
+     "root": 1045,
+     "internal": 569,
+     "leaf": 1498,
+     "isolated": 1422
+    },
+    "children_per_internal_node": {
+     "n": 1614,
+     "mean": 1.2806691449814127,
+     "min": 1.0,
+     "max": 33.0,
+     "q": {
+      "0.05": 1.0,
+      "0.25": 1.0,
+      "0.5": 1.0,
+      "0.75": 1.0,
+      "0.95": 2.0
+     },
+     "hist": {
+      "edges": [
+       0.5,
+       1.5,
+       2.5,
+       3.5,
+       4.5,
+       5.5,
+       6.5,
+       7.5,
+       8.5,
+       9.5,
+       10.5,
+       11.5,
+       12.5,
+       13.5,
+       14.5,
+       15.5,
+       16.5,
+       17.5,
+       18.5,
+       19.5,
+       20.5
+      ],
+      "counts": [
+       1338,
+       209,
+       36,
+       10,
+       9,
+       4,
+       3,
+       1,
+       1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "child_parent_area_ratio": {
+     "n": 2067,
+     "mean": 0.5816270063049263,
+     "min": 0.00016197019482890238,
+     "max": 0.9999784774982244,
+     "q": {
+      "0.05": 0.017080488787810866,
+      "0.25": 0.1482896260718155,
+      "0.5": 0.6366559485530546,
+      "0.75": 0.9922946026223387,
+      "0.95": 0.9989907371211992
+     },
+     "hist": {
+      "edges": [
+       0.0,
+       0.05,
+       0.1,
+       0.15000000000000002,
+       0.2,
+       0.25,
+       0.30000000000000004,
+       0.35000000000000003,
+       0.4,
+       0.45,
+       0.5,
+       0.55,
+       0.6000000000000001,
+       0.65,
+       0.7000000000000001,
+       0.75,
+       0.8,
+       0.8500000000000001,
+       0.9,
+       0.9500000000000001,
+       1.0
+      ],
+      "counts": [
+       251,
+       154,
+       113,
+       86,
+       89,
+       59,
+       52,
+       48,
+       55,
+       50,
+       36,
+       26,
+       21,
+       20,
+       24,
+       25,
+       19,
+       20,
+       35,
+       884
+      ]
+     }
+    },
+    "edges_across_generator_layers_share": 0.24141267537493952,
+    "per_scene_summary": {
+     "n_masks": {
+      "n": 40,
+      "mean": 113.35,
+      "min": 70.0,
+      "max": 171.0,
+      "q": {
+       "0.05": 76.65,
+       "0.25": 88.0,
+       "0.5": 113.5,
+       "0.75": 134.0,
+       "0.95": 155.05
+      }
+     },
+     "forest_depth": {
+      "n": 40,
+      "mean": 3.625,
+      "min": 2.0,
+      "max": 6.0,
+      "q": {
+       "0.05": 2.0,
+       "0.25": 3.0,
+       "0.5": 3.5,
+       "0.75": 4.0,
+       "0.95": 5.049999999999997
+      }
+     },
+     "n_roots": {
+      "n": 40,
+      "mean": 61.675,
+      "min": 28.0,
+      "max": 108.0,
+      "q": {
+       "0.05": 37.9,
+       "0.25": 44.5,
+       "0.5": 62.5,
+       "0.75": 73.5,
+       "0.95": 91.0
+      }
+     },
+     "n_leaves": {
+      "n": 40,
+      "mean": 73.0,
+      "min": 45.0,
+      "max": 123.0,
+      "q": {
+       "0.05": 45.95,
+       "0.25": 53.0,
+       "0.5": 74.5,
+       "0.75": 85.25,
+       "0.95": 101.29999999999998
+      }
+     },
+     "n_isolated": {
+      "n": 40,
+      "mean": 35.55,
+      "min": 9.0,
+      "max": 78.0,
+      "q": {
+       "0.05": 17.9,
+       "0.25": 23.0,
+       "0.5": 34.0,
+       "0.75": 48.25,
+       "0.95": 58.249999999999986
+      }
+     },
+     "n_maximal": {
+      "n": 40,
+      "mean": 61.675,
+      "min": 28.0,
+      "max": 108.0,
+      "q": {
+       "0.05": 37.9,
+       "0.25": 44.5,
+       "0.5": 62.5,
+       "0.75": 73.5,
+       "0.95": 91.0
+      }
+     },
+     "n_minimal": {
+      "n": 40,
+      "mean": 72.95,
+      "min": 45.0,
+      "max": 123.0,
+      "q": {
+       "0.05": 45.95,
+       "0.25": 53.0,
+       "0.5": 74.5,
+       "0.75": 85.25,
+       "0.95": 101.29999999999998
+      }
+     },
+     "width": {
+      "n": 40,
+      "mean": 72.975,
+      "min": 45.0,
+      "max": 123.0,
+      "q": {
+       "0.05": 45.95,
+       "0.25": 53.0,
+       "0.5": 74.5,
+       "0.75": 85.25,
+       "0.95": 101.29999999999998
+      }
+     }
+    },
+    "width_over_n_masks": {
+     "n": 40,
+     "mean": 0.6398573141106176,
+     "min": 0.5487804878048781,
+     "max": 0.7192982456140351,
+     "q": {
+      "0.05": 0.5591023565389458,
+      "0.25": 0.6055452003727866,
+      "0.5": 0.6480088495575221,
+      "0.75": 0.6666666666666666,
+      "0.95": 0.7052577167331265
+     }
+    },
+    "by_room": {
+     "meeting_room_001": {
+      "n_masks": {
+       "n": 20,
+       "mean": 131.5,
+       "min": 109.0,
+       "max": 171.0,
+       "q": {
+        "0.05": 110.9,
+        "0.25": 116.25,
+        "0.5": 134.0,
+        "0.75": 140.0,
+        "0.95": 156.75
+       }
+      },
+      "forest_depth": {
+       "n": 20,
+       "mean": 3.65,
+       "min": 2.0,
+       "max": 6.0,
+       "q": {
+        "0.05": 2.95,
+        "0.25": 3.0,
+        "0.5": 3.0,
+        "0.75": 4.0,
+        "0.95": 5.050000000000001
+       }
+      },
+      "width": {
+       "n": 20,
+       "mean": 87.3,
+       "min": 61.0,
+       "max": 123.0,
+       "q": {
+        "0.05": 72.4,
+        "0.25": 77.5,
+        "0.5": 85.5,
+        "0.75": 95.5,
+        "0.95": 107.80000000000001
+       }
+      }
+     },
+     "sink": {
+      "n_masks": {
+       "n": 20,
+       "mean": 95.2,
+       "min": 70.0,
+       "max": 144.0,
+       "q": {
+        "0.05": 70.0,
+        "0.25": 81.5,
+        "0.5": 88.0,
+        "0.75": 105.0,
+        "0.95": 126.9
+       }
+      },
+      "forest_depth": {
+       "n": 20,
+       "mean": 3.6,
+       "min": 2.0,
+       "max": 6.0,
+       "q": {
+        "0.05": 2.0,
+        "0.25": 3.0,
+        "0.5": 4.0,
+        "0.75": 4.0,
+        "0.95": 5.050000000000001
+       }
+      },
+      "width": {
+       "n": 20,
+       "mean": 58.65,
+       "min": 45.0,
+       "max": 84.0,
+       "q": {
+        "0.05": 45.0,
+        "0.25": 50.75,
+        "0.5": 53.0,
+        "0.75": 66.5,
+        "0.95": 82.1
+       }
+      }
+     }
+    },
+    "object_masks": {
+     "n": 764,
+     "by_position": {
+      "root": 253,
+      "internal": 68,
+      "leaf": 84,
+      "isolated": 359
+     },
+     "depth": {
+      "n": 764,
+      "mean": 0.2356020942408377,
+      "min": 0.0,
+      "max": 3.0,
+      "q": {
+       "0.05": 0.0,
+       "0.25": 0.0,
+       "0.5": 0.0,
+       "0.75": 0.0,
+       "0.95": 1.0
+      },
+      "hist": {
+       "edges": [
+        -0.5,
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5
+       ],
+       "counts": [
+        612,
+        128,
+        20,
+        4,
+        0,
+        0,
+        0,
+        0
+       ]
+      }
+     },
+     "n_ancestors": {
+      "n": 764,
+      "mean": 0.2356020942408377,
+      "min": 0.0,
+      "max": 3.0,
+      "q": {
+       "0.05": 0.0,
+       "0.25": 0.0,
+       "0.5": 0.0,
+       "0.75": 0.0,
+       "0.95": 1.0
+      },
+      "hist": {
+       "edges": [
+        -0.5,
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5
+       ],
+       "counts": [
+        612,
+        128,
+        20,
+        4,
+        0,
+        0,
+        0,
+        0
+       ]
+      }
+     },
+     "n_descendants": {
+      "n": 764,
+      "mean": 0.6858638743455497,
+      "min": 0.0,
+      "max": 11.0,
+      "q": {
+       "0.05": 0.0,
+       "0.25": 0.0,
+       "0.5": 0.0,
+       "0.75": 1.0,
+       "0.95": 3.0
+      },
+      "hist": {
+       "edges": [
+        -0.5,
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5,
+        8.5,
+        9.5,
+        10.5,
+        11.5,
+        12.5,
+        13.5,
+        14.5,
+        15.5,
+        16.5,
+        17.5,
+        18.5,
+        19.5,
+        20.5,
+        21.5,
+        22.5,
+        23.5,
+        24.5,
+        25.5,
+        26.5,
+        27.5,
+        28.5,
+        29.5
+       ],
+       "counts": [
+        443,
+        204,
+        77,
+        25,
+        5,
+        3,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ]
+      }
+     }
+    },
+    "near_object_masks_relative_to_object_mask_of_their_box": {
+     "inside_object": 386,
+     "contains_object": 173,
+     "duplicate_of_object": 1,
+     "crossing_object": 130,
+     "disjoint_from_object": 84,
+     "no_object_mask_for_its_box": 68
+    },
+    "per_scene": [
+     {
+      "scene": "easy/meeting_room_001/rgb_000",
+      "room": "meeting_room_001",
+      "n_masks": 111,
+      "forest_depth": 3,
+      "n_roots": 73,
+      "n_leaves": 79,
+      "n_isolated": 51,
+      "n_maximal": 73,
+      "n_minimal": 79,
+      "width": 79
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_001",
+      "room": "meeting_room_001",
+      "n_masks": 109,
+      "forest_depth": 5,
+      "n_roots": 54,
+      "n_leaves": 61,
+      "n_isolated": 26,
+      "n_maximal": 54,
+      "n_minimal": 61,
+      "width": 61
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_002",
+      "room": "meeting_room_001",
+      "n_masks": 113,
+      "forest_depth": 3,
+      "n_roots": 60,
+      "n_leaves": 73,
+      "n_isolated": 34,
+      "n_maximal": 60,
+      "n_minimal": 73,
+      "width": 73
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_003",
+      "room": "meeting_room_001",
+      "n_masks": 117,
+      "forest_depth": 4,
+      "n_roots": 65,
+      "n_leaves": 78,
+      "n_isolated": 39,
+      "n_maximal": 65,
+      "n_minimal": 78,
+      "width": 78
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_004",
+      "room": "meeting_room_001",
+      "n_masks": 156,
+      "forest_depth": 3,
+      "n_roots": 65,
+      "n_leaves": 107,
+      "n_isolated": 40,
+      "n_maximal": 65,
+      "n_minimal": 107,
+      "width": 107
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_005",
+      "room": "meeting_room_001",
+      "n_masks": 140,
+      "forest_depth": 4,
+      "n_roots": 80,
+      "n_leaves": 91,
+      "n_isolated": 49,
+      "n_maximal": 80,
+      "n_minimal": 91,
+      "width": 91
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_006",
+      "room": "meeting_room_001",
+      "n_masks": 125,
+      "forest_depth": 5,
+      "n_roots": 68,
+      "n_leaves": 85,
+      "n_isolated": 51,
+      "n_maximal": 68,
+      "n_minimal": 85,
+      "width": 85
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_007",
+      "room": "meeting_room_001",
+      "n_masks": 122,
+      "forest_depth": 3,
+      "n_roots": 80,
+      "n_leaves": 86,
+      "n_isolated": 52,
+      "n_maximal": 80,
+      "n_minimal": 86,
+      "width": 86
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_008",
+      "room": "meeting_room_001",
+      "n_masks": 135,
+      "forest_depth": 3,
+      "n_roots": 91,
+      "n_leaves": 96,
+      "n_isolated": 63,
+      "n_maximal": 91,
+      "n_minimal": 95,
+      "width": 95
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_009",
+      "room": "meeting_room_001",
+      "n_masks": 134,
+      "forest_depth": 6,
+      "n_roots": 75,
+      "n_leaves": 89,
+      "n_isolated": 49,
+      "n_maximal": 75,
+      "n_minimal": 89,
+      "width": 89
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_010",
+      "room": "meeting_room_001",
+      "n_masks": 119,
+      "forest_depth": 4,
+      "n_roots": 70,
+      "n_leaves": 79,
+      "n_isolated": 45,
+      "n_maximal": 70,
+      "n_minimal": 79,
+      "width": 79
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_011",
+      "room": "meeting_room_001",
+      "n_masks": 140,
+      "forest_depth": 3,
+      "n_roots": 79,
+      "n_leaves": 97,
+      "n_isolated": 49,
+      "n_maximal": 79,
+      "n_minimal": 97,
+      "width": 97
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_012",
+      "room": "meeting_room_001",
+      "n_masks": 114,
+      "forest_depth": 3,
+      "n_roots": 62,
+      "n_leaves": 73,
+      "n_isolated": 34,
+      "n_maximal": 62,
+      "n_minimal": 73,
+      "width": 73
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_013",
+      "room": "meeting_room_001",
+      "n_masks": 114,
+      "forest_depth": 2,
+      "n_roots": 66,
+      "n_leaves": 76,
+      "n_isolated": 38,
+      "n_maximal": 66,
+      "n_minimal": 76,
+      "width": 76
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_014",
+      "room": "meeting_room_001",
+      "n_masks": 137,
+      "forest_depth": 3,
+      "n_roots": 88,
+      "n_leaves": 95,
+      "n_isolated": 58,
+      "n_maximal": 88,
+      "n_minimal": 95,
+      "width": 95
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_015",
+      "room": "meeting_room_001",
+      "n_masks": 150,
+      "forest_depth": 4,
+      "n_roots": 83,
+      "n_leaves": 98,
+      "n_isolated": 48,
+      "n_maximal": 83,
+      "n_minimal": 98,
+      "width": 98
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_016",
+      "room": "meeting_room_001",
+      "n_masks": 155,
+      "forest_depth": 3,
+      "n_roots": 91,
+      "n_leaves": 101,
+      "n_isolated": 52,
+      "n_maximal": 91,
+      "n_minimal": 101,
+      "width": 101
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_017",
+      "room": "meeting_room_001",
+      "n_masks": 134,
+      "forest_depth": 3,
+      "n_roots": 79,
+      "n_leaves": 85,
+      "n_isolated": 44,
+      "n_maximal": 79,
+      "n_minimal": 85,
+      "width": 85
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_018",
+      "room": "meeting_room_001",
+      "n_masks": 171,
+      "forest_depth": 5,
+      "n_roots": 108,
+      "n_leaves": 123,
+      "n_isolated": 78,
+      "n_maximal": 108,
+      "n_minimal": 123,
+      "width": 123
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_019",
+      "room": "meeting_room_001",
+      "n_masks": 134,
+      "forest_depth": 4,
+      "n_roots": 62,
+      "n_leaves": 75,
+      "n_isolated": 32,
+      "n_maximal": 62,
+      "n_minimal": 75,
+      "width": 75
+     },
+     {
+      "scene": "easy/sink/rgb_000",
+      "room": "sink",
+      "n_masks": 103,
+      "forest_depth": 3,
+      "n_roots": 48,
+      "n_leaves": 68,
+      "n_isolated": 26,
+      "n_maximal": 48,
+      "n_minimal": 68,
+      "width": 68
+     },
+     {
+      "scene": "easy/sink/rgb_001",
+      "room": "sink",
+      "n_masks": 111,
+      "forest_depth": 4,
+      "n_roots": 61,
+      "n_leaves": 66,
+      "n_isolated": 33,
+      "n_maximal": 61,
+      "n_minimal": 66,
+      "width": 66
+     },
+     {
+      "scene": "easy/sink/rgb_002",
+      "room": "sink",
+      "n_masks": 83,
+      "forest_depth": 2,
+      "n_roots": 45,
+      "n_leaves": 52,
+      "n_isolated": 24,
+      "n_maximal": 45,
+      "n_minimal": 52,
+      "width": 52
+     },
+     {
+      "scene": "easy/sink/rgb_003",
+      "room": "sink",
+      "n_masks": 78,
+      "forest_depth": 2,
+      "n_roots": 42,
+      "n_leaves": 49,
+      "n_isolated": 18,
+      "n_maximal": 42,
+      "n_minimal": 49,
+      "width": 49
+     },
+     {
+      "scene": "easy/sink/rgb_004",
+      "room": "sink",
+      "n_masks": 84,
+      "forest_depth": 4,
+      "n_roots": 43,
+      "n_leaves": 53,
+      "n_isolated": 20,
+      "n_maximal": 43,
+      "n_minimal": 53,
+      "width": 53
+     },
+     {
+      "scene": "easy/sink/rgb_005",
+      "room": "sink",
+      "n_masks": 82,
+      "forest_depth": 3,
+      "n_roots": 28,
+      "n_leaves": 45,
+      "n_isolated": 9,
+      "n_maximal": 28,
+      "n_minimal": 45,
+      "width": 45
+     },
+     {
+      "scene": "easy/sink/rgb_006",
+      "room": "sink",
+      "n_masks": 88,
+      "forest_depth": 3,
+      "n_roots": 42,
+      "n_leaves": 52,
+      "n_isolated": 19,
+      "n_maximal": 42,
+      "n_minimal": 52,
+      "width": 52
+     },
+     {
+      "scene": "easy/sink/rgb_007",
+      "room": "sink",
+      "n_masks": 87,
+      "forest_depth": 4,
+      "n_roots": 36,
+      "n_leaves": 53,
+      "n_isolated": 19,
+      "n_maximal": 36,
+      "n_minimal": 53,
+      "width": 53
+     },
+     {
+      "scene": "easy/sink/rgb_008",
+      "room": "sink",
+      "n_masks": 80,
+      "forest_depth": 3,
+      "n_roots": 40,
+      "n_leaves": 50,
+      "n_isolated": 16,
+      "n_maximal": 40,
+      "n_minimal": 49,
+      "width": 50
+     },
+     {
+      "scene": "easy/sink/rgb_009",
+      "room": "sink",
+      "n_masks": 77,
+      "forest_depth": 6,
+      "n_roots": 39,
+      "n_leaves": 51,
+      "n_isolated": 23,
+      "n_maximal": 39,
+      "n_minimal": 51,
+      "width": 51
+     },
+     {
+      "scene": "easy/sink/rgb_010",
+      "room": "sink",
+      "n_masks": 70,
+      "forest_depth": 4,
+      "n_roots": 38,
+      "n_leaves": 45,
+      "n_isolated": 23,
+      "n_maximal": 38,
+      "n_minimal": 45,
+      "width": 45
+     },
+     {
+      "scene": "easy/sink/rgb_011",
+      "room": "sink",
+      "n_masks": 88,
+      "forest_depth": 4,
+      "n_roots": 43,
+      "n_leaves": 51,
+      "n_isolated": 19,
+      "n_maximal": 43,
+      "n_minimal": 51,
+      "width": 51
+     },
+     {
+      "scene": "easy/sink/rgb_012",
+      "room": "sink",
+      "n_masks": 70,
+      "forest_depth": 3,
+      "n_roots": 42,
+      "n_leaves": 46,
+      "n_isolated": 26,
+      "n_maximal": 42,
+      "n_minimal": 46,
+      "width": 46
+     },
+     {
+      "scene": "easy/sink/rgb_013",
+      "room": "sink",
+      "n_masks": 97,
+      "forest_depth": 5,
+      "n_roots": 54,
+      "n_leaves": 62,
+      "n_isolated": 31,
+      "n_maximal": 54,
+      "n_minimal": 62,
+      "width": 62
+     },
+     {
+      "scene": "easy/sink/rgb_014",
+      "room": "sink",
+      "n_masks": 113,
+      "forest_depth": 4,
+      "n_roots": 66,
+      "n_leaves": 76,
+      "n_isolated": 38,
+      "n_maximal": 66,
+      "n_minimal": 76,
+      "width": 76
+     },
+     {
+      "scene": "easy/sink/rgb_015",
+      "room": "sink",
+      "n_masks": 102,
+      "forest_depth": 4,
+      "n_roots": 49,
+      "n_leaves": 56,
+      "n_isolated": 21,
+      "n_maximal": 49,
+      "n_minimal": 56,
+      "width": 56
+     },
+     {
+      "scene": "easy/sink/rgb_016",
+      "room": "sink",
+      "n_masks": 123,
+      "forest_depth": 3,
+      "n_roots": 72,
+      "n_leaves": 82,
+      "n_isolated": 41,
+      "n_maximal": 72,
+      "n_minimal": 82,
+      "width": 82
+     },
+     {
+      "scene": "easy/sink/rgb_017",
+      "room": "sink",
+      "n_masks": 98,
+      "forest_depth": 3,
+      "n_roots": 47,
+      "n_leaves": 58,
+      "n_isolated": 18,
+      "n_maximal": 47,
+      "n_minimal": 58,
+      "width": 58
+     },
+     {
+      "scene": "easy/sink/rgb_018",
+      "room": "sink",
+      "n_masks": 144,
+      "forest_depth": 4,
+      "n_roots": 70,
+      "n_leaves": 84,
+      "n_isolated": 36,
+      "n_maximal": 70,
+      "n_minimal": 84,
+      "width": 84
+     },
+     {
+      "scene": "easy/sink/rgb_019",
+      "room": "sink",
+      "n_masks": 126,
+      "forest_depth": 4,
+      "n_roots": 63,
+      "n_leaves": 74,
+      "n_isolated": 30,
+      "n_maximal": 63,
+      "n_minimal": 74,
+      "width": 74
+     }
+    ]
+   },
+   "0.85": {
+    "pairs": {
+     "nested": 3022,
+     "crossing": 2846,
+     "duplicate": 2,
+     "triples": 1304,
+     "transitivity_violations": 11
+    },
+    "transitivity_violation_share": 0.00843558282208589,
+    "masks_by_depth": {
+     "0": 2474,
+     "1": 1361,
+     "2": 496,
+     "3": 151,
+     "4": 44,
+     "5": 6,
+     "6": 2
+    },
+    "masks_by_position": {
+     "root": 1046,
+     "internal": 565,
+     "leaf": 1495,
+     "isolated": 1428
+    },
+    "children_per_internal_node": {
+     "n": 1611,
+     "mean": 1.2787088764742396,
+     "min": 1.0,
+     "max": 33.0,
+     "q": {
+      "0.05": 1.0,
+      "0.25": 1.0,
+      "0.5": 1.0,
+      "0.75": 1.0,
+      "0.95": 2.0
+     },
+     "hist": {
+      "edges": [
+       0.5,
+       1.5,
+       2.5,
+       3.5,
+       4.5,
+       5.5,
+       6.5,
+       7.5,
+       8.5,
+       9.5,
+       10.5,
+       11.5,
+       12.5,
+       13.5,
+       14.5,
+       15.5,
+       16.5,
+       17.5,
+       18.5,
+       19.5,
+       20.5
+      ],
+      "counts": [
+       1333,
+       215,
+       34,
+       8,
+       9,
+       4,
+       3,
+       1,
+       1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "child_parent_area_ratio": {
+     "n": 2060,
+     "mean": 0.5833183898213342,
+     "min": 0.00016197019482890238,
+     "max": 0.9999784774982244,
+     "q": {
+      "0.05": 0.01744939756477175,
+      "0.25": 0.15118464105155613,
+      "0.5": 0.6445532110050562,
+      "0.75": 0.9923451070211164,
+      "0.95": 0.9989917844822218
+     },
+     "hist": {
+      "edges": [
+       0.0,
+       0.05,
+       0.1,
+       0.15000000000000002,
+       0.2,
+       0.25,
+       0.30000000000000004,
+       0.35000000000000003,
+       0.4,
+       0.45,
+       0.5,
+       0.55,
+       0.6000000000000001,
+       0.65,
+       0.7000000000000001,
+       0.75,
+       0.8,
+       0.8500000000000001,
+       0.9,
+       0.9500000000000001,
+       1.0
+      ],
+      "counts": [
+       248,
+       152,
+       113,
+       85,
+       88,
+       59,
+       52,
+       48,
+       55,
+       50,
+       36,
+       26,
+       21,
+       20,
+       24,
+       25,
+       19,
+       20,
+       35,
+       884
+      ]
+     }
+    },
+    "edges_across_generator_layers_share": 0.2412621359223301,
+    "per_scene_summary": {
+     "n_masks": {
+      "n": 40,
+      "mean": 113.35,
+      "min": 70.0,
+      "max": 171.0,
+      "q": {
+       "0.05": 76.65,
+       "0.25": 88.0,
+       "0.5": 113.5,
+       "0.75": 134.0,
+       "0.95": 155.05
+      }
+     },
+     "forest_depth": {
+      "n": 40,
+      "mean": 3.625,
+      "min": 2.0,
+      "max": 6.0,
+      "q": {
+       "0.05": 2.0,
+       "0.25": 3.0,
+       "0.5": 3.5,
+       "0.75": 4.0,
+       "0.95": 5.049999999999997
+      }
+     },
+     "n_roots": {
+      "n": 40,
+      "mean": 61.85,
+      "min": 28.0,
+      "max": 108.0,
+      "q": {
+       "0.05": 37.9,
+       "0.25": 44.5,
+       "0.5": 62.5,
+       "0.75": 73.5,
+       "0.95": 91.1
+      }
+     },
+     "n_leaves": {
+      "n": 40,
+      "mean": 73.075,
+      "min": 45.0,
+      "max": 123.0,
+      "q": {
+       "0.05": 45.95,
+       "0.25": 53.0,
+       "0.5": 74.5,
+       "0.75": 85.25,
+       "0.95": 102.24999999999999
+      }
+     },
+     "n_isolated": {
+      "n": 40,
+      "mean": 35.7,
+      "min": 9.0,
+      "max": 78.0,
+      "q": {
+       "0.05": 17.9,
+       "0.25": 23.0,
+       "0.5": 34.0,
+       "0.75": 48.25,
+       "0.95": 58.249999999999986
+      }
+     },
+     "n_maximal": {
+      "n": 40,
+      "mean": 61.85,
+      "min": 28.0,
+      "max": 108.0,
+      "q": {
+       "0.05": 37.9,
+       "0.25": 44.5,
+       "0.5": 62.5,
+       "0.75": 73.5,
+       "0.95": 91.1
+      }
+     },
+     "n_minimal": {
+      "n": 40,
+      "mean": 73.025,
+      "min": 45.0,
+      "max": 123.0,
+      "q": {
+       "0.05": 45.95,
+       "0.25": 53.0,
+       "0.5": 74.5,
+       "0.75": 85.25,
+       "0.95": 102.24999999999999
+      }
+     },
+     "width": {
+      "n": 40,
+      "mean": 73.05,
+      "min": 45.0,
+      "max": 123.0,
+      "q": {
+       "0.05": 45.95,
+       "0.25": 53.0,
+       "0.5": 74.5,
+       "0.75": 85.25,
+       "0.95": 102.24999999999999
+      }
+     }
+    },
+    "width_over_n_masks": {
+     "n": 40,
+     "mean": 0.6405685049830989,
+     "min": 0.5487804878048781,
+     "max": 0.7192982456140351,
+     "q": {
+      "0.05": 0.5591023565389458,
+      "0.25": 0.6077974526250389,
+      "0.5": 0.6480088495575221,
+      "0.75": 0.668141592920354,
+      "0.95": 0.7052577167331265
+     }
+    },
+    "by_room": {
+     "meeting_room_001": {
+      "n_masks": {
+       "n": 20,
+       "mean": 131.5,
+       "min": 109.0,
+       "max": 171.0,
+       "q": {
+        "0.05": 110.9,
+        "0.25": 116.25,
+        "0.5": 134.0,
+        "0.75": 140.0,
+        "0.95": 156.75
+       }
+      },
+      "forest_depth": {
+       "n": 20,
+       "mean": 3.65,
+       "min": 2.0,
+       "max": 6.0,
+       "q": {
+        "0.05": 2.95,
+        "0.25": 3.0,
+        "0.5": 3.0,
+        "0.75": 4.0,
+        "0.95": 5.050000000000001
+       }
+      },
+      "width": {
+       "n": 20,
+       "mean": 87.35,
+       "min": 61.0,
+       "max": 123.0,
+       "q": {
+        "0.05": 72.4,
+        "0.25": 77.5,
+        "0.5": 85.5,
+        "0.75": 95.5,
+        "0.95": 107.80000000000001
+       }
+      }
+     },
+     "sink": {
+      "n_masks": {
+       "n": 20,
+       "mean": 95.2,
+       "min": 70.0,
+       "max": 144.0,
+       "q": {
+        "0.05": 70.0,
+        "0.25": 81.5,
+        "0.5": 88.0,
+        "0.75": 105.0,
+        "0.95": 126.9
+       }
+      },
+      "forest_depth": {
+       "n": 20,
+       "mean": 3.6,
+       "min": 2.0,
+       "max": 6.0,
+       "q": {
+        "0.05": 2.0,
+        "0.25": 3.0,
+        "0.5": 4.0,
+        "0.75": 4.0,
+        "0.95": 5.050000000000001
+       }
+      },
+      "width": {
+       "n": 20,
+       "mean": 58.75,
+       "min": 45.0,
+       "max": 84.0,
+       "q": {
+        "0.05": 45.0,
+        "0.25": 50.75,
+        "0.5": 53.0,
+        "0.75": 67.25,
+        "0.95": 82.1
+       }
+      }
+     }
+    },
+    "object_masks": {
+     "n": 764,
+     "by_position": {
+      "root": 252,
+      "internal": 67,
+      "leaf": 85,
+      "isolated": 360
+     },
+     "depth": {
+      "n": 764,
+      "mean": 0.2356020942408377,
+      "min": 0.0,
+      "max": 3.0,
+      "q": {
+       "0.05": 0.0,
+       "0.25": 0.0,
+       "0.5": 0.0,
+       "0.75": 0.0,
+       "0.95": 1.0
+      },
+      "hist": {
+       "edges": [
+        -0.5,
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5
+       ],
+       "counts": [
+        612,
+        128,
+        20,
+        4,
+        0,
+        0,
+        0,
+        0
+       ]
+      }
+     },
+     "n_ancestors": {
+      "n": 764,
+      "mean": 0.2356020942408377,
+      "min": 0.0,
+      "max": 3.0,
+      "q": {
+       "0.05": 0.0,
+       "0.25": 0.0,
+       "0.5": 0.0,
+       "0.75": 0.0,
+       "0.95": 1.0
+      },
+      "hist": {
+       "edges": [
+        -0.5,
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5
+       ],
+       "counts": [
+        612,
+        128,
+        20,
+        4,
+        0,
+        0,
+        0,
+        0
+       ]
+      }
+     },
+     "n_descendants": {
+      "n": 764,
+      "mean": 0.6832460732984293,
+      "min": 0.0,
+      "max": 11.0,
+      "q": {
+       "0.05": 0.0,
+       "0.25": 0.0,
+       "0.5": 0.0,
+       "0.75": 1.0,
+       "0.95": 3.0
+      },
+      "hist": {
+       "edges": [
+        -0.5,
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5,
+        8.5,
+        9.5,
+        10.5,
+        11.5,
+        12.5,
+        13.5,
+        14.5,
+        15.5,
+        16.5,
+        17.5,
+        18.5,
+        19.5,
+        20.5,
+        21.5,
+        22.5,
+        23.5,
+        24.5,
+        25.5,
+        26.5,
+        27.5,
+        28.5,
+        29.5
+       ],
+       "counts": [
+        445,
+        202,
+        77,
+        25,
+        5,
+        3,
+        2,
+        1,
+        1,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ]
+      }
+     }
+    },
+    "near_object_masks_relative_to_object_mask_of_their_box": {
+     "inside_object": 385,
+     "contains_object": 173,
+     "duplicate_of_object": 1,
+     "crossing_object": 131,
+     "disjoint_from_object": 84,
+     "no_object_mask_for_its_box": 68
+    },
+    "per_scene": [
+     {
+      "scene": "easy/meeting_room_001/rgb_000",
+      "room": "meeting_room_001",
+      "n_masks": 111,
+      "forest_depth": 3,
+      "n_roots": 73,
+      "n_leaves": 79,
+      "n_isolated": 51,
+      "n_maximal": 73,
+      "n_minimal": 79,
+      "width": 79
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_001",
+      "room": "meeting_room_001",
+      "n_masks": 109,
+      "forest_depth": 5,
+      "n_roots": 54,
+      "n_leaves": 61,
+      "n_isolated": 26,
+      "n_maximal": 54,
+      "n_minimal": 61,
+      "width": 61
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_002",
+      "room": "meeting_room_001",
+      "n_masks": 113,
+      "forest_depth": 3,
+      "n_roots": 60,
+      "n_leaves": 73,
+      "n_isolated": 34,
+      "n_maximal": 60,
+      "n_minimal": 73,
+      "width": 73
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_003",
+      "room": "meeting_room_001",
+      "n_masks": 117,
+      "forest_depth": 4,
+      "n_roots": 65,
+      "n_leaves": 78,
+      "n_isolated": 39,
+      "n_maximal": 65,
+      "n_minimal": 78,
+      "width": 78
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_004",
+      "room": "meeting_room_001",
+      "n_masks": 156,
+      "forest_depth": 3,
+      "n_roots": 65,
+      "n_leaves": 107,
+      "n_isolated": 40,
+      "n_maximal": 65,
+      "n_minimal": 107,
+      "width": 107
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_005",
+      "room": "meeting_room_001",
+      "n_masks": 140,
+      "forest_depth": 4,
+      "n_roots": 80,
+      "n_leaves": 91,
+      "n_isolated": 49,
+      "n_maximal": 80,
+      "n_minimal": 91,
+      "width": 91
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_006",
+      "room": "meeting_room_001",
+      "n_masks": 125,
+      "forest_depth": 5,
+      "n_roots": 68,
+      "n_leaves": 85,
+      "n_isolated": 51,
+      "n_maximal": 68,
+      "n_minimal": 85,
+      "width": 85
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_007",
+      "room": "meeting_room_001",
+      "n_masks": 122,
+      "forest_depth": 3,
+      "n_roots": 80,
+      "n_leaves": 86,
+      "n_isolated": 52,
+      "n_maximal": 80,
+      "n_minimal": 86,
+      "width": 86
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_008",
+      "room": "meeting_room_001",
+      "n_masks": 135,
+      "forest_depth": 3,
+      "n_roots": 91,
+      "n_leaves": 96,
+      "n_isolated": 63,
+      "n_maximal": 91,
+      "n_minimal": 95,
+      "width": 95
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_009",
+      "room": "meeting_room_001",
+      "n_masks": 134,
+      "forest_depth": 6,
+      "n_roots": 75,
+      "n_leaves": 89,
+      "n_isolated": 49,
+      "n_maximal": 75,
+      "n_minimal": 89,
+      "width": 89
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_010",
+      "room": "meeting_room_001",
+      "n_masks": 119,
+      "forest_depth": 4,
+      "n_roots": 70,
+      "n_leaves": 79,
+      "n_isolated": 45,
+      "n_maximal": 70,
+      "n_minimal": 79,
+      "width": 79
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_011",
+      "room": "meeting_room_001",
+      "n_masks": 140,
+      "forest_depth": 3,
+      "n_roots": 79,
+      "n_leaves": 97,
+      "n_isolated": 49,
+      "n_maximal": 79,
+      "n_minimal": 97,
+      "width": 97
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_012",
+      "room": "meeting_room_001",
+      "n_masks": 114,
+      "forest_depth": 3,
+      "n_roots": 62,
+      "n_leaves": 73,
+      "n_isolated": 34,
+      "n_maximal": 62,
+      "n_minimal": 73,
+      "width": 73
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_013",
+      "room": "meeting_room_001",
+      "n_masks": 114,
+      "forest_depth": 2,
+      "n_roots": 67,
+      "n_leaves": 76,
+      "n_isolated": 39,
+      "n_maximal": 67,
+      "n_minimal": 76,
+      "width": 76
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_014",
+      "room": "meeting_room_001",
+      "n_masks": 137,
+      "forest_depth": 3,
+      "n_roots": 89,
+      "n_leaves": 95,
+      "n_isolated": 58,
+      "n_maximal": 89,
+      "n_minimal": 95,
+      "width": 95
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_015",
+      "room": "meeting_room_001",
+      "n_masks": 150,
+      "forest_depth": 4,
+      "n_roots": 83,
+      "n_leaves": 98,
+      "n_isolated": 48,
+      "n_maximal": 83,
+      "n_minimal": 98,
+      "width": 98
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_016",
+      "room": "meeting_room_001",
+      "n_masks": 155,
+      "forest_depth": 3,
+      "n_roots": 93,
+      "n_leaves": 102,
+      "n_isolated": 55,
+      "n_maximal": 93,
+      "n_minimal": 102,
+      "width": 102
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_017",
+      "room": "meeting_room_001",
+      "n_masks": 134,
+      "forest_depth": 3,
+      "n_roots": 79,
+      "n_leaves": 85,
+      "n_isolated": 44,
+      "n_maximal": 79,
+      "n_minimal": 85,
+      "width": 85
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_018",
+      "room": "meeting_room_001",
+      "n_masks": 171,
+      "forest_depth": 5,
+      "n_roots": 108,
+      "n_leaves": 123,
+      "n_isolated": 78,
+      "n_maximal": 108,
+      "n_minimal": 123,
+      "width": 123
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_019",
+      "room": "meeting_room_001",
+      "n_masks": 134,
+      "forest_depth": 4,
+      "n_roots": 62,
+      "n_leaves": 75,
+      "n_isolated": 32,
+      "n_maximal": 62,
+      "n_minimal": 75,
+      "width": 75
+     },
+     {
+      "scene": "easy/sink/rgb_000",
+      "room": "sink",
+      "n_masks": 103,
+      "forest_depth": 3,
+      "n_roots": 48,
+      "n_leaves": 68,
+      "n_isolated": 26,
+      "n_maximal": 48,
+      "n_minimal": 68,
+      "width": 68
+     },
+     {
+      "scene": "easy/sink/rgb_001",
+      "room": "sink",
+      "n_masks": 111,
+      "forest_depth": 4,
+      "n_roots": 61,
+      "n_leaves": 67,
+      "n_isolated": 33,
+      "n_maximal": 61,
+      "n_minimal": 67,
+      "width": 67
+     },
+     {
+      "scene": "easy/sink/rgb_002",
+      "room": "sink",
+      "n_masks": 83,
+      "forest_depth": 2,
+      "n_roots": 45,
+      "n_leaves": 52,
+      "n_isolated": 24,
+      "n_maximal": 45,
+      "n_minimal": 52,
+      "width": 52
+     },
+     {
+      "scene": "easy/sink/rgb_003",
+      "room": "sink",
+      "n_masks": 78,
+      "forest_depth": 2,
+      "n_roots": 43,
+      "n_leaves": 49,
+      "n_isolated": 18,
+      "n_maximal": 43,
+      "n_minimal": 49,
+      "width": 49
+     },
+     {
+      "scene": "easy/sink/rgb_004",
+      "room": "sink",
+      "n_masks": 84,
+      "forest_depth": 4,
+      "n_roots": 43,
+      "n_leaves": 53,
+      "n_isolated": 20,
+      "n_maximal": 43,
+      "n_minimal": 53,
+      "width": 53
+     },
+     {
+      "scene": "easy/sink/rgb_005",
+      "room": "sink",
+      "n_masks": 82,
+      "forest_depth": 3,
+      "n_roots": 28,
+      "n_leaves": 45,
+      "n_isolated": 9,
+      "n_maximal": 28,
+      "n_minimal": 45,
+      "width": 45
+     },
+     {
+      "scene": "easy/sink/rgb_006",
+      "room": "sink",
+      "n_masks": 88,
+      "forest_depth": 3,
+      "n_roots": 42,
+      "n_leaves": 52,
+      "n_isolated": 19,
+      "n_maximal": 42,
+      "n_minimal": 52,
+      "width": 52
+     },
+     {
+      "scene": "easy/sink/rgb_007",
+      "room": "sink",
+      "n_masks": 87,
+      "forest_depth": 4,
+      "n_roots": 36,
+      "n_leaves": 53,
+      "n_isolated": 19,
+      "n_maximal": 36,
+      "n_minimal": 53,
+      "width": 53
+     },
+     {
+      "scene": "easy/sink/rgb_008",
+      "room": "sink",
+      "n_masks": 80,
+      "forest_depth": 3,
+      "n_roots": 40,
+      "n_leaves": 50,
+      "n_isolated": 16,
+      "n_maximal": 40,
+      "n_minimal": 49,
+      "width": 50
+     },
+     {
+      "scene": "easy/sink/rgb_009",
+      "room": "sink",
+      "n_masks": 77,
+      "forest_depth": 6,
+      "n_roots": 39,
+      "n_leaves": 52,
+      "n_isolated": 23,
+      "n_maximal": 39,
+      "n_minimal": 52,
+      "width": 52
+     },
+     {
+      "scene": "easy/sink/rgb_010",
+      "room": "sink",
+      "n_masks": 70,
+      "forest_depth": 4,
+      "n_roots": 38,
+      "n_leaves": 45,
+      "n_isolated": 23,
+      "n_maximal": 38,
+      "n_minimal": 45,
+      "width": 45
+     },
+     {
+      "scene": "easy/sink/rgb_011",
+      "room": "sink",
+      "n_masks": 88,
+      "forest_depth": 4,
+      "n_roots": 43,
+      "n_leaves": 51,
+      "n_isolated": 19,
+      "n_maximal": 43,
+      "n_minimal": 51,
+      "width": 51
+     },
+     {
+      "scene": "easy/sink/rgb_012",
+      "room": "sink",
+      "n_masks": 70,
+      "forest_depth": 3,
+      "n_roots": 42,
+      "n_leaves": 46,
+      "n_isolated": 26,
+      "n_maximal": 42,
+      "n_minimal": 46,
+      "width": 46
+     },
+     {
+      "scene": "easy/sink/rgb_013",
+      "room": "sink",
+      "n_masks": 97,
+      "forest_depth": 5,
+      "n_roots": 54,
+      "n_leaves": 62,
+      "n_isolated": 31,
+      "n_maximal": 54,
+      "n_minimal": 62,
+      "width": 62
+     },
+     {
+      "scene": "easy/sink/rgb_014",
+      "room": "sink",
+      "n_masks": 113,
+      "forest_depth": 4,
+      "n_roots": 67,
+      "n_leaves": 76,
+      "n_isolated": 39,
+      "n_maximal": 67,
+      "n_minimal": 76,
+      "width": 76
+     },
+     {
+      "scene": "easy/sink/rgb_015",
+      "room": "sink",
+      "n_masks": 102,
+      "forest_depth": 4,
+      "n_roots": 49,
+      "n_leaves": 56,
+      "n_isolated": 21,
+      "n_maximal": 49,
+      "n_minimal": 56,
+      "width": 56
+     },
+     {
+      "scene": "easy/sink/rgb_016",
+      "room": "sink",
+      "n_masks": 123,
+      "forest_depth": 3,
+      "n_roots": 73,
+      "n_leaves": 82,
+      "n_isolated": 42,
+      "n_maximal": 73,
+      "n_minimal": 82,
+      "width": 82
+     },
+     {
+      "scene": "easy/sink/rgb_017",
+      "room": "sink",
+      "n_masks": 98,
+      "forest_depth": 3,
+      "n_roots": 47,
+      "n_leaves": 58,
+      "n_isolated": 18,
+      "n_maximal": 47,
+      "n_minimal": 58,
+      "width": 58
+     },
+     {
+      "scene": "easy/sink/rgb_018",
+      "room": "sink",
+      "n_masks": 144,
+      "forest_depth": 4,
+      "n_roots": 70,
+      "n_leaves": 84,
+      "n_isolated": 36,
+      "n_maximal": 70,
+      "n_minimal": 84,
+      "width": 84
+     },
+     {
+      "scene": "easy/sink/rgb_019",
+      "room": "sink",
+      "n_masks": 126,
+      "forest_depth": 4,
+      "n_roots": 63,
+      "n_leaves": 74,
+      "n_isolated": 30,
+      "n_maximal": 63,
+      "n_minimal": 74,
+      "width": 74
+     }
+    ]
+   },
+   "0.9": {
+    "pairs": {
+     "nested": 2984,
+     "crossing": 2884,
+     "duplicate": 2,
+     "triples": 1288,
+     "transitivity_violations": 13
+    },
+    "transitivity_violation_share": 0.010093167701863354,
+    "masks_by_depth": {
+     "0": 2498,
+     "1": 1346,
+     "2": 490,
+     "3": 148,
+     "4": 44,
+     "5": 6,
+     "6": 2
+    },
+    "masks_by_position": {
+     "root": 1037,
+     "internal": 559,
+     "leaf": 1477,
+     "isolated": 1461
+    },
+    "children_per_internal_node": {
+     "n": 1596,
+     "mean": 1.2756892230576442,
+     "min": 1.0,
+     "max": 32.0,
+     "q": {
+      "0.05": 1.0,
+      "0.25": 1.0,
+      "0.5": 1.0,
+      "0.75": 1.0,
+      "0.95": 2.0
+     },
+     "hist": {
+      "edges": [
+       0.5,
+       1.5,
+       2.5,
+       3.5,
+       4.5,
+       5.5,
+       6.5,
+       7.5,
+       8.5,
+       9.5,
+       10.5,
+       11.5,
+       12.5,
+       13.5,
+       14.5,
+       15.5,
+       16.5,
+       17.5,
+       18.5,
+       19.5,
+       20.5
+      ],
+      "counts": [
+       1321,
+       213,
+       35,
+       6,
+       10,
+       4,
+       2,
+       1,
+       1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "child_parent_area_ratio": {
+     "n": 2036,
+     "mean": 0.5889879874113214,
+     "min": 0.00016197019482890238,
+     "max": 0.9999784774982244,
+     "q": {
+      "0.05": 0.017936611335314448,
+      "0.25": 0.15574963761101424,
+      "0.5": 0.6860174822746805,
+      "0.75": 0.9924555478986952,
+      "0.95": 0.9989988677823144
+     },
+     "hist": {
+      "edges": [
+       0.0,
+       0.05,
+       0.1,
+       0.15000000000000002,
+       0.2,
+       0.25,
+       0.30000000000000004,
+       0.35000000000000003,
+       0.4,
+       0.45,
+       0.5,
+       0.55,
+       0.6000000000000001,
+       0.65,
+       0.7000000000000001,
+       0.75,
+       0.8,
+       0.8500000000000001,
+       0.9,
+       0.9500000000000001,
+       1.0
+      ],
+      "counts": [
+       236,
+       149,
+       110,
+       84,
+       86,
+       59,
+       50,
+       47,
+       55,
+       50,
+       36,
+       26,
+       21,
+       20,
+       24,
+       25,
+       19,
+       20,
+       35,
+       884
+      ]
+     }
+    },
+    "edges_across_generator_layers_share": 0.2382121807465619,
+    "per_scene_summary": {
+     "n_masks": {
+      "n": 40,
+      "mean": 113.35,
+      "min": 70.0,
+      "max": 171.0,
+      "q": {
+       "0.05": 76.65,
+       "0.25": 88.0,
+       "0.5": 113.5,
+       "0.75": 134.0,
+       "0.95": 155.05
+      }
+     },
+     "forest_depth": {
+      "n": 40,
+      "mean": 3.625,
+      "min": 2.0,
+      "max": 6.0,
+      "q": {
+       "0.05": 2.0,
+       "0.25": 3.0,
+       "0.5": 3.5,
+       "0.75": 4.0,
+       "0.95": 5.049999999999997
+      }
+     },
+     "n_roots": {
+      "n": 40,
+      "mean": 62.45,
+      "min": 28.0,
+      "max": 110.0,
+      "q": {
+       "0.05": 37.95,
+       "0.25": 44.75,
+       "0.5": 63.5,
+       "0.75": 74.25,
+       "0.95": 91.14999999999999
+      }
+     },
+     "n_leaves": {
+      "n": 40,
+      "mean": 73.45,
+      "min": 45.0,
+      "max": 124.0,
+      "q": {
+       "0.05": 45.95,
+       "0.25": 53.75,
+       "0.5": 75.0,
+       "0.75": 85.25,
+       "0.95": 102.24999999999999
+      }
+     },
+     "n_isolated": {
+      "n": 40,
+      "mean": 36.525,
+      "min": 9.0,
+      "max": 80.0,
+      "q": {
+       "0.05": 18.85,
+       "0.25": 23.0,
+       "0.5": 36.5,
+       "0.75": 49.0,
+       "0.95": 60.14999999999999
+      }
+     },
+     "n_maximal": {
+      "n": 40,
+      "mean": 62.45,
+      "min": 28.0,
+      "max": 110.0,
+      "q": {
+       "0.05": 37.95,
+       "0.25": 44.75,
+       "0.5": 63.5,
+       "0.75": 74.25,
+       "0.95": 91.14999999999999
+      }
+     },
+     "n_minimal": {
+      "n": 40,
+      "mean": 73.4,
+      "min": 45.0,
+      "max": 124.0,
+      "q": {
+       "0.05": 45.95,
+       "0.25": 53.75,
+       "0.5": 74.5,
+       "0.75": 85.25,
+       "0.95": 102.24999999999999
+      }
+     },
+     "width": {
+      "n": 40,
+      "mean": 73.425,
+      "min": 45.0,
+      "max": 124.0,
+      "q": {
+       "0.05": 45.95,
+       "0.25": 53.75,
+       "0.5": 75.0,
+       "0.75": 85.25,
+       "0.95": 102.24999999999999
+      }
+     }
+    },
+    "width_over_n_masks": {
+     "n": 40,
+     "mean": 0.6437922148763319,
+     "min": 0.5487804878048781,
+     "max": 0.7251461988304093,
+     "q": {
+      "0.05": 0.5662569505414106,
+      "0.25": 0.6186703945324635,
+      "0.5": 0.6497422680412371,
+      "0.75": 0.6763964191148657,
+      "0.95": 0.7052577167331265
+     }
+    },
+    "by_room": {
+     "meeting_room_001": {
+      "n_masks": {
+       "n": 20,
+       "mean": 131.5,
+       "min": 109.0,
+       "max": 171.0,
+       "q": {
+        "0.05": 110.9,
+        "0.25": 116.25,
+        "0.5": 134.0,
+        "0.75": 140.0,
+        "0.95": 156.75
+       }
+      },
+      "forest_depth": {
+       "n": 20,
+       "mean": 3.65,
+       "min": 2.0,
+       "max": 6.0,
+       "q": {
+        "0.05": 2.95,
+        "0.25": 3.0,
+        "0.5": 3.0,
+        "0.75": 4.0,
+        "0.95": 5.050000000000001
+       }
+      },
+      "width": {
+       "n": 20,
+       "mean": 87.65,
+       "min": 62.0,
+       "max": 124.0,
+       "q": {
+        "0.05": 72.45,
+        "0.25": 77.5,
+        "0.5": 85.5,
+        "0.75": 95.5,
+        "0.95": 107.85000000000001
+       }
+      }
+     },
+     "sink": {
+      "n_masks": {
+       "n": 20,
+       "mean": 95.2,
+       "min": 70.0,
+       "max": 144.0,
+       "q": {
+        "0.05": 70.0,
+        "0.25": 81.5,
+        "0.5": 88.0,
+        "0.75": 105.0,
+        "0.95": 126.9
+       }
+      },
+      "forest_depth": {
+       "n": 20,
+       "mean": 3.6,
+       "min": 2.0,
+       "max": 6.0,
+       "q": {
+        "0.05": 2.0,
+        "0.25": 3.0,
+        "0.5": 4.0,
+        "0.75": 4.0,
+        "0.95": 5.050000000000001
+       }
+      },
+      "width": {
+       "n": 20,
+       "mean": 59.2,
+       "min": 45.0,
+       "max": 85.0,
+       "q": {
+        "0.05": 45.0,
+        "0.25": 50.75,
+        "0.5": 53.5,
+        "0.75": 68.5,
+        "0.95": 83.1
+       }
+      }
+     }
+    },
+    "object_masks": {
+     "n": 764,
+     "by_position": {
+      "root": 248,
+      "internal": 66,
+      "leaf": 86,
+      "isolated": 364
+     },
+     "depth": {
+      "n": 764,
+      "mean": 0.2356020942408377,
+      "min": 0.0,
+      "max": 3.0,
+      "q": {
+       "0.05": 0.0,
+       "0.25": 0.0,
+       "0.5": 0.0,
+       "0.75": 0.0,
+       "0.95": 1.0
+      },
+      "hist": {
+       "edges": [
+        -0.5,
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5
+       ],
+       "counts": [
+        612,
+        128,
+        20,
+        4,
+        0,
+        0,
+        0,
+        0
+       ]
+      }
+     },
+     "n_ancestors": {
+      "n": 764,
+      "mean": 0.2356020942408377,
+      "min": 0.0,
+      "max": 3.0,
+      "q": {
+       "0.05": 0.0,
+       "0.25": 0.0,
+       "0.5": 0.0,
+       "0.75": 0.0,
+       "0.95": 1.0
+      },
+      "hist": {
+       "edges": [
+        -0.5,
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5
+       ],
+       "counts": [
+        612,
+        128,
+        20,
+        4,
+        0,
+        0,
+        0,
+        0
+       ]
+      }
+     },
+     "n_descendants": {
+      "n": 764,
+      "mean": 0.6740837696335078,
+      "min": 0.0,
+      "max": 10.0,
+      "q": {
+       "0.05": 0.0,
+       "0.25": 0.0,
+       "0.5": 0.0,
+       "0.75": 1.0,
+       "0.95": 2.8500000000000227
+      },
+      "hist": {
+       "edges": [
+        -0.5,
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5,
+        8.5,
+        9.5,
+        10.5,
+        11.5,
+        12.5,
+        13.5,
+        14.5,
+        15.5,
+        16.5,
+        17.5,
+        18.5,
+        19.5,
+        20.5,
+        21.5,
+        22.5,
+        23.5,
+        24.5,
+        25.5,
+        26.5,
+        27.5,
+        28.5,
+        29.5
+       ],
+       "counts": [
+        450,
+        197,
+        78,
+        24,
+        5,
+        3,
+        2,
+        1,
+        1,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ]
+      }
+     }
+    },
+    "near_object_masks_relative_to_object_mask_of_their_box": {
+     "inside_object": 383,
+     "contains_object": 173,
+     "duplicate_of_object": 1,
+     "crossing_object": 133,
+     "disjoint_from_object": 84,
+     "no_object_mask_for_its_box": 68
+    },
+    "per_scene": [
+     {
+      "scene": "easy/meeting_room_001/rgb_000",
+      "room": "meeting_room_001",
+      "n_masks": 111,
+      "forest_depth": 3,
+      "n_roots": 73,
+      "n_leaves": 79,
+      "n_isolated": 51,
+      "n_maximal": 73,
+      "n_minimal": 79,
+      "width": 79
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_001",
+      "room": "meeting_room_001",
+      "n_masks": 109,
+      "forest_depth": 5,
+      "n_roots": 54,
+      "n_leaves": 62,
+      "n_isolated": 26,
+      "n_maximal": 54,
+      "n_minimal": 62,
+      "width": 62
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_002",
+      "room": "meeting_room_001",
+      "n_masks": 113,
+      "forest_depth": 3,
+      "n_roots": 60,
+      "n_leaves": 73,
+      "n_isolated": 34,
+      "n_maximal": 60,
+      "n_minimal": 73,
+      "width": 73
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_003",
+      "room": "meeting_room_001",
+      "n_masks": 117,
+      "forest_depth": 4,
+      "n_roots": 66,
+      "n_leaves": 78,
+      "n_isolated": 40,
+      "n_maximal": 66,
+      "n_minimal": 78,
+      "width": 78
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_004",
+      "room": "meeting_room_001",
+      "n_masks": 156,
+      "forest_depth": 3,
+      "n_roots": 67,
+      "n_leaves": 107,
+      "n_isolated": 41,
+      "n_maximal": 67,
+      "n_minimal": 107,
+      "width": 107
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_005",
+      "room": "meeting_room_001",
+      "n_masks": 140,
+      "forest_depth": 4,
+      "n_roots": 81,
+      "n_leaves": 91,
+      "n_isolated": 50,
+      "n_maximal": 81,
+      "n_minimal": 91,
+      "width": 91
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_006",
+      "room": "meeting_room_001",
+      "n_masks": 125,
+      "forest_depth": 5,
+      "n_roots": 68,
+      "n_leaves": 85,
+      "n_isolated": 51,
+      "n_maximal": 68,
+      "n_minimal": 85,
+      "width": 85
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_007",
+      "room": "meeting_room_001",
+      "n_masks": 122,
+      "forest_depth": 3,
+      "n_roots": 80,
+      "n_leaves": 86,
+      "n_isolated": 52,
+      "n_maximal": 80,
+      "n_minimal": 86,
+      "width": 86
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_008",
+      "room": "meeting_room_001",
+      "n_masks": 135,
+      "forest_depth": 3,
+      "n_roots": 91,
+      "n_leaves": 96,
+      "n_isolated": 63,
+      "n_maximal": 91,
+      "n_minimal": 95,
+      "width": 95
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_009",
+      "room": "meeting_room_001",
+      "n_masks": 134,
+      "forest_depth": 6,
+      "n_roots": 75,
+      "n_leaves": 89,
+      "n_isolated": 49,
+      "n_maximal": 75,
+      "n_minimal": 89,
+      "width": 89
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_010",
+      "room": "meeting_room_001",
+      "n_masks": 119,
+      "forest_depth": 4,
+      "n_roots": 70,
+      "n_leaves": 79,
+      "n_isolated": 45,
+      "n_maximal": 70,
+      "n_minimal": 79,
+      "width": 79
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_011",
+      "room": "meeting_room_001",
+      "n_masks": 140,
+      "forest_depth": 3,
+      "n_roots": 79,
+      "n_leaves": 97,
+      "n_isolated": 49,
+      "n_maximal": 79,
+      "n_minimal": 97,
+      "width": 97
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_012",
+      "room": "meeting_room_001",
+      "n_masks": 114,
+      "forest_depth": 3,
+      "n_roots": 64,
+      "n_leaves": 74,
+      "n_isolated": 37,
+      "n_maximal": 64,
+      "n_minimal": 74,
+      "width": 74
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_013",
+      "room": "meeting_room_001",
+      "n_masks": 114,
+      "forest_depth": 2,
+      "n_roots": 68,
+      "n_leaves": 76,
+      "n_isolated": 40,
+      "n_maximal": 68,
+      "n_minimal": 76,
+      "width": 76
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_014",
+      "room": "meeting_room_001",
+      "n_masks": 137,
+      "forest_depth": 3,
+      "n_roots": 91,
+      "n_leaves": 95,
+      "n_isolated": 60,
+      "n_maximal": 91,
+      "n_minimal": 95,
+      "width": 95
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_015",
+      "room": "meeting_room_001",
+      "n_masks": 150,
+      "forest_depth": 4,
+      "n_roots": 85,
+      "n_leaves": 100,
+      "n_isolated": 52,
+      "n_maximal": 85,
+      "n_minimal": 100,
+      "width": 100
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_016",
+      "room": "meeting_room_001",
+      "n_masks": 155,
+      "forest_depth": 3,
+      "n_roots": 94,
+      "n_leaves": 102,
+      "n_isolated": 56,
+      "n_maximal": 94,
+      "n_minimal": 102,
+      "width": 102
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_017",
+      "room": "meeting_room_001",
+      "n_masks": 134,
+      "forest_depth": 3,
+      "n_roots": 79,
+      "n_leaves": 85,
+      "n_isolated": 44,
+      "n_maximal": 79,
+      "n_minimal": 85,
+      "width": 85
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_018",
+      "room": "meeting_room_001",
+      "n_masks": 171,
+      "forest_depth": 5,
+      "n_roots": 110,
+      "n_leaves": 124,
+      "n_isolated": 80,
+      "n_maximal": 110,
+      "n_minimal": 124,
+      "width": 124
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_019",
+      "room": "meeting_room_001",
+      "n_masks": 134,
+      "forest_depth": 4,
+      "n_roots": 62,
+      "n_leaves": 76,
+      "n_isolated": 32,
+      "n_maximal": 62,
+      "n_minimal": 75,
+      "width": 76
+     },
+     {
+      "scene": "easy/sink/rgb_000",
+      "room": "sink",
+      "n_masks": 103,
+      "forest_depth": 3,
+      "n_roots": 49,
+      "n_leaves": 70,
+      "n_isolated": 28,
+      "n_maximal": 49,
+      "n_minimal": 70,
+      "width": 70
+     },
+     {
+      "scene": "easy/sink/rgb_001",
+      "room": "sink",
+      "n_masks": 111,
+      "forest_depth": 4,
+      "n_roots": 63,
+      "n_leaves": 68,
+      "n_isolated": 36,
+      "n_maximal": 63,
+      "n_minimal": 68,
+      "width": 68
+     },
+     {
+      "scene": "easy/sink/rgb_002",
+      "room": "sink",
+      "n_masks": 83,
+      "forest_depth": 2,
+      "n_roots": 45,
+      "n_leaves": 52,
+      "n_isolated": 24,
+      "n_maximal": 45,
+      "n_minimal": 52,
+      "width": 52
+     },
+     {
+      "scene": "easy/sink/rgb_003",
+      "room": "sink",
+      "n_masks": 78,
+      "forest_depth": 2,
+      "n_roots": 44,
+      "n_leaves": 49,
+      "n_isolated": 19,
+      "n_maximal": 44,
+      "n_minimal": 49,
+      "width": 49
+     },
+     {
+      "scene": "easy/sink/rgb_004",
+      "room": "sink",
+      "n_masks": 84,
+      "forest_depth": 4,
+      "n_roots": 43,
+      "n_leaves": 53,
+      "n_isolated": 20,
+      "n_maximal": 43,
+      "n_minimal": 53,
+      "width": 53
+     },
+     {
+      "scene": "easy/sink/rgb_005",
+      "room": "sink",
+      "n_masks": 82,
+      "forest_depth": 3,
+      "n_roots": 28,
+      "n_leaves": 45,
+      "n_isolated": 9,
+      "n_maximal": 28,
+      "n_minimal": 45,
+      "width": 45
+     },
+     {
+      "scene": "easy/sink/rgb_006",
+      "room": "sink",
+      "n_masks": 88,
+      "forest_depth": 3,
+      "n_roots": 42,
+      "n_leaves": 52,
+      "n_isolated": 19,
+      "n_maximal": 42,
+      "n_minimal": 52,
+      "width": 52
+     },
+     {
+      "scene": "easy/sink/rgb_007",
+      "room": "sink",
+      "n_masks": 87,
+      "forest_depth": 4,
+      "n_roots": 37,
+      "n_leaves": 54,
+      "n_isolated": 21,
+      "n_maximal": 37,
+      "n_minimal": 54,
+      "width": 54
+     },
+     {
+      "scene": "easy/sink/rgb_008",
+      "room": "sink",
+      "n_masks": 80,
+      "forest_depth": 3,
+      "n_roots": 40,
+      "n_leaves": 50,
+      "n_isolated": 16,
+      "n_maximal": 40,
+      "n_minimal": 50,
+      "width": 50
+     },
+     {
+      "scene": "easy/sink/rgb_009",
+      "room": "sink",
+      "n_masks": 77,
+      "forest_depth": 6,
+      "n_roots": 39,
+      "n_leaves": 52,
+      "n_isolated": 23,
+      "n_maximal": 39,
+      "n_minimal": 52,
+      "width": 52
+     },
+     {
+      "scene": "easy/sink/rgb_010",
+      "room": "sink",
+      "n_masks": 70,
+      "forest_depth": 4,
+      "n_roots": 38,
+      "n_leaves": 45,
+      "n_isolated": 23,
+      "n_maximal": 38,
+      "n_minimal": 45,
+      "width": 45
+     },
+     {
+      "scene": "easy/sink/rgb_011",
+      "room": "sink",
+      "n_masks": 88,
+      "forest_depth": 4,
+      "n_roots": 44,
+      "n_leaves": 51,
+      "n_isolated": 20,
+      "n_maximal": 44,
+      "n_minimal": 51,
+      "width": 51
+     },
+     {
+      "scene": "easy/sink/rgb_012",
+      "room": "sink",
+      "n_masks": 70,
+      "forest_depth": 3,
+      "n_roots": 42,
+      "n_leaves": 46,
+      "n_isolated": 26,
+      "n_maximal": 42,
+      "n_minimal": 46,
+      "width": 46
+     },
+     {
+      "scene": "easy/sink/rgb_013",
+      "room": "sink",
+      "n_masks": 97,
+      "forest_depth": 5,
+      "n_roots": 54,
+      "n_leaves": 63,
+      "n_isolated": 31,
+      "n_maximal": 54,
+      "n_minimal": 63,
+      "width": 63
+     },
+     {
+      "scene": "easy/sink/rgb_014",
+      "room": "sink",
+      "n_masks": 113,
+      "forest_depth": 4,
+      "n_roots": 68,
+      "n_leaves": 77,
+      "n_isolated": 41,
+      "n_maximal": 68,
+      "n_minimal": 77,
+      "width": 77
+     },
+     {
+      "scene": "easy/sink/rgb_015",
+      "room": "sink",
+      "n_masks": 102,
+      "forest_depth": 4,
+      "n_roots": 49,
+      "n_leaves": 56,
+      "n_isolated": 21,
+      "n_maximal": 49,
+      "n_minimal": 56,
+      "width": 56
+     },
+     {
+      "scene": "easy/sink/rgb_016",
+      "room": "sink",
+      "n_masks": 123,
+      "forest_depth": 3,
+      "n_roots": 74,
+      "n_leaves": 83,
+      "n_isolated": 44,
+      "n_maximal": 74,
+      "n_minimal": 83,
+      "width": 83
+     },
+     {
+      "scene": "easy/sink/rgb_017",
+      "room": "sink",
+      "n_masks": 98,
+      "forest_depth": 3,
+      "n_roots": 48,
+      "n_leaves": 59,
+      "n_isolated": 20,
+      "n_maximal": 48,
+      "n_minimal": 59,
+      "width": 59
+     },
+     {
+      "scene": "easy/sink/rgb_018",
+      "room": "sink",
+      "n_masks": 144,
+      "forest_depth": 4,
+      "n_roots": 71,
+      "n_leaves": 85,
+      "n_isolated": 38,
+      "n_maximal": 71,
+      "n_minimal": 85,
+      "width": 85
+     },
+     {
+      "scene": "easy/sink/rgb_019",
+      "room": "sink",
+      "n_masks": 126,
+      "forest_depth": 4,
+      "n_roots": 63,
+      "n_leaves": 74,
+      "n_isolated": 30,
+      "n_maximal": 63,
+      "n_minimal": 74,
+      "width": 74
+     }
+    ]
+   },
+   "0.95": {
+    "pairs": {
+     "nested": 2851,
+     "crossing": 3017,
+     "duplicate": 2,
+     "triples": 1203,
+     "transitivity_violations": 22
+    },
+    "transitivity_violation_share": 0.01828761429758936,
+    "masks_by_depth": {
+     "0": 2573,
+     "1": 1305,
+     "2": 470,
+     "3": 138,
+     "4": 40,
+     "5": 6,
+     "6": 2
+    },
+    "masks_by_position": {
+     "root": 1025,
+     "internal": 535,
+     "leaf": 1426,
+     "isolated": 1548
+    },
+    "children_per_internal_node": {
+     "n": 1560,
+     "mean": 1.257051282051282,
+     "min": 1.0,
+     "max": 31.0,
+     "q": {
+      "0.05": 1.0,
+      "0.25": 1.0,
+      "0.5": 1.0,
+      "0.75": 1.0,
+      "0.95": 2.0
+     },
+     "hist": {
+      "edges": [
+       0.5,
+       1.5,
+       2.5,
+       3.5,
+       4.5,
+       5.5,
+       6.5,
+       7.5,
+       8.5,
+       9.5,
+       10.5,
+       11.5,
+       12.5,
+       13.5,
+       14.5,
+       15.5,
+       16.5,
+       17.5,
+       18.5,
+       19.5,
+       20.5
+      ],
+      "counts": [
+       1310,
+       194,
+       33,
+       3,
+       9,
+       5,
+       1,
+       2,
+       0,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "child_parent_area_ratio": {
+     "n": 1961,
+     "mean": 0.6064065401478487,
+     "min": 0.00016197019482890238,
+     "max": 0.9999784774982244,
+     "q": {
+      "0.05": 0.0193155302048224,
+      "0.25": 0.1720242641548613,
+      "0.5": 0.7519139274590118,
+      "0.75": 0.9927882224211678,
+      "0.95": 0.9990213159536254
+     },
+     "hist": {
+      "edges": [
+       0.0,
+       0.05,
+       0.1,
+       0.15000000000000002,
+       0.2,
+       0.25,
+       0.30000000000000004,
+       0.35000000000000003,
+       0.4,
+       0.45,
+       0.5,
+       0.55,
+       0.6000000000000001,
+       0.65,
+       0.7000000000000001,
+       0.75,
+       0.8,
+       0.8500000000000001,
+       0.9,
+       0.9500000000000001,
+       1.0
+      ],
+      "counts": [
+       209,
+       134,
+       103,
+       78,
+       77,
+       55,
+       48,
+       47,
+       54,
+       49,
+       35,
+       26,
+       20,
+       19,
+       24,
+       25,
+       19,
+       20,
+       35,
+       884
+      ]
+     }
+    },
+    "edges_across_generator_layers_share": 0.23814380418154002,
+    "per_scene_summary": {
+     "n_masks": {
+      "n": 40,
+      "mean": 113.35,
+      "min": 70.0,
+      "max": 171.0,
+      "q": {
+       "0.05": 76.65,
+       "0.25": 88.0,
+       "0.5": 113.5,
+       "0.75": 134.0,
+       "0.95": 155.05
+      }
+     },
+     "forest_depth": {
+      "n": 40,
+      "mean": 3.575,
+      "min": 2.0,
+      "max": 6.0,
+      "q": {
+       "0.05": 2.0,
+       "0.25": 3.0,
+       "0.5": 3.0,
+       "0.75": 4.0,
+       "0.95": 5.049999999999997
+      }
+     },
+     "n_roots": {
+      "n": 40,
+      "mean": 64.325,
+      "min": 29.0,
+      "max": 111.0,
+      "q": {
+       "0.05": 39.9,
+       "0.25": 45.75,
+       "0.5": 65.0,
+       "0.75": 76.5,
+       "0.95": 93.1
+      }
+     },
+     "n_leaves": {
+      "n": 40,
+      "mean": 74.35,
+      "min": 45.0,
+      "max": 124.0,
+      "q": {
+       "0.05": 47.9,
+       "0.25": 55.0,
+       "0.5": 75.5,
+       "0.75": 87.25,
+       "0.95": 104.19999999999999
+      }
+     },
+     "n_isolated": {
+      "n": 40,
+      "mean": 38.7,
+      "min": 10.0,
+      "max": 81.0,
+      "q": {
+       "0.05": 18.95,
+       "0.25": 24.75,
+       "0.5": 37.5,
+       "0.75": 52.5,
+       "0.95": 62.099999999999994
+      }
+     },
+     "n_maximal": {
+      "n": 40,
+      "mean": 64.325,
+      "min": 29.0,
+      "max": 111.0,
+      "q": {
+       "0.05": 39.9,
+       "0.25": 45.75,
+       "0.5": 65.0,
+       "0.75": 76.5,
+       "0.95": 93.1
+      }
+     },
+     "n_minimal": {
+      "n": 40,
+      "mean": 74.275,
+      "min": 45.0,
+      "max": 124.0,
+      "q": {
+       "0.05": 47.9,
+       "0.25": 55.0,
+       "0.5": 75.5,
+       "0.75": 87.0,
+       "0.95": 103.24999999999999
+      }
+     },
+     "width": {
+      "n": 40,
+      "mean": 74.35,
+      "min": 45.0,
+      "max": 124.0,
+      "q": {
+       "0.05": 47.9,
+       "0.25": 55.0,
+       "0.5": 75.5,
+       "0.75": 87.25,
+       "0.95": 104.19999999999999
+      }
+     }
+    },
+    "width_over_n_masks": {
+     "n": 40,
+     "mean": 0.6522677748985701,
+     "min": 0.5490196078431373,
+     "max": 0.7297297297297297,
+     "q": {
+      "0.05": 0.5668547506370586,
+      "0.25": 0.6243069993069993,
+      "0.5": 0.6632302405498282,
+      "0.75": 0.6824905183312262,
+      "0.95": 0.7215032115808647
+     }
+    },
+    "by_room": {
+     "meeting_room_001": {
+      "n_masks": {
+       "n": 20,
+       "mean": 131.5,
+       "min": 109.0,
+       "max": 171.0,
+       "q": {
+        "0.05": 110.9,
+        "0.25": 116.25,
+        "0.5": 134.0,
+        "0.75": 140.0,
+        "0.95": 156.75
+       }
+      },
+      "forest_depth": {
+       "n": 20,
+       "mean": 3.6,
+       "min": 2.0,
+       "max": 6.0,
+       "q": {
+        "0.05": 2.95,
+        "0.25": 3.0,
+        "0.5": 3.0,
+        "0.75": 4.0,
+        "0.95": 5.050000000000001
+       }
+      },
+      "width": {
+       "n": 20,
+       "mean": 88.75,
+       "min": 62.0,
+       "max": 124.0,
+       "q": {
+        "0.05": 72.45,
+        "0.25": 78.5,
+        "0.5": 87.0,
+        "0.75": 96.25,
+        "0.95": 108.80000000000001
+       }
+      }
+     },
+     "sink": {
+      "n_masks": {
+       "n": 20,
+       "mean": 95.2,
+       "min": 70.0,
+       "max": 144.0,
+       "q": {
+        "0.05": 70.0,
+        "0.25": 81.5,
+        "0.5": 88.0,
+        "0.75": 105.0,
+        "0.95": 126.9
+       }
+      },
+      "forest_depth": {
+       "n": 20,
+       "mean": 3.55,
+       "min": 2.0,
+       "max": 6.0,
+       "q": {
+        "0.05": 2.0,
+        "0.25": 3.0,
+        "0.5": 4.0,
+        "0.75": 4.0,
+        "0.95": 5.050000000000001
+       }
+      },
+      "width": {
+       "n": 20,
+       "mean": 59.95,
+       "min": 45.0,
+       "max": 87.0,
+       "q": {
+        "0.05": 45.95,
+        "0.25": 51.0,
+        "0.5": 55.0,
+        "0.75": 68.5,
+        "0.95": 83.2
+       }
+      }
+     }
+    },
+    "object_masks": {
+     "n": 764,
+     "by_position": {
+      "root": 238,
+      "internal": 61,
+      "leaf": 91,
+      "isolated": 374
+     },
+     "depth": {
+      "n": 764,
+      "mean": 0.2356020942408377,
+      "min": 0.0,
+      "max": 3.0,
+      "q": {
+       "0.05": 0.0,
+       "0.25": 0.0,
+       "0.5": 0.0,
+       "0.75": 0.0,
+       "0.95": 1.0
+      },
+      "hist": {
+       "edges": [
+        -0.5,
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5
+       ],
+       "counts": [
+        612,
+        128,
+        20,
+        4,
+        0,
+        0,
+        0,
+        0
+       ]
+      }
+     },
+     "n_ancestors": {
+      "n": 764,
+      "mean": 0.2356020942408377,
+      "min": 0.0,
+      "max": 3.0,
+      "q": {
+       "0.05": 0.0,
+       "0.25": 0.0,
+       "0.5": 0.0,
+       "0.75": 0.0,
+       "0.95": 1.0
+      },
+      "hist": {
+       "edges": [
+        -0.5,
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5
+       ],
+       "counts": [
+        612,
+        128,
+        20,
+        4,
+        0,
+        0,
+        0,
+        0
+       ]
+      }
+     },
+     "n_descendants": {
+      "n": 764,
+      "mean": 0.6413612565445026,
+      "min": 0.0,
+      "max": 10.0,
+      "q": {
+       "0.05": 0.0,
+       "0.25": 0.0,
+       "0.5": 0.0,
+       "0.75": 1.0,
+       "0.95": 2.0
+      },
+      "hist": {
+       "edges": [
+        -0.5,
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5,
+        8.5,
+        9.5,
+        10.5,
+        11.5,
+        12.5,
+        13.5,
+        14.5,
+        15.5,
+        16.5,
+        17.5,
+        18.5,
+        19.5,
+        20.5,
+        21.5,
+        22.5,
+        23.5,
+        24.5,
+        25.5,
+        26.5,
+        27.5,
+        28.5,
+        29.5
+       ],
+       "counts": [
+        465,
+        187,
+        78,
+        19,
+        5,
+        3,
+        2,
+        1,
+        1,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ]
+      }
+     }
+    },
+    "near_object_masks_relative_to_object_mask_of_their_box": {
+     "inside_object": 369,
+     "contains_object": 173,
+     "duplicate_of_object": 1,
+     "crossing_object": 147,
+     "disjoint_from_object": 84,
+     "no_object_mask_for_its_box": 68
+    },
+    "per_scene": [
+     {
+      "scene": "easy/meeting_room_001/rgb_000",
+      "room": "meeting_room_001",
+      "n_masks": 111,
+      "forest_depth": 3,
+      "n_roots": 75,
+      "n_leaves": 81,
+      "n_isolated": 55,
+      "n_maximal": 75,
+      "n_minimal": 81,
+      "width": 81
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_001",
+      "room": "meeting_room_001",
+      "n_masks": 109,
+      "forest_depth": 5,
+      "n_roots": 56,
+      "n_leaves": 62,
+      "n_isolated": 27,
+      "n_maximal": 56,
+      "n_minimal": 62,
+      "width": 62
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_002",
+      "room": "meeting_room_001",
+      "n_masks": 113,
+      "forest_depth": 3,
+      "n_roots": 62,
+      "n_leaves": 73,
+      "n_isolated": 36,
+      "n_maximal": 62,
+      "n_minimal": 73,
+      "width": 73
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_003",
+      "room": "meeting_room_001",
+      "n_masks": 117,
+      "forest_depth": 4,
+      "n_roots": 69,
+      "n_leaves": 79,
+      "n_isolated": 43,
+      "n_maximal": 69,
+      "n_minimal": 79,
+      "width": 79
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_004",
+      "room": "meeting_room_001",
+      "n_masks": 156,
+      "forest_depth": 3,
+      "n_roots": 71,
+      "n_leaves": 108,
+      "n_isolated": 44,
+      "n_maximal": 71,
+      "n_minimal": 108,
+      "width": 108
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_005",
+      "room": "meeting_room_001",
+      "n_masks": 140,
+      "forest_depth": 3,
+      "n_roots": 84,
+      "n_leaves": 94,
+      "n_isolated": 54,
+      "n_maximal": 84,
+      "n_minimal": 94,
+      "width": 94
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_006",
+      "room": "meeting_room_001",
+      "n_masks": 125,
+      "forest_depth": 5,
+      "n_roots": 72,
+      "n_leaves": 86,
+      "n_isolated": 55,
+      "n_maximal": 72,
+      "n_minimal": 86,
+      "width": 86
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_007",
+      "room": "meeting_room_001",
+      "n_masks": 122,
+      "forest_depth": 3,
+      "n_roots": 83,
+      "n_leaves": 88,
+      "n_isolated": 55,
+      "n_maximal": 83,
+      "n_minimal": 87,
+      "width": 88
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_008",
+      "room": "meeting_room_001",
+      "n_masks": 135,
+      "forest_depth": 3,
+      "n_roots": 92,
+      "n_leaves": 96,
+      "n_isolated": 64,
+      "n_maximal": 92,
+      "n_minimal": 95,
+      "width": 96
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_009",
+      "room": "meeting_room_001",
+      "n_masks": 134,
+      "forest_depth": 6,
+      "n_roots": 78,
+      "n_leaves": 91,
+      "n_isolated": 54,
+      "n_maximal": 78,
+      "n_minimal": 91,
+      "width": 91
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_010",
+      "room": "meeting_room_001",
+      "n_masks": 119,
+      "forest_depth": 4,
+      "n_roots": 75,
+      "n_leaves": 83,
+      "n_isolated": 52,
+      "n_maximal": 75,
+      "n_minimal": 83,
+      "width": 83
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_011",
+      "room": "meeting_room_001",
+      "n_masks": 140,
+      "forest_depth": 3,
+      "n_roots": 80,
+      "n_leaves": 97,
+      "n_isolated": 49,
+      "n_maximal": 80,
+      "n_minimal": 97,
+      "width": 97
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_012",
+      "room": "meeting_room_001",
+      "n_masks": 114,
+      "forest_depth": 3,
+      "n_roots": 66,
+      "n_leaves": 75,
+      "n_isolated": 38,
+      "n_maximal": 66,
+      "n_minimal": 75,
+      "width": 75
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_013",
+      "room": "meeting_room_001",
+      "n_masks": 114,
+      "forest_depth": 2,
+      "n_roots": 71,
+      "n_leaves": 77,
+      "n_isolated": 44,
+      "n_maximal": 71,
+      "n_minimal": 77,
+      "width": 77
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_014",
+      "room": "meeting_room_001",
+      "n_masks": 137,
+      "forest_depth": 3,
+      "n_roots": 93,
+      "n_leaves": 95,
+      "n_isolated": 62,
+      "n_maximal": 93,
+      "n_minimal": 95,
+      "width": 95
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_015",
+      "room": "meeting_room_001",
+      "n_masks": 150,
+      "forest_depth": 4,
+      "n_roots": 89,
+      "n_leaves": 100,
+      "n_isolated": 56,
+      "n_maximal": 89,
+      "n_minimal": 100,
+      "width": 100
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_016",
+      "room": "meeting_room_001",
+      "n_masks": 155,
+      "forest_depth": 3,
+      "n_roots": 95,
+      "n_leaves": 104,
+      "n_isolated": 58,
+      "n_maximal": 95,
+      "n_minimal": 103,
+      "width": 104
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_017",
+      "room": "meeting_room_001",
+      "n_masks": 134,
+      "forest_depth": 3,
+      "n_roots": 81,
+      "n_leaves": 86,
+      "n_isolated": 47,
+      "n_maximal": 81,
+      "n_minimal": 86,
+      "width": 86
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_018",
+      "room": "meeting_room_001",
+      "n_masks": 171,
+      "forest_depth": 5,
+      "n_roots": 111,
+      "n_leaves": 124,
+      "n_isolated": 81,
+      "n_maximal": 111,
+      "n_minimal": 124,
+      "width": 124
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_019",
+      "room": "meeting_room_001",
+      "n_masks": 134,
+      "forest_depth": 4,
+      "n_roots": 63,
+      "n_leaves": 76,
+      "n_isolated": 33,
+      "n_maximal": 63,
+      "n_minimal": 76,
+      "width": 76
+     },
+     {
+      "scene": "easy/sink/rgb_000",
+      "room": "sink",
+      "n_masks": 103,
+      "forest_depth": 3,
+      "n_roots": 50,
+      "n_leaves": 70,
+      "n_isolated": 29,
+      "n_maximal": 50,
+      "n_minimal": 70,
+      "width": 70
+     },
+     {
+      "scene": "easy/sink/rgb_001",
+      "room": "sink",
+      "n_masks": 111,
+      "forest_depth": 4,
+      "n_roots": 64,
+      "n_leaves": 68,
+      "n_isolated": 37,
+      "n_maximal": 64,
+      "n_minimal": 68,
+      "width": 68
+     },
+     {
+      "scene": "easy/sink/rgb_002",
+      "room": "sink",
+      "n_masks": 83,
+      "forest_depth": 2,
+      "n_roots": 46,
+      "n_leaves": 54,
+      "n_isolated": 25,
+      "n_maximal": 46,
+      "n_minimal": 54,
+      "width": 54
+     },
+     {
+      "scene": "easy/sink/rgb_003",
+      "room": "sink",
+      "n_masks": 78,
+      "forest_depth": 2,
+      "n_roots": 44,
+      "n_leaves": 49,
+      "n_isolated": 19,
+      "n_maximal": 44,
+      "n_minimal": 49,
+      "width": 49
+     },
+     {
+      "scene": "easy/sink/rgb_004",
+      "room": "sink",
+      "n_masks": 84,
+      "forest_depth": 4,
+      "n_roots": 45,
+      "n_leaves": 55,
+      "n_isolated": 22,
+      "n_maximal": 45,
+      "n_minimal": 55,
+      "width": 55
+     },
+     {
+      "scene": "easy/sink/rgb_005",
+      "room": "sink",
+      "n_masks": 82,
+      "forest_depth": 3,
+      "n_roots": 29,
+      "n_leaves": 46,
+      "n_isolated": 10,
+      "n_maximal": 29,
+      "n_minimal": 46,
+      "width": 46
+     },
+     {
+      "scene": "easy/sink/rgb_006",
+      "room": "sink",
+      "n_masks": 88,
+      "forest_depth": 3,
+      "n_roots": 45,
+      "n_leaves": 53,
+      "n_isolated": 23,
+      "n_maximal": 45,
+      "n_minimal": 53,
+      "width": 53
+     },
+     {
+      "scene": "easy/sink/rgb_007",
+      "room": "sink",
+      "n_masks": 87,
+      "forest_depth": 4,
+      "n_roots": 40,
+      "n_leaves": 55,
+      "n_isolated": 25,
+      "n_maximal": 40,
+      "n_minimal": 55,
+      "width": 55
+     },
+     {
+      "scene": "easy/sink/rgb_008",
+      "room": "sink",
+      "n_masks": 80,
+      "forest_depth": 2,
+      "n_roots": 42,
+      "n_leaves": 51,
+      "n_isolated": 18,
+      "n_maximal": 42,
+      "n_minimal": 51,
+      "width": 51
+     },
+     {
+      "scene": "easy/sink/rgb_009",
+      "room": "sink",
+      "n_masks": 77,
+      "forest_depth": 6,
+      "n_roots": 40,
+      "n_leaves": 52,
+      "n_isolated": 24,
+      "n_maximal": 40,
+      "n_minimal": 52,
+      "width": 52
+     },
+     {
+      "scene": "easy/sink/rgb_010",
+      "room": "sink",
+      "n_masks": 70,
+      "forest_depth": 4,
+      "n_roots": 38,
+      "n_leaves": 45,
+      "n_isolated": 23,
+      "n_maximal": 38,
+      "n_minimal": 45,
+      "width": 45
+     },
+     {
+      "scene": "easy/sink/rgb_011",
+      "room": "sink",
+      "n_masks": 88,
+      "forest_depth": 4,
+      "n_roots": 45,
+      "n_leaves": 51,
+      "n_isolated": 21,
+      "n_maximal": 45,
+      "n_minimal": 51,
+      "width": 51
+     },
+     {
+      "scene": "easy/sink/rgb_012",
+      "room": "sink",
+      "n_masks": 70,
+      "forest_depth": 3,
+      "n_roots": 44,
+      "n_leaves": 48,
+      "n_isolated": 29,
+      "n_maximal": 44,
+      "n_minimal": 48,
+      "width": 48
+     },
+     {
+      "scene": "easy/sink/rgb_013",
+      "room": "sink",
+      "n_masks": 97,
+      "forest_depth": 5,
+      "n_roots": 55,
+      "n_leaves": 64,
+      "n_isolated": 33,
+      "n_maximal": 55,
+      "n_minimal": 64,
+      "width": 64
+     },
+     {
+      "scene": "easy/sink/rgb_014",
+      "room": "sink",
+      "n_masks": 113,
+      "forest_depth": 4,
+      "n_roots": 69,
+      "n_leaves": 77,
+      "n_isolated": 42,
+      "n_maximal": 69,
+      "n_minimal": 77,
+      "width": 77
+     },
+     {
+      "scene": "easy/sink/rgb_015",
+      "room": "sink",
+      "n_masks": 102,
+      "forest_depth": 4,
+      "n_roots": 50,
+      "n_leaves": 56,
+      "n_isolated": 22,
+      "n_maximal": 50,
+      "n_minimal": 56,
+      "width": 56
+     },
+     {
+      "scene": "easy/sink/rgb_016",
+      "room": "sink",
+      "n_masks": 123,
+      "forest_depth": 3,
+      "n_roots": 76,
+      "n_leaves": 83,
+      "n_isolated": 46,
+      "n_maximal": 76,
+      "n_minimal": 83,
+      "width": 83
+     },
+     {
+      "scene": "easy/sink/rgb_017",
+      "room": "sink",
+      "n_masks": 98,
+      "forest_depth": 3,
+      "n_roots": 49,
+      "n_leaves": 60,
+      "n_isolated": 22,
+      "n_maximal": 49,
+      "n_minimal": 60,
+      "width": 60
+     },
+     {
+      "scene": "easy/sink/rgb_018",
+      "room": "sink",
+      "n_masks": 144,
+      "forest_depth": 4,
+      "n_roots": 72,
+      "n_leaves": 87,
+      "n_isolated": 39,
+      "n_maximal": 72,
+      "n_minimal": 87,
+      "width": 87
+     },
+     {
+      "scene": "easy/sink/rgb_019",
+      "room": "sink",
+      "n_masks": 126,
+      "forest_depth": 4,
+      "n_roots": 64,
+      "n_leaves": 75,
+      "n_isolated": 32,
+      "n_maximal": 64,
+      "n_minimal": 75,
+      "width": 75
+     }
+    ]
+   },
+   "0.99": {
+    "pairs": {
+     "nested": 2222,
+     "crossing": 3646,
+     "duplicate": 2,
+     "triples": 780,
+     "transitivity_violations": 18
+    },
+    "transitivity_violation_share": 0.023076923076923078,
+    "masks_by_depth": {
+     "0": 2944,
+     "1": 1117,
+     "2": 362,
+     "3": 92,
+     "4": 16,
+     "5": 3
+    },
+    "masks_by_position": {
+     "root": 909,
+     "internal": 376,
+     "leaf": 1214,
+     "isolated": 2035
+    },
+    "children_per_internal_node": {
+     "n": 1285,
+     "mean": 1.2373540856031129,
+     "min": 1.0,
+     "max": 33.0,
+     "q": {
+      "0.05": 1.0,
+      "0.25": 1.0,
+      "0.5": 1.0,
+      "0.75": 1.0,
+      "0.95": 2.0
+     },
+     "hist": {
+      "edges": [
+       0.5,
+       1.5,
+       2.5,
+       3.5,
+       4.5,
+       5.5,
+       6.5,
+       7.5,
+       8.5,
+       9.5,
+       10.5,
+       11.5,
+       12.5,
+       13.5,
+       14.5,
+       15.5,
+       16.5,
+       17.5,
+       18.5,
+       19.5,
+       20.5
+      ],
+      "counts": [
+       1119,
+       122,
+       20,
+       8,
+       6,
+       3,
+       2,
+       1,
+       1,
+       1,
+       0,
+       0,
+       1,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ]
+     }
+    },
+    "child_parent_area_ratio": {
+     "n": 1590,
+     "mean": 0.6373432142159069,
+     "min": 0.00016197019482890238,
+     "max": 0.9999784774982244,
+     "q": {
+      "0.05": 0.01779046872593869,
+      "0.25": 0.18636515627405598,
+      "0.5": 0.9490425293345002,
+      "0.75": 0.9939031586191399,
+      "0.95": 0.9990177829666017
+     },
+     "hist": {
+      "edges": [
+       0.0,
+       0.05,
+       0.1,
+       0.15000000000000002,
+       0.2,
+       0.25,
+       0.30000000000000004,
+       0.35000000000000003,
+       0.4,
+       0.45,
+       0.5,
+       0.55,
+       0.6000000000000001,
+       0.65,
+       0.7000000000000001,
+       0.75,
+       0.8,
+       0.8500000000000001,
+       0.9,
+       0.9500000000000001,
+       1.0
+      ],
+      "counts": [
+       182,
+       108,
+       65,
+       53,
+       53,
+       35,
+       36,
+       30,
+       38,
+       24,
+       26,
+       18,
+       15,
+       14,
+       15,
+       21,
+       14,
+       17,
+       32,
+       794
+      ]
+     }
+    },
+    "edges_across_generator_layers_share": 0.2289308176100629,
+    "per_scene_summary": {
+     "n_masks": {
+      "n": 40,
+      "mean": 113.35,
+      "min": 70.0,
+      "max": 171.0,
+      "q": {
+       "0.05": 76.65,
+       "0.25": 88.0,
+       "0.5": 113.5,
+       "0.75": 134.0,
+       "0.95": 155.05
+      }
+     },
+     "forest_depth": {
+      "n": 40,
+      "mean": 2.975,
+      "min": 2.0,
+      "max": 5.0,
+      "q": {
+       "0.05": 2.0,
+       "0.25": 2.0,
+       "0.5": 3.0,
+       "0.75": 3.0,
+       "0.95": 5.0
+      }
+     },
+     "n_roots": {
+      "n": 40,
+      "mean": 73.6,
+      "min": 34.0,
+      "max": 120.0,
+      "q": {
+       "0.05": 42.95,
+       "0.25": 55.0,
+       "0.5": 76.5,
+       "0.75": 85.75,
+       "0.95": 102.54999999999997
+      }
+     },
+     "n_leaves": {
+      "n": 40,
+      "mean": 81.225,
+      "min": 47.0,
+      "max": 133.0,
+      "q": {
+       "0.05": 49.95,
+       "0.25": 60.5,
+       "0.5": 82.5,
+       "0.75": 97.0,
+       "0.95": 118.0
+      }
+     },
+     "n_isolated": {
+      "n": 40,
+      "mean": 50.875,
+      "min": 15.0,
+      "max": 94.0,
+      "q": {
+       "0.05": 26.8,
+       "0.25": 37.5,
+       "0.5": 51.5,
+       "0.75": 63.25,
+       "0.95": 77.19999999999999
+      }
+     },
+     "n_maximal": {
+      "n": 40,
+      "mean": 73.6,
+      "min": 34.0,
+      "max": 120.0,
+      "q": {
+       "0.05": 42.95,
+       "0.25": 55.0,
+       "0.5": 76.5,
+       "0.75": 85.75,
+       "0.95": 102.54999999999997
+      }
+     },
+     "n_minimal": {
+      "n": 40,
+      "mean": 80.7,
+      "min": 47.0,
+      "max": 130.0,
+      "q": {
+       "0.05": 49.95,
+       "0.25": 60.5,
+       "0.5": 82.0,
+       "0.75": 96.25,
+       "0.95": 115.14999999999999
+      }
+     },
+     "width": {
+      "n": 40,
+      "mean": 81.2,
+      "min": 47.0,
+      "max": 132.0,
+      "q": {
+       "0.05": 49.95,
+       "0.25": 60.5,
+       "0.5": 82.5,
+       "0.75": 97.0,
+       "0.95": 118.0
+      }
+     }
+    },
+    "width_over_n_masks": {
+     "n": 40,
+     "mean": 0.7118602709520347,
+     "min": 0.5975609756097561,
+     "max": 0.7864077669902912,
+     "q": {
+      "0.05": 0.6361968306922435,
+      "0.25": 0.6752100840336135,
+      "0.5": 0.7167919799498748,
+      "0.75": 0.7478478478478479,
+      "0.95": 0.7722713864306784
+     }
+    },
+    "by_room": {
+     "meeting_room_001": {
+      "n_masks": {
+       "n": 20,
+       "mean": 131.5,
+       "min": 109.0,
+       "max": 171.0,
+       "q": {
+        "0.05": 110.9,
+        "0.25": 116.25,
+        "0.5": 134.0,
+        "0.75": 140.0,
+        "0.95": 156.75
+       }
+      },
+      "forest_depth": {
+       "n": 20,
+       "mean": 3.1,
+       "min": 2.0,
+       "max": 5.0,
+       "q": {
+        "0.05": 2.0,
+        "0.25": 2.75,
+        "0.5": 3.0,
+        "0.75": 3.0,
+        "0.95": 5.0
+       }
+      },
+      "width": {
+       "n": 20,
+       "mean": 96.05,
+       "min": 69.0,
+       "max": 132.0,
+       "q": {
+        "0.05": 78.5,
+        "0.25": 86.0,
+        "0.5": 95.0,
+        "0.75": 103.5,
+        "0.95": 118.70000000000002
+       }
+      }
+     },
+     "sink": {
+      "n_masks": {
+       "n": 20,
+       "mean": 95.2,
+       "min": 70.0,
+       "max": 144.0,
+       "q": {
+        "0.05": 70.0,
+        "0.25": 81.5,
+        "0.5": 88.0,
+        "0.75": 105.0,
+        "0.95": 126.9
+       }
+      },
+      "forest_depth": {
+       "n": 20,
+       "mean": 2.85,
+       "min": 2.0,
+       "max": 4.0,
+       "q": {
+        "0.05": 2.0,
+        "0.25": 2.0,
+        "0.5": 3.0,
+        "0.75": 3.0,
+        "0.95": 4.0
+       }
+      },
+      "width": {
+       "n": 20,
+       "mean": 66.35,
+       "min": 47.0,
+       "max": 98.0,
+       "q": {
+        "0.05": 48.9,
+        "0.25": 56.0,
+        "0.5": 60.0,
+        "0.75": 75.75,
+        "0.95": 94.2
+       }
+      }
+     }
+    },
+    "object_masks": {
+     "n": 764,
+     "by_position": {
+      "root": 173,
+      "internal": 39,
+      "leaf": 100,
+      "isolated": 452
+     },
+     "depth": {
+      "n": 764,
+      "mean": 0.21204188481675393,
+      "min": 0.0,
+      "max": 3.0,
+      "q": {
+       "0.05": 0.0,
+       "0.25": 0.0,
+       "0.5": 0.0,
+       "0.75": 0.0,
+       "0.95": 1.0
+      },
+      "hist": {
+       "edges": [
+        -0.5,
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5
+       ],
+       "counts": [
+        625,
+        119,
+        17,
+        3,
+        0,
+        0,
+        0,
+        0
+       ]
+      }
+     },
+     "n_ancestors": {
+      "n": 764,
+      "mean": 0.21204188481675393,
+      "min": 0.0,
+      "max": 3.0,
+      "q": {
+       "0.05": 0.0,
+       "0.25": 0.0,
+       "0.5": 0.0,
+       "0.75": 0.0,
+       "0.95": 1.0
+      },
+      "hist": {
+       "edges": [
+        -0.5,
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5
+       ],
+       "counts": [
+        625,
+        119,
+        17,
+        3,
+        0,
+        0,
+        0,
+        0
+       ]
+      }
+     },
+     "n_descendants": {
+      "n": 764,
+      "mean": 0.4201570680628272,
+      "min": 0.0,
+      "max": 9.0,
+      "q": {
+       "0.05": 0.0,
+       "0.25": 0.0,
+       "0.5": 0.0,
+       "0.75": 1.0,
+       "0.95": 2.0
+      },
+      "hist": {
+       "edges": [
+        -0.5,
+        0.5,
+        1.5,
+        2.5,
+        3.5,
+        4.5,
+        5.5,
+        6.5,
+        7.5,
+        8.5,
+        9.5,
+        10.5,
+        11.5,
+        12.5,
+        13.5,
+        14.5,
+        15.5,
+        16.5,
+        17.5,
+        18.5,
+        19.5,
+        20.5,
+        21.5,
+        22.5,
+        23.5,
+        24.5,
+        25.5,
+        26.5,
+        27.5,
+        28.5,
+        29.5
+       ],
+       "counts": [
+        552,
+        158,
+        36,
+        6,
+        3,
+        3,
+        1,
+        2,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+       ]
+      }
+     }
+    },
+    "near_object_masks_relative_to_object_mask_of_their_box": {
+     "inside_object": 229,
+     "contains_object": 160,
+     "duplicate_of_object": 1,
+     "crossing_object": 300,
+     "disjoint_from_object": 84,
+     "no_object_mask_for_its_box": 68
+    },
+    "per_scene": [
+     {
+      "scene": "easy/meeting_room_001/rgb_000",
+      "room": "meeting_room_001",
+      "n_masks": 111,
+      "forest_depth": 2,
+      "n_roots": 81,
+      "n_leaves": 83,
+      "n_isolated": 60,
+      "n_maximal": 81,
+      "n_minimal": 83,
+      "width": 83
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_001",
+      "room": "meeting_room_001",
+      "n_masks": 109,
+      "forest_depth": 5,
+      "n_roots": 65,
+      "n_leaves": 69,
+      "n_isolated": 38,
+      "n_maximal": 65,
+      "n_minimal": 69,
+      "width": 69
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_002",
+      "room": "meeting_room_001",
+      "n_masks": 113,
+      "forest_depth": 3,
+      "n_roots": 67,
+      "n_leaves": 79,
+      "n_isolated": 42,
+      "n_maximal": 67,
+      "n_minimal": 79,
+      "width": 79
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_003",
+      "room": "meeting_room_001",
+      "n_masks": 117,
+      "forest_depth": 2,
+      "n_roots": 78,
+      "n_leaves": 87,
+      "n_isolated": 56,
+      "n_maximal": 78,
+      "n_minimal": 87,
+      "width": 87
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_004",
+      "room": "meeting_room_001",
+      "n_masks": 156,
+      "forest_depth": 3,
+      "n_roots": 83,
+      "n_leaves": 118,
+      "n_isolated": 61,
+      "n_maximal": 83,
+      "n_minimal": 118,
+      "width": 118
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_005",
+      "room": "meeting_room_001",
+      "n_masks": 140,
+      "forest_depth": 3,
+      "n_roots": 96,
+      "n_leaves": 102,
+      "n_isolated": 70,
+      "n_maximal": 96,
+      "n_minimal": 99,
+      "width": 102
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_006",
+      "room": "meeting_room_001",
+      "n_masks": 125,
+      "forest_depth": 5,
+      "n_roots": 84,
+      "n_leaves": 93,
+      "n_isolated": 68,
+      "n_maximal": 84,
+      "n_minimal": 92,
+      "width": 93
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_007",
+      "room": "meeting_room_001",
+      "n_masks": 122,
+      "forest_depth": 3,
+      "n_roots": 90,
+      "n_leaves": 93,
+      "n_isolated": 65,
+      "n_maximal": 90,
+      "n_minimal": 93,
+      "width": 93
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_008",
+      "room": "meeting_room_001",
+      "n_masks": 135,
+      "forest_depth": 3,
+      "n_roots": 98,
+      "n_leaves": 101,
+      "n_isolated": 74,
+      "n_maximal": 98,
+      "n_minimal": 100,
+      "width": 101
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_009",
+      "room": "meeting_room_001",
+      "n_masks": 134,
+      "forest_depth": 5,
+      "n_roots": 84,
+      "n_leaves": 97,
+      "n_isolated": 62,
+      "n_maximal": 84,
+      "n_minimal": 97,
+      "width": 97
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_010",
+      "room": "meeting_room_001",
+      "n_masks": 119,
+      "forest_depth": 3,
+      "n_roots": 80,
+      "n_leaves": 87,
+      "n_isolated": 59,
+      "n_maximal": 80,
+      "n_minimal": 87,
+      "width": 87
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_011",
+      "room": "meeting_room_001",
+      "n_masks": 140,
+      "forest_depth": 3,
+      "n_roots": 88,
+      "n_leaves": 103,
+      "n_isolated": 61,
+      "n_maximal": 88,
+      "n_minimal": 103,
+      "width": 103
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_012",
+      "room": "meeting_room_001",
+      "n_masks": 114,
+      "forest_depth": 3,
+      "n_roots": 77,
+      "n_leaves": 81,
+      "n_isolated": 52,
+      "n_maximal": 77,
+      "n_minimal": 81,
+      "width": 81
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_013",
+      "room": "meeting_room_001",
+      "n_masks": 114,
+      "forest_depth": 2,
+      "n_roots": 76,
+      "n_leaves": 82,
+      "n_isolated": 51,
+      "n_maximal": 76,
+      "n_minimal": 82,
+      "width": 82
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_014",
+      "room": "meeting_room_001",
+      "n_masks": 137,
+      "forest_depth": 2,
+      "n_roots": 102,
+      "n_leaves": 105,
+      "n_isolated": 77,
+      "n_maximal": 102,
+      "n_minimal": 103,
+      "width": 105
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_015",
+      "room": "meeting_room_001",
+      "n_masks": 150,
+      "forest_depth": 3,
+      "n_roots": 101,
+      "n_leaves": 107,
+      "n_isolated": 71,
+      "n_maximal": 101,
+      "n_minimal": 107,
+      "width": 107
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_016",
+      "room": "meeting_room_001",
+      "n_masks": 155,
+      "forest_depth": 2,
+      "n_roots": 113,
+      "n_leaves": 118,
+      "n_isolated": 81,
+      "n_maximal": 113,
+      "n_minimal": 115,
+      "width": 118
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_017",
+      "room": "meeting_room_001",
+      "n_masks": 134,
+      "forest_depth": 3,
+      "n_roots": 92,
+      "n_leaves": 97,
+      "n_isolated": 64,
+      "n_maximal": 92,
+      "n_minimal": 96,
+      "width": 97
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_018",
+      "room": "meeting_room_001",
+      "n_masks": 171,
+      "forest_depth": 4,
+      "n_roots": 120,
+      "n_leaves": 133,
+      "n_isolated": 94,
+      "n_maximal": 120,
+      "n_minimal": 130,
+      "width": 132
+     },
+     {
+      "scene": "easy/meeting_room_001/rgb_019",
+      "room": "meeting_room_001",
+      "n_masks": 134,
+      "forest_depth": 3,
+      "n_roots": 84,
+      "n_leaves": 87,
+      "n_isolated": 55,
+      "n_maximal": 84,
+      "n_minimal": 85,
+      "width": 87
+     },
+     {
+      "scene": "easy/sink/rgb_000",
+      "room": "sink",
+      "n_masks": 103,
+      "forest_depth": 3,
+      "n_roots": 64,
+      "n_leaves": 81,
+      "n_isolated": 48,
+      "n_maximal": 64,
+      "n_minimal": 81,
+      "width": 81
+     },
+     {
+      "scene": "easy/sink/rgb_001",
+      "room": "sink",
+      "n_masks": 111,
+      "forest_depth": 4,
+      "n_roots": 71,
+      "n_leaves": 74,
+      "n_isolated": 45,
+      "n_maximal": 71,
+      "n_minimal": 73,
+      "width": 74
+     },
+     {
+      "scene": "easy/sink/rgb_002",
+      "room": "sink",
+      "n_masks": 83,
+      "forest_depth": 2,
+      "n_roots": 53,
+      "n_leaves": 58,
+      "n_isolated": 34,
+      "n_maximal": 53,
+      "n_minimal": 58,
+      "width": 58
+     },
+     {
+      "scene": "easy/sink/rgb_003",
+      "room": "sink",
+      "n_masks": 78,
+      "forest_depth": 2,
+      "n_roots": 47,
+      "n_leaves": 50,
+      "n_isolated": 23,
+      "n_maximal": 47,
+      "n_minimal": 50,
+      "width": 50
+     },
+     {
+      "scene": "easy/sink/rgb_004",
+      "room": "sink",
+      "n_masks": 84,
+      "forest_depth": 2,
+      "n_roots": 55,
+      "n_leaves": 61,
+      "n_isolated": 36,
+      "n_maximal": 55,
+      "n_minimal": 61,
+      "width": 61
+     },
+     {
+      "scene": "easy/sink/rgb_005",
+      "room": "sink",
+      "n_masks": 82,
+      "forest_depth": 3,
+      "n_roots": 34,
+      "n_leaves": 49,
+      "n_isolated": 15,
+      "n_maximal": 34,
+      "n_minimal": 49,
+      "width": 49
+     },
+     {
+      "scene": "easy/sink/rgb_006",
+      "room": "sink",
+      "n_masks": 88,
+      "forest_depth": 2,
+      "n_roots": 55,
+      "n_leaves": 58,
+      "n_isolated": 31,
+      "n_maximal": 55,
+      "n_minimal": 58,
+      "width": 58
+     },
+     {
+      "scene": "easy/sink/rgb_007",
+      "room": "sink",
+      "n_masks": 87,
+      "forest_depth": 4,
+      "n_roots": 43,
+      "n_leaves": 58,
+      "n_isolated": 29,
+      "n_maximal": 43,
+      "n_minimal": 58,
+      "width": 58
+     },
+     {
+      "scene": "easy/sink/rgb_008",
+      "room": "sink",
+      "n_masks": 80,
+      "forest_depth": 2,
+      "n_roots": 49,
+      "n_leaves": 56,
+      "n_isolated": 29,
+      "n_maximal": 49,
+      "n_minimal": 56,
+      "width": 56
+     },
+     {
+      "scene": "easy/sink/rgb_009",
+      "room": "sink",
+      "n_masks": 77,
+      "forest_depth": 3,
+      "n_roots": 52,
+      "n_leaves": 59,
+      "n_isolated": 39,
+      "n_maximal": 52,
+      "n_minimal": 59,
+      "width": 59
+     },
+     {
+      "scene": "easy/sink/rgb_010",
+      "room": "sink",
+      "n_masks": 70,
+      "forest_depth": 3,
+      "n_roots": 42,
+      "n_leaves": 47,
+      "n_isolated": 27,
+      "n_maximal": 42,
+      "n_minimal": 47,
+      "width": 47
+     },
+     {
+      "scene": "easy/sink/rgb_011",
+      "room": "sink",
+      "n_masks": 88,
+      "forest_depth": 3,
+      "n_roots": 55,
+      "n_leaves": 56,
+      "n_isolated": 31,
+      "n_maximal": 55,
+      "n_minimal": 56,
+      "width": 56
+     },
+     {
+      "scene": "easy/sink/rgb_012",
+      "room": "sink",
+      "n_masks": 70,
+      "forest_depth": 3,
+      "n_roots": 47,
+      "n_leaves": 50,
+      "n_isolated": 33,
+      "n_maximal": 47,
+      "n_minimal": 50,
+      "width": 50
+     },
+     {
+      "scene": "easy/sink/rgb_013",
+      "room": "sink",
+      "n_masks": 97,
+      "forest_depth": 4,
+      "n_roots": 61,
+      "n_leaves": 69,
+      "n_isolated": 41,
+      "n_maximal": 61,
+      "n_minimal": 69,
+      "width": 69
+     },
+     {
+      "scene": "easy/sink/rgb_014",
+      "room": "sink",
+      "n_masks": 113,
+      "forest_depth": 2,
+      "n_roots": 85,
+      "n_leaves": 88,
+      "n_isolated": 63,
+      "n_maximal": 85,
+      "n_minimal": 87,
+      "width": 88
+     },
+     {
+      "scene": "easy/sink/rgb_015",
+      "room": "sink",
+      "n_masks": 102,
+      "forest_depth": 4,
+      "n_roots": 65,
+      "n_leaves": 69,
+      "n_isolated": 43,
+      "n_maximal": 65,
+      "n_minimal": 69,
+      "width": 69
+     },
+     {
+      "scene": "easy/sink/rgb_016",
+      "room": "sink",
+      "n_masks": 123,
+      "forest_depth": 3,
+      "n_roots": 90,
+      "n_leaves": 94,
+      "n_isolated": 70,
+      "n_maximal": 90,
+      "n_minimal": 94,
+      "width": 94
+     },
+     {
+      "scene": "easy/sink/rgb_017",
+      "room": "sink",
+      "n_masks": 98,
+      "forest_depth": 2,
+      "n_roots": 64,
+      "n_leaves": 69,
+      "n_isolated": 40,
+      "n_maximal": 64,
+      "n_minimal": 67,
+      "width": 69
+     },
+     {
+      "scene": "easy/sink/rgb_018",
+      "room": "sink",
+      "n_masks": 144,
+      "forest_depth": 3,
+      "n_roots": 83,
+      "n_leaves": 98,
+      "n_isolated": 56,
+      "n_maximal": 83,
+      "n_minimal": 98,
+      "width": 98
+     },
+     {
+      "scene": "easy/sink/rgb_019",
+      "room": "sink",
+      "n_masks": 126,
+      "forest_depth": 3,
+      "n_roots": 70,
+      "n_leaves": 83,
+      "n_isolated": 41,
+      "n_maximal": 70,
+      "n_minimal": 82,
+      "width": 83
+     }
+    ]
+   }
+  }
+ }
+}

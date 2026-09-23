@@ -1,0 +1,45 @@
+%%{init: {"theme": "base", "fontFamily": "Times New Roman, serif", "flowchart": {"htmlLabels": true, "nodeSpacing": 30, "rankSpacing": 45, "curve": "linear"}, "themeVariables": {"fontSize": "14px", "primaryColor": "#ffffff", "primaryBorderColor": "#000000", "primaryTextColor": "#000000", "lineColor": "#000000", "clusterBkg": "#ffffff", "clusterBorder": "#000000"}}}%%
+%% Рисунок 3.1 — Модули пакета src и файлы между ними (§3.1). Имена модулей — по src/.
+%% Экспорт: python scripts/render_mermaid.py 3-1 → Рисунок_3-1.png (beautiful-mermaid + resvg, без браузера).
+%% Директива init выше фиксирует шрифт, размер и ч/б оформление; блок classDef в конце даёт цветовую раскраску — удалить для ч/б печати.
+%% Направление раскладки: модули столбцом, схема сверху вниз — при строчной раскладке рисунок был в 4,6 раза шире высоты
+%% и текст на полосе 16 см выходил около 2 pt.
+flowchart TB
+    DATA[("data/<br/>снимки и разметка<br/>(только чтение)")]
+    subgraph PKG["Пакет src"]
+        direction TB
+        D["data<br/>эталоны, сцены, истина"]
+        SEG["segment<br/>SAM 2: авторежим,<br/>промпт-рамка"]
+        SEL["select<br/>отбор ρ<br/>(θ = 9/10, γ = 4/5)"]
+        ENC["encode<br/>C(b, α), P, P<sup>⊥</sup>;<br/>вырезки в процессах"]
+        GAL["gallery<br/>паспорт, emb.npy,<br/>meta.jsonl, dedup"]
+        SRCH["search<br/>IndexFlatIP (метрики),<br/>HNSW (задержка); s<sub>y</sub>, s*, ŷ"]
+        CAL["calib<br/>τ<sup>q</sup>, F, τ<sup>m</sup>, κ,<br/>контрольная проверка"]
+        EVAL["eval<br/>оракул, AP/AR, AUROC,<br/>бутстрэп; rules, published"]
+        BL["baselines<br/>OWLv2 image-guided"]
+        D --> SEG --> SEL --> ENC
+        ENC --> GAL --> SRCH --> EVAL
+        SRCH --> CAL --> EVAL
+        D --> BL --> EVAL
+    end
+    MASKS[("cache/masks/<br/>кеш масок SAM 2<br/>ключ: режим, модель, коммит,<br/>вход, точность, генератор")]
+    RHO[("cache/rho/<br/>номера масок M*")]
+    EMB[("cache/run_emb/<br/>эмбеддинги прогона, fp16,<br/>хеш конфигурации")]
+    GDIR[("gallery/‹энкодер›/‹вариант›/‹датасет›/<br/>emb.npy float32, calib.json")]
+    RUNS[("experiments/runs/<br/>запись JSON на прогон:<br/>конфигурация, коммит, seed, метрики")]
+    TAB["experiments/tables/<br/>make_tables.py"]
+    CFG["configs/<br/>22 yaml из констант кода"]
+    DATA --> D
+    SEG <--> MASKS
+    SEL <--> RHO
+    ENC <--> EMB
+    GAL <--> GDIR
+    EVAL --> RUNS --> TAB
+    CFG --> ENC
+
+    classDef data fill:#f1efe8,stroke:#5f5e5a,color:#2c2c2a
+    classDef comp fill:#e1f5ee,stroke:#0f6e56,color:#04342c
+    classDef store fill:#eeedfe,stroke:#534ab7,color:#26215c
+    class DATA,CFG,TAB data
+    class D,SEG,SEL,ENC,GAL,SRCH,CAL,EVAL,BL comp
+    class MASKS,RHO,EMB,GDIR,RUNS store

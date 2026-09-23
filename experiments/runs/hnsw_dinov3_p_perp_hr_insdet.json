@@ -1,0 +1,213 @@
+{
+ "run_id": "hnsw_dinov3_p_perp_hr_insdet",
+ "kind": "hnsw_check",
+ "written": "2026-09-20",
+ "code_commit": "81e65c703807a8432e3efd6b2d856a4b9b2e846a",
+ "code_dirty": false,
+ "written_utc": "2026-09-20T14:52:57+00:00",
+ "config": {
+  "dataset": "hr_insdet",
+  "encoder": "dinov3",
+  "variant": "p_perp",
+  "seg_long_side": 2048,
+  "crop_n_layers": 1,
+  "points_per_batch": 16,
+  "crop_size": 448,
+  "blur_sigma_frac": 0.05,
+  "blur_work_side": 1792,
+  "pool_long_side": 2048,
+  "debias_r": 500,
+  "debias_noise_seed": 20260918,
+  "encoder_batch": 16,
+  "batch_rule": "маски одного изображения в порядке записи кеша; батч не пересекает границу изображения",
+  "gallery_protocols": [
+   "full",
+   "one_per_class"
+  ],
+  "hnsw": {
+   "M": 32,
+   "efConstruction": 200,
+   "efSearch_min": 64
+  },
+  "eps": [
+   0.05,
+   0.01
+  ],
+  "delta": 0.1,
+  "max_dets": 1000,
+  "bootstrap": 1000,
+  "seed": 20260918
+ },
+ "protocol": {
+  "criterion_recall_min": 0.999,
+  "s_star_tol": 1e-05,
+  "on_fail": "параметры графа не подбираются",
+  "verdict_by": "однопоточное (детерминированное) построение графа",
+  "queries": "все маски M(I) 40 калибровочных сцен из рабочих файлов прогона, fp16 → fp32; тестовые сцены в замер не читаются",
+  "tau": null,
+  "latency": "не повторяется (измерена первым замером, на галерее C(0,1.0) DINOv2)"
+ },
+ "versions": {
+  "faiss": "1.15.0",
+  "numpy": "2.5.2"
+ },
+ "gallery": {
+  "path": "gallery/dinov3/p_perp/hr_insdet",
+  "N": 2400,
+  "n_labels": 100,
+  "n_max": 24,
+  "k": 48,
+  "emb_sha256": "bed7f5edb0224e76a450a00c29c1f1bd9d658663b85b691e27a5baffdd3ab6f8"
+ },
+ "index": {
+  "hnsw": {
+   "M": 32,
+   "efConstruction": 200,
+   "efSearch_min": 64,
+   "efSearch": 64,
+   "metric": "METRIC_INNER_PRODUCT",
+   "add": "один add всех эталонов в порядке insert_no"
+  }
+ },
+ "queries": {
+  "split": "cal",
+  "n_scenes": 40,
+  "n": 4534,
+  "n_oracle": 764,
+  "n_distractors": 2928,
+  "source": "cache/run_emb/dinov3_p_perp_hr_insdet",
+  "mask_cache": "auto_cnl1_ls2048_ppb16_sam2-2b90b9f_26872978"
+ },
+ "grid_check": {
+  "single_thread": {
+   "recall": 0.9404499338332598,
+   "same_y": 0.9404499338332598,
+   "n_mismatched": 270,
+   "n_oracle_mismatched": 5,
+   "s_star_exact_max": 0.569595456123352,
+   "s_star_exact_max_oracle": 0.569595456123352,
+   "s_star_lost_max": 0.13632696866989136
+  },
+  "multi_thread": {
+   "n_builds": 30,
+   "build_threads": 6,
+   "recall": [
+    0.9400088222320248,
+    0.9419938244375827,
+    0.9397882664314071,
+    0.9382443758270842,
+    0.9364799294221438,
+    0.9415527128363476,
+    0.9402293780326423,
+    0.9422143802382003,
+    0.9430966034406705,
+    0.9411116012351125,
+    0.9362593736215262,
+    0.940891045434495,
+    0.9417732686369652,
+    0.9466254962505514,
+    0.9417732686369652,
+    0.943317159241288,
+    0.9393471548301721,
+    0.9406704896338773,
+    0.9415527128363476,
+    0.9424349360388178,
+    0.9380238200264667,
+    0.9360388178209087,
+    0.9395677106307896,
+    0.9347154830172033,
+    0.9344949272165858,
+    0.9400088222320248,
+    0.9347154830172033,
+    0.94133215703573,
+    0.9311865902073224,
+    0.9397882664314071
+   ],
+   "min": 0.9311865902073224,
+   "median": 0.9401191001323335,
+   "max": 0.9466254962505514,
+   "n_builds_passing": 0,
+   "n_mismatched_per_build": [
+    272,
+    263,
+    273,
+    280,
+    288,
+    265,
+    271,
+    262,
+    258,
+    267,
+    289,
+    268,
+    264,
+    242,
+    264,
+    257,
+    275,
+    269,
+    265,
+    261,
+    281,
+    290,
+    274,
+    296,
+    297,
+    272,
+    296,
+    266,
+    312,
+    273
+   ],
+   "n_oracle_mismatched_per_build": [
+    3,
+    3,
+    2,
+    3,
+    3,
+    3,
+    6,
+    2,
+    2,
+    5,
+    5,
+    5,
+    4,
+    4,
+    3,
+    6,
+    5,
+    2,
+    6,
+    6,
+    2,
+    6,
+    5,
+    5,
+    5,
+    2,
+    5,
+    5,
+    5,
+    2
+   ],
+   "s_star_exact_max": 0.6028605699539185,
+   "s_star_lost_max": 0.13632696866989136
+  },
+  "distractor_s_star_quantiles": {
+   "q": [
+    0.95,
+    0.99
+   ],
+   "exact": [
+    0.5762548744678497,
+    0.7212281095981598
+   ]
+  },
+  "distractor_s_star_quantiles_max_abs_diff_vs_exact": [
+   7.748603825241673e-08,
+   4.3511390601658206e-08
+  ]
+ },
+ "passed": false
+}

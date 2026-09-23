@@ -1,0 +1,34 @@
+{
+ "run_id": "dinov3_c_blur_15_hr_insdet",
+ "kind": "gallery_dedup",
+ "step": "дедупликация галереи лучшего φ",
+ "code_commit": "1099588c9e6aa30cdfc890ec8b9638dce73a7693",
+ "code_dirty": false,
+ "written_utc": "2026-09-21T17:15:34+00:00",
+ "gallery": "gallery/dinov3/c_blur_15/hr_insdet",
+ "format": 1,
+ "eta": 0.9,
+ "rule": "insert_order_same_label_max_cos_lt_eta_v1",
+ "gallery_emb_sha256": "4e1c9d1a8fa083b2a775eaf94736711e429167dade6bf63b5b9172d92183a66e",
+ "n_full": 2400,
+ "n_kept": 743,
+ "rows_sha256": "292835fce8521cdab4a094684e943e5044ef59fd45e0695faa8a49daf4ab07a5",
+ "n_per_label": {
+  "min": 1,
+  "median": 7.0,
+  "max": 20,
+  "n_labels_with_one": 3
+ },
+ "n_max": 20,
+ "k": 40,
+ "dedup_json_sha256": "f95e83032699786fb610e7998b52b8ff284870b7233ff2d23f61fbe8b67ec1a5",
+ "check_vs_analysis": {
+  "analysis_record": "experiments/analysis/gallery_dedup.json",
+  "analysis_t_star": 0.9,
+  "analysis_n_kept": 743,
+  "n_kept_equal": true,
+  "eta_equal": true,
+  "same_rows_in_float64": true
+ },
+ "passed": true
+}

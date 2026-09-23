@@ -1,0 +1,136 @@
+{
+ "what": "аналитика §2.3, часть 2: кандидатные правила ρ и дедупликации; правила выбора записаны до счёта",
+ "dataset": "hr_insdet",
+ "split": "cal",
+ "scenes": [
+  "easy/meeting_room_001/rgb_000",
+  "easy/meeting_room_001/rgb_001",
+  "easy/meeting_room_001/rgb_002",
+  "easy/meeting_room_001/rgb_003",
+  "easy/meeting_room_001/rgb_004",
+  "easy/meeting_room_001/rgb_005",
+  "easy/meeting_room_001/rgb_006",
+  "easy/meeting_room_001/rgb_007",
+  "easy/meeting_room_001/rgb_008",
+  "easy/meeting_room_001/rgb_009",
+  "easy/meeting_room_001/rgb_010",
+  "easy/meeting_room_001/rgb_011",
+  "easy/meeting_room_001/rgb_012",
+  "easy/meeting_room_001/rgb_013",
+  "easy/meeting_room_001/rgb_014",
+  "easy/meeting_room_001/rgb_015",
+  "easy/meeting_room_001/rgb_016",
+  "easy/meeting_room_001/rgb_017",
+  "easy/meeting_room_001/rgb_018",
+  "easy/meeting_room_001/rgb_019",
+  "easy/sink/rgb_000",
+  "easy/sink/rgb_001",
+  "easy/sink/rgb_002",
+  "easy/sink/rgb_003",
+  "easy/sink/rgb_004",
+  "easy/sink/rgb_005",
+  "easy/sink/rgb_006",
+  "easy/sink/rgb_007",
+  "easy/sink/rgb_008",
+  "easy/sink/rgb_009",
+  "easy/sink/rgb_010",
+  "easy/sink/rgb_011",
+  "easy/sink/rgb_012",
+  "easy/sink/rgb_013",
+  "easy/sink/rgb_014",
+  "easy/sink/rgb_015",
+  "easy/sink/rgb_016",
+  "easy/sink/rgb_017",
+  "easy/sink/rgb_018",
+  "easy/sink/rgb_019"
+ ],
+ "thetas": [
+  0.8,
+  0.85,
+  0.9,
+  0.95,
+  0.99
+ ],
+ "best_variants": {
+  "dinov2": "c_mean_10",
+  "dinov3": "c_blur_15"
+ },
+ "runs": {
+  "dinov2": "dinov2_c_mean_10_hr_insdet",
+  "dinov3": "dinov3_c_blur_15_hr_insdet"
+ },
+ "mask_cache": "auto_cnl1_ls2048_ppb16_sam2-2b90b9f_26872978",
+ "code_commit": "e5246324884083323db97bc26112aeb9693d40e4",
+ "code_dirty": false,
+ "written_utc": "2026-09-21T13:27:42+00:00",
+ "rho_embedding": {
+  "dinov2": {
+   "n_edges": 591,
+   "n_parent_object": 439,
+   "n_child_object": 152,
+   "auroc_area_ratio": 0.08349568397074691,
+   "auroc_cos": 0.08452223953962355,
+   "spearman_cos_area_ratio_all_forest_edges": 0.8409087505097834,
+   "spearman_cos_area_ratio_these_edges": 0.8955525172530777,
+   "auroc_cos_by_area_ratio_bin": {
+    "0.00-0.25": {
+     "n_parent_object": 201,
+     "n_child_object": 1,
+     "auroc_cos": 0.16417910447761194
+    },
+    "0.25-0.50": {
+     "n_parent_object": 114,
+     "n_child_object": 0,
+     "auroc_cos": null
+    },
+    "0.50-0.75": {
+     "n_parent_object": 58,
+     "n_child_object": 2,
+     "auroc_cos": 0.3017241379310345
+    },
+    "0.75-1.00": {
+     "n_parent_object": 66,
+     "n_child_object": 149,
+     "auroc_cos": 0.4469188529591214
+    }
+   },
+   "stratified_auroc_cos": 0.4396611171313171
+  },
+  "dinov3": {
+   "n_edges": 591,
+   "n_parent_object": 439,
+   "n_child_object": 152,
+   "auroc_area_ratio": 0.08349568397074691,
+   "auroc_cos": 0.10857511089797386,
+   "spearman_cos_area_ratio_all_forest_edges": 0.7869640582247897,
+   "spearman_cos_area_ratio_these_edges": 0.8492571644010997,
+   "auroc_cos_by_area_ratio_bin": {
+    "0.00-0.25": {
+     "n_parent_object": 201,
+     "n_child_object": 1,
+     "auroc_cos": 0.7860696517412935
+    },
+    "0.25-0.50": {
+     "n_parent_object": 114,
+     "n_child_object": 0,
+     "auroc_cos": null
+    },
+    "0.50-0.75": {
+     "n_parent_object": 58,
+     "n_child_object": 2,
+     "auroc_cos": 0.6896551724137931
+    },
+    "0.75-1.00": {
+     "n_parent_object": 66,
+     "n_child_object": 149,
+     "auroc_cos": 0.4451901565995526
+    }
+   },
+   "stratified_auroc_cos": 0.45473352379075954
+  },
+  "verdict": {
+   "rule": "|стратифицированный AUROC − 0,5| ≥ 0.15 у обоих энкодеров",
+   "embedding_stability_remains_candidate": false
+  }
+ }
+}

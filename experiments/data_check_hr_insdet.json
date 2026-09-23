@@ -1,0 +1,224 @@
+{
+  "written": "2026-09-18T21:51:11+00:00",
+  "root": "data/InsDet-FULL",
+  "files": {
+    "jpg": 2760,
+    "png": 2400,
+    "xml": 160,
+    "other": [
+      "Objects/087_thermos_flask_purple/images/colmap_output.txt"
+    ]
+  },
+  "undecodable": [],
+  "duplicates_md5": [],
+  "jpeg_without_eoi": [],
+  "jpeg_trailers": {
+    "ctrace": 2736,
+    "": 24
+  },
+  "objects": {
+    "n": 100,
+    "incomplete": {},
+    "mask_dir_not_masks": {
+      "003_bombik_bucket": "mask"
+    },
+    "hw": {
+      "3456x3456": [
+        "041_baseball_cap_black",
+        "042_baseball_cap_pink",
+        "043_bfe_facial_mask",
+        "044_corgi_doll",
+        "045_dinosaur_doll",
+        "046_geo_mocha",
+        "047_geo_roast_charcoal",
+        "048_instant_noodle_black",
+        "049_instant_noodle_red",
+        "050_nabati_cheese_wafer",
+        "051_truffettes",
+        "093_daiso_mod_remover",
+        "094_kaneyo_kitchen_bleach",
+        "095_lays_chip_bag_blue",
+        "096_lays_chip_bag_green",
+        "097_lays_chip_tube_auburn",
+        "098_lays_chip_tube_green",
+        "099_mug_blue"
+      ],
+      "3072x3072": [
+        "000_aveda_shampoo",
+        "001_binder_clips_median",
+        "002_binder_clips_small",
+        "003_bombik_bucket",
+        "004_bonne_maman_blueberry",
+        "005_bonne_maman_raspberry",
+        "006_bonne_maman_strawberry",
+        "007_costa_caramel",
+        "008_essential_oil_bergamot",
+        "009_garlic_toast_spread",
+        "010_handcream_avocado",
+        "011_hb_calcium",
+        "012_hb_grapeseed",
+        "013_hb_marine_collagen",
+        "014_hellmanns_mayonnaise",
+        "015_illy_blend",
+        "016_japanese_finger_cookies",
+        "017_john_west_canned_tuna",
+        "018_kerastase_shampoo",
+        "019_kiehls_facial_cream",
+        "020_kiihne_balsamic",
+        "021_kiihne_honey_mustard",
+        "022_lindor_matcha",
+        "023_lindor_salted_caramel",
+        "024_lush_mask",
+        "025_pasta_sauce_black_pepper",
+        "026_pasta_sauce_tomato",
+        "027_pepsi",
+        "028_portable_yogurt_machine",
+        "029_selfile_stick",
+        "030_sour_lemon_drops",
+        "031_sticky_notes",
+        "032_stridex_green",
+        "033_thermos_flask_cream",
+        "034_thermos_flask_muji",
+        "035_thermos_flask_sliver",
+        "036_tragata_olive_oil",
+        "037_tulip_luncheon_meat",
+        "038_unicharm_cotton_pad",
+        "039_vinda_tissue",
+        "040_wrigley_doublemint_gum",
+        "052_acnes_cream",
+        "053_aveda_conditioner",
+        "054_banana_milk_drink",
+        "055_candle_beast",
+        "056_china_persimmon",
+        "057_danisa_butter_cookies",
+        "058_effaclar_duo",
+        "059_evelom_cleanser",
+        "060_glasses_box_blone",
+        "061_handcream_iris",
+        "062_handcream_lavender",
+        "063_handcream_rosewater",
+        "064_handcream_summer_hill",
+        "065_hr_serum",
+        "066_japanese_chocolate",
+        "067_kerastase_hair_treatment",
+        "068_kiehls_serum",
+        "069_korean_beef_marinade",
+        "070_korean_doenjang",
+        "071_korean_gochujang",
+        "072_korean_ssamjang",
+        "073_loccitane_soap",
+        "074_marvis_toothpaste_purple",
+        "075_mouse_thinkpad",
+        "076_oatly_chocolate",
+        "077_oatly_original",
+        "078_ousa_grated_cheese",
+        "079_polaroid_film",
+        "080_skinceuticals_be",
+        "081_skinceuticals_cf",
+        "082_skinceuticals_phyto",
+        "083_stapler_black",
+        "084_stapler_blue",
+        "085_sunscreen_blue",
+        "086_tempo_pocket_tissue",
+        "087_thermos_flask_purple",
+        "088_uha_matcha",
+        "089_urban_decay_spray",
+        "090_vitaboost_multivitamin",
+        "091_watercolor_penbox",
+        "092_youthlt_bilberry_complex"
+      ]
+    }
+  },
+  "masks": {
+    "channels": {
+      "1": 2359,
+      "4": 41
+    },
+    "rgba_not_opaque": [],
+    "nonbinary": {
+      "Objects/028_portable_yogurt_machine/masks/006.png": 6
+    },
+    "empty": [],
+    "fg_frac_min_max": [
+      0.01550949944390191,
+      0.4486086496109825
+    ],
+    "touch_frame": [
+      "Objects/095_lays_chip_bag_blue/masks/008.png",
+      "Objects/095_lays_chip_bag_blue/masks/020.png",
+      "Objects/096_lays_chip_bag_green/masks/007.png",
+      "Objects/096_lays_chip_bag_green/masks/018.png",
+      "Objects/096_lays_chip_bag_green/masks/019.png"
+    ]
+  },
+  "background": {
+    "n": 200,
+    "hw": [
+      [
+        6144,
+        8192
+      ]
+    ]
+  },
+  "scenes": {
+    "images": {
+      "Scenes/easy/leisure_zone_001": 30,
+      "Scenes/easy/meeting_room_001": 20,
+      "Scenes/easy/office_002": 30,
+      "Scenes/easy/pantry_room_002": 20,
+      "Scenes/easy/sink": 20,
+      "Scenes/hard/office_001": 20,
+      "Scenes/hard/pantry_room_001": 20
+    },
+    "xml": {
+      "Scenes/easy/leisure_zone_001": 30,
+      "Scenes/easy/meeting_room_001": 20,
+      "Scenes/easy/office_002": 30,
+      "Scenes/easy/pantry_room_002": 20,
+      "Scenes/easy/sink": 20,
+      "Scenes/hard/office_001": 20,
+      "Scenes/hard/pantry_room_001": 20
+    },
+    "hw": [
+      [
+        6144,
+        8192
+      ]
+    ],
+    "xml_size_matches": true,
+    "xml_filename_matches": true,
+    "boxes": 3081,
+    "boxes_by_folder": {
+      "Scenes/easy/leisure_zone_001": 477,
+      "Scenes/easy/meeting_room_001": 471,
+      "Scenes/easy/office_002": 449,
+      "Scenes/easy/pantry_room_002": 361,
+      "Scenes/easy/sink": 360,
+      "Scenes/hard/office_001": 486,
+      "Scenes/hard/pantry_room_001": 477
+    },
+    "difficult": {
+      "0": 3081
+    },
+    "boxes_outside_frame": [],
+    "per_image_min_median_max": [
+      8,
+      20,
+      40
+    ],
+    "names_not_in_objects": {
+      "076_mouse_thinkpad": [
+        "Scenes/hard/office_001/rgb_001.xml"
+      ],
+      "077_mug_white": [
+        "Scenes/hard/pantry_room_001/rgb_011.xml"
+      ],
+      "062_cup_white": [
+        "Scenes/hard/pantry_room_001/rgb_013.xml",
+        "Scenes/hard/pantry_room_001/rgb_014.xml"
+      ]
+    },
+    "objects_never_annotated": [],
+    "same_name_twice_in_image": 9
+  }
+}

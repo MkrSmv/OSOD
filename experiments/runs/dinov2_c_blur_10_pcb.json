@@ -1,0 +1,2069 @@
+{
+ "run_id": "dinov2_c_blur_10_pcb",
+ "experiment": "4.3",
+ "kind": "grid_run",
+ "protocol": "oracle",
+ "dataset": "pcb",
+ "written": "2026-09-21T07:47:42+00:00",
+ "code_commit": "95fc4fc0adeaf2e553726e3df8841af4cc3f3237",
+ "code_dirty": false,
+ "started_utc": "2026-09-21T06:10:26+00:00",
+ "config": {
+  "dataset": "pcb",
+  "encoder": "dinov2",
+  "variant": "c_blur_10",
+  "seg_long_side": 2048,
+  "crop_n_layers": 1,
+  "points_per_batch": 16,
+  "crop_size": 448,
+  "blur_sigma_frac": 0.05,
+  "blur_work_side": 1792,
+  "pool_long_side": 2048,
+  "debias_r": 500,
+  "debias_noise_seed": 20260918,
+  "encoder_batch": 16,
+  "batch_rule": "маски одного изображения в порядке записи кеша; батч не пересекает границу изображения",
+  "gallery_protocols": [
+   "full",
+   "one_per_class"
+  ],
+  "hnsw": {
+   "M": 32,
+   "efConstruction": 200,
+   "efSearch_min": 64
+  },
+  "eps": [
+   0.05,
+   0.01
+  ],
+  "delta": 0.1,
+  "max_dets": 1000,
+  "bootstrap": 0,
+  "seed": 20260918
+ },
+ "seed": 20260918,
+ "variant_label": "C(blur,1.0)",
+ "splits": {
+  "file": "splits/pcb.json",
+  "written": "2026-09-18",
+  "seed": 20260918,
+  "n_cal": 92,
+  "n_test": 361,
+  "n_encoded": 361
+ },
+ "versions": {
+  "packages": {
+   "torch": "2.7.1+cu128",
+   "torchvision": "0.22.1+cu128",
+   "transformers": "4.57.6",
+   "huggingface-hub": "0.36.2",
+   "hf-transfer": "0.1.9",
+   "safetensors": "0.8.0",
+   "sam-2": "1.0",
+   "hydra-core": "1.3.7",
+   "iopath": "0.1.10",
+   "faiss-cpu": "1.15.0",
+   "numpy": "2.5.2",
+   "opencv-python-headless": "5.0.0.93",
+   "pillow": "12.3.0",
+   "pycocotools": "2.0.11",
+   "scikit-learn": "1.9.1",
+   "pandas": "3.0.5",
+   "matplotlib": "3.11.2",
+   "pyyaml": "6.0.3",
+   "pytest": "9.1.1"
+  },
+  "sam2": {
+   "version": "1.0",
+   "url": "https://github.com/facebookresearch/sam2.git",
+   "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+   "requested_revision": "main"
+  },
+  "lock_sha256": "3d53557c9c5641c34ca9cb5d2d04762bdff8133bc8abc6e29ad651dfce7a185b",
+  "encoder": {
+   "id": "facebook/dinov2-with-registers-large",
+   "revision": "e4c89a4e05589de9b3e188688a303d0f3c04d0f3",
+   "dtype": "float16"
+  },
+  "segmenter": "665f8e2ad61cf5f53d65644ff27c8ee525124610"
+ },
+ "mask_cache": {
+  "scenes": "auto_cnl1_ls2048_ppb16_sam2-2b90b9f_26872978",
+  "references": "box_ls2048_sam2-2b90b9f_667f33ac"
+ },
+ "run_emb": {
+  "dir": "cache/run_emb/dinov2_c_blur_10_pcb",
+  "config_sha1": "1ab8354c96294270c8921aea265c82ce6388c71c",
+  "dtype": "float16"
+ },
+ "gallery": {
+  "path": "gallery/dinov2/c_blur_10/pcb",
+  "N": 716,
+  "n_labels": 6,
+  "emb_sha256": "73d31fdef418d7f17dafd95b8e1b67bc6f8ae0991b1df57e90c19402b05a55b8",
+  "config_sha1": "254e0612b4168b8922dad4a8364cb7831b2a06ce",
+  "build": {
+   "code_commit": "95fc4fc0adeaf2e553726e3df8841af4cc3f3237",
+   "code_dirty": false,
+   "written_utc": "2026-09-21T06:10:26+00:00",
+   "n_encoded_this_session": 716,
+   "sec_encode_this_session": 53.5,
+   "shared_pass_with": [],
+   "built_by": "scripts/run_4_3.py",
+   "n_pool_center_patch_fallback": 0,
+   "control_iou": null,
+   "sec_assemble": 0.3,
+   "ref_masks": {
+    "what": "маска эталона по промпту-рамке: доля площади рамки разметки под маской, оценка сегментатора",
+    "by_type": {
+     "Missing_hole": {
+      "n": 121,
+      "box_fill_median": 0.6216,
+      "box_fill_min": 0.3839,
+      "predicted_iou_median": 0.9375
+     },
+     "Mouse_bite": {
+      "n": 113,
+      "box_fill_median": 0.5651,
+      "box_fill_min": 0.2573,
+      "predicted_iou_median": 0.8359
+     },
+     "Open_circuit": {
+      "n": 118,
+      "box_fill_median": 0.5413,
+      "box_fill_min": 0.1785,
+      "predicted_iou_median": 0.8086
+     },
+     "Short": {
+      "n": 131,
+      "box_fill_median": 0.6778,
+      "box_fill_min": 0.0293,
+      "predicted_iou_median": 0.7656
+     },
+     "Spur": {
+      "n": 113,
+      "box_fill_median": 0.6073,
+      "box_fill_min": 0.2357,
+      "predicted_iou_median": 0.8164
+     },
+     "Spurious_copper": {
+      "n": 120,
+      "box_fill_median": 0.6514,
+      "box_fill_min": 0.1802,
+      "predicted_iou_median": 0.8203
+     }
+    }
+   }
+  }
+ },
+ "rules": {
+  "oracle_iou_min": 0.5,
+  "distractor_iou_max": 0.1,
+  "search": "IndexFlatIP, k = N; порог τ не применяется",
+  "area_edges_px2": [
+   3570.0,
+   5250.0
+  ],
+  "ignore_zones": "iscrowd=1 в каждой категории; маска, чья рамка пересекает зону, — не дистрактор"
+ },
+ "paired_with": null,
+ "encode_sec_shared": false,
+ "pass": "single",
+ "status": "стресс-тест на границе применимости: только тестовые платы, один энкодер, без интервалов",
+ "encode": {
+  "encoder_batch": 16,
+  "batch_rule": "маски одного изображения в порядке записи кеша; батч не пересекает границу изображения",
+  "crop_workers": [
+   6
+  ],
+  "crop_max_in_flight": [
+   8
+  ],
+  "n_pool_center_patch_fallback": 0,
+  "sessions": [
+   "2026-09-21T06:10:26+00:00"
+  ],
+  "code_commits": [
+   "95fc4fc0adeaf2e553726e3df8841af4cc3f3237"
+  ]
+ },
+ "timing": {
+  "segmentation_from_cache_info_sec": {
+   "sec_read": 11.7,
+   "sec_resize": 2.4,
+   "sec_generate": 8990.5
+  },
+  "encode_scenes_sec": 5750.8,
+  "encode_scenes_n_masks": 93619,
+  "encode_gallery_sec": 53.5,
+  "search_sec": 2.3,
+  "evaluate_sec": 16.1,
+  "note": "кодирование — сумма по снимкам из progress.jsonl рабочих файлов (счёт урывками)"
+ },
+ "counts": {
+  "test/all": {
+   "n_scenes": 361,
+   "n_masks": 93619,
+   "n_gt": 1770,
+   "n_oracle": 279,
+   "n_ignore_zones": 32,
+   "n_masks_excluded_from_distractors_by_zones": 58,
+   "n_segmenter_miss": 1491,
+   "n_segmenter_miss_by_area": {
+    "small": 473,
+    "medium": 488,
+    "large": 530
+   },
+   "n_distractors": 92515,
+   "n_masks_not_evaluated_in_oracle_protocol": 825
+  },
+  "test/board_05": {
+   "n_scenes": 60,
+   "n_masks": 15945,
+   "n_gt": 259,
+   "n_oracle": 37,
+   "n_ignore_zones": 8,
+   "n_masks_excluded_from_distractors_by_zones": 14,
+   "n_segmenter_miss": 222,
+   "n_segmenter_miss_by_area": {
+    "small": 80,
+    "medium": 71,
+    "large": 71
+   },
+   "n_distractors": 15782,
+   "n_masks_not_evaluated_in_oracle_protocol": 126
+  },
+  "test/board_06": {
+   "n_scenes": 61,
+   "n_masks": 16832,
+   "n_gt": 307,
+   "n_oracle": 42,
+   "n_ignore_zones": 8,
+   "n_masks_excluded_from_distractors_by_zones": 12,
+   "n_segmenter_miss": 265,
+   "n_segmenter_miss_by_area": {
+    "small": 139,
+    "medium": 86,
+    "large": 40
+   },
+   "n_distractors": 16719,
+   "n_masks_not_evaluated_in_oracle_protocol": 71
+  },
+  "test/board_07": {
+   "n_scenes": 60,
+   "n_masks": 10251,
+   "n_gt": 300,
+   "n_oracle": 49,
+   "n_ignore_zones": 0,
+   "n_masks_excluded_from_distractors_by_zones": 0,
+   "n_segmenter_miss": 251,
+   "n_segmenter_miss_by_area": {
+    "small": 51,
+    "medium": 71,
+    "large": 129
+   },
+   "n_distractors": 10064,
+   "n_masks_not_evaluated_in_oracle_protocol": 138
+  },
+  "test/board_08": {
+   "n_scenes": 60,
+   "n_masks": 24812,
+   "n_gt": 298,
+   "n_oracle": 50,
+   "n_ignore_zones": 11,
+   "n_masks_excluded_from_distractors_by_zones": 21,
+   "n_segmenter_miss": 248,
+   "n_segmenter_miss_by_area": {
+    "small": 88,
+    "medium": 82,
+    "large": 78
+   },
+   "n_distractors": 24603,
+   "n_masks_not_evaluated_in_oracle_protocol": 159
+  },
+  "test/board_11": {
+   "n_scenes": 60,
+   "n_masks": 8291,
+   "n_gt": 303,
+   "n_oracle": 53,
+   "n_ignore_zones": 1,
+   "n_masks_excluded_from_distractors_by_zones": 3,
+   "n_segmenter_miss": 250,
+   "n_segmenter_miss_by_area": {
+    "small": 30,
+    "medium": 68,
+    "large": 152
+   },
+   "n_distractors": 8016,
+   "n_masks_not_evaluated_in_oracle_protocol": 222
+  },
+  "test/board_12": {
+   "n_scenes": 60,
+   "n_masks": 17488,
+   "n_gt": 303,
+   "n_oracle": 48,
+   "n_ignore_zones": 4,
+   "n_masks_excluded_from_distractors_by_zones": 8,
+   "n_segmenter_miss": 255,
+   "n_segmenter_miss_by_area": {
+    "small": 85,
+    "medium": 110,
+    "large": 60
+   },
+   "n_distractors": 17331,
+   "n_masks_not_evaluated_in_oracle_protocol": 109
+  }
+ },
+ "search": {
+  "full": {
+   "index": "IndexFlatIP",
+   "k": "N",
+   "N": 716,
+   "n_labels": 6,
+   "n_max": 131,
+   "tau": null,
+   "k_hnsw_by_gallery": 262
+  },
+  "one_per_class": {
+   "index": "IndexFlatIP",
+   "k": "N",
+   "N": 6,
+   "n_labels": 6,
+   "n_max": 1,
+   "tau": null,
+   "k_hnsw_by_gallery": 2
+  }
+ },
+ "metrics_note": "доли (0–1); 361 снимок тестовых плат; разбивка — по платам (подмножества снимков) и по типам дефекта (`by_type`: AP категории на всех снимках подмножества, top-1 — на оракульных масках типа); интервалов нет (bootstrap = 0); AP — при maxDets=1000, справочно — при 100",
+ "metrics": {
+  "full": {
+   "subsets": {
+    "test/all": {
+     "n_scenes": 361,
+     "by_area": {
+      "all": {
+       "n_gt": 1770,
+       "n_categories": 6,
+       "ap": 0.027769872323251604,
+       "ap50": 0.11149370061106241,
+       "ap75": 0.002649492494955268,
+       "ap_maxdets_100": 0.027769872323251604,
+       "n_oracle": 279,
+       "top1": 0.96415770609319,
+       "n_known": 279,
+       "n_unknown": 92515,
+       "auroc": 0.9381674036390882
+      },
+      "small": {
+       "n_gt": 549,
+       "n_categories": 6,
+       "ap": 0.021587784676477643,
+       "ap50": 0.09972749652224266,
+       "ap75": 0.001186748624576701,
+       "ap_maxdets_100": 0.021587784676477643,
+       "n_oracle": 76,
+       "top1": 0.9342105263157895,
+       "n_known": 76,
+       "n_unknown": 53071,
+       "auroc": 0.9575263624003197
+      },
+      "medium": {
+       "n_gt": 596,
+       "n_categories": 6,
+       "ap": 0.029198078898433087,
+       "ap50": 0.12605338488240667,
+       "ap75": 0.0004823301802796913,
+       "ap_maxdets_100": 0.029198078898433087,
+       "n_oracle": 108,
+       "top1": 0.9814814814814815,
+       "n_known": 108,
+       "n_unknown": 9535,
+       "auroc": 0.9716424867447416
+      },
+      "large": {
+       "n_gt": 625,
+       "n_categories": 6,
+       "ap": 0.055728004326865775,
+       "ap50": 0.1379255886930389,
+       "ap75": 0.03148053032264842,
+       "ap_maxdets_100": 0.055728004326865775,
+       "n_oracle": 95,
+       "top1": 0.968421052631579,
+       "n_known": 95,
+       "n_unknown": 29909,
+       "auroc": 0.8604834665150958
+      }
+     },
+     "by_type": {
+      "Missing_hole": {
+       "n_gt": 298,
+       "ap": 0.1660509576483881,
+       "ap50": 0.6633182589062386,
+       "ap75": 0.01589695496973161,
+       "n_oracle": 261,
+       "top1": 1.0
+      },
+      "Mouse_bite": {
+       "n_gt": 303,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Open_circuit": {
+       "n_gt": 283,
+       "ap": 1.183186681148242e-05,
+       "ap50": 0.00011103852833614045,
+       "ap75": 0.0,
+       "n_oracle": 10,
+       "top1": 0.3
+      },
+      "Short": {
+       "n_gt": 285,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spur": {
+       "n_gt": 300,
+       "ap": 6.0503339881947524e-05,
+       "ap50": 0.0005824111822947001,
+       "ap75": 0.0,
+       "n_oracle": 4,
+       "top1": 0.5
+      },
+      "Spurious_copper": {
+       "n_gt": 301,
+       "ap": 0.0004959410844281186,
+       "ap50": 0.0049504950495049506,
+       "ap75": 0.0,
+       "n_oracle": 4,
+       "top1": 0.75
+      }
+     }
+    },
+    "test/board_05": {
+     "n_scenes": 60,
+     "by_area": {
+      "all": {
+       "n_gt": 259,
+       "n_categories": 6,
+       "ap": 0.016151618015209666,
+       "ap50": 0.09747364974136051,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.016151618015209666,
+       "n_oracle": 37,
+       "top1": 0.972972972972973,
+       "n_known": 37,
+       "n_unknown": 15782,
+       "auroc": 0.9168810173752513
+      },
+      "small": {
+       "n_gt": 91,
+       "n_categories": 6,
+       "ap": 0.0106801359123622,
+       "ap50": 0.0707898628690708,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.0106801359123622,
+       "n_oracle": 11,
+       "top1": 1.0,
+       "n_known": 11,
+       "n_unknown": 10804,
+       "auroc": 0.9979132307899431
+      },
+      "medium": {
+       "n_gt": 95,
+       "n_categories": 6,
+       "ap": 0.030928082209940987,
+       "ap50": 0.14679446668071064,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.030928082209940987,
+       "n_oracle": 24,
+       "top1": 1.0,
+       "n_known": 24,
+       "n_unknown": 925,
+       "auroc": 0.897927927927928
+      },
+      "large": {
+       "n_gt": 73,
+       "n_categories": 6,
+       "ap": 0.08333333333333333,
+       "ap50": 0.16666666666666666,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.08333333333333333,
+       "n_oracle": 2,
+       "top1": 0.5,
+       "n_known": 2,
+       "n_unknown": 4053,
+       "auroc": 0.6919565753762645
+      }
+     },
+     "by_type": {
+      "Missing_hole": {
+       "n_gt": 46,
+       "ap": 0.09667733791546491,
+       "ap50": 0.582652904038518,
+       "ap75": 0.0,
+       "n_oracle": 34,
+       "top1": 1.0
+      },
+      "Mouse_bite": {
+       "n_gt": 51,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Open_circuit": {
+       "n_gt": 32,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Short": {
+       "n_gt": 30,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spur": {
+       "n_gt": 50,
+       "ap": 0.00021216407355021216,
+       "ap50": 0.0021216407355021216,
+       "ap75": 0.0,
+       "n_oracle": 1,
+       "top1": 1.0
+      },
+      "Spurious_copper": {
+       "n_gt": 50,
+       "ap": 2.0206102242877348e-05,
+       "ap50": 6.73536741429245e-05,
+       "ap75": 0.0,
+       "n_oracle": 2,
+       "top1": 0.5
+      }
+     }
+    },
+    "test/board_06": {
+     "n_scenes": 61,
+     "by_area": {
+      "all": {
+       "n_gt": 307,
+       "n_categories": 6,
+       "ap": 0.027665958629790516,
+       "ap50": 0.11829377367187222,
+       "ap75": 0.00018335166850018335,
+       "ap_maxdets_100": 0.027665958629790516,
+       "n_oracle": 42,
+       "top1": 0.9047619047619048,
+       "n_known": 42,
+       "n_unknown": 16719,
+       "auroc": 0.9565108416714374
+      },
+      "small": {
+       "n_gt": 162,
+       "n_categories": 6,
+       "ap": 0.03242117601017212,
+       "ap50": 0.15140264026402642,
+       "ap75": 0.00048534265191225003,
+       "ap_maxdets_100": 0.03242117601017212,
+       "n_oracle": 23,
+       "top1": 0.9130434782608695,
+       "n_known": 23,
+       "n_unknown": 12161,
+       "auroc": 0.974801843383875
+      },
+      "medium": {
+       "n_gt": 103,
+       "n_categories": 6,
+       "ap": 0.02492454373642492,
+       "ap50": 0.09376322247609375,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.02492454373642492,
+       "n_oracle": 17,
+       "top1": 0.9411764705882353,
+       "n_known": 17,
+       "n_unknown": 932,
+       "auroc": 0.9810653875284019
+      },
+      "large": {
+       "n_gt": 42,
+       "n_categories": 5,
+       "ap": 0.020198019801980195,
+       "ap50": 0.10099009900990097,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.020198019801980195,
+       "n_oracle": 2,
+       "top1": 0.5,
+       "n_known": 2,
+       "n_unknown": 3626,
+       "auroc": 0.7604798676227248
+      }
+     },
+     "by_type": {
+      "Missing_hole": {
+       "n_gt": 51,
+       "ap": 0.1659957517787431,
+       "ap50": 0.7097626420312333,
+       "ap75": 0.0011001100110011,
+       "n_oracle": 38,
+       "top1": 1.0
+      },
+      "Mouse_bite": {
+       "n_gt": 52,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Open_circuit": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 3,
+       "top1": 0.0
+      },
+      "Short": {
+       "n_gt": 55,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spur": {
+       "n_gt": 49,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 1,
+       "top1": 0.0
+      },
+      "Spurious_copper": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      }
+     }
+    },
+    "test/board_07": {
+     "n_scenes": 60,
+     "by_area": {
+      "all": {
+       "n_gt": 300,
+       "n_categories": 6,
+       "ap": 0.04844445385423899,
+       "ap50": 0.16481848184818482,
+       "ap75": 0.008415841584158415,
+       "ap_maxdets_100": 0.04844445385423899,
+       "n_oracle": 49,
+       "top1": 1.0,
+       "n_known": 49,
+       "n_unknown": 10064,
+       "auroc": 0.9851156678887771
+      },
+      "small": {
+       "n_gt": 51,
+       "n_categories": 4,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.0,
+       "n_oracle": 0,
+       "top1": null,
+       "n_known": 0,
+       "n_unknown": 1840,
+       "auroc": null
+      },
+      "medium": {
+       "n_gt": 74,
+       "n_categories": 6,
+       "ap": 0.01669076431452669,
+       "ap50": 0.1254125412541254,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.01669076431452669,
+       "n_oracle": 3,
+       "top1": 1.0,
+       "n_known": 3,
+       "n_unknown": 4111,
+       "auroc": 1.0
+      },
+      "large": {
+       "n_gt": 175,
+       "n_categories": 6,
+       "ap": 0.0585637200688154,
+       "ap50": 0.1665262270907942,
+       "ap75": 0.020407040704070407,
+       "ap_maxdets_100": 0.0585637200688154,
+       "n_oracle": 46,
+       "top1": 1.0,
+       "n_known": 46,
+       "n_unknown": 4113,
+       "auroc": 0.9649044915908201
+      }
+     },
+     "by_type": {
+      "Missing_hole": {
+       "n_gt": 50,
+       "ap": 0.28769642609573093,
+       "ap50": 0.9592079207920792,
+       "ap75": 0.05049504950495049,
+       "n_oracle": 48,
+       "top1": 1.0
+      },
+      "Mouse_bite": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Open_circuit": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Short": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spur": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spurious_copper": {
+       "n_gt": 50,
+       "ap": 0.0029702970297029695,
+       "ap50": 0.029702970297029695,
+       "ap75": 0.0,
+       "n_oracle": 1,
+       "top1": 1.0
+      }
+     }
+    },
+    "test/board_08": {
+     "n_scenes": 60,
+     "by_area": {
+      "all": {
+       "n_gt": 298,
+       "n_categories": 6,
+       "ap": 0.04027026489880943,
+       "ap50": 0.14686307216366273,
+       "ap75": 0.006015408249461579,
+       "ap_maxdets_100": 0.04027026489880943,
+       "n_oracle": 50,
+       "top1": 0.94,
+       "n_known": 50,
+       "n_unknown": 24603,
+       "auroc": 0.9351298622119254
+      },
+      "small": {
+       "n_gt": 105,
+       "n_categories": 6,
+       "ap": 0.04303344702202073,
+       "ap50": 0.15622705127655626,
+       "ap75": 0.013315260097438317,
+       "ap_maxdets_100": 0.04303344702202073,
+       "n_oracle": 17,
+       "top1": 0.8235294117647058,
+       "n_known": 17,
+       "n_unknown": 16130,
+       "auroc": 0.8631669158674009
+      },
+      "medium": {
+       "n_gt": 114,
+       "n_categories": 6,
+       "ap": 0.04785478547854786,
+       "ap50": 0.15676567656765675,
+       "ap75": 0.008250825082508248,
+       "ap_maxdets_100": 0.04785478547854786,
+       "n_oracle": 32,
+       "top1": 1.0,
+       "n_known": 32,
+       "n_unknown": 2011,
+       "auroc": 1.0
+      },
+      "large": {
+       "n_gt": 79,
+       "n_categories": 5,
+       "ap": 0.04039603960396038,
+       "ap50": 0.0673267326732673,
+       "ap75": 0.0673267326732673,
+       "ap_maxdets_100": 0.04039603960396038,
+       "n_oracle": 1,
+       "top1": 1.0,
+       "n_known": 1,
+       "n_unknown": 6462,
+       "auroc": 0.8517486846177654
+      }
+     },
+     "by_type": {
+      "Missing_hole": {
+       "n_gt": 49,
+       "ap": 0.24142805983581922,
+       "ap50": 0.8793643740250603,
+       "ap75": 0.03609244949676947,
+       "n_oracle": 44,
+       "top1": 1.0
+      },
+      "Mouse_bite": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Open_circuit": {
+       "n_gt": 50,
+       "ap": 0.0001935295570373364,
+       "ap50": 0.0018140589569160999,
+       "ap75": 0.0,
+       "n_oracle": 6,
+       "top1": 0.5
+      },
+      "Short": {
+       "n_gt": 49,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spur": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spurious_copper": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      }
+     }
+    },
+    "test/board_11": {
+     "n_scenes": 60,
+     "by_area": {
+      "all": {
+       "n_gt": 303,
+       "n_categories": 6,
+       "ap": 0.07182336652496205,
+       "ap50": 0.1643903165826787,
+       "ap75": 0.04236196971345486,
+       "ap_maxdets_100": 0.07182336652496205,
+       "n_oracle": 53,
+       "top1": 0.9622641509433962,
+       "n_known": 53,
+       "n_unknown": 8016,
+       "auroc": 0.8834453734041351
+      },
+      "small": {
+       "n_gt": 32,
+       "n_categories": 4,
+       "ap": 0.125,
+       "ap50": 0.25,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.125,
+       "n_oracle": 2,
+       "top1": 1.0,
+       "n_known": 2,
+       "n_unknown": 573,
+       "auroc": 1.0
+      },
+      "medium": {
+       "n_gt": 76,
+       "n_categories": 6,
+       "ap": 0.06243202891717743,
+       "ap50": 0.17491749174917492,
+       "ap75": 0.014026402640264028,
+       "ap_maxdets_100": 0.06243202891717743,
+       "n_oracle": 8,
+       "top1": 0.875,
+       "n_known": 8,
+       "n_unknown": 350,
+       "auroc": 0.9853571428571428
+      },
+      "large": {
+       "n_gt": 195,
+       "n_categories": 6,
+       "ap": 0.07467739315260812,
+       "ap50": 0.1614755225522552,
+       "ap75": 0.05653456736554951,
+       "ap_maxdets_100": 0.07467739315260812,
+       "n_oracle": 43,
+       "top1": 0.9767441860465116,
+       "n_known": 43,
+       "n_unknown": 7093,
+       "auroc": 0.8692749812294467
+      }
+     },
+     "by_type": {
+      "Missing_hole": {
+       "n_gt": 50,
+       "ap": 0.4287439795278101,
+       "ap50": 0.9659998652926517,
+       "ap75": 0.25417181828072916,
+       "n_oracle": 49,
+       "top1": 1.0
+      },
+      "Mouse_bite": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Open_circuit": {
+       "n_gt": 51,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 1,
+       "top1": 0.0
+      },
+      "Short": {
+       "n_gt": 51,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spur": {
+       "n_gt": 50,
+       "ap": 0.000216021602160216,
+       "ap50": 0.00054005400540054,
+       "ap75": 0.0,
+       "n_oracle": 2,
+       "top1": 0.5
+      },
+      "Spurious_copper": {
+       "n_gt": 51,
+       "ap": 0.00198019801980198,
+       "ap50": 0.0198019801980198,
+       "ap75": 0.0,
+       "n_oracle": 1,
+       "top1": 1.0
+      }
+     }
+    },
+    "test/board_12": {
+     "n_scenes": 60,
+     "by_area": {
+      "all": {
+       "n_gt": 303,
+       "n_categories": 6,
+       "ap": 0.01907643116217893,
+       "ap50": 0.07043083558162817,
+       "ap75": 0.0013201320132013201,
+       "ap_maxdets_100": 0.01907643116217893,
+       "n_oracle": 48,
+       "top1": 1.0,
+       "n_known": 48,
+       "n_unknown": 17331,
+       "auroc": 0.9440333314099975
+      },
+      "small": {
+       "n_gt": 108,
+       "n_categories": 6,
+       "ap": 0.018943415777074937,
+       "ap50": 0.06115263487133027,
+       "ap75": 0.0019229473967804942,
+       "ap_maxdets_100": 0.018943415777074937,
+       "n_oracle": 23,
+       "top1": 1.0,
+       "n_known": 23,
+       "n_unknown": 11563,
+       "auroc": 0.9962210799815002
+      },
+      "medium": {
+       "n_gt": 134,
+       "n_categories": 6,
+       "ap": 0.044248959804364545,
+       "ap50": 0.1593038227589575,
+       "ap75": 0.008250825082508248,
+       "ap_maxdets_100": 0.044248959804364545,
+       "n_oracle": 24,
+       "top1": 1.0,
+       "n_known": 24,
+       "n_unknown": 1206,
+       "auroc": 0.9625138197899392
+      },
+      "large": {
+       "n_gt": 61,
+       "n_categories": 5,
+       "ap": 0.019999999999999997,
+       "ap50": 0.19999999999999998,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.019999999999999997,
+       "n_oracle": 1,
+       "top1": 1.0,
+       "n_known": 1,
+       "n_unknown": 4562,
+       "auroc": 0.8233231039017974
+      }
+     },
+     "by_type": {
+      "Missing_hole": {
+       "n_gt": 52,
+       "ap": 0.11445858697307358,
+       "ap50": 0.422585013489769,
+       "ap75": 0.007920792079207921,
+       "n_oracle": 48,
+       "top1": 1.0
+      },
+      "Mouse_bite": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Open_circuit": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Short": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spur": {
+       "n_gt": 51,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spurious_copper": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      }
+     }
+    }
+   }
+  },
+  "one_per_class": {
+   "subsets": {
+    "test/all": {
+     "n_scenes": 361,
+     "by_area": {
+      "all": {
+       "n_gt": 1770,
+       "n_categories": 6,
+       "ap": 0.00433443512860298,
+       "ap50": 0.02077330419093396,
+       "ap75": 3.5722765521175206e-05,
+       "ap_maxdets_100": 0.004323345570372942,
+       "n_oracle": 279,
+       "top1": 0.9390681003584229,
+       "n_known": 279,
+       "n_unknown": 92515,
+       "auroc": 0.8087154131936757
+      },
+      "small": {
+       "n_gt": 549,
+       "n_categories": 6,
+       "ap": 0.0020854408993516314,
+       "ap50": 0.00874058829081891,
+       "ap75": 3.6297759785503584e-05,
+       "ap_maxdets_100": 0.0020730496605224327,
+       "n_oracle": 76,
+       "top1": 0.8947368421052632,
+       "n_known": 76,
+       "n_unknown": 53071,
+       "auroc": 0.8139741299887241
+      },
+      "medium": {
+       "n_gt": 596,
+       "n_categories": 6,
+       "ap": 0.00562727373684989,
+       "ap50": 0.02980567771184714,
+       "ap75": 9.375077284452715e-06,
+       "ap_maxdets_100": 0.005572521554548801,
+       "n_oracle": 108,
+       "top1": 0.9629629629629629,
+       "n_known": 108,
+       "n_unknown": 9535,
+       "auroc": 0.6647682029171279
+      },
+      "large": {
+       "n_gt": 625,
+       "n_categories": 6,
+       "ap": 0.0099340984284902,
+       "ap50": 0.03445750125069113,
+       "ap75": 0.00017213381115641462,
+       "ap_maxdets_100": 0.009943684960510688,
+       "n_oracle": 95,
+       "top1": 0.9473684210526315,
+       "n_known": 95,
+       "n_unknown": 29909,
+       "auroc": 0.8646353588340774
+      }
+     },
+     "by_type": {
+      "Missing_hole": {
+       "n_gt": 298,
+       "ap": 0.025993047771482248,
+       "ap50": 0.1245720101449256,
+       "ap75": 0.00021433659312705125,
+       "n_oracle": 261,
+       "top1": 1.0
+      },
+      "Mouse_bite": {
+       "n_gt": 303,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Open_circuit": {
+       "n_gt": 283,
+       "ap": 1.356300013563e-05,
+       "ap50": 6.781500067815e-05,
+       "ap75": 0.0,
+       "n_oracle": 10,
+       "top1": 0.1
+      },
+      "Short": {
+       "n_gt": 285,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spur": {
+       "n_gt": 300,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 4,
+       "top1": 0.0
+      },
+      "Spurious_copper": {
+       "n_gt": 301,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 4,
+       "top1": 0.0
+      }
+     }
+    },
+    "test/board_05": {
+     "n_scenes": 60,
+     "by_area": {
+      "all": {
+       "n_gt": 259,
+       "n_categories": 6,
+       "ap": 0.01015605395127622,
+       "ap50": 0.052178143874513354,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.010147566016818533,
+       "n_oracle": 37,
+       "top1": 0.918918918918919,
+       "n_known": 37,
+       "n_unknown": 15782,
+       "auroc": 0.8247644425568643
+      },
+      "small": {
+       "n_gt": 91,
+       "n_categories": 6,
+       "ap": 0.006122792090520594,
+       "ap50": 0.026778701091278487,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.006122792090520594,
+       "n_oracle": 11,
+       "top1": 1.0,
+       "n_known": 11,
+       "n_unknown": 10804,
+       "auroc": 0.8678099020564773
+      },
+      "medium": {
+       "n_gt": 95,
+       "n_categories": 6,
+       "ap": 0.017675533635547663,
+       "ap50": 0.09714083571838134,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.017423584624139222,
+       "n_oracle": 24,
+       "top1": 0.9166666666666666,
+       "n_known": 24,
+       "n_unknown": 925,
+       "auroc": 0.8636486486486487
+      },
+      "large": {
+       "n_gt": 73,
+       "n_categories": 6,
+       "ap": 0.00015015015015015017,
+       "ap50": 0.00030030030030030034,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.00015015015015015017,
+       "n_oracle": 2,
+       "top1": 0.5,
+       "n_known": 2,
+       "n_unknown": 4053,
+       "auroc": 0.803972366148532
+      }
+     },
+     "by_type": {
+      "Missing_hole": {
+       "n_gt": 46,
+       "ap": 0.0609363237076573,
+       "ap50": 0.3130688632470801,
+       "ap75": 0.0,
+       "n_oracle": 34,
+       "top1": 1.0
+      },
+      "Mouse_bite": {
+       "n_gt": 51,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Open_circuit": {
+       "n_gt": 32,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Short": {
+       "n_gt": 30,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spur": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 1,
+       "top1": 0.0
+      },
+      "Spurious_copper": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 2,
+       "top1": 0.0
+      }
+     }
+    },
+    "test/board_06": {
+     "n_scenes": 61,
+     "by_area": {
+      "all": {
+       "n_gt": 307,
+       "n_categories": 6,
+       "ap": 0.010977560706095681,
+       "ap50": 0.042531135952602245,
+       "ap75": 0.0011001100110011,
+       "ap_maxdets_100": 0.010977560706095681,
+       "n_oracle": 42,
+       "top1": 0.9047619047619048,
+       "n_known": 42,
+       "n_unknown": 16719,
+       "auroc": 0.87910389946995
+      },
+      "small": {
+       "n_gt": 162,
+       "n_categories": 6,
+       "ap": 0.018532731657525506,
+       "ap50": 0.07002173405668986,
+       "ap75": 0.00275027502750275,
+       "ap_maxdets_100": 0.018532731657525506,
+       "n_oracle": 23,
+       "top1": 0.9130434782608695,
+       "n_known": 23,
+       "n_unknown": 12161,
+       "auroc": 0.8696510226919268
+      },
+      "medium": {
+       "n_gt": 103,
+       "n_categories": 6,
+       "ap": 0.007768671659062613,
+       "ap50": 0.03233639093087908,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.007768671659062613,
+       "n_oracle": 17,
+       "top1": 0.9411764705882353,
+       "n_known": 17,
+       "n_unknown": 932,
+       "auroc": 0.8583690987124464
+      },
+      "large": {
+       "n_gt": 42,
+       "n_categories": 5,
+       "ap": 0.0005315268368942158,
+       "ap50": 0.002657634184471079,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.0005315268368942158,
+       "n_oracle": 2,
+       "top1": 0.5,
+       "n_known": 2,
+       "n_unknown": 3626,
+       "auroc": 0.9612520683949255
+      }
+     },
+     "by_type": {
+      "Missing_hole": {
+       "n_gt": 51,
+       "ap": 0.0658653642365741,
+       "ap50": 0.25518681571561347,
+       "ap75": 0.0066006600660066,
+       "n_oracle": 38,
+       "top1": 1.0
+      },
+      "Mouse_bite": {
+       "n_gt": 52,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Open_circuit": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 3,
+       "top1": 0.0
+      },
+      "Short": {
+       "n_gt": 55,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spur": {
+       "n_gt": 49,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 1,
+       "top1": 0.0
+      },
+      "Spurious_copper": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      }
+     }
+    },
+    "test/board_07": {
+     "n_scenes": 60,
+     "by_area": {
+      "all": {
+       "n_gt": 300,
+       "n_categories": 6,
+       "ap": 0.01300661933369789,
+       "ap50": 0.05785118861101548,
+       "ap75": 3.263922223575938e-05,
+       "ap_maxdets_100": 0.012996507165687001,
+       "n_oracle": 49,
+       "top1": 0.9795918367346939,
+       "n_known": 49,
+       "n_unknown": 10064,
+       "auroc": 0.8361080918854028
+      },
+      "small": {
+       "n_gt": 51,
+       "n_categories": 4,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.0,
+       "n_oracle": 0,
+       "top1": null,
+       "n_known": 0,
+       "n_unknown": 1840,
+       "auroc": null
+      },
+      "medium": {
+       "n_gt": 74,
+       "n_categories": 6,
+       "ap": 2.064435204367484e-05,
+       "ap50": 0.00011831371816426925,
+       "ap75": 0.0,
+       "ap_maxdets_100": 2.064435204367484e-05,
+       "n_oracle": 3,
+       "top1": 1.0,
+       "n_known": 3,
+       "n_unknown": 4111,
+       "auroc": 0.2802237898321576
+      },
+      "large": {
+       "n_gt": 175,
+       "n_categories": 6,
+       "ap": 0.02281523569279132,
+       "ap50": 0.07796767363392938,
+       "ap75": 0.00013203120470843833,
+       "ap_maxdets_100": 0.022786453353961043,
+       "n_oracle": 46,
+       "top1": 0.9782608695652174,
+       "n_known": 46,
+       "n_unknown": 4113,
+       "auroc": 0.9038467637078617
+      }
+     },
+     "by_type": {
+      "Missing_hole": {
+       "n_gt": 50,
+       "ap": 0.07803971600218733,
+       "ap50": 0.34710713166609286,
+       "ap75": 0.0001958353334145563,
+       "n_oracle": 48,
+       "top1": 1.0
+      },
+      "Mouse_bite": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Open_circuit": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Short": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spur": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spurious_copper": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 1,
+       "top1": 0.0
+      }
+     }
+    },
+    "test/board_08": {
+     "n_scenes": 60,
+     "by_area": {
+      "all": {
+       "n_gt": 298,
+       "n_categories": 6,
+       "ap": 0.005266372654963648,
+       "ap50": 0.014633253395350111,
+       "ap75": 9.393991251702937e-05,
+       "ap_maxdets_100": 0.005266372654963648,
+       "n_oracle": 50,
+       "top1": 0.88,
+       "n_known": 50,
+       "n_unknown": 24603,
+       "auroc": 0.8892354590903548
+      },
+      "small": {
+       "n_gt": 105,
+       "n_categories": 6,
+       "ap": 0.006339470566065907,
+       "ap50": 0.01656862920451784,
+       "ap75": 0.003387457532460022,
+       "ap_maxdets_100": 0.006339470566065907,
+       "n_oracle": 17,
+       "top1": 0.6470588235294118,
+       "n_known": 17,
+       "n_unknown": 16130,
+       "auroc": 0.7676598227635754
+      },
+      "medium": {
+       "n_gt": 114,
+       "n_categories": 6,
+       "ap": 0.01543386889004304,
+       "ap50": 0.05327335139223302,
+       "ap75": 6.667333400006666e-05,
+       "ap_maxdets_100": 0.01543386889004304,
+       "n_oracle": 32,
+       "top1": 1.0,
+       "n_known": 32,
+       "n_unknown": 2011,
+       "auroc": 0.9317969915464943
+      },
+      "large": {
+       "n_gt": 79,
+       "n_categories": 5,
+       "ap": 4.084533832554134e-05,
+       "ap50": 6.807556387590224e-05,
+       "ap75": 6.807556387590224e-05,
+       "ap_maxdets_100": 4.084533832554134e-05,
+       "n_oracle": 1,
+       "top1": 1.0,
+       "n_known": 1,
+       "n_unknown": 6462,
+       "auroc": 0.8385948622717425
+      }
+     },
+     "by_type": {
+      "Missing_hole": {
+       "n_gt": 49,
+       "ap": 0.031598235929781886,
+       "ap50": 0.08779952037210066,
+       "ap75": 0.0005636394751021762,
+       "n_oracle": 44,
+       "top1": 1.0
+      },
+      "Mouse_bite": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Open_circuit": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 6,
+       "top1": 0.0
+      },
+      "Short": {
+       "n_gt": 49,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spur": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spurious_copper": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      }
+     }
+    },
+    "test/board_11": {
+     "n_scenes": 60,
+     "by_area": {
+      "all": {
+       "n_gt": 303,
+       "n_categories": 6,
+       "ap": 0.02613285908441699,
+       "ap50": 0.05737355686850062,
+       "ap75": 0.018107994211382265,
+       "ap_maxdets_100": 0.026132903404677145,
+       "n_oracle": 53,
+       "top1": 0.9433962264150944,
+       "n_known": 53,
+       "n_unknown": 8016,
+       "auroc": 0.7732765600873724
+      },
+      "small": {
+       "n_gt": 32,
+       "n_categories": 4,
+       "ap": 0.125,
+       "ap50": 0.25,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.125,
+       "n_oracle": 2,
+       "top1": 1.0,
+       "n_known": 2,
+       "n_unknown": 573,
+       "auroc": 1.0
+      },
+      "medium": {
+       "n_gt": 76,
+       "n_categories": 6,
+       "ap": 0.02089349253306243,
+       "ap50": 0.04370365878237975,
+       "ap75": 0.028052805280528042,
+       "ap_maxdets_100": 0.02089349253306243,
+       "n_oracle": 8,
+       "top1": 0.875,
+       "n_known": 8,
+       "n_unknown": 350,
+       "auroc": 0.7442857142857143
+      },
+      "large": {
+       "n_gt": 195,
+       "n_categories": 6,
+       "ap": 0.023328926585524462,
+       "ap50": 0.05021294836821353,
+       "ap75": 0.016333132313942084,
+       "ap_maxdets_100": 0.02332898465353555,
+       "n_oracle": 43,
+       "top1": 0.9534883720930233,
+       "n_known": 43,
+       "n_unknown": 7093,
+       "auroc": 0.7575467460549051
+      }
+     },
+     "by_type": {
+      "Missing_hole": {
+       "n_gt": 50,
+       "ap": 0.15283675846689798,
+       "ap50": 0.3244393610129839,
+       "ap75": 0.10864796526829358,
+       "n_oracle": 49,
+       "top1": 1.0
+      },
+      "Mouse_bite": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Open_circuit": {
+       "n_gt": 51,
+       "ap": 0.00396039603960396,
+       "ap50": 0.0198019801980198,
+       "ap75": 0.0,
+       "n_oracle": 1,
+       "top1": 1.0
+      },
+      "Short": {
+       "n_gt": 51,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spur": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 2,
+       "top1": 0.0
+      },
+      "Spurious_copper": {
+       "n_gt": 51,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 1,
+       "top1": 0.0
+      }
+     }
+    },
+    "test/board_12": {
+     "n_scenes": 60,
+     "by_area": {
+      "all": {
+       "n_gt": 303,
+       "n_categories": 6,
+       "ap": 0.004373951506162598,
+       "ap50": 0.01712203094622065,
+       "ap75": 4.2887903457106414e-05,
+       "ap_maxdets_100": 0.004305784311444509,
+       "n_oracle": 48,
+       "top1": 1.0,
+       "n_known": 48,
+       "n_unknown": 17331,
+       "auroc": 0.7484829688611928
+      },
+      "small": {
+       "n_gt": 108,
+       "n_categories": 6,
+       "ap": 0.0045952842773177485,
+       "ap50": 0.014324810772823755,
+       "ap75": 8.596881933447935e-05,
+       "ap_maxdets_100": 0.004550248285240008,
+       "n_oracle": 23,
+       "top1": 1.0,
+       "n_known": 23,
+       "n_unknown": 11563,
+       "auroc": 0.7641314688154496
+      },
+      "medium": {
+       "n_gt": 134,
+       "n_categories": 6,
+       "ap": 0.008818408629448313,
+       "ap50": 0.03155777289085342,
+       "ap75": 7.711051478979675e-06,
+       "ap_maxdets_100": 0.008419954552426724,
+       "n_oracle": 24,
+       "top1": 1.0,
+       "n_known": 24,
+       "n_unknown": 1206,
+       "auroc": 0.42447484798231067
+      },
+      "large": {
+       "n_gt": 61,
+       "n_categories": 5,
+       "ap": 5.649717514124292e-05,
+       "ap50": 0.0005649717514124292,
+       "ap75": 0.0,
+       "ap_maxdets_100": 0.0,
+       "n_oracle": 1,
+       "top1": 1.0,
+       "n_known": 1,
+       "n_unknown": 4562,
+       "auroc": 0.9202104340201666
+      }
+     },
+     "by_type": {
+      "Missing_hole": {
+       "n_gt": 52,
+       "ap": 0.026243709036975593,
+       "ap50": 0.10273218567732391,
+       "ap75": 0.0002573274207426385,
+       "n_oracle": 48,
+       "top1": 1.0
+      },
+      "Mouse_bite": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Open_circuit": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Short": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spur": {
+       "n_gt": 51,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      },
+      "Spurious_copper": {
+       "n_gt": 50,
+       "ap": 0.0,
+       "ap50": 0.0,
+       "ap75": 0.0,
+       "n_oracle": 0,
+       "top1": null
+      }
+     }
+    }
+   }
+  }
+ },
+ "selection_cal": {
+  "enabled": false,
+  "reason": "калибровочные платы PCB в авторежиме не сегментируются; вариант контрольного прогона перенесён с HR-InsDet — c_mean_10"
+ },
+ "ap_without_zones": {
+  "what": "справочно: истина без зон игнорирования, маски у зон возвращены в дистракторы по общему правилу; подмножество test/all",
+  "close_if_abs_diff_le_points": 0.5,
+  "full": {
+   "ap": 0.0277698485760092,
+   "ap50": 0.11149363669663388,
+   "ap75": 0.002649492494955268,
+   "ap_with_zones": 0.027769872323251604,
+   "diff_ap_points": -0.0,
+   "close": true,
+   "by_type": {
+    "Missing_hole": {
+     "ap": 0.16605082102885715,
+     "ap50": 0.6633178914669998,
+     "ap75": 0.01589695496973161
+    },
+    "Mouse_bite": {
+     "ap": 0.0,
+     "ap50": 0.0,
+     "ap75": 0.0
+    },
+    "Open_circuit": {
+     "ap": 1.1829727167168332e-05,
+     "ap50": 0.0001110224810037848,
+     "ap75": 0.0
+    },
+    "Short": {
+     "ap": 0.0,
+     "ap50": 0.0,
+     "ap75": 0.0
+    },
+    "Spur": {
+     "ap": 6.050161825207501e-05,
+     "ap50": 0.0005824111822947001,
+     "ap75": 0.0
+    },
+    "Spurious_copper": {
+     "ap": 0.0004959390817787979,
+     "ap50": 0.0049504950495049506,
+     "ap75": 0.0
+    }
+   }
+  },
+  "one_per_class": {
+   "ap": 0.004334357507841558,
+   "ap50": 0.020772968720425326,
+   "ap75": 3.5717771029399036e-05,
+   "ap_with_zones": 0.00433443512860298,
+   "diff_ap_points": -0.0,
+   "close": true,
+   "by_type": {
+    "Missing_hole": {
+     "ap": 0.02599258204691371,
+     "ap50": 0.12456999732187381,
+     "ap75": 0.0002143066261763942
+    },
+    "Mouse_bite": {
+     "ap": 0.0,
+     "ap50": 0.0,
+     "ap75": 0.0
+    },
+    "Open_circuit": {
+     "ap": 1.356300013563e-05,
+     "ap50": 6.781500067815e-05,
+     "ap75": 0.0
+    },
+    "Short": {
+     "ap": 0.0,
+     "ap50": 0.0,
+     "ap75": 0.0
+    },
+    "Spur": {
+     "ap": 0.0,
+     "ap50": 0.0,
+     "ap75": 0.0
+    },
+    "Spurious_copper": {
+     "ap": 0.0,
+     "ap50": 0.0,
+     "ap75": 0.0
+    }
+   }
+  }
+ },
+ "pcb_pipeline_checks": {
+  "ceiling": {
+   "Missing_hole": {
+    "ap": 0.32097481560236557,
+    "ap50": 0.8857399162735066,
+    "ap75": 0.144129178018473
+   },
+   "Mouse_bite": {
+    "ap": 0.009900990099009901,
+    "ap50": 0.009900990099009901,
+    "ap75": 0.009900990099009901
+   },
+   "Open_circuit": {
+    "ap": 0.018028198579575272,
+    "ap50": 0.0452366791449463,
+    "ap75": 0.009900990099009901
+   },
+   "Short": {
+    "ap": 0.009900990099009901,
+    "ap50": 0.009900990099009901,
+    "ap75": 0.009900990099009901
+   },
+   "Spur": {
+    "ap": 0.013234323432343233,
+    "ap50": 0.023234323432343235,
+    "ap75": 0.009900990099009901
+   },
+   "Spurious_copper": {
+    "ap": 0.012891023321601263,
+    "ap50": 0.023190026643860398,
+    "ap75": 0.009900990099009901
+   }
+  },
+  "composition_expected": {
+   "n_images": 361,
+   "n_gt": 1770,
+   "n_ignore_zones": 32,
+   "n_masks": 93619,
+   "n_oracle_by_type_within_4_2": true,
+   "gallery_N": 716,
+   "gallery_labels": [
+    "Missing_hole",
+    "Mouse_bite",
+    "Open_circuit",
+    "Short",
+    "Spur",
+    "Spurious_copper"
+   ],
+   "gallery_n_max": 131,
+   "gallery_k": 262,
+   "gallery_boards": [
+    "01",
+    "04"
+   ],
+   "gallery_modes": [
+    "category"
+   ]
+  },
+  "failed": [],
+  "passed": true,
+  "ap_max_over_protocols_by_type": {
+   "Missing_hole": {
+    "ap": 0.1660509576483881,
+    "ap50": 0.6633182589062386,
+    "ap75": 0.01589695496973161
+   },
+   "Mouse_bite": {
+    "ap": 0.0,
+    "ap50": 0.0,
+    "ap75": 0.0
+   },
+   "Open_circuit": {
+    "ap": 1.356300013563e-05,
+    "ap50": 0.00011103852833614045,
+    "ap75": 0.0
+   },
+   "Short": {
+    "ap": 0.0,
+    "ap50": 0.0,
+    "ap75": 0.0
+   },
+   "Spur": {
+    "ap": 6.0503339881947524e-05,
+    "ap50": 0.0005824111822947001,
+    "ap75": 0.0
+   },
+   "Spurious_copper": {
+    "ap": 0.0004959410844281186,
+    "ap50": 0.0049504950495049506,
+    "ap75": 0.0
+   }
+  },
+  "n_oracle_by_type": {
+   "Missing_hole": 261,
+   "Mouse_bite": 0,
+   "Open_circuit": 10,
+   "Short": 0,
+   "Spur": 4,
+   "Spurious_copper": 4
+  },
+  "n_gt_with_mask_iou50_in_4_2": {
+   "Missing_hole": 261,
+   "Mouse_bite": 0,
+   "Open_circuit": 10,
+   "Short": 0,
+   "Spur": 4,
+   "Spurious_copper": 4
+  },
+  "recall_record": "experiments/runs/4_2_pcb.json",
+  "composition": {
+   "n_images": 361,
+   "n_gt": 1770,
+   "n_ignore_zones": 32,
+   "n_masks": 93619,
+   "n_oracle_by_type_within_4_2": true,
+   "gallery_N": 716,
+   "gallery_labels": [
+    "Missing_hole",
+    "Mouse_bite",
+    "Open_circuit",
+    "Short",
+    "Spur",
+    "Spurious_copper"
+   ],
+   "gallery_n_max": 131,
+   "gallery_k": 262,
+   "gallery_boards": [
+    "01",
+    "04"
+   ],
+   "gallery_modes": [
+    "category"
+   ]
+  }
+ }
+}

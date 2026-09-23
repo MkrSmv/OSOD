@@ -1,0 +1,491 @@
+{
+ "run_id": "hnsw_dinov2_c_0_10_hr_insdet",
+ "kind": "hnsw_check",
+ "written": "2026-09-19",
+ "code_commit": "d2744bcf596e5b65be8b9914691e4ff61551522e",
+ "code_dirty": false,
+ "written_utc": "2026-09-19T20:34:23+00:00",
+ "config": {
+  "dataset": "hr_insdet",
+  "encoder": "dinov2",
+  "variant": "c_0_10",
+  "seg_long_side": 2048,
+  "crop_n_layers": 1,
+  "points_per_batch": 16,
+  "crop_size": 448,
+  "blur_sigma_frac": 0.05,
+  "blur_work_side": 1792,
+  "pool_long_side": 2048,
+  "debias_r": 500,
+  "debias_noise_seed": 20260918,
+  "encoder_batch": 16,
+  "batch_rule": "маски одного изображения в порядке записи кеша; батч не пересекает границу изображения",
+  "gallery_protocols": [
+   "full",
+   "one_per_class"
+  ],
+  "hnsw": {
+   "M": 32,
+   "efConstruction": 200,
+   "efSearch_min": 64
+  },
+  "eps": [
+   0.05,
+   0.01
+  ],
+  "delta": 0.1,
+  "max_dets": 1000,
+  "bootstrap": 1000,
+  "seed": 20260918
+ },
+ "protocol": {
+  "criterion_recall_min": 0.999,
+  "s_star_tol": 1e-05,
+  "on_fail": "параметры графа не подбираются",
+  "criterion_commit": "f62d6d3",
+  "queries": "все маски M(I) 40 калибровочных сцен, тот же φ, из рабочих файлов fp16 → fp32; тестовые сцены не открывались",
+  "tau": null,
+  "latency": "только index.search; прогрев — полный проход; 5 повторов, у вызова — медиана по повторам; агрегация по меткам вне таймеров",
+  "quality_metrics": "не считаются (их дают прогоны сетки 4.3)"
+ },
+ "versions": {
+  "faiss": "1.15.0",
+  "numpy": "2.5.2"
+ },
+ "gallery": {
+  "path": "gallery/dinov2/c_0_10/hr_insdet",
+  "N": 2400,
+  "n_labels": 100,
+  "n_max": 24,
+  "k": 48,
+  "n_deleted": 0,
+  "build": {
+   "code_commit": "7c3364511f62227c83f5bfc7963f2510d5f48921",
+   "code_dirty": false,
+   "written_utc": "2026-09-19T20:14:06+00:00",
+   "n_encoded_this_session": 2400,
+   "sec_encode_this_session": 187.8,
+   "sec_control_iou": 73.6,
+   "feeder": {
+    "encoder_batch": 16,
+    "batch_rule": "маски одного изображения в порядке записи кеша; батч не пересекает границу изображения",
+    "crop_workers": 6,
+    "crop_max_in_flight": 8,
+    "cv2_threads_per_worker": 2
+   },
+   "n_pool_center_patch_fallback": 0,
+   "control_iou": {
+    "n": 2400,
+    "min": 0.4025363344690948,
+    "q05": 0.9648920867964613,
+    "median": 0.9843614657518291,
+    "mean": 0.9783026694217198,
+    "n_below_0.9": 34,
+    "n_below_0.5": 2,
+    "worst": {
+     "051_truffettes/014": 0.4025,
+     "051_truffettes/001": 0.4306,
+     "055_candle_beast/010": 0.6383,
+     "055_candle_beast/014": 0.6391,
+     "055_candle_beast/009": 0.641
+    }
+   },
+   "sec_assemble": 0.9
+  }
+ },
+ "index": {
+  "hnsw": {
+   "M": 32,
+   "efConstruction": 200,
+   "efSearch_min": 64,
+   "efSearch": 64,
+   "metric": "METRIC_INNER_PRODUCT",
+   "build_sec": 0.078,
+   "build_threads": 6,
+   "add": "один add всех эталонов в порядке insert_no"
+  },
+  "flat": {
+   "build_sec": 0.0105
+  }
+ },
+ "queries": {
+  "split": "cal",
+  "n_scenes": 40,
+  "n": 4534,
+  "per_scene_min_median_max": [
+   70,
+   113.5,
+   171
+  ],
+  "mask_cache": "auto_cnl1_ls2048_ppb16_sam2-2b90b9f_26872978"
+ },
+ "recall": {
+  "all": {
+   "n_queries": 4534,
+   "recall_y_and_s_star": 0.9964711071901191,
+   "same_y": 0.9964711071901191,
+   "same_s_star": 0.9964711071901191,
+   "n_mismatch": 16,
+   "neighbors_shared_mean": 0.9729865093368624,
+   "max_abs_s_star_diff": 0.04335297644138336
+  },
+  "oracle_masks": {
+   "n_queries": 764,
+   "recall_y_and_s_star": 1.0,
+   "same_y": 1.0,
+   "same_s_star": 1.0,
+   "n_mismatch": 0,
+   "neighbors_shared_mean": 0.9953643106457242,
+   "max_abs_s_star_diff": 3.5762786865234375e-07
+  },
+  "other_masks": {
+   "n_queries": 3770,
+   "recall_y_and_s_star": 0.9957559681697613,
+   "same_y": 0.9957559681697613,
+   "same_s_star": 0.9957559681697613,
+   "n_mismatch": 16,
+   "neighbors_shared_mean": 0.9684515915119364,
+   "max_abs_s_star_diff": 0.04335297644138336
+  },
+  "n_hnsw_short_lists": 0
+ },
+ "passed": false,
+ "latency": {
+  "threads_default": {
+   "faiss_omp_threads": 6,
+   "flat_k2400": {
+    "single_query": {
+     "n_calls": 4534,
+     "n_queries": 4534,
+     "ms_per_call_median": 0.357446500856895,
+     "ms_per_call_mean": 0.3637951198732121,
+     "ms_per_call_p95": 0.406960499822162,
+     "ms_per_query_mean": 0.3637951198732121
+    },
+    "batch_per_scene": {
+     "n_calls": 40,
+     "n_queries": 4534,
+     "ms_per_call_median": 8.091297495411709,
+     "ms_per_call_mean": 7.952231801755261,
+     "ms_per_call_p95": 10.183241759659717,
+     "ms_per_query_mean": 0.07015643406930093
+    }
+   },
+   "flat_k48": {
+    "single_query": {
+     "n_calls": 4534,
+     "n_queries": 4534,
+     "ms_per_call_median": 0.203957999474369,
+     "ms_per_call_mean": 0.20823293956999334,
+     "ms_per_call_p95": 0.23823964875191447,
+     "ms_per_query_mean": 0.20823293956999334
+    },
+    "batch_per_scene": {
+     "n_calls": 40,
+     "n_queries": 4534,
+     "ms_per_call_median": 3.732206991116982,
+     "ms_per_call_mean": 4.060070498599089,
+     "ms_per_call_p95": 5.404356201324844,
+     "ms_per_query_mean": 0.03581888397528971
+    }
+   },
+   "hnsw_k48": {
+    "single_query": {
+     "n_calls": 4534,
+     "n_queries": 4534,
+     "ms_per_call_median": 0.06118549936218187,
+     "ms_per_call_mean": 0.06151591752439406,
+     "ms_per_call_p95": 0.07577449214295484,
+     "ms_per_query_mean": 0.06151591752439406
+    },
+    "batch_per_scene": {
+     "n_calls": 40,
+     "n_queries": 4534,
+     "ms_per_call_median": 1.4392099983524531,
+     "ms_per_call_mean": 1.4173173996823607,
+     "ms_per_call_p95": 1.8465011948137544,
+     "ms_per_query_mean": 0.01250390295264544
+    }
+   }
+  },
+  "threads_1": {
+   "faiss_omp_threads": 1,
+   "flat_k2400": {
+    "single_query": {
+     "n_calls": 4534,
+     "n_queries": 4534,
+     "ms_per_call_median": 0.3584045043680817,
+     "ms_per_call_mean": 0.36728150398786996,
+     "ms_per_call_p95": 0.4223225558234843,
+     "ms_per_query_mean": 0.36728150398786996
+    },
+    "batch_per_scene": {
+     "n_calls": 40,
+     "n_queries": 4534,
+     "ms_per_call_median": 31.871837993094232,
+     "ms_per_call_mean": 33.3732509494439,
+     "ms_per_call_p95": 42.90297474944964,
+     "ms_per_query_mean": 0.29442656329460876
+    }
+   },
+   "flat_k48": {
+    "single_query": {
+     "n_calls": 4534,
+     "n_queries": 4534,
+     "ms_per_call_median": 0.20362699433462694,
+     "ms_per_call_mean": 0.20634027264496585,
+     "ms_per_call_p95": 0.22829250083304933,
+     "ms_per_query_mean": 0.20634027264496585
+    },
+    "batch_per_scene": {
+     "n_calls": 40,
+     "n_queries": 4534,
+     "ms_per_call_median": 16.244749502220657,
+     "ms_per_call_mean": 15.787282949895598,
+     "ms_per_call_p95": 24.203985047643073,
+     "ms_per_query_mean": 0.13927907322360475
+    }
+   },
+   "hnsw_k48": {
+    "single_query": {
+     "n_calls": 4534,
+     "n_queries": 4534,
+     "ms_per_call_median": 0.057388497225474566,
+     "ms_per_call_mean": 0.05768026588598133,
+     "ms_per_call_p95": 0.07070035353535783,
+     "ms_per_query_mean": 0.05768026588598133
+    },
+    "batch_per_scene": {
+     "n_calls": 40,
+     "n_queries": 4534,
+     "ms_per_call_median": 7.244861997605767,
+     "ms_per_call_mean": 7.0744598502642475,
+     "ms_per_call_p95": 9.493379692139568,
+     "ms_per_query_mean": 0.062412526248471524
+    }
+   }
+  }
+ },
+ "post_hoc_diagnostics": {
+  "note": "добавлено после результата; критерия не касается; параметры графа те же, что в замере, не варьируются",
+  "written": "2026-09-19",
+  "code_commit": "e08d903787cec2cf22d765658f69857224db6513",
+  "code_dirty": false,
+  "written_utc": "2026-09-19T21:10:37+00:00",
+  "repeat_builds": {
+   "build_threads_6": {
+    "recall": [
+     0.9960299955888839,
+     0.9953683281870314,
+     0.9964711071901191,
+     0.9953683281870314,
+     0.9964711071901191,
+     0.9962505513895016,
+     0.9966916629907366,
+     0.9955888839876489,
+     0.9951477723864137,
+     0.9962505513895016,
+     0.9951477723864137,
+     0.9955888839876489,
+     0.9960299955888839,
+     0.9955888839876489,
+     0.9953683281870314,
+     0.9958094397882664,
+     0.9955888839876489,
+     0.9960299955888839,
+     0.9969122187913542,
+     0.9955888839876489,
+     0.9953683281870314,
+     0.9944861049845611,
+     0.9964711071901191,
+     0.9964711071901191,
+     0.9958094397882664,
+     0.9971327745919718,
+     0.9964711071901191,
+     0.9955888839876489,
+     0.9949272165857962,
+     0.9958094397882664
+    ],
+    "min": 0.9944861049845611,
+    "median": 0.9958094397882664,
+    "max": 0.9971327745919718,
+    "n_builds_passing": 0
+   },
+   "build_threads_1": {
+    "recall": [
+     0.992059991177768,
+     0.992059991177768
+    ],
+    "min": 0.992059991177768,
+    "median": 0.992059991177768,
+    "max": 0.992059991177768,
+    "n_builds_passing": 0
+   }
+  },
+  "mismatched_over_all_builds": {
+   "build_threads_6": {
+    "n_builds": 30,
+    "n_mismatched": 563,
+    "n_oracle_mismatched": 0,
+    "n_mismatched_per_build": [
+     18,
+     21,
+     16,
+     21,
+     16,
+     17,
+     15,
+     20,
+     22,
+     17,
+     22,
+     20,
+     18,
+     20,
+     21,
+     19,
+     20,
+     18,
+     14,
+     20,
+     21,
+     25,
+     16,
+     16,
+     19,
+     13,
+     16,
+     20,
+     23,
+     19
+    ],
+    "n_oracle_mismatched_per_build": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "builds_with_oracle_mismatch": 0,
+    "s_star_exact_max": 0.3073614835739136,
+    "s_star_exact_max_oracle": null,
+    "s_star_lost_max": 0.10443297028541565,
+    "distractor_s_star_quantiles_max_abs_diff_vs_exact": [
+     5.778670310974121e-05,
+     8.940696738513054e-09,
+     7.569789883810074e-08
+    ]
+   },
+   "build_threads_1": {
+    "n_builds": 2,
+    "n_mismatched": 72,
+    "n_oracle_mismatched": 2,
+    "n_mismatched_per_build": [
+     36,
+     36
+    ],
+    "n_oracle_mismatched_per_build": [
+     1,
+     1
+    ],
+    "builds_with_oracle_mismatch": 2,
+    "s_star_exact_max": 0.3521662652492523,
+    "s_star_exact_max_oracle": 0.3521662652492523,
+    "s_star_lost_max": 0.12144342064857483,
+    "distractor_s_star_quantiles_max_abs_diff_vs_exact": [
+     0.00012546777725219727,
+     8.940696738513054e-09,
+     7.569789883810074e-08
+    ]
+   }
+  },
+  "distractor_s_star_quantiles": {
+   "q": [
+    0.5,
+    0.95,
+    0.99
+   ],
+   "exact": [
+    0.26782986521720886,
+    0.3795539736747742,
+    0.5159962850809098
+   ],
+   "note": "наибольшее по построениям отклонение квантилей HNSW от точных — `distractor_s_star_quantiles_max_abs_diff_vs_exact` в блоке выше; F калибровки требует сходств всех пар «дистрактор — эталон» и из k соседей HNSW не строится"
+  },
+  "gallery_emb_sha256": "635585142f1607a3abeee1ef4e332f20a9d5464c1bf53ccf0d6b70180bbc87eb",
+  "mismatched_in_last_default_build": {
+   "n": 19,
+   "n_oracle": 0,
+   "n_distractor": 16,
+   "s_star_exact_min_q25_median_q75_max": [
+    0.10906292498111725,
+    0.13486503809690475,
+    0.166612446308136,
+    0.2109352871775627,
+    0.26627281308174133
+   ],
+   "s_star_lost_min_q25_median_q75_max": [
+    0.0006325691938400269,
+    0.005823824554681778,
+    0.017178192734718323,
+    0.03893214464187622,
+    0.09288223087787628
+   ],
+   "n_with_s_star_exact_ge_0.4": 0,
+   "mask_area_px_min_median_max": [
+    9456.0,
+    536368.0,
+    13868800.0
+   ]
+  },
+  "all_queries": {
+   "s_star_exact_min_q25_median_q75_max": [
+    0.09112416207790375,
+    0.24628208950161934,
+    0.2993038147687912,
+    0.4469902813434601,
+    0.9837466478347778
+   ],
+   "s_star_exact_oracle_min_q25_median_q75_max": [
+    0.2220303863286972,
+    0.5586897432804108,
+    0.6866505742073059,
+    0.8044698089361191,
+    0.9837466478347778
+   ],
+   "s_star_exact_distractor_min_q25_median_q75_max": [
+    0.09112416207790375,
+    0.22216103225946426,
+    0.26782986521720886,
+    0.30841734260320663,
+    0.861056923866272
+   ],
+   "n_distractors": 2928
+  }
+ }
+}

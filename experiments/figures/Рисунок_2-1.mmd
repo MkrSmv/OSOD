@@ -1,0 +1,38 @@
+%%{init: {"theme": "base", "fontFamily": "Times New Roman, serif", "flowchart": {"htmlLabels": true, "nodeSpacing": 40, "rankSpacing": 50, "curve": "linear"}, "themeVariables": {"fontSize": "14px", "primaryColor": "#ffffff", "primaryBorderColor": "#000000", "primaryTextColor": "#000000", "lineColor": "#000000", "clusterBkg": "#ffffff", "clusterBorder": "#000000"}}}%%
+%% Рисунок 2.1 — Схема метода (§2.1).
+%% Экспорт: python scripts/render_mermaid.py 2-1 → Рисунок_2-1.png (beautiful-mermaid + resvg, без браузера).
+%% Директива init выше фиксирует шрифт, размер и ч/б оформление; блок classDef в конце даёт цветовую раскраску — удалить для ч/б печати.
+%% Направление раскладки: индексация строкой сверху, галерея, инференс столбцом — при строчной раскладке рисунок был
+%% в 3,7 раза шире высоты и текст на полосе 16 см выходил около 3 pt; заголовки групп рендер ставит по центру полосы, чтобы стрелка
+%% «галерея → поиск» не пересекала подпись «Инференс».
+flowchart TB
+    subgraph IDX["Индексация"]
+        direction LR
+        E["Эталон<br/>(I<sub>j</sub>, m<sub>j</sub>, y<sub>j</sub>)"]
+        S1["Сегментатор S<br/>промпт-рамка"]
+        F1["Кодирование φ<br/>z<sub>j</sub> = φ(I<sub>j</sub>, m<sub>j</sub>)"]
+        E --> S1 --> F1
+    end
+
+    G[("Галерея G<sub>N</sub><br/>индекс HNSW<br/>пополнение G<sub>N</sub> → G<sub>N+n</sub>")]
+
+    subgraph INF["Инференс"]
+        direction TB
+        I["Сцена I<br/>вход S: ≤2048 по длинной стороне"]
+        S2["Сегментатор S<br/>авторежим → M(I)"]
+        R["Отбор ρ<br/>антицепь M*"]
+        F2["Кодирование φ<br/>z для m ∈ M*"]
+        Q["Поиск и решение<br/>s<sub>y</sub>, s*, порог τ"]
+        D["Результат D(I)<br/>(m, ŷ(m), s*(m))"]
+        I --> S2 --> R --> F2 --> Q --> D
+    end
+
+    F1 --> G
+    G --> Q
+
+    classDef data fill:#f1efe8,stroke:#5f5e5a,color:#2c2c2a
+    classDef comp fill:#e1f5ee,stroke:#0f6e56,color:#04342c
+    classDef store fill:#eeedfe,stroke:#534ab7,color:#26215c
+    class E,I,D data
+    class S1,F1,S2,R,F2,Q comp
+    class G store

@@ -1,0 +1,153 @@
+{
+ "what": "замер кодирования с ρ на 40 калибровочных сценах; не прогон сетки и не источник метрик качества",
+ "dataset": "hr_insdet",
+ "split": "cal",
+ "n_scenes": 40,
+ "code_commit": "cfbfba246941caf52f7c752755b84e1a2dc01f62",
+ "code_dirty": false,
+ "written_utc": "2026-09-21T17:57:35+00:00",
+ "threshold": {
+  "cos_median_per_area_bin_min": 0.999,
+  "set_before_run": "до замера",
+  "area_bin": "площадь описывающей рамки маски в пикселях исходного снимка, hr_insdet.AREA_EDGES",
+  "descriptive_only": [
+   "max_abs_delta_s_star",
+   "n_y_hat_changed"
+  ]
+ },
+ "protocol": {
+  "passes_order": [
+   "all",
+   "rho"
+  ],
+  "warmup": "первый батч первой сцены до замера каждого энкодера",
+  "timing": "от выдачи сцены до выдачи следующей; вырезки на CPU параллельно GPU",
+  "embeddings": "fp16 рабочих файлов → fp32, как в прогоне сетки",
+  "batch": 16
+ },
+ "by_encoder": {
+  "dinov2": {
+   "run_id": "dinov2_c_mean_10_hr_insdet",
+   "variant_label": "c_mean_10",
+   "timing": {
+    "all": {
+     "n_masks": 4534,
+     "sec": 289.6,
+     "masks_per_sec": 15.66,
+     "sec_per_scene_median": 7.285,
+     "sessions": [
+      "2026-09-21T17:18:04+00:00"
+     ],
+     "code_commits": [
+      "101570fcef39f6028d8ae66d5e995ffe7f66ad03"
+     ],
+     "code_dirty": false
+    },
+    "rho": {
+     "n_masks": 2498,
+     "sec": 156.3,
+     "masks_per_sec": 15.98,
+     "sec_per_scene_median": 3.9275,
+     "sessions": [
+      "2026-09-21T17:18:04+00:00"
+     ],
+     "code_commits": [
+      "101570fcef39f6028d8ae66d5e995ffe7f66ad03"
+     ],
+     "code_dirty": false
+    }
+   },
+   "time_ratio_rho_to_all": 0.5397,
+   "masks_ratio_rho_to_all": 0.5509,
+   "rho_vs_saved": {
+    "n_masks": 2498,
+    "by_area_bin": {
+     "small": {
+      "n": 526,
+      "cos_median": 1.0,
+      "cos_min": 0.9999984502792358
+     },
+     "medium": {
+      "n": 885,
+      "cos_median": 1.0,
+      "cos_min": 0.999991774559021
+     },
+     "large": {
+      "n": 1087,
+      "cos_median": 1.0,
+      "cos_min": 0.9999964237213135
+     }
+    },
+    "cos_median_all": 1.0,
+    "cos_min_all": 0.999991774559021,
+    "max_abs_delta_s_star": 0.00035685300827026367,
+    "n_y_hat_changed": 0,
+    "gallery": "full",
+    "search": "IndexFlatIP, k = N"
+   },
+   "passed": true
+  },
+  "dinov3": {
+   "run_id": "dinov3_c_blur_15_hr_insdet",
+   "variant_label": "c_blur_15",
+   "timing": {
+    "all": {
+     "n_masks": 4534,
+     "sec": 1217.7,
+     "masks_per_sec": 3.72,
+     "sec_per_scene_median": 30.075499999999998,
+     "sessions": [
+      "2026-09-21T17:18:04+00:00"
+     ],
+     "code_commits": [
+      "101570fcef39f6028d8ae66d5e995ffe7f66ad03"
+     ],
+     "code_dirty": false
+    },
+    "rho": {
+     "n_masks": 2498,
+     "sec": 557.1,
+     "masks_per_sec": 4.48,
+     "sec_per_scene_median": 13.615,
+     "sessions": [
+      "2026-09-21T17:18:04+00:00"
+     ],
+     "code_commits": [
+      "101570fcef39f6028d8ae66d5e995ffe7f66ad03"
+     ],
+     "code_dirty": false
+    }
+   },
+   "time_ratio_rho_to_all": 0.4575,
+   "masks_ratio_rho_to_all": 0.5509,
+   "rho_vs_saved": {
+    "n_masks": 2498,
+    "by_area_bin": {
+     "small": {
+      "n": 526,
+      "cos_median": 1.0,
+      "cos_min": 0.9997984170913696
+     },
+     "medium": {
+      "n": 885,
+      "cos_median": 1.0,
+      "cos_min": 0.9999998807907104
+     },
+     "large": {
+      "n": 1087,
+      "cos_median": 1.0,
+      "cos_min": 0.9999071359634399
+     }
+    },
+    "cos_median_all": 1.0,
+    "cos_min_all": 0.9997984170913696,
+    "max_abs_delta_s_star": 0.0005284249782562256,
+    "n_y_hat_changed": 0,
+    "gallery": "full",
+    "search": "IndexFlatIP, k = N"
+   },
+   "passed": true
+  }
+ },
+ "passed": true
+}

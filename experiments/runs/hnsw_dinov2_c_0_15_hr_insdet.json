@@ -1,0 +1,213 @@
+{
+ "run_id": "hnsw_dinov2_c_0_15_hr_insdet",
+ "kind": "hnsw_check",
+ "written": "2026-09-20",
+ "code_commit": "81e65c703807a8432e3efd6b2d856a4b9b2e846a",
+ "code_dirty": false,
+ "written_utc": "2026-09-20T14:50:09+00:00",
+ "config": {
+  "dataset": "hr_insdet",
+  "encoder": "dinov2",
+  "variant": "c_0_15",
+  "seg_long_side": 2048,
+  "crop_n_layers": 1,
+  "points_per_batch": 16,
+  "crop_size": 448,
+  "blur_sigma_frac": 0.05,
+  "blur_work_side": 1792,
+  "pool_long_side": 2048,
+  "debias_r": 500,
+  "debias_noise_seed": 20260918,
+  "encoder_batch": 16,
+  "batch_rule": "маски одного изображения в порядке записи кеша; батч не пересекает границу изображения",
+  "gallery_protocols": [
+   "full",
+   "one_per_class"
+  ],
+  "hnsw": {
+   "M": 32,
+   "efConstruction": 200,
+   "efSearch_min": 64
+  },
+  "eps": [
+   0.05,
+   0.01
+  ],
+  "delta": 0.1,
+  "max_dets": 1000,
+  "bootstrap": 1000,
+  "seed": 20260918
+ },
+ "protocol": {
+  "criterion_recall_min": 0.999,
+  "s_star_tol": 1e-05,
+  "on_fail": "параметры графа не подбираются",
+  "verdict_by": "однопоточное (детерминированное) построение графа",
+  "queries": "все маски M(I) 40 калибровочных сцен из рабочих файлов прогона, fp16 → fp32; тестовые сцены в замер не читаются",
+  "tau": null,
+  "latency": "не повторяется (измерена первым замером, на галерее C(0,1.0) DINOv2)"
+ },
+ "versions": {
+  "faiss": "1.15.0",
+  "numpy": "2.5.2"
+ },
+ "gallery": {
+  "path": "gallery/dinov2/c_0_15/hr_insdet",
+  "N": 2400,
+  "n_labels": 100,
+  "n_max": 24,
+  "k": 48,
+  "emb_sha256": "c69dbf1feea779e49f44dc027b7290bc0ea413add9ee44d2d1199ee4703ece61"
+ },
+ "index": {
+  "hnsw": {
+   "M": 32,
+   "efConstruction": 200,
+   "efSearch_min": 64,
+   "efSearch": 64,
+   "metric": "METRIC_INNER_PRODUCT",
+   "add": "один add всех эталонов в порядке insert_no"
+  }
+ },
+ "queries": {
+  "split": "cal",
+  "n_scenes": 40,
+  "n": 4534,
+  "n_oracle": 764,
+  "n_distractors": 2928,
+  "source": "cache/run_emb/dinov2_c_0_15_hr_insdet",
+  "mask_cache": "auto_cnl1_ls2048_ppb16_sam2-2b90b9f_26872978"
+ },
+ "grid_check": {
+  "single_thread": {
+   "recall": 0.9916188795765328,
+   "same_y": 0.9918394353771505,
+   "n_mismatched": 38,
+   "n_oracle_mismatched": 1,
+   "s_star_exact_max": 0.3503004014492035,
+   "s_star_exact_max_oracle": 0.3457123339176178,
+   "s_star_lost_max": 0.09296488761901855
+  },
+  "multi_thread": {
+   "n_builds": 30,
+   "build_threads": 6,
+   "recall": [
+    0.9931627701808557,
+    0.9951477723864137,
+    0.9938244375827084,
+    0.9942655491839435,
+    0.9947066607851787,
+    0.9947066607851787,
+    0.994044993383326,
+    0.9949272165857962,
+    0.9947066607851787,
+    0.9938244375827084,
+    0.9942655491839435,
+    0.9944861049845611,
+    0.9951477723864137,
+    0.9947066607851787,
+    0.9938244375827084,
+    0.9942655491839435,
+    0.9949272165857962,
+    0.9949272165857962,
+    0.9949272165857962,
+    0.994044993383326,
+    0.9955888839876489,
+    0.992059991177768,
+    0.9949272165857962,
+    0.9944861049845611,
+    0.9929422143802382,
+    0.9942655491839435,
+    0.992059991177768,
+    0.9942655491839435,
+    0.9938244375827084,
+    0.9951477723864137
+   ],
+   "min": 0.992059991177768,
+   "median": 0.9943758270842523,
+   "max": 0.9955888839876489,
+   "n_builds_passing": 0,
+   "n_mismatched_per_build": [
+    31,
+    22,
+    28,
+    26,
+    24,
+    24,
+    27,
+    23,
+    24,
+    28,
+    26,
+    25,
+    22,
+    24,
+    28,
+    26,
+    23,
+    23,
+    23,
+    27,
+    20,
+    36,
+    23,
+    25,
+    32,
+    26,
+    36,
+    26,
+    28,
+    22
+   ],
+   "n_oracle_mismatched_per_build": [
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    2,
+    1,
+    2,
+    1,
+    2,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    1,
+    0
+   ],
+   "s_star_exact_max": 0.424876868724823,
+   "s_star_lost_max": 0.11813846230506897
+  },
+  "distractor_s_star_quantiles": {
+   "q": [
+    0.95,
+    0.99
+   ],
+   "exact": [
+    0.38585674911737444,
+    0.5183979451656342
+   ]
+  },
+  "distractor_s_star_quantiles_max_abs_diff_vs_exact": [
+   4.9173831950799496e-08,
+   4.3511390601658206e-08
+  ]
+ },
+ "passed": false
+}

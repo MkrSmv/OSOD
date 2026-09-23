@@ -1,0 +1,10065 @@
+{
+ "dataset": "pcb",
+ "written": "2026-09-18",
+ "root": "data/pku_market_pcb",
+ "seed": 20260918,
+ "labels": [
+  "Missing_hole",
+  "Mouse_bite",
+  "Open_circuit",
+  "Short",
+  "Spur",
+  "Spurious_copper"
+ ],
+ "boards": {
+  "gallery": [
+   "01",
+   "04"
+  ],
+  "cal": [
+   "09",
+   "10"
+  ],
+  "test": [
+   "05",
+   "06",
+   "07",
+   "08",
+   "11",
+   "12"
+  ]
+ },
+ "clean_images": {
+  "09": "PCB_USED/09.JPG",
+  "10": "PCB_USED/10.JPG",
+  "05": "PCB_USED/05.JPG",
+  "06": "PCB_USED/06.JPG",
+  "07": "PCB_USED/07.JPG",
+  "08": "PCB_USED/08.JPG",
+  "11": "PCB_USED/11.JPG",
+  "12": "PCB_USED/12.JPG"
+ },
+ "counts": {
+  "gallery_images": 240,
+  "gallery": 716,
+  "gallery_per_type": {
+   "Missing_hole": 121,
+   "Mouse_bite": 113,
+   "Open_circuit": 118,
+   "Short": 131,
+   "Spur": 113,
+   "Spurious_copper": 120
+  },
+  "cal_images": 92,
+  "test_images": 361
+ },
+ "gallery": [
+  {
+   "id": "01_missing_hole_01/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_01.jpg",
+   "board": "01",
+   "box": [
+    2459,
+    1274,
+    2530,
+    1329
+   ]
+  },
+  {
+   "id": "01_missing_hole_01/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_01.jpg",
+   "board": "01",
+   "box": [
+    1613,
+    334,
+    1679,
+    396
+   ]
+  },
+  {
+   "id": "01_missing_hole_01/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_01.jpg",
+   "board": "01",
+   "box": [
+    1726,
+    794,
+    1797,
+    854
+   ]
+  },
+  {
+   "id": "01_missing_hole_02/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_02.jpg",
+   "board": "01",
+   "box": [
+    2584,
+    232,
+    2650,
+    298
+   ]
+  },
+  {
+   "id": "01_missing_hole_02/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_02.jpg",
+   "board": "01",
+   "box": [
+    2366,
+    803,
+    2406,
+    860
+   ]
+  },
+  {
+   "id": "01_missing_hole_02/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_02.jpg",
+   "board": "01",
+   "box": [
+    1506,
+    802,
+    1559,
+    856
+   ]
+  },
+  {
+   "id": "01_missing_hole_03/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_03.jpg",
+   "board": "01",
+   "box": [
+    2651,
+    487,
+    2700,
+    531
+   ]
+  },
+  {
+   "id": "01_missing_hole_03/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_03.jpg",
+   "board": "01",
+   "box": [
+    1342,
+    749,
+    1393,
+    796
+   ]
+  },
+  {
+   "id": "01_missing_hole_03/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_03.jpg",
+   "board": "01",
+   "box": [
+    2082,
+    582,
+    2135,
+    620
+   ]
+  },
+  {
+   "id": "01_missing_hole_04/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_04.jpg",
+   "board": "01",
+   "box": [
+    1619,
+    225,
+    1673,
+    278
+   ]
+  },
+  {
+   "id": "01_missing_hole_04/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_04.jpg",
+   "board": "01",
+   "box": [
+    337,
+    754,
+    386,
+    814
+   ]
+  },
+  {
+   "id": "01_missing_hole_04/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_04.jpg",
+   "board": "01",
+   "box": [
+    217,
+    1009,
+    277,
+    1067
+   ]
+  },
+  {
+   "id": "01_missing_hole_05/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_05.jpg",
+   "board": "01",
+   "box": [
+    804,
+    298,
+    860,
+    365
+   ]
+  },
+  {
+   "id": "01_missing_hole_05/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_05.jpg",
+   "board": "01",
+   "box": [
+    279,
+    294,
+    353,
+    374
+   ]
+  },
+  {
+   "id": "01_missing_hole_05/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_05.jpg",
+   "board": "01",
+   "box": [
+    1068,
+    1051,
+    1110,
+    1107
+   ]
+  },
+  {
+   "id": "01_missing_hole_05/3",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_05.jpg",
+   "board": "01",
+   "box": [
+    1613,
+    392,
+    1677,
+    460
+   ]
+  },
+  {
+   "id": "01_missing_hole_06/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_06.jpg",
+   "board": "01",
+   "box": [
+    1446,
+    480,
+    1504,
+    542
+   ]
+  },
+  {
+   "id": "01_missing_hole_06/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_06.jpg",
+   "board": "01",
+   "box": [
+    1326,
+    1203,
+    1386,
+    1269
+   ]
+  },
+  {
+   "id": "01_missing_hole_06/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_06.jpg",
+   "board": "01",
+   "box": [
+    2070,
+    800,
+    2140,
+    860
+   ]
+  },
+  {
+   "id": "01_missing_hole_07/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_07.jpg",
+   "board": "01",
+   "box": [
+    1737,
+    340,
+    1793,
+    394
+   ]
+  },
+  {
+   "id": "01_missing_hole_07/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_07.jpg",
+   "board": "01",
+   "box": [
+    1390,
+    1042,
+    1470,
+    1122
+   ]
+  },
+  {
+   "id": "01_missing_hole_07/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_07.jpg",
+   "board": "01",
+   "box": [
+    2580,
+    238,
+    2648,
+    294
+   ]
+  },
+  {
+   "id": "01_missing_hole_08/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_08.jpg",
+   "board": "01",
+   "box": [
+    2757,
+    700,
+    2817,
+    767
+   ]
+  },
+  {
+   "id": "01_missing_hole_08/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_08.jpg",
+   "board": "01",
+   "box": [
+    2637,
+    1336,
+    2700,
+    1391
+   ]
+  },
+  {
+   "id": "01_missing_hole_08/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_08.jpg",
+   "board": "01",
+   "box": [
+    482,
+    1125,
+    539,
+    1183
+   ]
+  },
+  {
+   "id": "01_missing_hole_09/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_09.jpg",
+   "board": "01",
+   "box": [
+    1222,
+    620,
+    1293,
+    689
+   ]
+  },
+  {
+   "id": "01_missing_hole_09/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_09.jpg",
+   "board": "01",
+   "box": [
+    482,
+    1118,
+    539,
+    1180
+   ]
+  },
+  {
+   "id": "01_missing_hole_09/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_09.jpg",
+   "board": "01",
+   "box": [
+    162,
+    482,
+    222,
+    542
+   ]
+  },
+  {
+   "id": "01_missing_hole_10/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_10.jpg",
+   "board": "01",
+   "box": [
+    1624,
+    402,
+    1673,
+    454
+   ]
+  },
+  {
+   "id": "01_missing_hole_10/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_10.jpg",
+   "board": "01",
+   "box": [
+    331,
+    751,
+    388,
+    816
+   ]
+  },
+  {
+   "id": "01_missing_hole_10/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_10.jpg",
+   "board": "01",
+   "box": [
+    866,
+    623,
+    915,
+    682
+   ]
+  },
+  {
+   "id": "01_missing_hole_11/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_11.jpg",
+   "board": "01",
+   "box": [
+    2073,
+    685,
+    2146,
+    752
+   ]
+  },
+  {
+   "id": "01_missing_hole_11/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_11.jpg",
+   "board": "01",
+   "box": [
+    1500,
+    736,
+    1559,
+    800
+   ]
+  },
+  {
+   "id": "01_missing_hole_11/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_11.jpg",
+   "board": "01",
+   "box": [
+    482,
+    843,
+    562,
+    916
+   ]
+  },
+  {
+   "id": "01_missing_hole_12/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_12.jpg",
+   "board": "01",
+   "box": [
+    1062,
+    1047,
+    1117,
+    1112
+   ]
+  },
+  {
+   "id": "01_missing_hole_12/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_12.jpg",
+   "board": "01",
+   "box": [
+    2633,
+    932,
+    2702,
+    989
+   ]
+  },
+  {
+   "id": "01_missing_hole_12/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_12.jpg",
+   "board": "01",
+   "box": [
+    2460,
+    1220,
+    2528,
+    1276
+   ]
+  },
+  {
+   "id": "01_missing_hole_13/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_13.jpg",
+   "board": "01",
+   "box": [
+    1384,
+    296,
+    1460,
+    362
+   ]
+  },
+  {
+   "id": "01_missing_hole_13/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_13.jpg",
+   "board": "01",
+   "box": [
+    1340,
+    738,
+    1397,
+    802
+   ]
+  },
+  {
+   "id": "01_missing_hole_13/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_13.jpg",
+   "board": "01",
+   "box": [
+    708,
+    620,
+    768,
+    683
+   ]
+  },
+  {
+   "id": "01_missing_hole_14/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_14.jpg",
+   "board": "01",
+   "box": [
+    2295,
+    640,
+    2359,
+    712
+   ]
+  },
+  {
+   "id": "01_missing_hole_14/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_14.jpg",
+   "board": "01",
+   "box": [
+    159,
+    751,
+    220,
+    812
+   ]
+  },
+  {
+   "id": "01_missing_hole_14/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_14.jpg",
+   "board": "01",
+   "box": [
+    864,
+    623,
+    917,
+    680
+   ]
+  },
+  {
+   "id": "01_missing_hole_15/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_15.jpg",
+   "board": "01",
+   "box": [
+    2075,
+    1034,
+    2139,
+    1087
+   ]
+  },
+  {
+   "id": "01_missing_hole_15/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_15.jpg",
+   "board": "01",
+   "box": [
+    2470,
+    1105,
+    2526,
+    1158
+   ]
+  },
+  {
+   "id": "01_missing_hole_15/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_15.jpg",
+   "board": "01",
+   "box": [
+    2077,
+    514,
+    2135,
+    572
+   ]
+  },
+  {
+   "id": "01_missing_hole_16/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_16.jpg",
+   "board": "01",
+   "box": [
+    1499,
+    729,
+    1559,
+    794
+   ]
+  },
+  {
+   "id": "01_missing_hole_16/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_16.jpg",
+   "board": "01",
+   "box": [
+    644,
+    720,
+    702,
+    783
+   ]
+  },
+  {
+   "id": "01_missing_hole_16/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_16.jpg",
+   "board": "01",
+   "box": [
+    2517,
+    698,
+    2584,
+    763
+   ]
+  },
+  {
+   "id": "01_missing_hole_17/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_17.jpg",
+   "board": "01",
+   "box": [
+    917,
+    292,
+    984,
+    369
+   ]
+  },
+  {
+   "id": "01_missing_hole_17/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_17.jpg",
+   "board": "01",
+   "box": [
+    480,
+    1123,
+    539,
+    1191
+   ]
+  },
+  {
+   "id": "01_missing_hole_17/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_17.jpg",
+   "board": "01",
+   "box": [
+    1725,
+    1083,
+    1790,
+    1147
+   ]
+  },
+  {
+   "id": "01_missing_hole_18/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_18.jpg",
+   "board": "01",
+   "box": [
+    2188,
+    914,
+    2250,
+    980
+   ]
+  },
+  {
+   "id": "01_missing_hole_18/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_18.jpg",
+   "board": "01",
+   "box": [
+    1160,
+    1200,
+    1220,
+    1254
+   ]
+  },
+  {
+   "id": "01_missing_hole_18/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_18.jpg",
+   "board": "01",
+   "box": [
+    1731,
+    1151,
+    1791,
+    1203
+   ]
+  },
+  {
+   "id": "01_missing_hole_19/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_19.jpg",
+   "board": "01",
+   "box": [
+    1395,
+    738,
+    1450,
+    803
+   ]
+  },
+  {
+   "id": "01_missing_hole_19/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_19.jpg",
+   "board": "01",
+   "box": [
+    339,
+    752,
+    388,
+    814
+   ]
+  },
+  {
+   "id": "01_missing_hole_19/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_19.jpg",
+   "board": "01",
+   "box": [
+    168,
+    572,
+    228,
+    638
+   ]
+  },
+  {
+   "id": "01_missing_hole_20/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_20.jpg",
+   "board": "01",
+   "box": [
+    2635,
+    1102,
+    2695,
+    1160
+   ]
+  },
+  {
+   "id": "01_missing_hole_20/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_20.jpg",
+   "board": "01",
+   "box": [
+    228,
+    574,
+    275,
+    629
+   ]
+  },
+  {
+   "id": "01_missing_hole_20/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/01_missing_hole_20.jpg",
+   "board": "01",
+   "box": [
+    2528,
+    227,
+    2588,
+    302
+   ]
+  },
+  {
+   "id": "04_missing_hole_01/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_01.jpg",
+   "board": "04",
+   "box": [
+    2139,
+    753,
+    2189,
+    824
+   ]
+  },
+  {
+   "id": "04_missing_hole_01/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_01.jpg",
+   "board": "04",
+   "box": [
+    2117,
+    1590,
+    2171,
+    1646
+   ]
+  },
+  {
+   "id": "04_missing_hole_01/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_01.jpg",
+   "board": "04",
+   "box": [
+    1401,
+    955,
+    1464,
+    1033
+   ]
+  },
+  {
+   "id": "04_missing_hole_02/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_02.jpg",
+   "board": "04",
+   "box": [
+    1877,
+    757,
+    1930,
+    815
+   ]
+  },
+  {
+   "id": "04_missing_hole_02/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_02.jpg",
+   "board": "04",
+   "box": [
+    997,
+    759,
+    1055,
+    817
+   ]
+  },
+  {
+   "id": "04_missing_hole_02/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_02.jpg",
+   "board": "04",
+   "box": [
+    1228,
+    1771,
+    1284,
+    1841
+   ]
+  },
+  {
+   "id": "04_missing_hole_03/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_03.jpg",
+   "board": "04",
+   "box": [
+    2474,
+    1581,
+    2547,
+    1650
+   ]
+  },
+  {
+   "id": "04_missing_hole_03/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_03.jpg",
+   "board": "04",
+   "box": [
+    1279,
+    1295,
+    1351,
+    1381
+   ]
+  },
+  {
+   "id": "04_missing_hole_03/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_03.jpg",
+   "board": "04",
+   "box": [
+    711,
+    1626,
+    775,
+    1713
+   ]
+  },
+  {
+   "id": "04_missing_hole_04/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_04.jpg",
+   "board": "04",
+   "box": [
+    2113,
+    1473,
+    2186,
+    1537
+   ]
+  },
+  {
+   "id": "04_missing_hole_04/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_04.jpg",
+   "board": "04",
+   "box": [
+    2570,
+    1366,
+    2646,
+    1457
+   ]
+  },
+  {
+   "id": "04_missing_hole_04/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_04.jpg",
+   "board": "04",
+   "box": [
+    2564,
+    946,
+    2621,
+    1019
+   ]
+  },
+  {
+   "id": "04_missing_hole_05/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_05.jpg",
+   "board": "04",
+   "box": [
+    1344,
+    1093,
+    1395,
+    1151
+   ]
+  },
+  {
+   "id": "04_missing_hole_05/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_05.jpg",
+   "board": "04",
+   "box": [
+    1817,
+    859,
+    1882,
+    922
+   ]
+  },
+  {
+   "id": "04_missing_hole_05/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_05.jpg",
+   "board": "04",
+   "box": [
+    1888,
+    357,
+    1946,
+    417
+   ]
+  },
+  {
+   "id": "04_missing_hole_06/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_06.jpg",
+   "board": "04",
+   "box": [
+    1173,
+    621,
+    1231,
+    695
+   ]
+  },
+  {
+   "id": "04_missing_hole_06/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_06.jpg",
+   "board": "04",
+   "box": [
+    1461,
+    377,
+    1519,
+    442
+   ]
+  },
+  {
+   "id": "04_missing_hole_06/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_06.jpg",
+   "board": "04",
+   "box": [
+    2171,
+    341,
+    2239,
+    419
+   ]
+  },
+  {
+   "id": "04_missing_hole_07/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_07.jpg",
+   "board": "04",
+   "box": [
+    1744,
+    964,
+    1811,
+    1031
+   ]
+  },
+  {
+   "id": "04_missing_hole_07/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_07.jpg",
+   "board": "04",
+   "box": [
+    1939,
+    346,
+    2011,
+    419
+   ]
+  },
+  {
+   "id": "04_missing_hole_07/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_07.jpg",
+   "board": "04",
+   "box": [
+    2617,
+    339,
+    2684,
+    424
+   ]
+  },
+  {
+   "id": "04_missing_hole_08/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_08.jpg",
+   "board": "04",
+   "box": [
+    1967,
+    1177,
+    2047,
+    1253
+   ]
+  },
+  {
+   "id": "04_missing_hole_08/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_08.jpg",
+   "board": "04",
+   "box": [
+    1344,
+    1430,
+    1402,
+    1502
+   ]
+  },
+  {
+   "id": "04_missing_hole_08/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_08.jpg",
+   "board": "04",
+   "box": [
+    1742,
+    1428,
+    1806,
+    1504
+   ]
+  },
+  {
+   "id": "04_missing_hole_09/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_09.jpg",
+   "board": "04",
+   "box": [
+    2488,
+    1246,
+    2581,
+    1344
+   ]
+  },
+  {
+   "id": "04_missing_hole_09/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_09.jpg",
+   "board": "04",
+   "box": [
+    1175,
+    1308,
+    1230,
+    1381
+   ]
+  },
+  {
+   "id": "04_missing_hole_09/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_09.jpg",
+   "board": "04",
+   "box": [
+    715,
+    1404,
+    768,
+    1481
+   ]
+  },
+  {
+   "id": "04_missing_hole_10/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_10.jpg",
+   "board": "04",
+   "box": [
+    1122,
+    844,
+    1166,
+    904
+   ]
+  },
+  {
+   "id": "04_missing_hole_10/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_10.jpg",
+   "board": "04",
+   "box": [
+    1288,
+    375,
+    1341,
+    439
+   ]
+  },
+  {
+   "id": "04_missing_hole_10/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_10.jpg",
+   "board": "04",
+   "box": [
+    662,
+    504,
+    715,
+    566
+   ]
+  },
+  {
+   "id": "04_missing_hole_11/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_11.jpg",
+   "board": "04",
+   "box": [
+    1284,
+    953,
+    1350,
+    1028
+   ]
+  },
+  {
+   "id": "04_missing_hole_11/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_11.jpg",
+   "board": "04",
+   "box": [
+    1399,
+    82,
+    1461,
+    137
+   ]
+  },
+  {
+   "id": "04_missing_hole_11/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_11.jpg",
+   "board": "04",
+   "box": [
+    1391,
+    251,
+    1464,
+    306
+   ]
+  },
+  {
+   "id": "04_missing_hole_12/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_12.jpg",
+   "board": "04",
+   "box": [
+    1650,
+    750,
+    1721,
+    826
+   ]
+  },
+  {
+   "id": "04_missing_hole_12/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_12.jpg",
+   "board": "04",
+   "box": [
+    326,
+    802,
+    402,
+    864
+   ]
+  },
+  {
+   "id": "04_missing_hole_12/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_12.jpg",
+   "board": "04",
+   "box": [
+    177,
+    1144,
+    250,
+    1213
+   ]
+  },
+  {
+   "id": "04_missing_hole_13/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_13.jpg",
+   "board": "04",
+   "box": [
+    711,
+    1922,
+    773,
+    1986
+   ]
+  },
+  {
+   "id": "04_missing_hole_13/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_13.jpg",
+   "board": "04",
+   "box": [
+    659,
+    1410,
+    713,
+    1473
+   ]
+  },
+  {
+   "id": "04_missing_hole_13/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_13.jpg",
+   "board": "04",
+   "box": [
+    177,
+    453,
+    255,
+    524
+   ]
+  },
+  {
+   "id": "04_missing_hole_14/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_14.jpg",
+   "board": "04",
+   "box": [
+    1121,
+    1924,
+    1173,
+    1988
+   ]
+  },
+  {
+   "id": "04_missing_hole_14/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_14.jpg",
+   "board": "04",
+   "box": [
+    891,
+    1404,
+    944,
+    1475
+   ]
+  },
+  {
+   "id": "04_missing_hole_14/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_14.jpg",
+   "board": "04",
+   "box": [
+    337,
+    1142,
+    393,
+    1208
+   ]
+  },
+  {
+   "id": "04_missing_hole_15/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_15.jpg",
+   "board": "04",
+   "box": [
+    1286,
+    1541,
+    1348,
+    1597
+   ]
+  },
+  {
+   "id": "04_missing_hole_15/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_15.jpg",
+   "board": "04",
+   "box": [
+    1688,
+    1653,
+    1748,
+    1715
+   ]
+  },
+  {
+   "id": "04_missing_hole_15/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_15.jpg",
+   "board": "04",
+   "box": [
+    657,
+    957,
+    715,
+    1039
+   ]
+  },
+  {
+   "id": "04_missing_hole_16/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_16.jpg",
+   "board": "04",
+   "box": [
+    1177,
+    762,
+    1230,
+    815
+   ]
+  },
+  {
+   "id": "04_missing_hole_16/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_16.jpg",
+   "board": "04",
+   "box": [
+    1231,
+    1537,
+    1288,
+    1599
+   ]
+  },
+  {
+   "id": "04_missing_hole_16/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_16.jpg",
+   "board": "04",
+   "box": [
+    830,
+    502,
+    886,
+    566
+   ]
+  },
+  {
+   "id": "04_missing_hole_17/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_17.jpg",
+   "board": "04",
+   "box": [
+    1348,
+    1304,
+    1401,
+    1373
+   ]
+  },
+  {
+   "id": "04_missing_hole_17/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_17.jpg",
+   "board": "04",
+   "box": [
+    651,
+    1410,
+    715,
+    1468
+   ]
+  },
+  {
+   "id": "04_missing_hole_17/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_17.jpg",
+   "board": "04",
+   "box": [
+    1515,
+    1655,
+    1575,
+    1715
+   ]
+  },
+  {
+   "id": "04_missing_hole_18/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_18.jpg",
+   "board": "04",
+   "box": [
+    1342,
+    1431,
+    1401,
+    1502
+   ]
+  },
+  {
+   "id": "04_missing_hole_18/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_18.jpg",
+   "board": "04",
+   "box": [
+    882,
+    957,
+    944,
+    1028
+   ]
+  },
+  {
+   "id": "04_missing_hole_18/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_18.jpg",
+   "board": "04",
+   "box": [
+    1284,
+    1777,
+    1344,
+    1844
+   ]
+  },
+  {
+   "id": "04_missing_hole_19/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_19.jpg",
+   "board": "04",
+   "box": [
+    1288,
+    1535,
+    1341,
+    1601
+   ]
+  },
+  {
+   "id": "04_missing_hole_19/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_19.jpg",
+   "board": "04",
+   "box": [
+    1517,
+    1648,
+    1571,
+    1715
+   ]
+  },
+  {
+   "id": "04_missing_hole_19/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_19.jpg",
+   "board": "04",
+   "box": [
+    2110,
+    1591,
+    2173,
+    1650
+   ]
+  },
+  {
+   "id": "04_missing_hole_20/0",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_20.jpg",
+   "board": "04",
+   "box": [
+    1635,
+    1430,
+    1688,
+    1502
+   ]
+  },
+  {
+   "id": "04_missing_hole_20/1",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_20.jpg",
+   "board": "04",
+   "box": [
+    1053,
+    1410,
+    1106,
+    1471
+   ]
+  },
+  {
+   "id": "04_missing_hole_20/2",
+   "label": "Missing_hole",
+   "category_id": 0,
+   "image": "images/Missing_hole/04_missing_hole_20.jpg",
+   "board": "04",
+   "box": [
+    2110,
+    1471,
+    2177,
+    1537
+   ]
+  },
+  {
+   "id": "01_mouse_bite_01/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_01.jpg",
+   "board": "01",
+   "box": [
+    1518,
+    913,
+    1547,
+    958
+   ]
+  },
+  {
+   "id": "01_mouse_bite_01/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_01.jpg",
+   "board": "01",
+   "box": [
+    2020,
+    1260,
+    2046,
+    1302
+   ]
+  },
+  {
+   "id": "01_mouse_bite_01/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_01.jpg",
+   "board": "01",
+   "box": [
+    2595,
+    888,
+    2620,
+    920
+   ]
+  },
+  {
+   "id": "01_mouse_bite_02/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_02.jpg",
+   "board": "01",
+   "box": [
+    1526,
+    1165,
+    1571,
+    1209
+   ]
+  },
+  {
+   "id": "01_mouse_bite_02/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_02.jpg",
+   "board": "01",
+   "box": [
+    1985,
+    951,
+    2022,
+    988
+   ]
+  },
+  {
+   "id": "01_mouse_bite_02/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_02.jpg",
+   "board": "01",
+   "box": [
+    785,
+    1035,
+    824,
+    1073
+   ]
+  },
+  {
+   "id": "01_mouse_bite_03/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_03.jpg",
+   "board": "01",
+   "box": [
+    1019,
+    500,
+    1079,
+    558
+   ]
+  },
+  {
+   "id": "01_mouse_bite_03/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_03.jpg",
+   "board": "01",
+   "box": [
+    1264,
+    1067,
+    1301,
+    1100
+   ]
+  },
+  {
+   "id": "01_mouse_bite_03/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_03.jpg",
+   "board": "01",
+   "box": [
+    1683,
+    638,
+    1723,
+    677
+   ]
+  },
+  {
+   "id": "01_mouse_bite_04/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_04.jpg",
+   "board": "01",
+   "box": [
+    1940,
+    757,
+    1974,
+    785
+   ]
+  },
+  {
+   "id": "01_mouse_bite_04/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_04.jpg",
+   "board": "01",
+   "box": [
+    2590,
+    892,
+    2624,
+    929
+   ]
+  },
+  {
+   "id": "01_mouse_bite_04/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_04.jpg",
+   "board": "01",
+   "box": [
+    2564,
+    545,
+    2603,
+    583
+   ]
+  },
+  {
+   "id": "01_mouse_bite_05/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_05.jpg",
+   "board": "01",
+   "box": [
+    2151,
+    1155,
+    2184,
+    1191
+   ]
+  },
+  {
+   "id": "01_mouse_bite_05/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_05.jpg",
+   "board": "01",
+   "box": [
+    2164,
+    296,
+    2205,
+    331
+   ]
+  },
+  {
+   "id": "01_mouse_bite_05/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_05.jpg",
+   "board": "01",
+   "box": [
+    2201,
+    615,
+    2233,
+    654
+   ]
+  },
+  {
+   "id": "01_mouse_bite_06/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_06.jpg",
+   "board": "01",
+   "box": [
+    1198,
+    1312,
+    1244,
+    1350
+   ]
+  },
+  {
+   "id": "01_mouse_bite_06/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_06.jpg",
+   "board": "01",
+   "box": [
+    2629,
+    319,
+    2665,
+    352
+   ]
+  },
+  {
+   "id": "01_mouse_bite_06/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_06.jpg",
+   "board": "01",
+   "box": [
+    2821,
+    824,
+    2853,
+    872
+   ]
+  },
+  {
+   "id": "01_mouse_bite_07/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_07.jpg",
+   "board": "01",
+   "box": [
+    1471,
+    403,
+    1508,
+    461
+   ]
+  },
+  {
+   "id": "01_mouse_bite_07/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_07.jpg",
+   "board": "01",
+   "box": [
+    441,
+    916,
+    476,
+    947
+   ]
+  },
+  {
+   "id": "01_mouse_bite_07/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_07.jpg",
+   "board": "01",
+   "box": [
+    663,
+    1302,
+    702,
+    1343
+   ]
+  },
+  {
+   "id": "01_mouse_bite_08/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_08.jpg",
+   "board": "01",
+   "box": [
+    1018,
+    1281,
+    1058,
+    1318
+   ]
+  },
+  {
+   "id": "01_mouse_bite_08/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_08.jpg",
+   "board": "01",
+   "box": [
+    837,
+    1099,
+    874,
+    1147
+   ]
+  },
+  {
+   "id": "01_mouse_bite_09/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_09.jpg",
+   "board": "01",
+   "box": [
+    957,
+    886,
+    990,
+    916
+   ]
+  },
+  {
+   "id": "01_mouse_bite_09/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_09.jpg",
+   "board": "01",
+   "box": [
+    176,
+    1113,
+    207,
+    1144
+   ]
+  },
+  {
+   "id": "01_mouse_bite_09/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_09.jpg",
+   "board": "01",
+   "box": [
+    597,
+    803,
+    626,
+    840
+   ]
+  },
+  {
+   "id": "01_mouse_bite_10/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_10.jpg",
+   "board": "01",
+   "box": [
+    1694,
+    642,
+    1729,
+    677
+   ]
+  },
+  {
+   "id": "01_mouse_bite_10/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_10.jpg",
+   "board": "01",
+   "box": [
+    445,
+    423,
+    505,
+    464
+   ]
+  },
+  {
+   "id": "01_mouse_bite_11/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_11.jpg",
+   "board": "01",
+   "box": [
+    1199,
+    966,
+    1234,
+    1004
+   ]
+  },
+  {
+   "id": "01_mouse_bite_11/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_11.jpg",
+   "board": "01",
+   "box": [
+    2042,
+    755,
+    2073,
+    786
+   ]
+  },
+  {
+   "id": "01_mouse_bite_11/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_11.jpg",
+   "board": "01",
+   "box": [
+    1472,
+    607,
+    1507,
+    639
+   ]
+  },
+  {
+   "id": "01_mouse_bite_12/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_12.jpg",
+   "board": "01",
+   "box": [
+    2594,
+    882,
+    2625,
+    918
+   ]
+  },
+  {
+   "id": "01_mouse_bite_12/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_12.jpg",
+   "board": "01",
+   "box": [
+    2819,
+    1210,
+    2854,
+    1253
+   ]
+  },
+  {
+   "id": "01_mouse_bite_12/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_12.jpg",
+   "board": "01",
+   "box": [
+    2664,
+    318,
+    2704,
+    354
+   ]
+  },
+  {
+   "id": "01_mouse_bite_13/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_13.jpg",
+   "board": "01",
+   "box": [
+    1223,
+    1369,
+    1264,
+    1410
+   ]
+  },
+  {
+   "id": "01_mouse_bite_13/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_13.jpg",
+   "board": "01",
+   "box": [
+    1539,
+    1162,
+    1577,
+    1202
+   ]
+  },
+  {
+   "id": "01_mouse_bite_13/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_13.jpg",
+   "board": "01",
+   "box": [
+    1550,
+    1288,
+    1586,
+    1326
+   ]
+  },
+  {
+   "id": "01_mouse_bite_14/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_14.jpg",
+   "board": "01",
+   "box": [
+    731,
+    1396,
+    768,
+    1430
+   ]
+  },
+  {
+   "id": "01_mouse_bite_14/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_14.jpg",
+   "board": "01",
+   "box": [
+    444,
+    915,
+    476,
+    949
+   ]
+  },
+  {
+   "id": "01_mouse_bite_15/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_15.jpg",
+   "board": "01",
+   "box": [
+    601,
+    1053,
+    635,
+    1084
+   ]
+  },
+  {
+   "id": "01_mouse_bite_15/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_15.jpg",
+   "board": "01",
+   "box": [
+    2651,
+    558,
+    2684,
+    591
+   ]
+  },
+  {
+   "id": "01_mouse_bite_16/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_16.jpg",
+   "board": "01",
+   "box": [
+    2547,
+    318,
+    2582,
+    352
+   ]
+  },
+  {
+   "id": "01_mouse_bite_16/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_16.jpg",
+   "board": "01",
+   "box": [
+    2210,
+    1113,
+    2249,
+    1160
+   ]
+  },
+  {
+   "id": "01_mouse_bite_16/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_16.jpg",
+   "board": "01",
+   "box": [
+    2768,
+    306,
+    2795,
+    344
+   ]
+  },
+  {
+   "id": "01_mouse_bite_17/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_17.jpg",
+   "board": "01",
+   "box": [
+    2168,
+    854,
+    2200,
+    887
+   ]
+  },
+  {
+   "id": "01_mouse_bite_17/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_17.jpg",
+   "board": "01",
+   "box": [
+    1513,
+    919,
+    1545,
+    957
+   ]
+  },
+  {
+   "id": "01_mouse_bite_17/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_17.jpg",
+   "board": "01",
+   "box": [
+    2727,
+    1245,
+    2761,
+    1289
+   ]
+  },
+  {
+   "id": "01_mouse_bite_18/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_18.jpg",
+   "board": "01",
+   "box": [
+    391,
+    1395,
+    427,
+    1428
+   ]
+  },
+  {
+   "id": "01_mouse_bite_19/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_19.jpg",
+   "board": "01",
+   "box": [
+    724,
+    1222,
+    755,
+    1258
+   ]
+  },
+  {
+   "id": "01_mouse_bite_19/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_19.jpg",
+   "board": "01",
+   "box": [
+    645,
+    1286,
+    689,
+    1329
+   ]
+  },
+  {
+   "id": "01_mouse_bite_20/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_20.jpg",
+   "board": "01",
+   "box": [
+    1339,
+    1366,
+    1382,
+    1410
+   ]
+  },
+  {
+   "id": "01_mouse_bite_20/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_20.jpg",
+   "board": "01",
+   "box": [
+    995,
+    1312,
+    1040,
+    1351
+   ]
+  },
+  {
+   "id": "01_mouse_bite_20/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/01_mouse_bite_20.jpg",
+   "board": "01",
+   "box": [
+    792,
+    1296,
+    834,
+    1340
+   ]
+  },
+  {
+   "id": "04_mouse_bite_01/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_01.jpg",
+   "board": "04",
+   "box": [
+    986,
+    2115,
+    1093,
+    2195
+   ]
+  },
+  {
+   "id": "04_mouse_bite_01/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_01.jpg",
+   "board": "04",
+   "box": [
+    1895,
+    1448,
+    1979,
+    1537
+   ]
+  },
+  {
+   "id": "04_mouse_bite_01/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_01.jpg",
+   "board": "04",
+   "box": [
+    1773,
+    1139,
+    1855,
+    1190
+   ]
+  },
+  {
+   "id": "04_mouse_bite_02/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_02.jpg",
+   "board": "04",
+   "box": [
+    762,
+    1159,
+    833,
+    1201
+   ]
+  },
+  {
+   "id": "04_mouse_bite_02/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_02.jpg",
+   "board": "04",
+   "box": [
+    537,
+    1468,
+    582,
+    1531
+   ]
+  },
+  {
+   "id": "04_mouse_bite_02/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_02.jpg",
+   "board": "04",
+   "box": [
+    1533,
+    1875,
+    1619,
+    1926
+   ]
+  },
+  {
+   "id": "04_mouse_bite_03/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_03.jpg",
+   "board": "04",
+   "box": [
+    2010,
+    435,
+    2084,
+    482
+   ]
+  },
+  {
+   "id": "04_mouse_bite_03/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_03.jpg",
+   "board": "04",
+   "box": [
+    2157,
+    862,
+    2208,
+    935
+   ]
+  },
+  {
+   "id": "04_mouse_bite_03/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_03.jpg",
+   "board": "04",
+   "box": [
+    1153,
+    473,
+    1208,
+    539
+   ]
+  },
+  {
+   "id": "04_mouse_bite_04/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_04.jpg",
+   "board": "04",
+   "box": [
+    113,
+    995,
+    171,
+    1064
+   ]
+  },
+  {
+   "id": "04_mouse_bite_04/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_04.jpg",
+   "board": "04",
+   "box": [
+    853,
+    1081,
+    926,
+    1137
+   ]
+  },
+  {
+   "id": "04_mouse_bite_04/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_04.jpg",
+   "board": "04",
+   "box": [
+    262,
+    541,
+    328,
+    610
+   ]
+  },
+  {
+   "id": "04_mouse_bite_05/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_05.jpg",
+   "board": "04",
+   "box": [
+    701,
+    642,
+    762,
+    724
+   ]
+  },
+  {
+   "id": "04_mouse_bite_05/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_05.jpg",
+   "board": "04",
+   "box": [
+    1106,
+    621,
+    1170,
+    688
+   ]
+  },
+  {
+   "id": "04_mouse_bite_05/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_05.jpg",
+   "board": "04",
+   "box": [
+    1595,
+    473,
+    1648,
+    551
+   ]
+  },
+  {
+   "id": "04_mouse_bite_06/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_06.jpg",
+   "board": "04",
+   "box": [
+    397,
+    2231,
+    497,
+    2299
+   ]
+  },
+  {
+   "id": "04_mouse_bite_06/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_06.jpg",
+   "board": "04",
+   "box": [
+    2382,
+    1790,
+    2468,
+    1853
+   ]
+  },
+  {
+   "id": "04_mouse_bite_06/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_06.jpg",
+   "board": "04",
+   "box": [
+    2562,
+    1581,
+    2635,
+    1631
+   ]
+  },
+  {
+   "id": "04_mouse_bite_07/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_07.jpg",
+   "board": "04",
+   "box": [
+    1257,
+    1197,
+    1342,
+    1253
+   ]
+  },
+  {
+   "id": "04_mouse_bite_07/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_07.jpg",
+   "board": "04",
+   "box": [
+    2410,
+    1137,
+    2470,
+    1221
+   ]
+  },
+  {
+   "id": "04_mouse_bite_07/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_07.jpg",
+   "board": "04",
+   "box": [
+    751,
+    1206,
+    824,
+    1257
+   ]
+  },
+  {
+   "id": "04_mouse_bite_08/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_08.jpg",
+   "board": "04",
+   "box": [
+    1474,
+    1069,
+    1555,
+    1146
+   ]
+  },
+  {
+   "id": "04_mouse_bite_08/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_08.jpg",
+   "board": "04",
+   "box": [
+    426,
+    1357,
+    481,
+    1419
+   ]
+  },
+  {
+   "id": "04_mouse_bite_08/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_08.jpg",
+   "board": "04",
+   "box": [
+    1739,
+    811,
+    1795,
+    875
+   ]
+  },
+  {
+   "id": "04_mouse_bite_09/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_09.jpg",
+   "board": "04",
+   "box": [
+    1126,
+    1495,
+    1182,
+    1561
+   ]
+  },
+  {
+   "id": "04_mouse_bite_09/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_09.jpg",
+   "board": "04",
+   "box": [
+    1673,
+    1508,
+    1726,
+    1573
+   ]
+  },
+  {
+   "id": "04_mouse_bite_09/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_09.jpg",
+   "board": "04",
+   "box": [
+    1959,
+    1353,
+    2026,
+    1451
+   ]
+  },
+  {
+   "id": "04_mouse_bite_10/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_10.jpg",
+   "board": "04",
+   "box": [
+    1588,
+    1861,
+    1673,
+    1928
+   ]
+  },
+  {
+   "id": "04_mouse_bite_10/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_10.jpg",
+   "board": "04",
+   "box": [
+    591,
+    1386,
+    657,
+    1477
+   ]
+  },
+  {
+   "id": "04_mouse_bite_10/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_10.jpg",
+   "board": "04",
+   "box": [
+    488,
+    1601,
+    542,
+    1686
+   ]
+  },
+  {
+   "id": "04_mouse_bite_11/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_11.jpg",
+   "board": "04",
+   "box": [
+    1659,
+    271,
+    1751,
+    335
+   ]
+  },
+  {
+   "id": "04_mouse_bite_11/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_11.jpg",
+   "board": "04",
+   "box": [
+    1208,
+    1151,
+    1299,
+    1222
+   ]
+  },
+  {
+   "id": "04_mouse_bite_11/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_11.jpg",
+   "board": "04",
+   "box": [
+    2273,
+    751,
+    2353,
+    821
+   ]
+  },
+  {
+   "id": "04_mouse_bite_12/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_12.jpg",
+   "board": "04",
+   "box": [
+    2302,
+    439,
+    2393,
+    508
+   ]
+  },
+  {
+   "id": "04_mouse_bite_12/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_12.jpg",
+   "board": "04",
+   "box": [
+    473,
+    504,
+    575,
+    573
+   ]
+  },
+  {
+   "id": "04_mouse_bite_12/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_12.jpg",
+   "board": "04",
+   "box": [
+    513,
+    1015,
+    606,
+    1070
+   ]
+  },
+  {
+   "id": "04_mouse_bite_13/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_13.jpg",
+   "board": "04",
+   "box": [
+    855,
+    1237,
+    957,
+    1304
+   ]
+  },
+  {
+   "id": "04_mouse_bite_13/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_13.jpg",
+   "board": "04",
+   "box": [
+    2084,
+    1093,
+    2177,
+    1166
+   ]
+  },
+  {
+   "id": "04_mouse_bite_13/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_13.jpg",
+   "board": "04",
+   "box": [
+    871,
+    1801,
+    930,
+    1881
+   ]
+  },
+  {
+   "id": "04_mouse_bite_14/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_14.jpg",
+   "board": "04",
+   "box": [
+    748,
+    1126,
+    824,
+    1177
+   ]
+  },
+  {
+   "id": "04_mouse_bite_14/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_14.jpg",
+   "board": "04",
+   "box": [
+    2222,
+    1208,
+    2282,
+    1297
+   ]
+  },
+  {
+   "id": "04_mouse_bite_14/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_14.jpg",
+   "board": "04",
+   "box": [
+    1973,
+    1735,
+    2053,
+    1802
+   ]
+  },
+  {
+   "id": "04_mouse_bite_15/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_15.jpg",
+   "board": "04",
+   "box": [
+    1666,
+    1202,
+    1751,
+    1259
+   ]
+  },
+  {
+   "id": "04_mouse_bite_15/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_15.jpg",
+   "board": "04",
+   "box": [
+    593,
+    1335,
+    651,
+    1415
+   ]
+  },
+  {
+   "id": "04_mouse_bite_15/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_15.jpg",
+   "board": "04",
+   "box": [
+    1571,
+    715,
+    1646,
+    795
+   ]
+  },
+  {
+   "id": "04_mouse_bite_16/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_16.jpg",
+   "board": "04",
+   "box": [
+    1795,
+    806,
+    1841,
+    875
+   ]
+  },
+  {
+   "id": "04_mouse_bite_16/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_16.jpg",
+   "board": "04",
+   "box": [
+    2048,
+    655,
+    2117,
+    733
+   ]
+  },
+  {
+   "id": "04_mouse_bite_16/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_16.jpg",
+   "board": "04",
+   "box": [
+    1771,
+    1259,
+    1861,
+    1313
+   ]
+  },
+  {
+   "id": "04_mouse_bite_17/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_17.jpg",
+   "board": "04",
+   "box": [
+    1219,
+    264,
+    1275,
+    348
+   ]
+  },
+  {
+   "id": "04_mouse_bite_17/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_17.jpg",
+   "board": "04",
+   "box": [
+    891,
+    1021,
+    950,
+    1099
+   ]
+  },
+  {
+   "id": "04_mouse_bite_17/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_17.jpg",
+   "board": "04",
+   "box": [
+    1993,
+    961,
+    2082,
+    1024
+   ]
+  },
+  {
+   "id": "04_mouse_bite_18/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_18.jpg",
+   "board": "04",
+   "box": [
+    1810,
+    1088,
+    1891,
+    1150
+   ]
+  },
+  {
+   "id": "04_mouse_bite_18/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_18.jpg",
+   "board": "04",
+   "box": [
+    593,
+    1368,
+    655,
+    1448
+   ]
+  },
+  {
+   "id": "04_mouse_bite_18/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_18.jpg",
+   "board": "04",
+   "box": [
+    1626,
+    890,
+    1681,
+    957
+   ]
+  },
+  {
+   "id": "04_mouse_bite_19/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_19.jpg",
+   "board": "04",
+   "box": [
+    1175,
+    1626,
+    1237,
+    1704
+   ]
+  },
+  {
+   "id": "04_mouse_bite_19/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_19.jpg",
+   "board": "04",
+   "box": [
+    2228,
+    1381,
+    2281,
+    1457
+   ]
+  },
+  {
+   "id": "04_mouse_bite_19/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_19.jpg",
+   "board": "04",
+   "box": [
+    433,
+    1350,
+    491,
+    1428
+   ]
+  },
+  {
+   "id": "04_mouse_bite_20/0",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_20.jpg",
+   "board": "04",
+   "box": [
+    401,
+    508,
+    479,
+    575
+   ]
+  },
+  {
+   "id": "04_mouse_bite_20/1",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_20.jpg",
+   "board": "04",
+   "box": [
+    2024,
+    430,
+    2101,
+    481
+   ]
+  },
+  {
+   "id": "04_mouse_bite_20/2",
+   "label": "Mouse_bite",
+   "category_id": 1,
+   "image": "images/Mouse_bite/04_mouse_bite_20.jpg",
+   "board": "04",
+   "box": [
+    1275,
+    1621,
+    1333,
+    1706
+   ]
+  },
+  {
+   "id": "01_open_circuit_01/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_01.jpg",
+   "board": "01",
+   "box": [
+    1539,
+    1149,
+    1584,
+    1205
+   ]
+  },
+  {
+   "id": "01_open_circuit_01/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_01.jpg",
+   "board": "01",
+   "box": [
+    1071,
+    1342,
+    1113,
+    1380
+   ]
+  },
+  {
+   "id": "01_open_circuit_01/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_01.jpg",
+   "board": "01",
+   "box": [
+    1684,
+    467,
+    1727,
+    503
+   ]
+  },
+  {
+   "id": "01_open_circuit_02/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_02.jpg",
+   "board": "01",
+   "box": [
+    1502,
+    1349,
+    1539,
+    1378
+   ]
+  },
+  {
+   "id": "01_open_circuit_02/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_02.jpg",
+   "board": "01",
+   "box": [
+    1653,
+    1196,
+    1684,
+    1229
+   ]
+  },
+  {
+   "id": "01_open_circuit_02/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_02.jpg",
+   "board": "01",
+   "box": [
+    775,
+    1127,
+    808,
+    1165
+   ]
+  },
+  {
+   "id": "01_open_circuit_03/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_03.jpg",
+   "board": "01",
+   "box": [
+    1419,
+    1132,
+    1460,
+    1172
+   ]
+  },
+  {
+   "id": "01_open_circuit_03/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_03.jpg",
+   "board": "01",
+   "box": [
+    599,
+    909,
+    633,
+    942
+   ]
+  },
+  {
+   "id": "01_open_circuit_03/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_03.jpg",
+   "board": "01",
+   "box": [
+    1688,
+    350,
+    1723,
+    390
+   ]
+  },
+  {
+   "id": "01_open_circuit_04/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_04.jpg",
+   "board": "01",
+   "box": [
+    2177,
+    1090,
+    2218,
+    1134
+   ]
+  },
+  {
+   "id": "01_open_circuit_04/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_04.jpg",
+   "board": "01",
+   "box": [
+    2155,
+    296,
+    2192,
+    331
+   ]
+  },
+  {
+   "id": "01_open_circuit_04/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_04.jpg",
+   "board": "01",
+   "box": [
+    728,
+    1278,
+    762,
+    1315
+   ]
+  },
+  {
+   "id": "01_open_circuit_05/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_05.jpg",
+   "board": "01",
+   "box": [
+    2204,
+    604,
+    2236,
+    641
+   ]
+  },
+  {
+   "id": "01_open_circuit_05/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_05.jpg",
+   "board": "01",
+   "box": [
+    1015,
+    1312,
+    1050,
+    1349
+   ]
+  },
+  {
+   "id": "01_open_circuit_05/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_05.jpg",
+   "board": "01",
+   "box": [
+    2713,
+    946,
+    2746,
+    979
+   ]
+  },
+  {
+   "id": "01_open_circuit_06/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_06.jpg",
+   "board": "01",
+   "box": [
+    1513,
+    927,
+    1545,
+    961
+   ]
+  },
+  {
+   "id": "01_open_circuit_06/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_06.jpg",
+   "board": "01",
+   "box": [
+    714,
+    1113,
+    740,
+    1141
+   ]
+  },
+  {
+   "id": "01_open_circuit_06/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_06.jpg",
+   "board": "01",
+   "box": [
+    175,
+    1166,
+    207,
+    1209
+   ]
+  },
+  {
+   "id": "01_open_circuit_07/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_07.jpg",
+   "board": "01",
+   "box": [
+    2192,
+    296,
+    2232,
+    332
+   ]
+  },
+  {
+   "id": "01_open_circuit_07/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_07.jpg",
+   "board": "01",
+   "box": [
+    2710,
+    942,
+    2743,
+    977
+   ]
+  },
+  {
+   "id": "01_open_circuit_07/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_07.jpg",
+   "board": "01",
+   "box": [
+    2555,
+    544,
+    2590,
+    577
+   ]
+  },
+  {
+   "id": "01_open_circuit_08/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_08.jpg",
+   "board": "01",
+   "box": [
+    1982,
+    989,
+    2023,
+    1031
+   ]
+  },
+  {
+   "id": "01_open_circuit_08/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_08.jpg",
+   "board": "01",
+   "box": [
+    1674,
+    635,
+    1719,
+    676
+   ]
+  },
+  {
+   "id": "01_open_circuit_08/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_08.jpg",
+   "board": "01",
+   "box": [
+    714,
+    742,
+    747,
+    773
+   ]
+  },
+  {
+   "id": "01_open_circuit_09/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_09.jpg",
+   "board": "01",
+   "box": [
+    483,
+    963,
+    515,
+    1002
+   ]
+  },
+  {
+   "id": "01_open_circuit_09/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_09.jpg",
+   "board": "01",
+   "box": [
+    2480,
+    286,
+    2514,
+    321
+   ]
+  },
+  {
+   "id": "01_open_circuit_09/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_09.jpg",
+   "board": "01",
+   "box": [
+    2695,
+    1231,
+    2723,
+    1261
+   ]
+  },
+  {
+   "id": "01_open_circuit_10/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_10.jpg",
+   "board": "01",
+   "box": [
+    1412,
+    1141,
+    1456,
+    1182
+   ]
+  },
+  {
+   "id": "01_open_circuit_10/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_10.jpg",
+   "board": "01",
+   "box": [
+    1694,
+    239,
+    1721,
+    273
+   ]
+  },
+  {
+   "id": "01_open_circuit_10/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_10.jpg",
+   "board": "01",
+   "box": [
+    1207,
+    974,
+    1232,
+    999
+   ]
+  },
+  {
+   "id": "01_open_circuit_11/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_11.jpg",
+   "board": "01",
+   "box": [
+    2620,
+    524,
+    2651,
+    552
+   ]
+  },
+  {
+   "id": "01_open_circuit_11/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_11.jpg",
+   "board": "01",
+   "box": [
+    1684,
+    1376,
+    1713,
+    1409
+   ]
+  },
+  {
+   "id": "01_open_circuit_11/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_11.jpg",
+   "board": "01",
+   "box": [
+    2548,
+    575,
+    2596,
+    610
+   ]
+  },
+  {
+   "id": "01_open_circuit_12/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_12.jpg",
+   "board": "01",
+   "box": [
+    2716,
+    946,
+    2743,
+    975
+   ]
+  },
+  {
+   "id": "01_open_circuit_12/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_12.jpg",
+   "board": "01",
+   "box": [
+    2714,
+    1178,
+    2740,
+    1204
+   ]
+  },
+  {
+   "id": "01_open_circuit_12/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_12.jpg",
+   "board": "01",
+   "box": [
+    1706,
+    587,
+    1732,
+    613
+   ]
+  },
+  {
+   "id": "01_open_circuit_13/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_13.jpg",
+   "board": "01",
+   "box": [
+    580,
+    1083,
+    605,
+    1110
+   ]
+  },
+  {
+   "id": "01_open_circuit_13/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_13.jpg",
+   "board": "01",
+   "box": [
+    443,
+    904,
+    473,
+    935
+   ]
+  },
+  {
+   "id": "01_open_circuit_13/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_13.jpg",
+   "board": "01",
+   "box": [
+    1330,
+    792,
+    1361,
+    822
+   ]
+  },
+  {
+   "id": "01_open_circuit_14/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_14.jpg",
+   "board": "01",
+   "box": [
+    1120,
+    1314,
+    1180,
+    1351
+   ]
+  },
+  {
+   "id": "01_open_circuit_14/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_14.jpg",
+   "board": "01",
+   "box": [
+    2829,
+    826,
+    2853,
+    863
+   ]
+  },
+  {
+   "id": "01_open_circuit_14/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_14.jpg",
+   "board": "01",
+   "box": [
+    2029,
+    758,
+    2061,
+    785
+   ]
+  },
+  {
+   "id": "01_open_circuit_15/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_15.jpg",
+   "board": "01",
+   "box": [
+    729,
+    1278,
+    758,
+    1313
+   ]
+  },
+  {
+   "id": "01_open_circuit_15/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_15.jpg",
+   "board": "01",
+   "box": [
+    474,
+    1048,
+    518,
+    1082
+   ]
+  },
+  {
+   "id": "01_open_circuit_15/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_15.jpg",
+   "board": "01",
+   "box": [
+    177,
+    1124,
+    206,
+    1155
+   ]
+  },
+  {
+   "id": "01_open_circuit_16/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_16.jpg",
+   "board": "01",
+   "box": [
+    1835,
+    817,
+    1864,
+    843
+   ]
+  },
+  {
+   "id": "01_open_circuit_16/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_16.jpg",
+   "board": "01",
+   "box": [
+    1514,
+    884,
+    1544,
+    917
+   ]
+  },
+  {
+   "id": "01_open_circuit_17/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_17.jpg",
+   "board": "01",
+   "box": [
+    2594,
+    722,
+    2626,
+    750
+   ]
+  },
+  {
+   "id": "01_open_circuit_17/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_17.jpg",
+   "board": "01",
+   "box": [
+    2425,
+    1114,
+    2454,
+    1149
+   ]
+  },
+  {
+   "id": "01_open_circuit_17/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_17.jpg",
+   "board": "01",
+   "box": [
+    2138,
+    874,
+    2165,
+    901
+   ]
+  },
+  {
+   "id": "01_open_circuit_18/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_18.jpg",
+   "board": "01",
+   "box": [
+    627,
+    1273,
+    667,
+    1310
+   ]
+  },
+  {
+   "id": "01_open_circuit_18/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_18.jpg",
+   "board": "01",
+   "box": [
+    314,
+    1397,
+    350,
+    1427
+   ]
+  },
+  {
+   "id": "01_open_circuit_18/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_18.jpg",
+   "board": "01",
+   "box": [
+    1250,
+    1153,
+    1302,
+    1188
+   ]
+  },
+  {
+   "id": "01_open_circuit_19/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_19.jpg",
+   "board": "01",
+   "box": [
+    1684,
+    354,
+    1723,
+    385
+   ]
+  },
+  {
+   "id": "01_open_circuit_19/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_19.jpg",
+   "board": "01",
+   "box": [
+    713,
+    1000,
+    738,
+    1027
+   ]
+  },
+  {
+   "id": "01_open_circuit_19/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_19.jpg",
+   "board": "01",
+   "box": [
+    2432,
+    1173,
+    2462,
+    1203
+   ]
+  },
+  {
+   "id": "01_open_circuit_20/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_20.jpg",
+   "board": "01",
+   "box": [
+    2142,
+    1160,
+    2179,
+    1190
+   ]
+  },
+  {
+   "id": "01_open_circuit_20/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_20.jpg",
+   "board": "01",
+   "box": [
+    2495,
+    1412,
+    2536,
+    1442
+   ]
+  },
+  {
+   "id": "01_open_circuit_20/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/01_open_circuit_20.jpg",
+   "board": "01",
+   "box": [
+    1988,
+    1237,
+    2018,
+    1278
+   ]
+  },
+  {
+   "id": "04_open_circuit_01/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_01.jpg",
+   "board": "04",
+   "box": [
+    434,
+    2177,
+    491,
+    2244
+   ]
+  },
+  {
+   "id": "04_open_circuit_01/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_01.jpg",
+   "board": "04",
+   "box": [
+    440,
+    1374,
+    498,
+    1427
+   ]
+  },
+  {
+   "id": "04_open_circuit_01/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_01.jpg",
+   "board": "04",
+   "box": [
+    596,
+    1213,
+    677,
+    1281
+   ]
+  },
+  {
+   "id": "04_open_circuit_02/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_02.jpg",
+   "board": "04",
+   "box": [
+    466,
+    2235,
+    546,
+    2313
+   ]
+  },
+  {
+   "id": "04_open_circuit_02/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_02.jpg",
+   "board": "04",
+   "box": [
+    421,
+    1722,
+    502,
+    1779
+   ]
+  },
+  {
+   "id": "04_open_circuit_02/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_02.jpg",
+   "board": "04",
+   "box": [
+    128,
+    1228,
+    197,
+    1306
+   ]
+  },
+  {
+   "id": "04_open_circuit_03/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_03.jpg",
+   "board": "04",
+   "box": [
+    941,
+    850,
+    1002,
+    911
+   ]
+  },
+  {
+   "id": "04_open_circuit_03/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_03.jpg",
+   "board": "04",
+   "box": [
+    1199,
+    1208,
+    1262,
+    1262
+   ]
+  },
+  {
+   "id": "04_open_circuit_03/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_03.jpg",
+   "board": "04",
+   "box": [
+    1879,
+    431,
+    1944,
+    510
+   ]
+  },
+  {
+   "id": "04_open_circuit_04/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_04.jpg",
+   "board": "04",
+   "box": [
+    395,
+    506,
+    455,
+    564
+   ]
+  },
+  {
+   "id": "04_open_circuit_04/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_04.jpg",
+   "board": "04",
+   "box": [
+    1797,
+    815,
+    1866,
+    859
+   ]
+  },
+  {
+   "id": "04_open_circuit_04/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_04.jpg",
+   "board": "04",
+   "box": [
+    1224,
+    301,
+    1297,
+    355
+   ]
+  },
+  {
+   "id": "04_open_circuit_05/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_05.jpg",
+   "board": "04",
+   "box": [
+    126,
+    621,
+    197,
+    677
+   ]
+  },
+  {
+   "id": "04_open_circuit_05/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_05.jpg",
+   "board": "04",
+   "box": [
+    2384,
+    1608,
+    2451,
+    1668
+   ]
+  },
+  {
+   "id": "04_open_circuit_05/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_05.jpg",
+   "board": "04",
+   "box": [
+    1901,
+    981,
+    1984,
+    1055
+   ]
+  },
+  {
+   "id": "04_open_circuit_06/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_06.jpg",
+   "board": "04",
+   "box": [
+    999,
+    1531,
+    1061,
+    1588
+   ]
+  },
+  {
+   "id": "04_open_circuit_06/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_06.jpg",
+   "board": "04",
+   "box": [
+    591,
+    1842,
+    646,
+    1889
+   ]
+  },
+  {
+   "id": "04_open_circuit_06/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_06.jpg",
+   "board": "04",
+   "box": [
+    1785,
+    1257,
+    1841,
+    1308
+   ]
+  },
+  {
+   "id": "04_open_circuit_07/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_07.jpg",
+   "board": "04",
+   "box": [
+    1002,
+    1030,
+    1055,
+    1075
+   ]
+  },
+  {
+   "id": "04_open_circuit_07/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_07.jpg",
+   "board": "04",
+   "box": [
+    386,
+    1111,
+    459,
+    1170
+   ]
+  },
+  {
+   "id": "04_open_circuit_07/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_07.jpg",
+   "board": "04",
+   "box": [
+    1791,
+    1255,
+    1853,
+    1310
+   ]
+  },
+  {
+   "id": "04_open_circuit_08/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_08.jpg",
+   "board": "04",
+   "box": [
+    886,
+    1028,
+    944,
+    1071
+   ]
+  },
+  {
+   "id": "04_open_circuit_08/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_08.jpg",
+   "board": "04",
+   "box": [
+    495,
+    1299,
+    553,
+    1351
+   ]
+  },
+  {
+   "id": "04_open_circuit_08/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_08.jpg",
+   "board": "04",
+   "box": [
+    1742,
+    906,
+    1797,
+    962
+   ]
+  },
+  {
+   "id": "04_open_circuit_09/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_09.jpg",
+   "board": "04",
+   "box": [
+    1113,
+    286,
+    1173,
+    348
+   ]
+  },
+  {
+   "id": "04_open_circuit_09/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_09.jpg",
+   "board": "04",
+   "box": [
+    2331,
+    433,
+    2401,
+    501
+   ]
+  },
+  {
+   "id": "04_open_circuit_09/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_09.jpg",
+   "board": "04",
+   "box": [
+    2128,
+    877,
+    2208,
+    937
+   ]
+  },
+  {
+   "id": "04_open_circuit_10/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_10.jpg",
+   "board": "04",
+   "box": [
+    1171,
+    1708,
+    1241,
+    1753
+   ]
+  },
+  {
+   "id": "04_open_circuit_10/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_10.jpg",
+   "board": "04",
+   "box": [
+    2181,
+    1466,
+    2235,
+    1535
+   ]
+  },
+  {
+   "id": "04_open_circuit_10/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_10.jpg",
+   "board": "04",
+   "box": [
+    2582,
+    1584,
+    2657,
+    1659
+   ]
+  },
+  {
+   "id": "04_open_circuit_11/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_11.jpg",
+   "board": "04",
+   "box": [
+    2231,
+    1601,
+    2310,
+    1653
+   ]
+  },
+  {
+   "id": "04_open_circuit_11/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_11.jpg",
+   "board": "04",
+   "box": [
+    2473,
+    1775,
+    2541,
+    1850
+   ]
+  },
+  {
+   "id": "04_open_circuit_11/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_11.jpg",
+   "board": "04",
+   "box": [
+    2390,
+    1155,
+    2451,
+    1226
+   ]
+  },
+  {
+   "id": "04_open_circuit_12/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_12.jpg",
+   "board": "04",
+   "box": [
+    2135,
+    855,
+    2202,
+    911
+   ]
+  },
+  {
+   "id": "04_open_circuit_12/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_12.jpg",
+   "board": "04",
+   "box": [
+    908,
+    1110,
+    977,
+    1161
+   ]
+  },
+  {
+   "id": "04_open_circuit_12/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_12.jpg",
+   "board": "04",
+   "box": [
+    1162,
+    1201,
+    1228,
+    1264
+   ]
+  },
+  {
+   "id": "04_open_circuit_13/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_13.jpg",
+   "board": "04",
+   "box": [
+    539,
+    1453,
+    602,
+    1511
+   ]
+  },
+  {
+   "id": "04_open_circuit_13/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_13.jpg",
+   "board": "04",
+   "box": [
+    1706,
+    279,
+    1786,
+    348
+   ]
+  },
+  {
+   "id": "04_open_circuit_13/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_13.jpg",
+   "board": "04",
+   "box": [
+    559,
+    504,
+    621,
+    566
+   ]
+  },
+  {
+   "id": "04_open_circuit_14/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_14.jpg",
+   "board": "04",
+   "box": [
+    550,
+    1021,
+    611,
+    1079
+   ]
+  },
+  {
+   "id": "04_open_circuit_14/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_14.jpg",
+   "board": "04",
+   "box": [
+    1777,
+    1206,
+    1842,
+    1266
+   ]
+  },
+  {
+   "id": "04_open_circuit_14/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_14.jpg",
+   "board": "04",
+   "box": [
+    886,
+    1021,
+    942,
+    1070
+   ]
+  },
+  {
+   "id": "04_open_circuit_15/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_15.jpg",
+   "board": "04",
+   "box": [
+    1891,
+    1402,
+    1955,
+    1457
+   ]
+  },
+  {
+   "id": "04_open_circuit_15/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_15.jpg",
+   "board": "04",
+   "box": [
+    2382,
+    1393,
+    2457,
+    1457
+   ]
+  },
+  {
+   "id": "04_open_circuit_15/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_15.jpg",
+   "board": "04",
+   "box": [
+    1875,
+    521,
+    1950,
+    582
+   ]
+  },
+  {
+   "id": "04_open_circuit_16/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_16.jpg",
+   "board": "04",
+   "box": [
+    1718,
+    813,
+    1784,
+    871
+   ]
+  },
+  {
+   "id": "04_open_circuit_16/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_16.jpg",
+   "board": "04",
+   "box": [
+    1964,
+    1239,
+    2041,
+    1299
+   ]
+  },
+  {
+   "id": "04_open_circuit_16/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_16.jpg",
+   "board": "04",
+   "box": [
+    1795,
+    958,
+    1849,
+    1035
+   ]
+  },
+  {
+   "id": "04_open_circuit_17/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_17.jpg",
+   "board": "04",
+   "box": [
+    488,
+    1304,
+    551,
+    1364
+   ]
+  },
+  {
+   "id": "04_open_circuit_17/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_17.jpg",
+   "board": "04",
+   "box": [
+    119,
+    1210,
+    204,
+    1273
+   ]
+  },
+  {
+   "id": "04_open_circuit_17/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_17.jpg",
+   "board": "04",
+   "box": [
+    239,
+    1797,
+    291,
+    1859
+   ]
+  },
+  {
+   "id": "04_open_circuit_18/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_18.jpg",
+   "board": "04",
+   "box": [
+    493,
+    501,
+    551,
+    568
+   ]
+  },
+  {
+   "id": "04_open_circuit_18/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_18.jpg",
+   "board": "04",
+   "box": [
+    397,
+    1077,
+    457,
+    1141
+   ]
+  },
+  {
+   "id": "04_open_circuit_19/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_19.jpg",
+   "board": "04",
+   "box": [
+    1562,
+    1206,
+    1624,
+    1259
+   ]
+  },
+  {
+   "id": "04_open_circuit_19/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_19.jpg",
+   "board": "04",
+   "box": [
+    1850,
+    1764,
+    1927,
+    1821
+   ]
+  },
+  {
+   "id": "04_open_circuit_19/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_19.jpg",
+   "board": "04",
+   "box": [
+    908,
+    1253,
+    968,
+    1302
+   ]
+  },
+  {
+   "id": "04_open_circuit_20/0",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_20.jpg",
+   "board": "04",
+   "box": [
+    842,
+    1079,
+    908,
+    1133
+   ]
+  },
+  {
+   "id": "04_open_circuit_20/1",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_20.jpg",
+   "board": "04",
+   "box": [
+    1886,
+    1377,
+    1962,
+    1442
+   ]
+  },
+  {
+   "id": "04_open_circuit_20/2",
+   "label": "Open_circuit",
+   "category_id": 2,
+   "image": "images/Open_circuit/04_open_circuit_20.jpg",
+   "board": "04",
+   "box": [
+    1797,
+    817,
+    1866,
+    859
+   ]
+  },
+  {
+   "id": "01_short_01/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_01.jpg",
+   "board": "01",
+   "box": [
+    763,
+    1136,
+    828,
+    1201
+   ]
+  },
+  {
+   "id": "01_short_01/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_01.jpg",
+   "board": "01",
+   "box": [
+    538,
+    936,
+    608,
+    998
+   ]
+  },
+  {
+   "id": "01_short_01/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_01.jpg",
+   "board": "01",
+   "box": [
+    2300,
+    1101,
+    2355,
+    1143
+   ]
+  },
+  {
+   "id": "01_short_02/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_02.jpg",
+   "board": "01",
+   "box": [
+    1010,
+    1371,
+    1065,
+    1418
+   ]
+  },
+  {
+   "id": "01_short_02/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_02.jpg",
+   "board": "01",
+   "box": [
+    2560,
+    556,
+    2618,
+    596
+   ]
+  },
+  {
+   "id": "01_short_02/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_02.jpg",
+   "board": "01",
+   "box": [
+    1500,
+    1326,
+    1558,
+    1373
+   ]
+  },
+  {
+   "id": "01_short_03/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_03.jpg",
+   "board": "01",
+   "box": [
+    787,
+    1206,
+    841,
+    1263
+   ]
+  },
+  {
+   "id": "01_short_03/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_03.jpg",
+   "board": "01",
+   "box": [
+    1003,
+    1318,
+    1063,
+    1369
+   ]
+  },
+  {
+   "id": "01_short_03/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_03.jpg",
+   "board": "01",
+   "box": [
+    1318,
+    1263,
+    1379,
+    1318
+   ]
+  },
+  {
+   "id": "01_short_04/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_04.jpg",
+   "board": "01",
+   "box": [
+    1984,
+    1227,
+    2057,
+    1287
+   ]
+  },
+  {
+   "id": "01_short_04/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_04.jpg",
+   "board": "01",
+   "box": [
+    2205,
+    1135,
+    2281,
+    1218
+   ]
+  },
+  {
+   "id": "01_short_04/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_04.jpg",
+   "board": "01",
+   "box": [
+    2342,
+    1161,
+    2411,
+    1226
+   ]
+  },
+  {
+   "id": "01_short_05/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_05.jpg",
+   "board": "01",
+   "box": [
+    1726,
+    1376,
+    1794,
+    1436
+   ]
+  },
+  {
+   "id": "01_short_05/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_05.jpg",
+   "board": "01",
+   "box": [
+    942,
+    890,
+    999,
+    938
+   ]
+  },
+  {
+   "id": "01_short_05/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_05.jpg",
+   "board": "01",
+   "box": [
+    559,
+    1053,
+    620,
+    1112
+   ]
+  },
+  {
+   "id": "01_short_06/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_06.jpg",
+   "board": "01",
+   "box": [
+    754,
+    1336,
+    823,
+    1402
+   ]
+  },
+  {
+   "id": "01_short_06/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_06.jpg",
+   "board": "01",
+   "box": [
+    2065,
+    1376,
+    2136,
+    1445
+   ]
+  },
+  {
+   "id": "01_short_06/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_06.jpg",
+   "board": "01",
+   "box": [
+    445,
+    923,
+    517,
+    991
+   ]
+  },
+  {
+   "id": "01_short_07/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_07.jpg",
+   "board": "01",
+   "box": [
+    705,
+    1114,
+    771,
+    1169
+   ]
+  },
+  {
+   "id": "01_short_07/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_07.jpg",
+   "board": "01",
+   "box": [
+    1645,
+    524,
+    1744,
+    617
+   ]
+  },
+  {
+   "id": "01_short_07/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_07.jpg",
+   "board": "01",
+   "box": [
+    1599,
+    1227,
+    1688,
+    1312
+   ]
+  },
+  {
+   "id": "01_short_08/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_08.jpg",
+   "board": "01",
+   "box": [
+    935,
+    1251,
+    994,
+    1315
+   ]
+  },
+  {
+   "id": "01_short_08/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_08.jpg",
+   "board": "01",
+   "box": [
+    2353,
+    1166,
+    2421,
+    1233
+   ]
+  },
+  {
+   "id": "01_short_08/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_08.jpg",
+   "board": "01",
+   "box": [
+    2666,
+    1111,
+    2771,
+    1209
+   ]
+  },
+  {
+   "id": "01_short_09/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_09.jpg",
+   "board": "01",
+   "box": [
+    921,
+    1254,
+    997,
+    1318
+   ]
+  },
+  {
+   "id": "01_short_09/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_09.jpg",
+   "board": "01",
+   "box": [
+    803,
+    1373,
+    865,
+    1432
+   ]
+  },
+  {
+   "id": "01_short_09/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_09.jpg",
+   "board": "01",
+   "box": [
+    2348,
+    1158,
+    2414,
+    1227
+   ]
+  },
+  {
+   "id": "01_short_09/3",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_09.jpg",
+   "board": "01",
+   "box": [
+    2675,
+    1109,
+    2765,
+    1209
+   ]
+  },
+  {
+   "id": "01_short_09/4",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_09.jpg",
+   "board": "01",
+   "box": [
+    488,
+    944,
+    553,
+    1003
+   ]
+  },
+  {
+   "id": "01_short_09/5",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_09.jpg",
+   "board": "01",
+   "box": [
+    594,
+    912,
+    644,
+    964
+   ]
+  },
+  {
+   "id": "01_short_10/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_10.jpg",
+   "board": "01",
+   "box": [
+    542,
+    914,
+    600,
+    966
+   ]
+  },
+  {
+   "id": "01_short_10/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_10.jpg",
+   "board": "01",
+   "box": [
+    784,
+    1200,
+    841,
+    1260
+   ]
+  },
+  {
+   "id": "01_short_10/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_10.jpg",
+   "board": "01",
+   "box": [
+    620,
+    885,
+    656,
+    932
+   ]
+  },
+  {
+   "id": "01_short_11/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_11.jpg",
+   "board": "01",
+   "box": [
+    1105,
+    1253,
+    1166,
+    1321
+   ]
+  },
+  {
+   "id": "01_short_11/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_11.jpg",
+   "board": "01",
+   "box": [
+    2121,
+    927,
+    2206,
+    1026
+   ]
+  },
+  {
+   "id": "01_short_11/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_11.jpg",
+   "board": "01",
+   "box": [
+    2678,
+    1064,
+    2762,
+    1148
+   ]
+  },
+  {
+   "id": "01_short_11/3",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_11.jpg",
+   "board": "01",
+   "box": [
+    615,
+    882,
+    659,
+    930
+   ]
+  },
+  {
+   "id": "01_short_12/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_12.jpg",
+   "board": "01",
+   "box": [
+    747,
+    1370,
+    802,
+    1433
+   ]
+  },
+  {
+   "id": "01_short_12/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_12.jpg",
+   "board": "01",
+   "box": [
+    1496,
+    1321,
+    1547,
+    1382
+   ]
+  },
+  {
+   "id": "01_short_12/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_12.jpg",
+   "board": "01",
+   "box": [
+    603,
+    879,
+    656,
+    933
+   ]
+  },
+  {
+   "id": "01_short_12/3",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_12.jpg",
+   "board": "01",
+   "box": [
+    1979,
+    1170,
+    2048,
+    1227
+   ]
+  },
+  {
+   "id": "01_short_13/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_13.jpg",
+   "board": "01",
+   "box": [
+    2062,
+    1373,
+    2136,
+    1442
+   ]
+  },
+  {
+   "id": "01_short_13/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_13.jpg",
+   "board": "01",
+   "box": [
+    2681,
+    1160,
+    2765,
+    1273
+   ]
+  },
+  {
+   "id": "01_short_13/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_13.jpg",
+   "board": "01",
+   "box": [
+    609,
+    878,
+    657,
+    932
+   ]
+  },
+  {
+   "id": "01_short_14/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_14.jpg",
+   "board": "01",
+   "box": [
+    541,
+    936,
+    593,
+    999
+   ]
+  },
+  {
+   "id": "01_short_14/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_14.jpg",
+   "board": "01",
+   "box": [
+    612,
+    873,
+    659,
+    932
+   ]
+  },
+  {
+   "id": "01_short_14/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_14.jpg",
+   "board": "01",
+   "box": [
+    2253,
+    1281,
+    2327,
+    1348
+   ]
+  },
+  {
+   "id": "01_short_14/3",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_14.jpg",
+   "board": "01",
+   "box": [
+    2406,
+    1173,
+    2491,
+    1258
+   ]
+  },
+  {
+   "id": "01_short_15/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_15.jpg",
+   "board": "01",
+   "box": [
+    697,
+    1112,
+    738,
+    1166
+   ]
+  },
+  {
+   "id": "01_short_15/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_15.jpg",
+   "board": "01",
+   "box": [
+    1627,
+    1227,
+    1696,
+    1296
+   ]
+  },
+  {
+   "id": "01_short_15/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_15.jpg",
+   "board": "01",
+   "box": [
+    608,
+    879,
+    659,
+    932
+   ]
+  },
+  {
+   "id": "01_short_15/3",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_15.jpg",
+   "board": "01",
+   "box": [
+    445,
+    938,
+    500,
+    985
+   ]
+  },
+  {
+   "id": "01_short_16/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_16.jpg",
+   "board": "01",
+   "box": [
+    1633,
+    463,
+    1724,
+    564
+   ]
+  },
+  {
+   "id": "01_short_16/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_16.jpg",
+   "board": "01",
+   "box": [
+    2675,
+    1057,
+    2744,
+    1151
+   ]
+  },
+  {
+   "id": "01_short_16/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_16.jpg",
+   "board": "01",
+   "box": [
+    2144,
+    693,
+    2200,
+    775
+   ]
+  },
+  {
+   "id": "01_short_16/3",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_16.jpg",
+   "board": "01",
+   "box": [
+    617,
+    884,
+    659,
+    933
+   ]
+  },
+  {
+   "id": "01_short_17/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_17.jpg",
+   "board": "01",
+   "box": [
+    541,
+    903,
+    597,
+    966
+   ]
+  },
+  {
+   "id": "01_short_17/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_17.jpg",
+   "board": "01",
+   "box": [
+    559,
+    1051,
+    602,
+    1109
+   ]
+  },
+  {
+   "id": "01_short_17/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_17.jpg",
+   "board": "01",
+   "box": [
+    1138,
+    1347,
+    1191,
+    1409
+   ]
+  },
+  {
+   "id": "01_short_17/3",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_17.jpg",
+   "board": "01",
+   "box": [
+    615,
+    887,
+    657,
+    929
+   ]
+  },
+  {
+   "id": "01_short_18/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_18.jpg",
+   "board": "01",
+   "box": [
+    805,
+    1166,
+    871,
+    1223
+   ]
+  },
+  {
+   "id": "01_short_18/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_18.jpg",
+   "board": "01",
+   "box": [
+    817,
+    1318,
+    875,
+    1372
+   ]
+  },
+  {
+   "id": "01_short_18/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_18.jpg",
+   "board": "01",
+   "box": [
+    1987,
+    1205,
+    2059,
+    1263
+   ]
+  },
+  {
+   "id": "01_short_18/3",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_18.jpg",
+   "board": "01",
+   "box": [
+    620,
+    888,
+    653,
+    926
+   ]
+  },
+  {
+   "id": "01_short_19/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_19.jpg",
+   "board": "01",
+   "box": [
+    979,
+    1294,
+    1030,
+    1341
+   ]
+  },
+  {
+   "id": "01_short_19/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_19.jpg",
+   "board": "01",
+   "box": [
+    1336,
+    1345,
+    1390,
+    1400
+   ]
+  },
+  {
+   "id": "01_short_19/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_19.jpg",
+   "board": "01",
+   "box": [
+    2712,
+    1111,
+    2791,
+    1209
+   ]
+  },
+  {
+   "id": "01_short_19/3",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_19.jpg",
+   "board": "01",
+   "box": [
+    615,
+    878,
+    656,
+    930
+   ]
+  },
+  {
+   "id": "01_short_20/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_20.jpg",
+   "board": "01",
+   "box": [
+    721,
+    1115,
+    774,
+    1173
+   ]
+  },
+  {
+   "id": "01_short_20/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_20.jpg",
+   "board": "01",
+   "box": [
+    609,
+    881,
+    662,
+    939
+   ]
+  },
+  {
+   "id": "01_short_20/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_20.jpg",
+   "board": "01",
+   "box": [
+    1236,
+    1375,
+    1296,
+    1427
+   ]
+  },
+  {
+   "id": "01_short_20/3",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/01_short_20.jpg",
+   "board": "01",
+   "box": [
+    1671,
+    297,
+    1738,
+    379
+   ]
+  },
+  {
+   "id": "04_short_01/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_01.jpg",
+   "board": "04",
+   "box": [
+    857,
+    1171,
+    944,
+    1250
+   ]
+  },
+  {
+   "id": "04_short_01/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_01.jpg",
+   "board": "04",
+   "box": [
+    1364,
+    473,
+    1448,
+    561
+   ]
+  },
+  {
+   "id": "04_short_01/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_01.jpg",
+   "board": "04",
+   "box": [
+    1357,
+    1519,
+    1446,
+    1613
+   ]
+  },
+  {
+   "id": "04_short_02/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_02.jpg",
+   "board": "04",
+   "box": [
+    1579,
+    1161,
+    1677,
+    1261
+   ]
+  },
+  {
+   "id": "04_short_02/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_02.jpg",
+   "board": "04",
+   "box": [
+    2021,
+    1597,
+    2110,
+    1695
+   ]
+  },
+  {
+   "id": "04_short_02/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_02.jpg",
+   "board": "04",
+   "box": [
+    2571,
+    1684,
+    2686,
+    1804
+   ]
+  },
+  {
+   "id": "04_short_03/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_03.jpg",
+   "board": "04",
+   "box": [
+    2255,
+    1562,
+    2362,
+    1702
+   ]
+  },
+  {
+   "id": "04_short_03/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_03.jpg",
+   "board": "04",
+   "box": [
+    1404,
+    1148,
+    1526,
+    1264
+   ]
+  },
+  {
+   "id": "04_short_03/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_03.jpg",
+   "board": "04",
+   "box": [
+    975,
+    2024,
+    1126,
+    2197
+   ]
+  },
+  {
+   "id": "04_short_04/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_04.jpg",
+   "board": "04",
+   "box": [
+    704,
+    1824,
+    828,
+    1924
+   ]
+  },
+  {
+   "id": "04_short_04/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_04.jpg",
+   "board": "04",
+   "box": [
+    2046,
+    1655,
+    2119,
+    1748
+   ]
+  },
+  {
+   "id": "04_short_04/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_04.jpg",
+   "board": "04",
+   "box": [
+    241,
+    2111,
+    335,
+    2199
+   ]
+  },
+  {
+   "id": "04_short_05/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_05.jpg",
+   "board": "04",
+   "box": [
+    1742,
+    782,
+    1839,
+    882
+   ]
+  },
+  {
+   "id": "04_short_05/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_05.jpg",
+   "board": "04",
+   "box": [
+    2097,
+    1026,
+    2226,
+    1155
+   ]
+  },
+  {
+   "id": "04_short_05/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_05.jpg",
+   "board": "04",
+   "box": [
+    1886,
+    375,
+    1988,
+    477
+   ]
+  },
+  {
+   "id": "04_short_06/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_06.jpg",
+   "board": "04",
+   "box": [
+    1190,
+    550,
+    1271,
+    626
+   ]
+  },
+  {
+   "id": "04_short_06/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_06.jpg",
+   "board": "04",
+   "box": [
+    1248,
+    237,
+    1330,
+    322
+   ]
+  },
+  {
+   "id": "04_short_06/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_06.jpg",
+   "board": "04",
+   "box": [
+    835,
+    873,
+    930,
+    957
+   ]
+  },
+  {
+   "id": "04_short_07/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_07.jpg",
+   "board": "04",
+   "box": [
+    893,
+    1508,
+    990,
+    1610
+   ]
+  },
+  {
+   "id": "04_short_07/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_07.jpg",
+   "board": "04",
+   "box": [
+    1902,
+    1344,
+    2039,
+    1457
+   ]
+  },
+  {
+   "id": "04_short_07/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_07.jpg",
+   "board": "04",
+   "box": [
+    2019,
+    1641,
+    2124,
+    1768
+   ]
+  },
+  {
+   "id": "04_short_08/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_08.jpg",
+   "board": "04",
+   "box": [
+    402,
+    1177,
+    486,
+    1273
+   ]
+  },
+  {
+   "id": "04_short_08/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_08.jpg",
+   "board": "04",
+   "box": [
+    901,
+    1002,
+    988,
+    1091
+   ]
+  },
+  {
+   "id": "04_short_08/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_08.jpg",
+   "board": "04",
+   "box": [
+    499,
+    1593,
+    595,
+    1711
+   ]
+  },
+  {
+   "id": "04_short_09/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_09.jpg",
+   "board": "04",
+   "box": [
+    1906,
+    1590,
+    1997,
+    1690
+   ]
+  },
+  {
+   "id": "04_short_09/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_09.jpg",
+   "board": "04",
+   "box": [
+    2499,
+    1597,
+    2604,
+    1704
+   ]
+  },
+  {
+   "id": "04_short_09/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_09.jpg",
+   "board": "04",
+   "box": [
+    1533,
+    1371,
+    1622,
+    1455
+   ]
+  },
+  {
+   "id": "04_short_10/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_10.jpg",
+   "board": "04",
+   "box": [
+    2006,
+    1537,
+    2091,
+    1635
+   ]
+  },
+  {
+   "id": "04_short_10/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_10.jpg",
+   "board": "04",
+   "box": [
+    1390,
+    1090,
+    1490,
+    1197
+   ]
+  },
+  {
+   "id": "04_short_10/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_10.jpg",
+   "board": "04",
+   "box": [
+    2488,
+    884,
+    2586,
+    1001
+   ]
+  },
+  {
+   "id": "04_short_11/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_11.jpg",
+   "board": "04",
+   "box": [
+    444,
+    1324,
+    550,
+    1422
+   ]
+  },
+  {
+   "id": "04_short_11/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_11.jpg",
+   "board": "04",
+   "box": [
+    830,
+    1130,
+    906,
+    1210
+   ]
+  },
+  {
+   "id": "04_short_11/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_11.jpg",
+   "board": "04",
+   "box": [
+    2050,
+    655,
+    2197,
+    766
+   ]
+  },
+  {
+   "id": "04_short_12/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_12.jpg",
+   "board": "04",
+   "box": [
+    391,
+    1193,
+    493,
+    1290
+   ]
+  },
+  {
+   "id": "04_short_12/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_12.jpg",
+   "board": "04",
+   "box": [
+    499,
+    1606,
+    597,
+    1715
+   ]
+  },
+  {
+   "id": "04_short_12/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_12.jpg",
+   "board": "04",
+   "box": [
+    1130,
+    1862,
+    1241,
+    1977
+   ]
+  },
+  {
+   "id": "04_short_13/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_13.jpg",
+   "board": "04",
+   "box": [
+    1899,
+    1299,
+    2033,
+    1410
+   ]
+  },
+  {
+   "id": "04_short_13/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_13.jpg",
+   "board": "04",
+   "box": [
+    446,
+    2235,
+    559,
+    2362
+   ]
+  },
+  {
+   "id": "04_short_13/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_13.jpg",
+   "board": "04",
+   "box": [
+    237,
+    1971,
+    337,
+    2075
+   ]
+  },
+  {
+   "id": "04_short_14/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_14.jpg",
+   "board": "04",
+   "box": [
+    1486,
+    657,
+    1559,
+    737
+   ]
+  },
+  {
+   "id": "04_short_14/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_14.jpg",
+   "board": "04",
+   "box": [
+    730,
+    1802,
+    821,
+    1897
+   ]
+  },
+  {
+   "id": "04_short_14/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_14.jpg",
+   "board": "04",
+   "box": [
+    1750,
+    768,
+    1844,
+    881
+   ]
+  },
+  {
+   "id": "04_short_15/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_15.jpg",
+   "board": "04",
+   "box": [
+    2070,
+    599,
+    2188,
+    721
+   ]
+  },
+  {
+   "id": "04_short_15/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_15.jpg",
+   "board": "04",
+   "box": [
+    2581,
+    982,
+    2699,
+    1102
+   ]
+  },
+  {
+   "id": "04_short_15/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_15.jpg",
+   "board": "04",
+   "box": [
+    2244,
+    1155,
+    2364,
+    1277
+   ]
+  },
+  {
+   "id": "04_short_16/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_16.jpg",
+   "board": "04",
+   "box": [
+    1090,
+    1139,
+    1190,
+    1241
+   ]
+  },
+  {
+   "id": "04_short_16/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_16.jpg",
+   "board": "04",
+   "box": [
+    1853,
+    1033,
+    1955,
+    1121
+   ]
+  },
+  {
+   "id": "04_short_17/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_17.jpg",
+   "board": "04",
+   "box": [
+    1135,
+    497,
+    1210,
+    584
+   ]
+  },
+  {
+   "id": "04_short_17/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_17.jpg",
+   "board": "04",
+   "box": [
+    961,
+    1148,
+    1048,
+    1233
+   ]
+  },
+  {
+   "id": "04_short_17/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_17.jpg",
+   "board": "04",
+   "box": [
+    442,
+    1195,
+    550,
+    1284
+   ]
+  },
+  {
+   "id": "04_short_18/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_18.jpg",
+   "board": "04",
+   "box": [
+    377,
+    2177,
+    482,
+    2291
+   ]
+  },
+  {
+   "id": "04_short_18/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_18.jpg",
+   "board": "04",
+   "box": [
+    631,
+    2166,
+    728,
+    2264
+   ]
+  },
+  {
+   "id": "04_short_18/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_18.jpg",
+   "board": "04",
+   "box": [
+    2404,
+    1697,
+    2521,
+    1824
+   ]
+  },
+  {
+   "id": "04_short_19/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_19.jpg",
+   "board": "04",
+   "box": [
+    444,
+    1284,
+    548,
+    1371
+   ]
+  },
+  {
+   "id": "04_short_19/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_19.jpg",
+   "board": "04",
+   "box": [
+    502,
+    1928,
+    619,
+    2044
+   ]
+  },
+  {
+   "id": "04_short_19/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_19.jpg",
+   "board": "04",
+   "box": [
+    497,
+    1582,
+    595,
+    1695
+   ]
+  },
+  {
+   "id": "04_short_20/0",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_20.jpg",
+   "board": "04",
+   "box": [
+    1111,
+    490,
+    1221,
+    608
+   ]
+  },
+  {
+   "id": "04_short_20/1",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_20.jpg",
+   "board": "04",
+   "box": [
+    1802,
+    1168,
+    1888,
+    1259
+   ]
+  },
+  {
+   "id": "04_short_20/2",
+   "label": "Short",
+   "category_id": 3,
+   "image": "images/Short/04_short_20.jpg",
+   "board": "04",
+   "box": [
+    1261,
+    1210,
+    1350,
+    1297
+   ]
+  },
+  {
+   "id": "01_spur_01/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_01.jpg",
+   "board": "01",
+   "box": [
+    1444,
+    1123,
+    1474,
+    1156
+   ]
+  },
+  {
+   "id": "01_spur_01/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_01.jpg",
+   "board": "01",
+   "box": [
+    1318,
+    1263,
+    1353,
+    1295
+   ]
+  },
+  {
+   "id": "01_spur_01/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_01.jpg",
+   "board": "01",
+   "box": [
+    952,
+    1291,
+    987,
+    1323
+   ]
+  },
+  {
+   "id": "01_spur_02/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_02.jpg",
+   "board": "01",
+   "box": [
+    766,
+    1156,
+    804,
+    1199
+   ]
+  },
+  {
+   "id": "01_spur_02/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_02.jpg",
+   "board": "01",
+   "box": [
+    720,
+    1224,
+    758,
+    1259
+   ]
+  },
+  {
+   "id": "01_spur_02/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_02.jpg",
+   "board": "01",
+   "box": [
+    821,
+    1337,
+    862,
+    1377
+   ]
+  },
+  {
+   "id": "01_spur_03/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_03.jpg",
+   "board": "01",
+   "box": [
+    1257,
+    1308,
+    1294,
+    1350
+   ]
+  },
+  {
+   "id": "01_spur_03/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_03.jpg",
+   "board": "01",
+   "box": [
+    1650,
+    1376,
+    1687,
+    1411
+   ]
+  },
+  {
+   "id": "01_spur_03/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_03.jpg",
+   "board": "01",
+   "box": [
+    1669,
+    1100,
+    1707,
+    1138
+   ]
+  },
+  {
+   "id": "01_spur_04/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_04.jpg",
+   "board": "01",
+   "box": [
+    2708,
+    937,
+    2751,
+    973
+   ]
+  },
+  {
+   "id": "01_spur_04/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_04.jpg",
+   "board": "01",
+   "box": [
+    2153,
+    1156,
+    2190,
+    1189
+   ]
+  },
+  {
+   "id": "01_spur_04/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_04.jpg",
+   "board": "01",
+   "box": [
+    2329,
+    1141,
+    2372,
+    1188
+   ]
+  },
+  {
+   "id": "01_spur_05/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_05.jpg",
+   "board": "01",
+   "box": [
+    1912,
+    815,
+    1966,
+    856
+   ]
+  },
+  {
+   "id": "01_spur_05/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_05.jpg",
+   "board": "01",
+   "box": [
+    2323,
+    1098,
+    2356,
+    1134
+   ]
+  },
+  {
+   "id": "01_spur_05/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_05.jpg",
+   "board": "01",
+   "box": [
+    2157,
+    844,
+    2208,
+    884
+   ]
+  },
+  {
+   "id": "01_spur_06/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_06.jpg",
+   "board": "01",
+   "box": [
+    2200,
+    590,
+    2238,
+    633
+   ]
+  },
+  {
+   "id": "01_spur_06/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_06.jpg",
+   "board": "01",
+   "box": [
+    2613,
+    449,
+    2651,
+    485
+   ]
+  },
+  {
+   "id": "01_spur_06/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_06.jpg",
+   "board": "01",
+   "box": [
+    2181,
+    287,
+    2230,
+    328
+   ]
+  },
+  {
+   "id": "01_spur_07/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_07.jpg",
+   "board": "01",
+   "box": [
+    1668,
+    402,
+    1708,
+    443
+   ]
+  },
+  {
+   "id": "01_spur_07/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_07.jpg",
+   "board": "01",
+   "box": [
+    1695,
+    579,
+    1737,
+    621
+   ]
+  },
+  {
+   "id": "01_spur_07/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_07.jpg",
+   "board": "01",
+   "box": [
+    1326,
+    390,
+    1398,
+    452
+   ]
+  },
+  {
+   "id": "01_spur_08/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_08.jpg",
+   "board": "01",
+   "box": [
+    1510,
+    1162,
+    1566,
+    1217
+   ]
+  },
+  {
+   "id": "01_spur_08/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_08.jpg",
+   "board": "01",
+   "box": [
+    1680,
+    1369,
+    1721,
+    1410
+   ]
+  },
+  {
+   "id": "01_spur_08/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_08.jpg",
+   "board": "01",
+   "box": [
+    1254,
+    1337,
+    1307,
+    1373
+   ]
+  },
+  {
+   "id": "01_spur_09/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_09.jpg",
+   "board": "01",
+   "box": [
+    783,
+    1033,
+    828,
+    1077
+   ]
+  },
+  {
+   "id": "01_spur_09/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_09.jpg",
+   "board": "01",
+   "box": [
+    473,
+    964,
+    519,
+    1012
+   ]
+  },
+  {
+   "id": "01_spur_10/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_10.jpg",
+   "board": "01",
+   "box": [
+    472,
+    393,
+    530,
+    432
+   ]
+  },
+  {
+   "id": "01_spur_10/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_10.jpg",
+   "board": "01",
+   "box": [
+    178,
+    1117,
+    211,
+    1156
+   ]
+  },
+  {
+   "id": "01_spur_10/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_10.jpg",
+   "board": "01",
+   "box": [
+    529,
+    1184,
+    562,
+    1219
+   ]
+  },
+  {
+   "id": "01_spur_11/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_11.jpg",
+   "board": "01",
+   "box": [
+    597,
+    801,
+    635,
+    845
+   ]
+  },
+  {
+   "id": "01_spur_11/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_11.jpg",
+   "board": "01",
+   "box": [
+    720,
+    741,
+    765,
+    771
+   ]
+  },
+  {
+   "id": "01_spur_11/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_11.jpg",
+   "board": "01",
+   "box": [
+    961,
+    885,
+    1005,
+    923
+   ]
+  },
+  {
+   "id": "01_spur_12/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_12.jpg",
+   "board": "01",
+   "box": [
+    589,
+    972,
+    625,
+    1010
+   ]
+  },
+  {
+   "id": "01_spur_12/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_12.jpg",
+   "board": "01",
+   "box": [
+    601,
+    1197,
+    645,
+    1243
+   ]
+  },
+  {
+   "id": "01_spur_13/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_13.jpg",
+   "board": "01",
+   "box": [
+    1516,
+    1030,
+    1549,
+    1066
+   ]
+  },
+  {
+   "id": "01_spur_13/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_13.jpg",
+   "board": "01",
+   "box": [
+    1653,
+    1092,
+    1689,
+    1120
+   ]
+  },
+  {
+   "id": "01_spur_14/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_14.jpg",
+   "board": "01",
+   "box": [
+    1671,
+    804,
+    1711,
+    840
+   ]
+  },
+  {
+   "id": "01_spur_14/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_14.jpg",
+   "board": "01",
+   "box": [
+    1684,
+    401,
+    1725,
+    435
+   ]
+  },
+  {
+   "id": "01_spur_14/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_14.jpg",
+   "board": "01",
+   "box": [
+    1475,
+    591,
+    1513,
+    629
+   ]
+  },
+  {
+   "id": "01_spur_15/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_15.jpg",
+   "board": "01",
+   "box": [
+    399,
+    426,
+    471,
+    474
+   ]
+  },
+  {
+   "id": "01_spur_15/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_15.jpg",
+   "board": "01",
+   "box": [
+    717,
+    287,
+    775,
+    333
+   ]
+  },
+  {
+   "id": "01_spur_16/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_16.jpg",
+   "board": "01",
+   "box": [
+    2295,
+    1289,
+    2331,
+    1328
+   ]
+  },
+  {
+   "id": "01_spur_16/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_16.jpg",
+   "board": "01",
+   "box": [
+    2129,
+    980,
+    2175,
+    1020
+   ]
+  },
+  {
+   "id": "01_spur_16/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_16.jpg",
+   "board": "01",
+   "box": [
+    2419,
+    1105,
+    2467,
+    1146
+   ]
+  },
+  {
+   "id": "01_spur_17/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_17.jpg",
+   "board": "01",
+   "box": [
+    2205,
+    595,
+    2237,
+    638
+   ]
+  },
+  {
+   "id": "01_spur_17/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_17.jpg",
+   "board": "01",
+   "box": [
+    1923,
+    750,
+    1964,
+    780
+   ]
+  },
+  {
+   "id": "01_spur_17/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_17.jpg",
+   "board": "01",
+   "box": [
+    2482,
+    597,
+    2525,
+    630
+   ]
+  },
+  {
+   "id": "01_spur_18/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_18.jpg",
+   "board": "01",
+   "box": [
+    2499,
+    442,
+    2545,
+    489
+   ]
+  },
+  {
+   "id": "01_spur_18/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_18.jpg",
+   "board": "01",
+   "box": [
+    2669,
+    315,
+    2706,
+    344
+   ]
+  },
+  {
+   "id": "01_spur_19/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_19.jpg",
+   "board": "01",
+   "box": [
+    2430,
+    1166,
+    2470,
+    1205
+   ]
+  },
+  {
+   "id": "01_spur_19/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_19.jpg",
+   "board": "01",
+   "box": [
+    2700,
+    1164,
+    2744,
+    1201
+   ]
+  },
+  {
+   "id": "01_spur_20/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_20.jpg",
+   "board": "01",
+   "box": [
+    2140,
+    1151,
+    2194,
+    1188
+   ]
+  },
+  {
+   "id": "01_spur_20/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/01_spur_20.jpg",
+   "board": "01",
+   "box": [
+    1977,
+    1021,
+    2018,
+    1071
+   ]
+  },
+  {
+   "id": "04_spur_01/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_01.jpg",
+   "board": "04",
+   "box": [
+    1917,
+    1357,
+    1984,
+    1441
+   ]
+  },
+  {
+   "id": "04_spur_01/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_01.jpg",
+   "board": "04",
+   "box": [
+    997,
+    2064,
+    1117,
+    2126
+   ]
+  },
+  {
+   "id": "04_spur_01/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_01.jpg",
+   "board": "04",
+   "box": [
+    830,
+    1215,
+    911,
+    1268
+   ]
+  },
+  {
+   "id": "04_spur_02/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_02.jpg",
+   "board": "04",
+   "box": [
+    1697,
+    1830,
+    1775,
+    1888
+   ]
+  },
+  {
+   "id": "04_spur_02/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_02.jpg",
+   "board": "04",
+   "box": [
+    2486,
+    1871,
+    2559,
+    1930
+   ]
+  },
+  {
+   "id": "04_spur_02/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_02.jpg",
+   "board": "04",
+   "box": [
+    2168,
+    866,
+    2219,
+    944
+   ]
+  },
+  {
+   "id": "04_spur_03/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_03.jpg",
+   "board": "04",
+   "box": [
+    1955,
+    1288,
+    2017,
+    1370
+   ]
+  },
+  {
+   "id": "04_spur_03/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_03.jpg",
+   "board": "04",
+   "box": [
+    2601,
+    1693,
+    2655,
+    1782
+   ]
+  },
+  {
+   "id": "04_spur_03/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_03.jpg",
+   "board": "04",
+   "box": [
+    1888,
+    1782,
+    1942,
+    1864
+   ]
+  },
+  {
+   "id": "04_spur_04/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_04.jpg",
+   "board": "04",
+   "box": [
+    1913,
+    1319,
+    1986,
+    1421
+   ]
+  },
+  {
+   "id": "04_spur_04/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_04.jpg",
+   "board": "04",
+   "box": [
+    608,
+    1304,
+    664,
+    1391
+   ]
+  },
+  {
+   "id": "04_spur_04/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_04.jpg",
+   "board": "04",
+   "box": [
+    424,
+    1322,
+    482,
+    1421
+   ]
+  },
+  {
+   "id": "04_spur_05/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_05.jpg",
+   "board": "04",
+   "box": [
+    2202,
+    879,
+    2264,
+    951
+   ]
+  },
+  {
+   "id": "04_spur_05/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_05.jpg",
+   "board": "04",
+   "box": [
+    2075,
+    637,
+    2122,
+    726
+   ]
+  },
+  {
+   "id": "04_spur_05/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_05.jpg",
+   "board": "04",
+   "box": [
+    1635,
+    722,
+    1675,
+    779
+   ]
+  },
+  {
+   "id": "04_spur_06/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_06.jpg",
+   "board": "04",
+   "box": [
+    1928,
+    1371,
+    1982,
+    1471
+   ]
+  },
+  {
+   "id": "04_spur_06/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_06.jpg",
+   "board": "04",
+   "box": [
+    757,
+    2068,
+    846,
+    2131
+   ]
+  },
+  {
+   "id": "04_spur_06/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_06.jpg",
+   "board": "04",
+   "box": [
+    1179,
+    1891,
+    1231,
+    1964
+   ]
+  },
+  {
+   "id": "04_spur_07/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_07.jpg",
+   "board": "04",
+   "box": [
+    2199,
+    831,
+    2262,
+    917
+   ]
+  },
+  {
+   "id": "04_spur_07/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_07.jpg",
+   "board": "04",
+   "box": [
+    922,
+    1091,
+    997,
+    1173
+   ]
+  },
+  {
+   "id": "04_spur_07/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_07.jpg",
+   "board": "04",
+   "box": [
+    2410,
+    1362,
+    2479,
+    1448
+   ]
+  },
+  {
+   "id": "04_spur_08/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_08.jpg",
+   "board": "04",
+   "box": [
+    1946,
+    1350,
+    2017,
+    1446
+   ]
+  },
+  {
+   "id": "04_spur_08/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_08.jpg",
+   "board": "04",
+   "box": [
+    962,
+    1026,
+    1013,
+    1099
+   ]
+  },
+  {
+   "id": "04_spur_08/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_08.jpg",
+   "board": "04",
+   "box": [
+    477,
+    1290,
+    531,
+    1390
+   ]
+  },
+  {
+   "id": "04_spur_09/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_09.jpg",
+   "board": "04",
+   "box": [
+    848,
+    1237,
+    933,
+    1282
+   ]
+  },
+  {
+   "id": "04_spur_09/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_09.jpg",
+   "board": "04",
+   "box": [
+    461,
+    1231,
+    515,
+    1310
+   ]
+  },
+  {
+   "id": "04_spur_09/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_09.jpg",
+   "board": "04",
+   "box": [
+    382,
+    2199,
+    450,
+    2257
+   ]
+  },
+  {
+   "id": "04_spur_10/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_10.jpg",
+   "board": "04",
+   "box": [
+    2071,
+    619,
+    2131,
+    699
+   ]
+  },
+  {
+   "id": "04_spur_10/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_10.jpg",
+   "board": "04",
+   "box": [
+    1748,
+    799,
+    1808,
+    873
+   ]
+  },
+  {
+   "id": "04_spur_10/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_10.jpg",
+   "board": "04",
+   "box": [
+    461,
+    524,
+    548,
+    579
+   ]
+  },
+  {
+   "id": "04_spur_11/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_11.jpg",
+   "board": "04",
+   "box": [
+    2135,
+    1804,
+    2190,
+    1897
+   ]
+  },
+  {
+   "id": "04_spur_11/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_11.jpg",
+   "board": "04",
+   "box": [
+    926,
+    2101,
+    1033,
+    2170
+   ]
+  },
+  {
+   "id": "04_spur_11/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_11.jpg",
+   "board": "04",
+   "box": [
+    2610,
+    1671,
+    2666,
+    1768
+   ]
+  },
+  {
+   "id": "04_spur_12/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_12.jpg",
+   "board": "04",
+   "box": [
+    1959,
+    1326,
+    2008,
+    1431
+   ]
+  },
+  {
+   "id": "04_spur_12/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_12.jpg",
+   "board": "04",
+   "box": [
+    659,
+    1219,
+    759,
+    1268
+   ]
+  },
+  {
+   "id": "04_spur_12/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_12.jpg",
+   "board": "04",
+   "box": [
+    859,
+    1118,
+    928,
+    1161
+   ]
+  },
+  {
+   "id": "04_spur_13/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_13.jpg",
+   "board": "04",
+   "box": [
+    2166,
+    877,
+    2224,
+    962
+   ]
+  },
+  {
+   "id": "04_spur_13/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_13.jpg",
+   "board": "04",
+   "box": [
+    521,
+    2277,
+    595,
+    2337
+   ]
+  },
+  {
+   "id": "04_spur_13/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_13.jpg",
+   "board": "04",
+   "box": [
+    2110,
+    410,
+    2184,
+    459
+   ]
+  },
+  {
+   "id": "04_spur_14/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_14.jpg",
+   "board": "04",
+   "box": [
+    1931,
+    1797,
+    1984,
+    1862
+   ]
+  },
+  {
+   "id": "04_spur_14/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_14.jpg",
+   "board": "04",
+   "box": [
+    788,
+    2106,
+    864,
+    2164
+   ]
+  },
+  {
+   "id": "04_spur_14/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_14.jpg",
+   "board": "04",
+   "box": [
+    1137,
+    1841,
+    1204,
+    1933
+   ]
+  },
+  {
+   "id": "04_spur_15/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_15.jpg",
+   "board": "04",
+   "box": [
+    2441,
+    1733,
+    2499,
+    1791
+   ]
+  },
+  {
+   "id": "04_spur_15/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_15.jpg",
+   "board": "04",
+   "box": [
+    1917,
+    1415,
+    1975,
+    1497
+   ]
+  },
+  {
+   "id": "04_spur_15/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_15.jpg",
+   "board": "04",
+   "box": [
+    657,
+    1210,
+    744,
+    1270
+   ]
+  },
+  {
+   "id": "04_spur_16/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_16.jpg",
+   "board": "04",
+   "box": [
+    457,
+    1295,
+    510,
+    1393
+   ]
+  },
+  {
+   "id": "04_spur_16/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_16.jpg",
+   "board": "04",
+   "box": [
+    2417,
+    1368,
+    2473,
+    1459
+   ]
+  },
+  {
+   "id": "04_spur_16/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_16.jpg",
+   "board": "04",
+   "box": [
+    2386,
+    1002,
+    2461,
+    1064
+   ]
+  },
+  {
+   "id": "04_spur_17/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_17.jpg",
+   "board": "04",
+   "box": [
+    2201,
+    846,
+    2259,
+    957
+   ]
+  },
+  {
+   "id": "04_spur_17/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_17.jpg",
+   "board": "04",
+   "box": [
+    1786,
+    808,
+    1839,
+    866
+   ]
+  },
+  {
+   "id": "04_spur_17/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_17.jpg",
+   "board": "04",
+   "box": [
+    2628,
+    1677,
+    2675,
+    1771
+   ]
+  },
+  {
+   "id": "04_spur_18/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_18.jpg",
+   "board": "04",
+   "box": [
+    448,
+    2344,
+    544,
+    2391
+   ]
+  },
+  {
+   "id": "04_spur_18/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_18.jpg",
+   "board": "04",
+   "box": [
+    2391,
+    1039,
+    2462,
+    1122
+   ]
+  },
+  {
+   "id": "04_spur_18/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_18.jpg",
+   "board": "04",
+   "box": [
+    2424,
+    1759,
+    2522,
+    1815
+   ]
+  },
+  {
+   "id": "04_spur_19/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_19.jpg",
+   "board": "04",
+   "box": [
+    855,
+    1235,
+    961,
+    1286
+   ]
+  },
+  {
+   "id": "04_spur_19/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_19.jpg",
+   "board": "04",
+   "box": [
+    488,
+    2297,
+    586,
+    2346
+   ]
+  },
+  {
+   "id": "04_spur_19/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_19.jpg",
+   "board": "04",
+   "box": [
+    831,
+    2110,
+    971,
+    2157
+   ]
+  },
+  {
+   "id": "04_spur_20/0",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_20.jpg",
+   "board": "04",
+   "box": [
+    1955,
+    1273,
+    1997,
+    1375
+   ]
+  },
+  {
+   "id": "04_spur_20/1",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_20.jpg",
+   "board": "04",
+   "box": [
+    490,
+    1273,
+    530,
+    1371
+   ]
+  },
+  {
+   "id": "04_spur_20/2",
+   "label": "Spur",
+   "category_id": 4,
+   "image": "images/Spur/04_spur_20.jpg",
+   "board": "04",
+   "box": [
+    1170,
+    1873,
+    1221,
+    1962
+   ]
+  },
+  {
+   "id": "01_spurious_copper_01/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_01.jpg",
+   "board": "01",
+   "box": [
+    1639,
+    1052,
+    1711,
+    1100
+   ]
+  },
+  {
+   "id": "01_spurious_copper_01/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_01.jpg",
+   "board": "01",
+   "box": [
+    2142,
+    1123,
+    2199,
+    1165
+   ]
+  },
+  {
+   "id": "01_spurious_copper_01/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_01.jpg",
+   "board": "01",
+   "box": [
+    782,
+    1096,
+    840,
+    1152
+   ]
+  },
+  {
+   "id": "01_spurious_copper_02/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_02.jpg",
+   "board": "01",
+   "box": [
+    1675,
+    394,
+    1732,
+    419
+   ]
+  },
+  {
+   "id": "01_spurious_copper_02/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_02.jpg",
+   "board": "01",
+   "box": [
+    1460,
+    1160,
+    1541,
+    1232
+   ]
+  },
+  {
+   "id": "01_spurious_copper_02/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_02.jpg",
+   "board": "01",
+   "box": [
+    711,
+    1092,
+    775,
+    1119
+   ]
+  },
+  {
+   "id": "01_spurious_copper_03/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_03.jpg",
+   "board": "01",
+   "box": [
+    1539,
+    866,
+    1574,
+    962
+   ]
+  },
+  {
+   "id": "01_spurious_copper_03/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_03.jpg",
+   "board": "01",
+   "box": [
+    1854,
+    948,
+    1904,
+    1043
+   ]
+  },
+  {
+   "id": "01_spurious_copper_03/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_03.jpg",
+   "board": "01",
+   "box": [
+    1810,
+    1289,
+    1846,
+    1374
+   ]
+  },
+  {
+   "id": "01_spurious_copper_04/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_04.jpg",
+   "board": "01",
+   "box": [
+    2134,
+    1138,
+    2212,
+    1168
+   ]
+  },
+  {
+   "id": "01_spurious_copper_04/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_04.jpg",
+   "board": "01",
+   "box": [
+    1597,
+    1232,
+    1691,
+    1325
+   ]
+  },
+  {
+   "id": "01_spurious_copper_04/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_04.jpg",
+   "board": "01",
+   "box": [
+    2134,
+    724,
+    2190,
+    749
+   ]
+  },
+  {
+   "id": "01_spurious_copper_05/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_05.jpg",
+   "board": "01",
+   "box": [
+    537,
+    985,
+    637,
+    1013
+   ]
+  },
+  {
+   "id": "01_spurious_copper_05/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_05.jpg",
+   "board": "01",
+   "box": [
+    740,
+    1260,
+    775,
+    1332
+   ]
+  },
+  {
+   "id": "01_spurious_copper_05/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_05.jpg",
+   "board": "01",
+   "box": [
+    412,
+    912,
+    468,
+    955
+   ]
+  },
+  {
+   "id": "01_spurious_copper_06/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_06.jpg",
+   "board": "01",
+   "box": [
+    751,
+    1023,
+    850,
+    1125
+   ]
+  },
+  {
+   "id": "01_spurious_copper_06/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_06.jpg",
+   "board": "01",
+   "box": [
+    1669,
+    663,
+    1732,
+    694
+   ]
+  },
+  {
+   "id": "01_spurious_copper_06/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_06.jpg",
+   "board": "01",
+   "box": [
+    2597,
+    467,
+    2653,
+    503
+   ]
+  },
+  {
+   "id": "01_spurious_copper_07/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_07.jpg",
+   "board": "01",
+   "box": [
+    2578,
+    741,
+    2642,
+    770
+   ]
+  },
+  {
+   "id": "01_spurious_copper_07/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_07.jpg",
+   "board": "01",
+   "box": [
+    2613,
+    863,
+    2648,
+    953
+   ]
+  },
+  {
+   "id": "01_spurious_copper_07/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_07.jpg",
+   "board": "01",
+   "box": [
+    1811,
+    861,
+    1961,
+    917
+   ]
+  },
+  {
+   "id": "01_spurious_copper_08/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_08.jpg",
+   "board": "01",
+   "box": [
+    1532,
+    1203,
+    1637,
+    1244
+   ]
+  },
+  {
+   "id": "01_spurious_copper_08/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_08.jpg",
+   "board": "01",
+   "box": [
+    2696,
+    921,
+    2759,
+    949
+   ]
+  },
+  {
+   "id": "01_spurious_copper_08/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_08.jpg",
+   "board": "01",
+   "box": [
+    2189,
+    1056,
+    2315,
+    1179
+   ]
+  },
+  {
+   "id": "01_spurious_copper_09/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_09.jpg",
+   "board": "01",
+   "box": [
+    1537,
+    870,
+    1580,
+    990
+   ]
+  },
+  {
+   "id": "01_spurious_copper_09/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_09.jpg",
+   "board": "01",
+   "box": [
+    2039,
+    1164,
+    2068,
+    1288
+   ]
+  },
+  {
+   "id": "01_spurious_copper_09/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_09.jpg",
+   "board": "01",
+   "box": [
+    1226,
+    1091,
+    1311,
+    1124
+   ]
+  },
+  {
+   "id": "01_spurious_copper_10/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_10.jpg",
+   "board": "01",
+   "box": [
+    1611,
+    1356,
+    1730,
+    1407
+   ]
+  },
+  {
+   "id": "01_spurious_copper_10/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_10.jpg",
+   "board": "01",
+   "box": [
+    1003,
+    1317,
+    1172,
+    1381
+   ]
+  },
+  {
+   "id": "01_spurious_copper_10/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_10.jpg",
+   "board": "01",
+   "box": [
+    1684,
+    321,
+    1729,
+    357
+   ]
+  },
+  {
+   "id": "01_spurious_copper_11/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_11.jpg",
+   "board": "01",
+   "box": [
+    714,
+    1051,
+    815,
+    1118
+   ]
+  },
+  {
+   "id": "01_spurious_copper_11/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_11.jpg",
+   "board": "01",
+   "box": [
+    1073,
+    1102,
+    1145,
+    1149
+   ]
+  },
+  {
+   "id": "01_spurious_copper_11/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_11.jpg",
+   "board": "01",
+   "box": [
+    2795,
+    1209,
+    2837,
+    1328
+   ]
+  },
+  {
+   "id": "01_spurious_copper_12/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_12.jpg",
+   "board": "01",
+   "box": [
+    2343,
+    1122,
+    2467,
+    1181
+   ]
+  },
+  {
+   "id": "01_spurious_copper_12/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_12.jpg",
+   "board": "01",
+   "box": [
+    2690,
+    1086,
+    2764,
+    1148
+   ]
+  },
+  {
+   "id": "01_spurious_copper_12/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_12.jpg",
+   "board": "01",
+   "box": [
+    2731,
+    1213,
+    2813,
+    1300
+   ]
+  },
+  {
+   "id": "01_spurious_copper_13/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_13.jpg",
+   "board": "01",
+   "box": [
+    1840,
+    1218,
+    1977,
+    1273
+   ]
+  },
+  {
+   "id": "01_spurious_copper_13/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_13.jpg",
+   "board": "01",
+   "box": [
+    2470,
+    572,
+    2534,
+    619
+   ]
+  },
+  {
+   "id": "01_spurious_copper_13/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_13.jpg",
+   "board": "01",
+   "box": [
+    2093,
+    269,
+    2205,
+    304
+   ]
+  },
+  {
+   "id": "01_spurious_copper_14/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_14.jpg",
+   "board": "01",
+   "box": [
+    1666,
+    612,
+    1746,
+    652
+   ]
+  },
+  {
+   "id": "01_spurious_copper_14/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_14.jpg",
+   "board": "01",
+   "box": [
+    743,
+    1190,
+    805,
+    1267
+   ]
+  },
+  {
+   "id": "01_spurious_copper_14/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_14.jpg",
+   "board": "01",
+   "box": [
+    1184,
+    1091,
+    1343,
+    1156
+   ]
+  },
+  {
+   "id": "01_spurious_copper_15/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_15.jpg",
+   "board": "01",
+   "box": [
+    1375,
+    1112,
+    1456,
+    1180
+   ]
+  },
+  {
+   "id": "01_spurious_copper_15/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_15.jpg",
+   "board": "01",
+   "box": [
+    602,
+    995,
+    641,
+    1061
+   ]
+  },
+  {
+   "id": "01_spurious_copper_15/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_15.jpg",
+   "board": "01",
+   "box": [
+    417,
+    911,
+    467,
+    960
+   ]
+  },
+  {
+   "id": "01_spurious_copper_16/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_16.jpg",
+   "board": "01",
+   "box": [
+    2128,
+    725,
+    2165,
+    764
+   ]
+  },
+  {
+   "id": "01_spurious_copper_16/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_16.jpg",
+   "board": "01",
+   "box": [
+    2629,
+    532,
+    2690,
+    584
+   ]
+  },
+  {
+   "id": "01_spurious_copper_16/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_16.jpg",
+   "board": "01",
+   "box": [
+    1669,
+    422,
+    1740,
+    479
+   ]
+  },
+  {
+   "id": "01_spurious_copper_17/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_17.jpg",
+   "board": "01",
+   "box": [
+    1780,
+    898,
+    1833,
+    1003
+   ]
+  },
+  {
+   "id": "01_spurious_copper_17/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_17.jpg",
+   "board": "01",
+   "box": [
+    2124,
+    1297,
+    2198,
+    1358
+   ]
+  },
+  {
+   "id": "01_spurious_copper_17/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_17.jpg",
+   "board": "01",
+   "box": [
+    1844,
+    1383,
+    2001,
+    1435
+   ]
+  },
+  {
+   "id": "01_spurious_copper_18/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_18.jpg",
+   "board": "01",
+   "box": [
+    1680,
+    886,
+    1754,
+    1012
+   ]
+  },
+  {
+   "id": "01_spurious_copper_18/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_18.jpg",
+   "board": "01",
+   "box": [
+    1181,
+    1093,
+    1366,
+    1164
+   ]
+  },
+  {
+   "id": "01_spurious_copper_18/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_18.jpg",
+   "board": "01",
+   "box": [
+    754,
+    1286,
+    821,
+    1359
+   ]
+  },
+  {
+   "id": "01_spurious_copper_19/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_19.jpg",
+   "board": "01",
+   "box": [
+    2147,
+    1189,
+    2250,
+    1280
+   ]
+  },
+  {
+   "id": "01_spurious_copper_19/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_19.jpg",
+   "board": "01",
+   "box": [
+    1688,
+    1274,
+    1745,
+    1375
+   ]
+  },
+  {
+   "id": "01_spurious_copper_19/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_19.jpg",
+   "board": "01",
+   "box": [
+    445,
+    985,
+    481,
+    1066
+   ]
+  },
+  {
+   "id": "01_spurious_copper_20/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_20.jpg",
+   "board": "01",
+   "box": [
+    1626,
+    869,
+    1680,
+    983
+   ]
+  },
+  {
+   "id": "01_spurious_copper_20/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_20.jpg",
+   "board": "01",
+   "box": [
+    1610,
+    1124,
+    1746,
+    1180
+   ]
+  },
+  {
+   "id": "01_spurious_copper_20/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/01_spurious_copper_20.jpg",
+   "board": "01",
+   "box": [
+    2783,
+    783,
+    2842,
+    916
+   ]
+  },
+  {
+   "id": "04_spurious_copper_01/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_01.jpg",
+   "board": "04",
+   "box": [
+    773,
+    2085,
+    880,
+    2150
+   ]
+  },
+  {
+   "id": "04_spurious_copper_01/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_01.jpg",
+   "board": "04",
+   "box": [
+    654,
+    1229,
+    766,
+    1275
+   ]
+  },
+  {
+   "id": "04_spurious_copper_01/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_01.jpg",
+   "board": "04",
+   "box": [
+    629,
+    1325,
+    660,
+    1419
+   ]
+  },
+  {
+   "id": "04_spurious_copper_02/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_02.jpg",
+   "board": "04",
+   "box": [
+    819,
+    1232,
+    931,
+    1270
+   ]
+  },
+  {
+   "id": "04_spurious_copper_02/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_02.jpg",
+   "board": "04",
+   "box": [
+    1916,
+    1787,
+    1961,
+    1851
+   ]
+  },
+  {
+   "id": "04_spurious_copper_02/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_02.jpg",
+   "board": "04",
+   "box": [
+    1165,
+    1881,
+    1203,
+    1962
+   ]
+  },
+  {
+   "id": "04_spurious_copper_03/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_03.jpg",
+   "board": "04",
+   "box": [
+    1790,
+    1129,
+    1912,
+    1163
+   ]
+  },
+  {
+   "id": "04_spurious_copper_03/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_03.jpg",
+   "board": "04",
+   "box": [
+    2103,
+    626,
+    2133,
+    717
+   ]
+  },
+  {
+   "id": "04_spurious_copper_03/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_03.jpg",
+   "board": "04",
+   "box": [
+    2189,
+    832,
+    2239,
+    937
+   ]
+  },
+  {
+   "id": "04_spurious_copper_04/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_04.jpg",
+   "board": "04",
+   "box": [
+    1796,
+    1019,
+    1839,
+    1089
+   ]
+  },
+  {
+   "id": "04_spurious_copper_04/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_04.jpg",
+   "board": "04",
+   "box": [
+    474,
+    1236,
+    527,
+    1382
+   ]
+  },
+  {
+   "id": "04_spurious_copper_04/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_04.jpg",
+   "board": "04",
+   "box": [
+    938,
+    1106,
+    1023,
+    1176
+   ]
+  },
+  {
+   "id": "04_spurious_copper_05/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_05.jpg",
+   "board": "04",
+   "box": [
+    2190,
+    837,
+    2236,
+    962
+   ]
+  },
+  {
+   "id": "04_spurious_copper_05/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_05.jpg",
+   "board": "04",
+   "box": [
+    2099,
+    633,
+    2143,
+    750
+   ]
+  },
+  {
+   "id": "04_spurious_copper_05/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_05.jpg",
+   "board": "04",
+   "box": [
+    2378,
+    1015,
+    2468,
+    1095
+   ]
+  },
+  {
+   "id": "04_spurious_copper_06/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_06.jpg",
+   "board": "04",
+   "box": [
+    2618,
+    991,
+    2662,
+    1091
+   ]
+  },
+  {
+   "id": "04_spurious_copper_06/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_06.jpg",
+   "board": "04",
+   "box": [
+    1922,
+    1779,
+    1953,
+    1849
+   ]
+  },
+  {
+   "id": "04_spurious_copper_06/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_06.jpg",
+   "board": "04",
+   "box": [
+    2444,
+    1360,
+    2485,
+    1446
+   ]
+  },
+  {
+   "id": "04_spurious_copper_07/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_07.jpg",
+   "board": "04",
+   "box": [
+    1937,
+    1257,
+    1990,
+    1399
+   ]
+  },
+  {
+   "id": "04_spurious_copper_07/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_07.jpg",
+   "board": "04",
+   "box": [
+    1935,
+    1422,
+    1988,
+    1577
+   ]
+  },
+  {
+   "id": "04_spurious_copper_07/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_07.jpg",
+   "board": "04",
+   "box": [
+    309,
+    530,
+    346,
+    628
+   ]
+  },
+  {
+   "id": "04_spurious_copper_08/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_08.jpg",
+   "board": "04",
+   "box": [
+    802,
+    2095,
+    992,
+    2138
+   ]
+  },
+  {
+   "id": "04_spurious_copper_08/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_08.jpg",
+   "board": "04",
+   "box": [
+    2433,
+    1757,
+    2533,
+    1792
+   ]
+  },
+  {
+   "id": "04_spurious_copper_08/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_08.jpg",
+   "board": "04",
+   "box": [
+    2487,
+    1438,
+    2663,
+    1471
+   ]
+  },
+  {
+   "id": "04_spurious_copper_09/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_09.jpg",
+   "board": "04",
+   "box": [
+    1947,
+    1260,
+    1987,
+    1370
+   ]
+  },
+  {
+   "id": "04_spurious_copper_09/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_09.jpg",
+   "board": "04",
+   "box": [
+    2371,
+    1028,
+    2462,
+    1100
+   ]
+  },
+  {
+   "id": "04_spurious_copper_09/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_09.jpg",
+   "board": "04",
+   "box": [
+    483,
+    1234,
+    513,
+    1411
+   ]
+  },
+  {
+   "id": "04_spurious_copper_10/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_10.jpg",
+   "board": "04",
+   "box": [
+    1800,
+    1017,
+    1840,
+    1093
+   ]
+  },
+  {
+   "id": "04_spurious_copper_10/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_10.jpg",
+   "board": "04",
+   "box": [
+    1626,
+    714,
+    1663,
+    815
+   ]
+  },
+  {
+   "id": "04_spurious_copper_10/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_10.jpg",
+   "board": "04",
+   "box": [
+    382,
+    2220,
+    529,
+    2254
+   ]
+  },
+  {
+   "id": "04_spurious_copper_11/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_11.jpg",
+   "board": "04",
+   "box": [
+    2624,
+    1683,
+    2657,
+    1848
+   ]
+  },
+  {
+   "id": "04_spurious_copper_11/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_11.jpg",
+   "board": "04",
+   "box": [
+    1168,
+    1897,
+    1204,
+    2001
+   ]
+  },
+  {
+   "id": "04_spurious_copper_11/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_11.jpg",
+   "board": "04",
+   "box": [
+    2609,
+    1020,
+    2665,
+    1235
+   ]
+  },
+  {
+   "id": "04_spurious_copper_12/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_12.jpg",
+   "board": "04",
+   "box": [
+    2189,
+    840,
+    2226,
+    952
+   ]
+  },
+  {
+   "id": "04_spurious_copper_12/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_12.jpg",
+   "board": "04",
+   "box": [
+    1946,
+    1259,
+    1984,
+    1407
+   ]
+  },
+  {
+   "id": "04_spurious_copper_12/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_12.jpg",
+   "board": "04",
+   "box": [
+    670,
+    1241,
+    953,
+    1268
+   ]
+  },
+  {
+   "id": "04_spurious_copper_13/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_13.jpg",
+   "board": "04",
+   "box": [
+    2101,
+    633,
+    2141,
+    768
+   ]
+  },
+  {
+   "id": "04_spurious_copper_13/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_13.jpg",
+   "board": "04",
+   "box": [
+    870,
+    1086,
+    946,
+    1143
+   ]
+  },
+  {
+   "id": "04_spurious_copper_13/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_13.jpg",
+   "board": "04",
+   "box": [
+    944,
+    1114,
+    1015,
+    1170
+   ]
+  },
+  {
+   "id": "04_spurious_copper_14/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_14.jpg",
+   "board": "04",
+   "box": [
+    2182,
+    831,
+    2244,
+    962
+   ]
+  },
+  {
+   "id": "04_spurious_copper_14/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_14.jpg",
+   "board": "04",
+   "box": [
+    1944,
+    1364,
+    1991,
+    1528
+   ]
+  },
+  {
+   "id": "04_spurious_copper_14/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_14.jpg",
+   "board": "04",
+   "box": [
+    1910,
+    1775,
+    1964,
+    1861
+   ]
+  },
+  {
+   "id": "04_spurious_copper_15/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_15.jpg",
+   "board": "04",
+   "box": [
+    2613,
+    1637,
+    2664,
+    1826
+   ]
+  },
+  {
+   "id": "04_spurious_copper_15/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_15.jpg",
+   "board": "04",
+   "box": [
+    633,
+    1237,
+    748,
+    1291
+   ]
+  },
+  {
+   "id": "04_spurious_copper_15/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_15.jpg",
+   "board": "04",
+   "box": [
+    369,
+    2223,
+    464,
+    2258
+   ]
+  },
+  {
+   "id": "04_spurious_copper_16/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_16.jpg",
+   "board": "04",
+   "box": [
+    529,
+    1966,
+    600,
+    2024
+   ]
+  },
+  {
+   "id": "04_spurious_copper_16/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_16.jpg",
+   "board": "04",
+   "box": [
+    479,
+    1313,
+    511,
+    1462
+   ]
+  },
+  {
+   "id": "04_spurious_copper_16/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_16.jpg",
+   "board": "04",
+   "box": [
+    624,
+    1255,
+    666,
+    1427
+   ]
+  },
+  {
+   "id": "04_spurious_copper_17/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_17.jpg",
+   "board": "04",
+   "box": [
+    1163,
+    1862,
+    1209,
+    1975
+   ]
+  },
+  {
+   "id": "04_spurious_copper_17/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_17.jpg",
+   "board": "04",
+   "box": [
+    2362,
+    1011,
+    2457,
+    1074
+   ]
+  },
+  {
+   "id": "04_spurious_copper_17/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_17.jpg",
+   "board": "04",
+   "box": [
+    2423,
+    1756,
+    2548,
+    1792
+   ]
+  },
+  {
+   "id": "04_spurious_copper_18/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_18.jpg",
+   "board": "04",
+   "box": [
+    2100,
+    629,
+    2143,
+    740
+   ]
+  },
+  {
+   "id": "04_spurious_copper_18/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_18.jpg",
+   "board": "04",
+   "box": [
+    2194,
+    828,
+    2232,
+    959
+   ]
+  },
+  {
+   "id": "04_spurious_copper_18/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_18.jpg",
+   "board": "04",
+   "box": [
+    1625,
+    716,
+    1659,
+    812
+   ]
+  },
+  {
+   "id": "04_spurious_copper_19/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_19.jpg",
+   "board": "04",
+   "box": [
+    1778,
+    775,
+    1815,
+    874
+   ]
+  },
+  {
+   "id": "04_spurious_copper_19/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_19.jpg",
+   "board": "04",
+   "box": [
+    2268,
+    408,
+    2407,
+    459
+   ]
+  },
+  {
+   "id": "04_spurious_copper_19/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_19.jpg",
+   "board": "04",
+   "box": [
+    308,
+    539,
+    342,
+    614
+   ]
+  },
+  {
+   "id": "04_spurious_copper_20/0",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_20.jpg",
+   "board": "04",
+   "box": [
+    2190,
+    871,
+    2235,
+    1028
+   ]
+  },
+  {
+   "id": "04_spurious_copper_20/1",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_20.jpg",
+   "board": "04",
+   "box": [
+    955,
+    1230,
+    1126,
+    1277
+   ]
+  },
+  {
+   "id": "04_spurious_copper_20/2",
+   "label": "Spurious_copper",
+   "category_id": 5,
+   "image": "images/Spurious_copper/04_spurious_copper_20.jpg",
+   "board": "04",
+   "box": [
+    874,
+    1091,
+    947,
+    1139
+   ]
+  }
+ ],
+ "gallery_images": [
+  "01_missing_hole_01",
+  "01_missing_hole_02",
+  "01_missing_hole_03",
+  "01_missing_hole_04",
+  "01_missing_hole_05",
+  "01_missing_hole_06",
+  "01_missing_hole_07",
+  "01_missing_hole_08",
+  "01_missing_hole_09",
+  "01_missing_hole_10",
+  "01_missing_hole_11",
+  "01_missing_hole_12",
+  "01_missing_hole_13",
+  "01_missing_hole_14",
+  "01_missing_hole_15",
+  "01_missing_hole_16",
+  "01_missing_hole_17",
+  "01_missing_hole_18",
+  "01_missing_hole_19",
+  "01_missing_hole_20",
+  "04_missing_hole_01",
+  "04_missing_hole_02",
+  "04_missing_hole_03",
+  "04_missing_hole_04",
+  "04_missing_hole_05",
+  "04_missing_hole_06",
+  "04_missing_hole_07",
+  "04_missing_hole_08",
+  "04_missing_hole_09",
+  "04_missing_hole_10",
+  "04_missing_hole_11",
+  "04_missing_hole_12",
+  "04_missing_hole_13",
+  "04_missing_hole_14",
+  "04_missing_hole_15",
+  "04_missing_hole_16",
+  "04_missing_hole_17",
+  "04_missing_hole_18",
+  "04_missing_hole_19",
+  "04_missing_hole_20",
+  "01_mouse_bite_01",
+  "01_mouse_bite_02",
+  "01_mouse_bite_03",
+  "01_mouse_bite_04",
+  "01_mouse_bite_05",
+  "01_mouse_bite_06",
+  "01_mouse_bite_07",
+  "01_mouse_bite_08",
+  "01_mouse_bite_09",
+  "01_mouse_bite_10",
+  "01_mouse_bite_11",
+  "01_mouse_bite_12",
+  "01_mouse_bite_13",
+  "01_mouse_bite_14",
+  "01_mouse_bite_15",
+  "01_mouse_bite_16",
+  "01_mouse_bite_17",
+  "01_mouse_bite_18",
+  "01_mouse_bite_19",
+  "01_mouse_bite_20",
+  "04_mouse_bite_01",
+  "04_mouse_bite_02",
+  "04_mouse_bite_03",
+  "04_mouse_bite_04",
+  "04_mouse_bite_05",
+  "04_mouse_bite_06",
+  "04_mouse_bite_07",
+  "04_mouse_bite_08",
+  "04_mouse_bite_09",
+  "04_mouse_bite_10",
+  "04_mouse_bite_11",
+  "04_mouse_bite_12",
+  "04_mouse_bite_13",
+  "04_mouse_bite_14",
+  "04_mouse_bite_15",
+  "04_mouse_bite_16",
+  "04_mouse_bite_17",
+  "04_mouse_bite_18",
+  "04_mouse_bite_19",
+  "04_mouse_bite_20",
+  "01_open_circuit_01",
+  "01_open_circuit_02",
+  "01_open_circuit_03",
+  "01_open_circuit_04",
+  "01_open_circuit_05",
+  "01_open_circuit_06",
+  "01_open_circuit_07",
+  "01_open_circuit_08",
+  "01_open_circuit_09",
+  "01_open_circuit_10",
+  "01_open_circuit_11",
+  "01_open_circuit_12",
+  "01_open_circuit_13",
+  "01_open_circuit_14",
+  "01_open_circuit_15",
+  "01_open_circuit_16",
+  "01_open_circuit_17",
+  "01_open_circuit_18",
+  "01_open_circuit_19",
+  "01_open_circuit_20",
+  "04_open_circuit_01",
+  "04_open_circuit_02",
+  "04_open_circuit_03",
+  "04_open_circuit_04",
+  "04_open_circuit_05",
+  "04_open_circuit_06",
+  "04_open_circuit_07",
+  "04_open_circuit_08",
+  "04_open_circuit_09",
+  "04_open_circuit_10",
+  "04_open_circuit_11",
+  "04_open_circuit_12",
+  "04_open_circuit_13",
+  "04_open_circuit_14",
+  "04_open_circuit_15",
+  "04_open_circuit_16",
+  "04_open_circuit_17",
+  "04_open_circuit_18",
+  "04_open_circuit_19",
+  "04_open_circuit_20",
+  "01_short_01",
+  "01_short_02",
+  "01_short_03",
+  "01_short_04",
+  "01_short_05",
+  "01_short_06",
+  "01_short_07",
+  "01_short_08",
+  "01_short_09",
+  "01_short_10",
+  "01_short_11",
+  "01_short_12",
+  "01_short_13",
+  "01_short_14",
+  "01_short_15",
+  "01_short_16",
+  "01_short_17",
+  "01_short_18",
+  "01_short_19",
+  "01_short_20",
+  "04_short_01",
+  "04_short_02",
+  "04_short_03",
+  "04_short_04",
+  "04_short_05",
+  "04_short_06",
+  "04_short_07",
+  "04_short_08",
+  "04_short_09",
+  "04_short_10",
+  "04_short_11",
+  "04_short_12",
+  "04_short_13",
+  "04_short_14",
+  "04_short_15",
+  "04_short_16",
+  "04_short_17",
+  "04_short_18",
+  "04_short_19",
+  "04_short_20",
+  "01_spur_01",
+  "01_spur_02",
+  "01_spur_03",
+  "01_spur_04",
+  "01_spur_05",
+  "01_spur_06",
+  "01_spur_07",
+  "01_spur_08",
+  "01_spur_09",
+  "01_spur_10",
+  "01_spur_11",
+  "01_spur_12",
+  "01_spur_13",
+  "01_spur_14",
+  "01_spur_15",
+  "01_spur_16",
+  "01_spur_17",
+  "01_spur_18",
+  "01_spur_19",
+  "01_spur_20",
+  "04_spur_01",
+  "04_spur_02",
+  "04_spur_03",
+  "04_spur_04",
+  "04_spur_05",
+  "04_spur_06",
+  "04_spur_07",
+  "04_spur_08",
+  "04_spur_09",
+  "04_spur_10",
+  "04_spur_11",
+  "04_spur_12",
+  "04_spur_13",
+  "04_spur_14",
+  "04_spur_15",
+  "04_spur_16",
+  "04_spur_17",
+  "04_spur_18",
+  "04_spur_19",
+  "04_spur_20",
+  "01_spurious_copper_01",
+  "01_spurious_copper_02",
+  "01_spurious_copper_03",
+  "01_spurious_copper_04",
+  "01_spurious_copper_05",
+  "01_spurious_copper_06",
+  "01_spurious_copper_07",
+  "01_spurious_copper_08",
+  "01_spurious_copper_09",
+  "01_spurious_copper_10",
+  "01_spurious_copper_11",
+  "01_spurious_copper_12",
+  "01_spurious_copper_13",
+  "01_spurious_copper_14",
+  "01_spurious_copper_15",
+  "01_spurious_copper_16",
+  "01_spurious_copper_17",
+  "01_spurious_copper_18",
+  "01_spurious_copper_19",
+  "01_spurious_copper_20",
+  "04_spurious_copper_01",
+  "04_spurious_copper_02",
+  "04_spurious_copper_03",
+  "04_spurious_copper_04",
+  "04_spurious_copper_05",
+  "04_spurious_copper_06",
+  "04_spurious_copper_07",
+  "04_spurious_copper_08",
+  "04_spurious_copper_09",
+  "04_spurious_copper_10",
+  "04_spurious_copper_11",
+  "04_spurious_copper_12",
+  "04_spurious_copper_13",
+  "04_spurious_copper_14",
+  "04_spurious_copper_15",
+  "04_spurious_copper_16",
+  "04_spurious_copper_17",
+  "04_spurious_copper_18",
+  "04_spurious_copper_19",
+  "04_spurious_copper_20"
+ ],
+ "cal": [
+  "09_missing_hole_01",
+  "09_missing_hole_02",
+  "09_missing_hole_03",
+  "09_missing_hole_04",
+  "09_missing_hole_05",
+  "09_missing_hole_06",
+  "09_missing_hole_07",
+  "09_missing_hole_08",
+  "09_missing_hole_09",
+  "09_missing_hole_10",
+  "10_missing_hole_01",
+  "10_missing_hole_02",
+  "10_missing_hole_03",
+  "10_missing_hole_04",
+  "10_missing_hole_05",
+  "09_mouse_bite_01",
+  "09_mouse_bite_02",
+  "09_mouse_bite_03",
+  "09_mouse_bite_04",
+  "09_mouse_bite_05",
+  "09_mouse_bite_06",
+  "09_mouse_bite_07",
+  "09_mouse_bite_08",
+  "09_mouse_bite_09",
+  "09_mouse_bite_10",
+  "10_mouse_bite_01",
+  "10_mouse_bite_02",
+  "10_mouse_bite_03",
+  "10_mouse_bite_04",
+  "10_mouse_bite_05",
+  "09_open_circuit_01",
+  "09_open_circuit_02",
+  "09_open_circuit_03",
+  "09_open_circuit_04",
+  "09_open_circuit_05",
+  "09_open_circuit_06",
+  "09_open_circuit_07",
+  "09_open_circuit_08",
+  "09_open_circuit_09",
+  "09_open_circuit_10",
+  "10_open_circuit_01",
+  "10_open_circuit_02",
+  "10_open_circuit_03",
+  "10_open_circuit_04",
+  "10_open_circuit_05",
+  "10_open_circuit_06",
+  "09_short_01",
+  "09_short_02",
+  "09_short_03",
+  "09_short_04",
+  "09_short_05",
+  "09_short_06",
+  "09_short_07",
+  "09_short_08",
+  "09_short_09",
+  "09_short_10",
+  "10_short_01",
+  "10_short_02",
+  "10_short_03",
+  "10_short_04",
+  "10_short_05",
+  "09_spur_01",
+  "09_spur_02",
+  "09_spur_03",
+  "09_spur_04",
+  "09_spur_05",
+  "09_spur_06",
+  "09_spur_07",
+  "09_spur_08",
+  "09_spur_09",
+  "09_spur_10",
+  "10_spur_01",
+  "10_spur_02",
+  "10_spur_03",
+  "10_spur_04",
+  "10_spur_05",
+  "09_spurious_copper_01",
+  "09_spurious_copper_02",
+  "09_spurious_copper_03",
+  "09_spurious_copper_04",
+  "09_spurious_copper_05",
+  "09_spurious_copper_06",
+  "09_spurious_copper_07",
+  "09_spurious_copper_08",
+  "09_spurious_copper_09",
+  "09_spurious_copper_10",
+  "10_spurious_copper_01",
+  "10_spurious_copper_02",
+  "10_spurious_copper_03",
+  "10_spurious_copper_04",
+  "10_spurious_copper_05",
+  "10_spurious_copper_06"
+ ],
+ "test": [
+  "05_missing_hole_01",
+  "05_missing_hole_02",
+  "05_missing_hole_03",
+  "05_missing_hole_04",
+  "05_missing_hole_05",
+  "05_missing_hole_06",
+  "05_missing_hole_07",
+  "05_missing_hole_08",
+  "05_missing_hole_09",
+  "05_missing_hole_10",
+  "06_missing_hole_01",
+  "06_missing_hole_02",
+  "06_missing_hole_03",
+  "06_missing_hole_04",
+  "06_missing_hole_05",
+  "06_missing_hole_06",
+  "06_missing_hole_07",
+  "06_missing_hole_08",
+  "06_missing_hole_09",
+  "06_missing_hole_10",
+  "07_missing_hole_01",
+  "07_missing_hole_02",
+  "07_missing_hole_03",
+  "07_missing_hole_04",
+  "07_missing_hole_05",
+  "07_missing_hole_06",
+  "07_missing_hole_07",
+  "07_missing_hole_08",
+  "07_missing_hole_09",
+  "07_missing_hole_10",
+  "08_missing_hole_01",
+  "08_missing_hole_02",
+  "08_missing_hole_03",
+  "08_missing_hole_04",
+  "08_missing_hole_05",
+  "08_missing_hole_06",
+  "08_missing_hole_07",
+  "08_missing_hole_08",
+  "08_missing_hole_09",
+  "08_missing_hole_10",
+  "11_missing_hole_01",
+  "11_missing_hole_02",
+  "11_missing_hole_03",
+  "11_missing_hole_04",
+  "11_missing_hole_05",
+  "11_missing_hole_06",
+  "11_missing_hole_07",
+  "11_missing_hole_08",
+  "11_missing_hole_09",
+  "11_missing_hole_10",
+  "12_missing_hole_01",
+  "12_missing_hole_02",
+  "12_missing_hole_03",
+  "12_missing_hole_04",
+  "12_missing_hole_05",
+  "12_missing_hole_06",
+  "12_missing_hole_07",
+  "12_missing_hole_08",
+  "12_missing_hole_09",
+  "12_missing_hole_10",
+  "05_mouse_bite_01",
+  "05_mouse_bite_02",
+  "05_mouse_bite_03",
+  "05_mouse_bite_04",
+  "05_mouse_bite_05",
+  "05_mouse_bite_06",
+  "05_mouse_bite_07",
+  "05_mouse_bite_08",
+  "05_mouse_bite_09",
+  "05_mouse_bite_10",
+  "06_mouse_bite_01",
+  "06_mouse_bite_02",
+  "06_mouse_bite_03",
+  "06_mouse_bite_04",
+  "06_mouse_bite_05",
+  "06_mouse_bite_06",
+  "06_mouse_bite_07",
+  "06_mouse_bite_08",
+  "06_mouse_bite_09",
+  "06_mouse_bite_10",
+  "07_mouse_bite_01",
+  "07_mouse_bite_02",
+  "07_mouse_bite_03",
+  "07_mouse_bite_04",
+  "07_mouse_bite_05",
+  "07_mouse_bite_06",
+  "07_mouse_bite_07",
+  "07_mouse_bite_08",
+  "07_mouse_bite_09",
+  "07_mouse_bite_10",
+  "08_mouse_bite_01",
+  "08_mouse_bite_02",
+  "08_mouse_bite_03",
+  "08_mouse_bite_04",
+  "08_mouse_bite_05",
+  "08_mouse_bite_06",
+  "08_mouse_bite_07",
+  "08_mouse_bite_08",
+  "08_mouse_bite_09",
+  "08_mouse_bite_10",
+  "11_mouse_bite_01",
+  "11_mouse_bite_02",
+  "11_mouse_bite_03",
+  "11_mouse_bite_04",
+  "11_mouse_bite_05",
+  "11_mouse_bite_06",
+  "11_mouse_bite_07",
+  "11_mouse_bite_08",
+  "11_mouse_bite_09",
+  "11_mouse_bite_10",
+  "12_mouse_bite_01",
+  "12_mouse_bite_02",
+  "12_mouse_bite_03",
+  "12_mouse_bite_04",
+  "12_mouse_bite_05",
+  "12_mouse_bite_06",
+  "12_mouse_bite_07",
+  "12_mouse_bite_08",
+  "12_mouse_bite_09",
+  "12_mouse_bite_10",
+  "05_open_circuit_01",
+  "05_open_circuit_02",
+  "05_open_circuit_03",
+  "05_open_circuit_04",
+  "05_open_circuit_05",
+  "05_open_circuit_06",
+  "05_open_circuit_07",
+  "05_open_circuit_08",
+  "05_open_circuit_09",
+  "05_open_circuit_10",
+  "06_open_circuit_01",
+  "06_open_circuit_02",
+  "06_open_circuit_03",
+  "06_open_circuit_04",
+  "06_open_circuit_05",
+  "06_open_circuit_06",
+  "06_open_circuit_07",
+  "06_open_circuit_08",
+  "06_open_circuit_09",
+  "06_open_circuit_10",
+  "07_open_circuit_01",
+  "07_open_circuit_02",
+  "07_open_circuit_03",
+  "07_open_circuit_04",
+  "07_open_circuit_05",
+  "07_open_circuit_06",
+  "07_open_circuit_07",
+  "07_open_circuit_08",
+  "07_open_circuit_09",
+  "07_open_circuit_10",
+  "08_open_circuit_01",
+  "08_open_circuit_02",
+  "08_open_circuit_03",
+  "08_open_circuit_04",
+  "08_open_circuit_05",
+  "08_open_circuit_06",
+  "08_open_circuit_07",
+  "08_open_circuit_08",
+  "08_open_circuit_09",
+  "08_open_circuit_10",
+  "11_open_circuit_01",
+  "11_open_circuit_02",
+  "11_open_circuit_03",
+  "11_open_circuit_04",
+  "11_open_circuit_05",
+  "11_open_circuit_06",
+  "11_open_circuit_07",
+  "11_open_circuit_08",
+  "11_open_circuit_09",
+  "11_open_circuit_10",
+  "12_open_circuit_01",
+  "12_open_circuit_02",
+  "12_open_circuit_03",
+  "12_open_circuit_04",
+  "12_open_circuit_05",
+  "12_open_circuit_06",
+  "12_open_circuit_07",
+  "12_open_circuit_08",
+  "12_open_circuit_09",
+  "12_open_circuit_10",
+  "05_short_01",
+  "05_short_02",
+  "05_short_03",
+  "05_short_04",
+  "05_short_05",
+  "05_short_06",
+  "05_short_07",
+  "05_short_08",
+  "05_short_09",
+  "05_short_10",
+  "06_short_01",
+  "06_short_02",
+  "06_short_03",
+  "06_short_04",
+  "06_short_05",
+  "06_short_06",
+  "06_short_07",
+  "06_short_08",
+  "06_short_09",
+  "06_short_10",
+  "06_short_11",
+  "07_short_01",
+  "07_short_02",
+  "07_short_03",
+  "07_short_04",
+  "07_short_05",
+  "07_short_06",
+  "07_short_07",
+  "07_short_08",
+  "07_short_09",
+  "07_short_10",
+  "08_short_01",
+  "08_short_02",
+  "08_short_03",
+  "08_short_04",
+  "08_short_05",
+  "08_short_06",
+  "08_short_07",
+  "08_short_08",
+  "08_short_09",
+  "08_short_10",
+  "11_short_01",
+  "11_short_02",
+  "11_short_03",
+  "11_short_04",
+  "11_short_05",
+  "11_short_06",
+  "11_short_07",
+  "11_short_08",
+  "11_short_09",
+  "11_short_10",
+  "12_short_01",
+  "12_short_02",
+  "12_short_03",
+  "12_short_04",
+  "12_short_05",
+  "12_short_06",
+  "12_short_07",
+  "12_short_08",
+  "12_short_09",
+  "12_short_10",
+  "05_spur_01",
+  "05_spur_02",
+  "05_spur_03",
+  "05_spur_04",
+  "05_spur_05",
+  "05_spur_06",
+  "05_spur_07",
+  "05_spur_08",
+  "05_spur_09",
+  "05_spur_10",
+  "06_spur_01",
+  "06_spur_02",
+  "06_spur_03",
+  "06_spur_04",
+  "06_spur_05",
+  "06_spur_06",
+  "06_spur_07",
+  "06_spur_08",
+  "06_spur_09",
+  "06_spur_10",
+  "07_spur_01",
+  "07_spur_02",
+  "07_spur_03",
+  "07_spur_04",
+  "07_spur_05",
+  "07_spur_06",
+  "07_spur_07",
+  "07_spur_08",
+  "07_spur_09",
+  "07_spur_10",
+  "08_spur_01",
+  "08_spur_02",
+  "08_spur_03",
+  "08_spur_04",
+  "08_spur_05",
+  "08_spur_06",
+  "08_spur_07",
+  "08_spur_08",
+  "08_spur_09",
+  "08_spur_10",
+  "11_spur_01",
+  "11_spur_02",
+  "11_spur_03",
+  "11_spur_04",
+  "11_spur_05",
+  "11_spur_06",
+  "11_spur_07",
+  "11_spur_08",
+  "11_spur_09",
+  "11_spur_10",
+  "12_spur_01",
+  "12_spur_02",
+  "12_spur_03",
+  "12_spur_04",
+  "12_spur_05",
+  "12_spur_06",
+  "12_spur_07",
+  "12_spur_08",
+  "12_spur_09",
+  "12_spur_10",
+  "05_spurious_copper_01",
+  "05_spurious_copper_02",
+  "05_spurious_copper_03",
+  "05_spurious_copper_04",
+  "05_spurious_copper_05",
+  "05_spurious_copper_06",
+  "05_spurious_copper_07",
+  "05_spurious_copper_08",
+  "05_spurious_copper_09",
+  "05_spurious_copper_10",
+  "06_spurious_copper_01",
+  "06_spurious_copper_02",
+  "06_spurious_copper_03",
+  "06_spurious_copper_04",
+  "06_spurious_copper_05",
+  "06_spurious_copper_06",
+  "06_spurious_copper_07",
+  "06_spurious_copper_08",
+  "06_spurious_copper_09",
+  "06_spurious_copper_10",
+  "07_spurious_copper_01",
+  "07_spurious_copper_02",
+  "07_spurious_copper_03",
+  "07_spurious_copper_04",
+  "07_spurious_copper_05",
+  "07_spurious_copper_06",
+  "07_spurious_copper_07",
+  "07_spurious_copper_08",
+  "07_spurious_copper_09",
+  "07_spurious_copper_10",
+  "08_spurious_copper_01",
+  "08_spurious_copper_02",
+  "08_spurious_copper_03",
+  "08_spurious_copper_04",
+  "08_spurious_copper_05",
+  "08_spurious_copper_06",
+  "08_spurious_copper_07",
+  "08_spurious_copper_08",
+  "08_spurious_copper_09",
+  "08_spurious_copper_10",
+  "11_spurious_copper_01",
+  "11_spurious_copper_02",
+  "11_spurious_copper_03",
+  "11_spurious_copper_04",
+  "11_spurious_copper_05",
+  "11_spurious_copper_06",
+  "11_spurious_copper_07",
+  "11_spurious_copper_08",
+  "11_spurious_copper_09",
+  "11_spurious_copper_10",
+  "12_spurious_copper_01",
+  "12_spurious_copper_02",
+  "12_spurious_copper_03",
+  "12_spurious_copper_04",
+  "12_spurious_copper_05",
+  "12_spurious_copper_06",
+  "12_spurious_copper_07",
+  "12_spurious_copper_08",
+  "12_spurious_copper_09",
+  "12_spurious_copper_10"
+ ]
+}

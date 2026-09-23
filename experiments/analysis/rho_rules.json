@@ -1,0 +1,1779 @@
+{
+ "what": "аналитика §2.3, часть 2: кандидатные правила ρ и дедупликации; правила выбора записаны до счёта",
+ "dataset": "hr_insdet",
+ "split": "cal",
+ "scenes": [
+  "easy/meeting_room_001/rgb_000",
+  "easy/meeting_room_001/rgb_001",
+  "easy/meeting_room_001/rgb_002",
+  "easy/meeting_room_001/rgb_003",
+  "easy/meeting_room_001/rgb_004",
+  "easy/meeting_room_001/rgb_005",
+  "easy/meeting_room_001/rgb_006",
+  "easy/meeting_room_001/rgb_007",
+  "easy/meeting_room_001/rgb_008",
+  "easy/meeting_room_001/rgb_009",
+  "easy/meeting_room_001/rgb_010",
+  "easy/meeting_room_001/rgb_011",
+  "easy/meeting_room_001/rgb_012",
+  "easy/meeting_room_001/rgb_013",
+  "easy/meeting_room_001/rgb_014",
+  "easy/meeting_room_001/rgb_015",
+  "easy/meeting_room_001/rgb_016",
+  "easy/meeting_room_001/rgb_017",
+  "easy/meeting_room_001/rgb_018",
+  "easy/meeting_room_001/rgb_019",
+  "easy/sink/rgb_000",
+  "easy/sink/rgb_001",
+  "easy/sink/rgb_002",
+  "easy/sink/rgb_003",
+  "easy/sink/rgb_004",
+  "easy/sink/rgb_005",
+  "easy/sink/rgb_006",
+  "easy/sink/rgb_007",
+  "easy/sink/rgb_008",
+  "easy/sink/rgb_009",
+  "easy/sink/rgb_010",
+  "easy/sink/rgb_011",
+  "easy/sink/rgb_012",
+  "easy/sink/rgb_013",
+  "easy/sink/rgb_014",
+  "easy/sink/rgb_015",
+  "easy/sink/rgb_016",
+  "easy/sink/rgb_017",
+  "easy/sink/rgb_018",
+  "easy/sink/rgb_019"
+ ],
+ "thetas": [
+  0.8,
+  0.85,
+  0.9,
+  0.95,
+  0.99
+ ],
+ "best_variants": {
+  "dinov2": "c_mean_10",
+  "dinov3": "c_blur_15"
+ },
+ "runs": {
+  "dinov2": "dinov2_c_mean_10_hr_insdet",
+  "dinov3": "dinov3_c_blur_15_hr_insdet"
+ },
+ "mask_cache": "auto_cnl1_ls2048_ppb16_sam2-2b90b9f_26872978",
+ "code_commit": "e5246324884083323db97bc26112aeb9693d40e4",
+ "code_dirty": false,
+ "written_utc": "2026-09-21T13:27:42+00:00",
+ "rho_rules": {
+  "by_theta": {
+   "0.8": {
+    "all": {
+     "n_kept": 4534,
+     "share_of_M": 1.0,
+     "per_scene_median": 113.5,
+     "by_role": {
+      "object": 764,
+      "near": 842,
+      "distractor": 2928
+     },
+     "recall_50": 0.9217809867629362,
+     "recall_75": 0.8567990373044525,
+     "recall_50_95": 0.8276774969915764,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8701298701298701,
+       "recall_75": 0.8246753246753247,
+       "recall_50_95": 0.7610389610389611,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.9247524752475248,
+       "recall_75": 0.8475247524752475,
+       "recall_50_95": 0.8235643564356435,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.9593023255813954,
+       "recall_75": 0.9127906976744186,
+       "recall_50_95": 0.8994186046511627,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 0,
+     "object_masks_kept": 764,
+     "gt_with_2plus_masks_at_50_share": 0.21540312876052947,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 638,
+     "removed_by_antichain_repair": 0
+    },
+    "maximal": {
+     "n_kept": 2467,
+     "share_of_M": 0.5441111601235112,
+     "per_scene_median": 62.5,
+     "by_role": {
+      "object": 612,
+      "near": 350,
+      "distractor": 1505
+     },
+     "recall_50": 0.8315282791817088,
+     "recall_75": 0.6823104693140795,
+     "recall_50_95": 0.6779783393501805,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8441558441558441,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7318181818181818,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8257425742574257,
+       "recall_75": 0.6613861386138614,
+       "recall_50_95": 0.6637623762376238,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8372093023255814,
+       "recall_75": 0.6453488372093024,
+       "recall_50_95": 0.6715116279069767,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 75,
+     "object_masks_kept": 612,
+     "gt_with_2plus_masks_at_50_share": 0.012033694344163659,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 264,
+     "removed_by_antichain_repair": 0
+    },
+    "minimal": {
+     "n_kept": 2918,
+     "share_of_M": 0.6435818262020291,
+     "per_scene_median": 74.5,
+     "by_role": {
+      "object": 443,
+      "near": 518,
+      "distractor": 1957
+     },
+     "recall_50": 0.628158844765343,
+     "recall_75": 0.48375451263537905,
+     "recall_50_95": 0.4888086642599278,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8311688311688312,
+       "recall_75": 0.7662337662337663,
+       "recall_50_95": 0.7103896103896103,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.6475247524752475,
+       "recall_75": 0.4891089108910891,
+       "recall_50_95": 0.5027722772277228,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.38953488372093026,
+       "recall_75": 0.21511627906976744,
+       "recall_50_95": 0.24941860465116278,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 244,
+     "object_masks_kept": 443,
+     "gt_with_2plus_masks_at_50_share": 0.00842358604091456,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 434,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.9": {
+     "n_kept": 2597,
+     "share_of_M": 0.5727834142037935,
+     "per_scene_median": 67.0,
+     "by_role": {
+      "object": 574,
+      "near": 437,
+      "distractor": 1586
+     },
+     "recall_50": 0.8206979542719615,
+     "recall_75": 0.6365824308062575,
+     "recall_50_95": 0.6407942238267148,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8158415841584158,
+       "recall_75": 0.6198019801980198,
+       "recall_50_95": 0.6287128712871287,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8081395348837209,
+       "recall_75": 0.5465116279069767,
+       "recall_50_95": 0.5941860465116279,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 84,
+     "object_masks_kept": 574,
+     "gt_with_2plus_masks_at_50_share": 0.015643802647412757,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 319,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.8": {
+     "n_kept": 2620,
+     "share_of_M": 0.5778561976179973,
+     "per_scene_median": 67.0,
+     "by_role": {
+      "object": 570,
+      "near": 445,
+      "distractor": 1605
+     },
+     "recall_50": 0.8206979542719615,
+     "recall_75": 0.631768953068592,
+     "recall_50_95": 0.6373044524669074,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8158415841584158,
+       "recall_75": 0.6158415841584158,
+       "recall_50_95": 0.6259405940594059,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8081395348837209,
+       "recall_75": 0.5348837209302325,
+       "recall_50_95": 0.5854651162790697,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 84,
+     "object_masks_kept": 570,
+     "gt_with_2plus_masks_at_50_share": 0.01684717208182912,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 322,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.7": {
+     "n_kept": 2661,
+     "share_of_M": 0.5868989854433172,
+     "per_scene_median": 67.5,
+     "by_role": {
+      "object": 566,
+      "near": 452,
+      "distractor": 1643
+     },
+     "recall_50": 0.8194945848375451,
+     "recall_75": 0.6269554753309265,
+     "recall_50_95": 0.633453670276775,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8138613861386138,
+       "recall_75": 0.6079207920792079,
+       "recall_50_95": 0.6196039603960396,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8081395348837209,
+       "recall_75": 0.5348837209302325,
+       "recall_50_95": 0.5854651162790697,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 85,
+     "object_masks_kept": 566,
+     "gt_with_2plus_masks_at_50_share": 0.01684717208182912,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 326,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.6": {
+     "n_kept": 2670,
+     "share_of_M": 0.5888839876488752,
+     "per_scene_median": 68.0,
+     "by_role": {
+      "object": 563,
+      "near": 458,
+      "distractor": 1649
+     },
+     "recall_50": 0.8170878459687124,
+     "recall_75": 0.6233453670276775,
+     "recall_50_95": 0.6304452466907341,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8118811881188119,
+       "recall_75": 0.6059405940594059,
+       "recall_50_95": 0.6178217821782178,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8023255813953488,
+       "recall_75": 0.5232558139534884,
+       "recall_50_95": 0.5761627906976744,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 87,
+     "object_masks_kept": 563,
+     "gt_with_2plus_masks_at_50_share": 0.01684717208182912,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 331,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.5": {
+     "n_kept": 2694,
+     "share_of_M": 0.5941773268636965,
+     "per_scene_median": 68.0,
+     "by_role": {
+      "object": 559,
+      "near": 465,
+      "distractor": 1670
+     },
+     "recall_50": 0.8122743682310469,
+     "recall_75": 0.618531889290012,
+     "recall_50_95": 0.6256317689530686,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.805940594059406,
+       "recall_75": 0.6,
+       "recall_50_95": 0.6118811881188119,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.7965116279069767,
+       "recall_75": 0.5174418604651163,
+       "recall_50_95": 0.5703488372093023,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 91,
+     "object_masks_kept": 559,
+     "gt_with_2plus_masks_at_50_share": 0.01684717208182912,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 338,
+     "removed_by_antichain_repair": 0
+    }
+   },
+   "0.85": {
+    "all": {
+     "n_kept": 4534,
+     "share_of_M": 1.0,
+     "per_scene_median": 113.5,
+     "by_role": {
+      "object": 764,
+      "near": 842,
+      "distractor": 2928
+     },
+     "recall_50": 0.9217809867629362,
+     "recall_75": 0.8567990373044525,
+     "recall_50_95": 0.8276774969915764,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8701298701298701,
+       "recall_75": 0.8246753246753247,
+       "recall_50_95": 0.7610389610389611,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.9247524752475248,
+       "recall_75": 0.8475247524752475,
+       "recall_50_95": 0.8235643564356435,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.9593023255813954,
+       "recall_75": 0.9127906976744186,
+       "recall_50_95": 0.8994186046511627,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 0,
+     "object_masks_kept": 764,
+     "gt_with_2plus_masks_at_50_share": 0.21540312876052947,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 638,
+     "removed_by_antichain_repair": 0
+    },
+    "maximal": {
+     "n_kept": 2474,
+     "share_of_M": 0.5456550507278342,
+     "per_scene_median": 62.5,
+     "by_role": {
+      "object": 612,
+      "near": 351,
+      "distractor": 1511
+     },
+     "recall_50": 0.8315282791817088,
+     "recall_75": 0.6823104693140795,
+     "recall_50_95": 0.6779783393501805,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8441558441558441,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7318181818181818,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8257425742574257,
+       "recall_75": 0.6613861386138614,
+       "recall_50_95": 0.6637623762376238,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8372093023255814,
+       "recall_75": 0.6453488372093024,
+       "recall_50_95": 0.6715116279069767,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 75,
+     "object_masks_kept": 612,
+     "gt_with_2plus_masks_at_50_share": 0.012033694344163659,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 265,
+     "removed_by_antichain_repair": 0
+    },
+    "minimal": {
+     "n_kept": 2921,
+     "share_of_M": 0.6442434936038818,
+     "per_scene_median": 74.5,
+     "by_role": {
+      "object": 445,
+      "near": 518,
+      "distractor": 1958
+     },
+     "recall_50": 0.6305655836341757,
+     "recall_75": 0.4861612515042118,
+     "recall_50_95": 0.49097472924187724,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8311688311688312,
+       "recall_75": 0.7662337662337663,
+       "recall_50_95": 0.7103896103896103,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.6514851485148515,
+       "recall_75": 0.49306930693069306,
+       "recall_50_95": 0.5063366336633663,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.38953488372093026,
+       "recall_75": 0.21511627906976744,
+       "recall_50_95": 0.24941860465116278,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 242,
+     "object_masks_kept": 445,
+     "gt_with_2plus_masks_at_50_share": 0.00842358604091456,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 434,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.9": {
+     "n_kept": 2607,
+     "share_of_M": 0.5749889722099691,
+     "per_scene_median": 67.5,
+     "by_role": {
+      "object": 575,
+      "near": 436,
+      "distractor": 1596
+     },
+     "recall_50": 0.8219013237063778,
+     "recall_75": 0.6377858002406739,
+     "recall_50_95": 0.6418772563176895,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8178217821782178,
+       "recall_75": 0.6217821782178218,
+       "recall_50_95": 0.6304950495049505,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8081395348837209,
+       "recall_75": 0.5465116279069767,
+       "recall_50_95": 0.5941860465116279,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 83,
+     "object_masks_kept": 575,
+     "gt_with_2plus_masks_at_50_share": 0.015643802647412757,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 318,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.8": {
+     "n_kept": 2630,
+     "share_of_M": 0.580061755624173,
+     "per_scene_median": 67.5,
+     "by_role": {
+      "object": 571,
+      "near": 444,
+      "distractor": 1615
+     },
+     "recall_50": 0.8219013237063778,
+     "recall_75": 0.6329723225030084,
+     "recall_50_95": 0.6383874849578821,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8178217821782178,
+       "recall_75": 0.6178217821782178,
+       "recall_50_95": 0.6277227722772277,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8081395348837209,
+       "recall_75": 0.5348837209302325,
+       "recall_50_95": 0.5854651162790697,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 83,
+     "object_masks_kept": 571,
+     "gt_with_2plus_masks_at_50_share": 0.01684717208182912,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 321,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.7": {
+     "n_kept": 2670,
+     "share_of_M": 0.5888839876488752,
+     "per_scene_median": 67.5,
+     "by_role": {
+      "object": 567,
+      "near": 451,
+      "distractor": 1652
+     },
+     "recall_50": 0.8206979542719615,
+     "recall_75": 0.628158844765343,
+     "recall_50_95": 0.6345367027677496,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8158415841584158,
+       "recall_75": 0.6099009900990099,
+       "recall_50_95": 0.6213861386138614,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8081395348837209,
+       "recall_75": 0.5348837209302325,
+       "recall_50_95": 0.5854651162790697,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 84,
+     "object_masks_kept": 567,
+     "gt_with_2plus_masks_at_50_share": 0.01684717208182912,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 325,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.6": {
+     "n_kept": 2679,
+     "share_of_M": 0.5908689898544331,
+     "per_scene_median": 68.0,
+     "by_role": {
+      "object": 564,
+      "near": 457,
+      "distractor": 1658
+     },
+     "recall_50": 0.8182912154031288,
+     "recall_75": 0.6245487364620939,
+     "recall_50_95": 0.6315282791817087,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8138613861386138,
+       "recall_75": 0.6079207920792079,
+       "recall_50_95": 0.6196039603960396,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8023255813953488,
+       "recall_75": 0.5232558139534884,
+       "recall_50_95": 0.5761627906976744,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 86,
+     "object_masks_kept": 564,
+     "gt_with_2plus_masks_at_50_share": 0.01684717208182912,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 330,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.5": {
+     "n_kept": 2703,
+     "share_of_M": 0.5961623290692545,
+     "per_scene_median": 68.0,
+     "by_role": {
+      "object": 560,
+      "near": 464,
+      "distractor": 1679
+     },
+     "recall_50": 0.8134777376654633,
+     "recall_75": 0.6197352587244284,
+     "recall_50_95": 0.6267148014440433,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.807920792079208,
+       "recall_75": 0.601980198019802,
+       "recall_50_95": 0.6136633663366337,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.7965116279069767,
+       "recall_75": 0.5174418604651163,
+       "recall_50_95": 0.5703488372093023,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 90,
+     "object_masks_kept": 560,
+     "gt_with_2plus_masks_at_50_share": 0.01684717208182912,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 337,
+     "removed_by_antichain_repair": 0
+    }
+   },
+   "0.9": {
+    "all": {
+     "n_kept": 4534,
+     "share_of_M": 1.0,
+     "per_scene_median": 113.5,
+     "by_role": {
+      "object": 764,
+      "near": 842,
+      "distractor": 2928
+     },
+     "recall_50": 0.9217809867629362,
+     "recall_75": 0.8567990373044525,
+     "recall_50_95": 0.8276774969915764,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8701298701298701,
+       "recall_75": 0.8246753246753247,
+       "recall_50_95": 0.7610389610389611,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.9247524752475248,
+       "recall_75": 0.8475247524752475,
+       "recall_50_95": 0.8235643564356435,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.9593023255813954,
+       "recall_75": 0.9127906976744186,
+       "recall_50_95": 0.8994186046511627,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 0,
+     "object_masks_kept": 764,
+     "gt_with_2plus_masks_at_50_share": 0.21540312876052947,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 638,
+     "removed_by_antichain_repair": 0
+    },
+    "maximal": {
+     "n_kept": 2498,
+     "share_of_M": 0.5509483899426555,
+     "per_scene_median": 63.5,
+     "by_role": {
+      "object": 612,
+      "near": 353,
+      "distractor": 1533
+     },
+     "recall_50": 0.8315282791817088,
+     "recall_75": 0.6823104693140795,
+     "recall_50_95": 0.6779783393501805,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8441558441558441,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7318181818181818,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8257425742574257,
+       "recall_75": 0.6613861386138614,
+       "recall_50_95": 0.6637623762376238,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8372093023255814,
+       "recall_75": 0.6453488372093024,
+       "recall_50_95": 0.6715116279069767,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 75,
+     "object_masks_kept": 612,
+     "gt_with_2plus_masks_at_50_share": 0.012033694344163659,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 267,
+     "removed_by_antichain_repair": 0
+    },
+    "minimal": {
+     "n_kept": 2936,
+     "share_of_M": 0.6475518306131451,
+     "per_scene_median": 74.5,
+     "by_role": {
+      "object": 450,
+      "near": 522,
+      "distractor": 1964
+     },
+     "recall_50": 0.641395908543923,
+     "recall_75": 0.49217809867629364,
+     "recall_50_95": 0.4981949458483754,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8311688311688312,
+       "recall_75": 0.7662337662337663,
+       "recall_50_95": 0.7103896103896103,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.6613861386138614,
+       "recall_75": 0.500990099009901,
+       "recall_50_95": 0.5146534653465347,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.4127906976744186,
+       "recall_75": 0.22093023255813954,
+       "recall_50_95": 0.25988372093023254,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 233,
+     "object_masks_kept": 450,
+     "gt_with_2plus_masks_at_50_share": 0.00842358604091456,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 435,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.9": {
+     "n_kept": 2629,
+     "share_of_M": 0.5798411998235553,
+     "per_scene_median": 68.5,
+     "by_role": {
+      "object": 575,
+      "near": 440,
+      "distractor": 1614
+     },
+     "recall_50": 0.8219013237063778,
+     "recall_75": 0.6377858002406739,
+     "recall_50_95": 0.6419975932611311,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8178217821782178,
+       "recall_75": 0.6217821782178218,
+       "recall_50_95": 0.6304950495049505,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8081395348837209,
+       "recall_75": 0.5465116279069767,
+       "recall_50_95": 0.5947674418604652,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 83,
+     "object_masks_kept": 575,
+     "gt_with_2plus_masks_at_50_share": 0.01684717208182912,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 322,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.8": {
+     "n_kept": 2652,
+     "share_of_M": 0.5849139832377591,
+     "per_scene_median": 68.5,
+     "by_role": {
+      "object": 571,
+      "near": 448,
+      "distractor": 1633
+     },
+     "recall_50": 0.8219013237063778,
+     "recall_75": 0.6329723225030084,
+     "recall_50_95": 0.6385078219013237,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8178217821782178,
+       "recall_75": 0.6178217821782178,
+       "recall_50_95": 0.6277227722772277,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8081395348837209,
+       "recall_75": 0.5348837209302325,
+       "recall_50_95": 0.586046511627907,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 83,
+     "object_masks_kept": 571,
+     "gt_with_2plus_masks_at_50_share": 0.018050541516245487,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 325,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.7": {
+     "n_kept": 2691,
+     "share_of_M": 0.5935156594618438,
+     "per_scene_median": 68.5,
+     "by_role": {
+      "object": 567,
+      "near": 455,
+      "distractor": 1669
+     },
+     "recall_50": 0.8206979542719615,
+     "recall_75": 0.628158844765343,
+     "recall_50_95": 0.6346570397111914,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8158415841584158,
+       "recall_75": 0.6099009900990099,
+       "recall_50_95": 0.6213861386138614,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8081395348837209,
+       "recall_75": 0.5348837209302325,
+       "recall_50_95": 0.586046511627907,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 84,
+     "object_masks_kept": 567,
+     "gt_with_2plus_masks_at_50_share": 0.018050541516245487,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 329,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.6": {
+     "n_kept": 2700,
+     "share_of_M": 0.5955006616674019,
+     "per_scene_median": 69.0,
+     "by_role": {
+      "object": 564,
+      "near": 461,
+      "distractor": 1675
+     },
+     "recall_50": 0.8182912154031288,
+     "recall_75": 0.6245487364620939,
+     "recall_50_95": 0.6316486161251504,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8138613861386138,
+       "recall_75": 0.6079207920792079,
+       "recall_50_95": 0.6196039603960396,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8023255813953488,
+       "recall_75": 0.5232558139534884,
+       "recall_50_95": 0.5767441860465117,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 86,
+     "object_masks_kept": 564,
+     "gt_with_2plus_masks_at_50_share": 0.018050541516245487,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 334,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.5": {
+     "n_kept": 2724,
+     "share_of_M": 0.6007940008822232,
+     "per_scene_median": 69.0,
+     "by_role": {
+      "object": 560,
+      "near": 468,
+      "distractor": 1696
+     },
+     "recall_50": 0.8134777376654633,
+     "recall_75": 0.6197352587244284,
+     "recall_50_95": 0.626835138387485,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.807920792079208,
+       "recall_75": 0.601980198019802,
+       "recall_50_95": 0.6136633663366337,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.7965116279069767,
+       "recall_75": 0.5174418604651163,
+       "recall_50_95": 0.5709302325581396,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 90,
+     "object_masks_kept": 560,
+     "gt_with_2plus_masks_at_50_share": 0.018050541516245487,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 341,
+     "removed_by_antichain_repair": 0
+    }
+   },
+   "0.95": {
+    "all": {
+     "n_kept": 4534,
+     "share_of_M": 1.0,
+     "per_scene_median": 113.5,
+     "by_role": {
+      "object": 764,
+      "near": 842,
+      "distractor": 2928
+     },
+     "recall_50": 0.9217809867629362,
+     "recall_75": 0.8567990373044525,
+     "recall_50_95": 0.8276774969915764,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8701298701298701,
+       "recall_75": 0.8246753246753247,
+       "recall_50_95": 0.7610389610389611,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.9247524752475248,
+       "recall_75": 0.8475247524752475,
+       "recall_50_95": 0.8235643564356435,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.9593023255813954,
+       "recall_75": 0.9127906976744186,
+       "recall_50_95": 0.8994186046511627,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 0,
+     "object_masks_kept": 764,
+     "gt_with_2plus_masks_at_50_share": 0.21540312876052947,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 638,
+     "removed_by_antichain_repair": 0
+    },
+    "maximal": {
+     "n_kept": 2573,
+     "share_of_M": 0.5674900749889722,
+     "per_scene_median": 65.0,
+     "by_role": {
+      "object": 612,
+      "near": 367,
+      "distractor": 1594
+     },
+     "recall_50": 0.8315282791817088,
+     "recall_75": 0.6823104693140795,
+     "recall_50_95": 0.6779783393501805,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8441558441558441,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7318181818181818,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8257425742574257,
+       "recall_75": 0.6613861386138614,
+       "recall_50_95": 0.6637623762376238,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8372093023255814,
+       "recall_75": 0.6453488372093024,
+       "recall_50_95": 0.6715116279069767,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 75,
+     "object_masks_kept": 612,
+     "gt_with_2plus_masks_at_50_share": 0.013237063778580024,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 280,
+     "removed_by_antichain_repair": 0
+    },
+    "minimal": {
+     "n_kept": 2971,
+     "share_of_M": 0.6552712836347596,
+     "per_scene_median": 75.5,
+     "by_role": {
+      "object": 465,
+      "near": 526,
+      "distractor": 1980
+     },
+     "recall_50": 0.6594464500601684,
+     "recall_75": 0.5102286401925391,
+     "recall_50_95": 0.5156438026474127,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8376623376623377,
+       "recall_75": 0.7727272727272727,
+       "recall_50_95": 0.7168831168831169,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.6792079207920793,
+       "recall_75": 0.5207920792079208,
+       "recall_50_95": 0.5328712871287129,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.4418604651162791,
+       "recall_75": 0.2441860465116279,
+       "recall_50_95": 0.28488372093023256,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 218,
+     "object_masks_kept": 465,
+     "gt_with_2plus_masks_at_50_share": 0.009626955475330927,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 438,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.9": {
+     "n_kept": 2690,
+     "share_of_M": 0.5932951036612263,
+     "per_scene_median": 70.0,
+     "by_role": {
+      "object": 576,
+      "near": 452,
+      "distractor": 1662
+     },
+     "recall_50": 0.8231046931407943,
+     "recall_75": 0.6389891696750902,
+     "recall_50_95": 0.6424789410348977,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8158415841584158,
+       "recall_75": 0.6217821782178218,
+       "recall_50_95": 0.6295049504950495,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8197674418604651,
+       "recall_75": 0.5523255813953488,
+       "recall_50_95": 0.6,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 82,
+     "object_masks_kept": 576,
+     "gt_with_2plus_masks_at_50_share": 0.019253910950661854,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 332,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.8": {
+     "n_kept": 2714,
+     "share_of_M": 0.5985884428760476,
+     "per_scene_median": 70.0,
+     "by_role": {
+      "object": 571,
+      "near": 461,
+      "distractor": 1682
+     },
+     "recall_50": 0.8231046931407943,
+     "recall_75": 0.6329723225030084,
+     "recall_50_95": 0.6383874849578821,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8158415841584158,
+       "recall_75": 0.6158415841584158,
+       "recall_50_95": 0.6257425742574257,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8197674418604651,
+       "recall_75": 0.5406976744186046,
+       "recall_50_95": 0.5912790697674418,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 82,
+     "object_masks_kept": 571,
+     "gt_with_2plus_masks_at_50_share": 0.02045728038507822,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 335,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.7": {
+     "n_kept": 2719,
+     "share_of_M": 0.5996912218791354,
+     "per_scene_median": 70.5,
+     "by_role": {
+      "object": 567,
+      "near": 468,
+      "distractor": 1684
+     },
+     "recall_50": 0.8219013237063778,
+     "recall_75": 0.628158844765343,
+     "recall_50_95": 0.6345367027677496,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8138613861386138,
+       "recall_75": 0.6079207920792079,
+       "recall_50_95": 0.6194059405940594,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8197674418604651,
+       "recall_75": 0.5406976744186046,
+       "recall_50_95": 0.5912790697674418,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 83,
+     "object_masks_kept": 567,
+     "gt_with_2plus_masks_at_50_share": 0.02045728038507822,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 339,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.6": {
+     "n_kept": 2758,
+     "share_of_M": 0.6082928981032201,
+     "per_scene_median": 71.0,
+     "by_role": {
+      "object": 564,
+      "near": 474,
+      "distractor": 1720
+     },
+     "recall_50": 0.8194945848375451,
+     "recall_75": 0.6245487364620939,
+     "recall_50_95": 0.6315282791817087,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8118811881188119,
+       "recall_75": 0.6059405940594059,
+       "recall_50_95": 0.6176237623762376,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.813953488372093,
+       "recall_75": 0.5290697674418605,
+       "recall_50_95": 0.5819767441860465,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 85,
+     "object_masks_kept": 564,
+     "gt_with_2plus_masks_at_50_share": 0.02045728038507822,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 344,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.5": {
+     "n_kept": 2782,
+     "share_of_M": 0.6135862373180415,
+     "per_scene_median": 71.0,
+     "by_role": {
+      "object": 560,
+      "near": 481,
+      "distractor": 1741
+     },
+     "recall_50": 0.8146811070998796,
+     "recall_75": 0.6197352587244284,
+     "recall_50_95": 0.6267148014440433,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8506493506493507,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7324675324675325,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.805940594059406,
+       "recall_75": 0.6,
+       "recall_50_95": 0.6116831683168317,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8081395348837209,
+       "recall_75": 0.5232558139534884,
+       "recall_50_95": 0.5761627906976744,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 89,
+     "object_masks_kept": 560,
+     "gt_with_2plus_masks_at_50_share": 0.02045728038507822,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 351,
+     "removed_by_antichain_repair": 0
+    }
+   },
+   "0.99": {
+    "all": {
+     "n_kept": 4534,
+     "share_of_M": 1.0,
+     "per_scene_median": 113.5,
+     "by_role": {
+      "object": 764,
+      "near": 842,
+      "distractor": 2928
+     },
+     "recall_50": 0.9217809867629362,
+     "recall_75": 0.8567990373044525,
+     "recall_50_95": 0.8276774969915764,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8701298701298701,
+       "recall_75": 0.8246753246753247,
+       "recall_50_95": 0.7610389610389611,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.9247524752475248,
+       "recall_75": 0.8475247524752475,
+       "recall_50_95": 0.8235643564356435,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.9593023255813954,
+       "recall_75": 0.9127906976744186,
+       "recall_50_95": 0.8994186046511627,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 0,
+     "object_masks_kept": 764,
+     "gt_with_2plus_masks_at_50_share": 0.21540312876052947,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 638,
+     "removed_by_antichain_repair": 0
+    },
+    "maximal": {
+     "n_kept": 2944,
+     "share_of_M": 0.6493162770180856,
+     "per_scene_median": 76.5,
+     "by_role": {
+      "object": 625,
+      "near": 523,
+      "distractor": 1796
+     },
+     "recall_50": 0.8447653429602888,
+     "recall_75": 0.6955475330926595,
+     "recall_50_95": 0.6908543922984356,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8571428571428571,
+       "recall_75": 0.8051948051948052,
+       "recall_50_95": 0.7441558441558441,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8376237623762376,
+       "recall_75": 0.6772277227722773,
+       "recall_50_95": 0.6776237623762377,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8546511627906976,
+       "recall_75": 0.6511627906976745,
+       "recall_50_95": 0.6819767441860465,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 64,
+     "object_masks_kept": 625,
+     "gt_with_2plus_masks_at_50_share": 0.04693140794223827,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 408,
+     "removed_by_antichain_repair": 0
+    },
+    "minimal": {
+     "n_kept": 3228,
+     "share_of_M": 0.7119541243934715,
+     "per_scene_median": 82.0,
+     "by_role": {
+      "object": 550,
+      "near": 572,
+      "distractor": 2106
+     },
+     "recall_50": 0.7424789410348978,
+     "recall_75": 0.6101083032490975,
+     "recall_50_95": 0.6064981949458483,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8571428571428571,
+       "recall_75": 0.7922077922077922,
+       "recall_50_95": 0.7363636363636363,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.7643564356435644,
+       "recall_75": 0.6356435643564357,
+       "recall_50_95": 0.6340594059405941,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.5755813953488372,
+       "recall_75": 0.37209302325581395,
+       "recall_50_95": 0.40930232558139534,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 149,
+     "object_masks_kept": 550,
+     "gt_with_2plus_masks_at_50_share": 0.04091456077015644,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 471,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.9": {
+     "n_kept": 3017,
+     "share_of_M": 0.6654168504631672,
+     "per_scene_median": 78.0,
+     "by_role": {
+      "object": 632,
+      "near": 540,
+      "distractor": 1845
+     },
+     "recall_50": 0.8495788206979543,
+     "recall_75": 0.703971119133574,
+     "recall_50_95": 0.6984356197352587,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8571428571428571,
+       "recall_75": 0.8051948051948052,
+       "recall_50_95": 0.7441558441558441,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8415841584158416,
+       "recall_75": 0.691089108910891,
+       "recall_50_95": 0.6887128712871287,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8662790697674418,
+       "recall_75": 0.6511627906976745,
+       "recall_50_95": 0.686046511627907,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 60,
+     "object_masks_kept": 632,
+     "gt_with_2plus_masks_at_50_share": 0.048134777376654635,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 427,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.8": {
+     "n_kept": 3034,
+     "share_of_M": 0.6691662990736656,
+     "per_scene_median": 79.0,
+     "by_role": {
+      "object": 629,
+      "near": 545,
+      "distractor": 1860
+     },
+     "recall_50": 0.8495788206979543,
+     "recall_75": 0.7003610108303249,
+     "recall_50_95": 0.696028880866426,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8571428571428571,
+       "recall_75": 0.8051948051948052,
+       "recall_50_95": 0.7441558441558441,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8415841584158416,
+       "recall_75": 0.689108910891089,
+       "recall_50_95": 0.6877227722772277,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8662790697674418,
+       "recall_75": 0.6395348837209303,
+       "recall_50_95": 0.6773255813953488,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 60,
+     "object_masks_kept": 629,
+     "gt_with_2plus_masks_at_50_share": 0.049338146811071,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 428,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.7": {
+     "n_kept": 3041,
+     "share_of_M": 0.6707101896779886,
+     "per_scene_median": 79.0,
+     "by_role": {
+      "object": 628,
+      "near": 546,
+      "distractor": 1867
+     },
+     "recall_50": 0.8495788206979543,
+     "recall_75": 0.6991576413959085,
+     "recall_50_95": 0.6949458483754513,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8571428571428571,
+       "recall_75": 0.8051948051948052,
+       "recall_50_95": 0.7441558441558441,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8415841584158416,
+       "recall_75": 0.689108910891089,
+       "recall_50_95": 0.6877227722772277,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8662790697674418,
+       "recall_75": 0.6337209302325582,
+       "recall_50_95": 0.672093023255814,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 60,
+     "object_masks_kept": 628,
+     "gt_with_2plus_masks_at_50_share": 0.049338146811071,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 428,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.6": {
+     "n_kept": 3080,
+     "share_of_M": 0.6793118659020733,
+     "per_scene_median": 79.5,
+     "by_role": {
+      "object": 626,
+      "near": 549,
+      "distractor": 1905
+     },
+     "recall_50": 0.8483754512635379,
+     "recall_75": 0.6967509025270758,
+     "recall_50_95": 0.6930204572803851,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8571428571428571,
+       "recall_75": 0.8051948051948052,
+       "recall_50_95": 0.7441558441558441,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8415841584158416,
+       "recall_75": 0.689108910891089,
+       "recall_50_95": 0.6877227722772277,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8604651162790697,
+       "recall_75": 0.622093023255814,
+       "recall_50_95": 0.6627906976744186,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 61,
+     "object_masks_kept": 626,
+     "gt_with_2plus_masks_at_50_share": 0.049338146811071,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 430,
+     "removed_by_antichain_repair": 0
+    },
+    "split_0.5": {
+     "n_kept": 3087,
+     "share_of_M": 0.6808557565063961,
+     "per_scene_median": 79.5,
+     "by_role": {
+      "object": 625,
+      "near": 551,
+      "distractor": 1911
+     },
+     "recall_50": 0.8471720818291215,
+     "recall_75": 0.6955475330926595,
+     "recall_50_95": 0.6918170878459687,
+     "n_gt": 831,
+     "by_gt_area_bin": {
+      "<200^2": {
+       "recall_50": 0.8571428571428571,
+       "recall_75": 0.8051948051948052,
+       "recall_50_95": 0.7441558441558441,
+       "n_gt": 154
+      },
+      "200^2-400^2": {
+       "recall_50": 0.8415841584158416,
+       "recall_75": 0.689108910891089,
+       "recall_50_95": 0.6877227722772277,
+       "n_gt": 505
+      },
+      ">400^2": {
+       "recall_50": 0.8546511627906976,
+       "recall_75": 0.6162790697674418,
+       "recall_50_95": 0.6569767441860465,
+       "n_gt": 172
+      }
+     },
+     "gt_found_in_M_lost_at_50": 62,
+     "object_masks_kept": 625,
+     "gt_with_2plus_masks_at_50_share": 0.049338146811071,
+     "kept_masks_best_gt_iou_in_0.1_0.5": 432,
+     "removed_by_antichain_repair": 0
+    }
+   }
+  },
+  "selection": {
+   "theta": 0.9,
+   "selected": "maximal",
+   "steps": [
+    "исходное — maximal (83.15 %; maximal 83.15, minimal 64.14)",
+    "split_0.9: 82.19 < 83.15 + 1.0 — нет",
+    "split_0.8: 82.19 < 83.15 + 1.0 — нет",
+    "split_0.7: 82.07 < 83.15 + 1.0 — нет",
+    "split_0.6: 81.83 < 83.15 + 1.0 — нет",
+    "split_0.5: 81.35 < 83.15 + 1.0 — нет"
+   ],
+   "recall_50_selected": 0.8315282791817088,
+   "recall_50_all": 0.9217809867629362,
+   "loss_vs_all_pp": 9.025270758122739
+  },
+  "objects_with_parent": {
+   "n": 152,
+   "area_ratio_object_to_parent": {
+    "n": 152,
+    "mean": 0.9695947261831275,
+    "min": 0.07585503260435612,
+    "max": 0.999764788898036,
+    "q": {
+     "0.05": 0.910642595047948,
+     "0.25": 0.9779724783071746,
+     "0.5": 0.9882548217809746,
+     "0.75": 0.993803344627634,
+     "0.95": 0.9990529809033414
+    },
+    "hist": {
+     "edges": [
+      0.0,
+      0.1,
+      0.2,
+      0.30000000000000004,
+      0.4,
+      0.5,
+      0.6000000000000001,
+      0.7000000000000001,
+      0.8,
+      0.9,
+      1.0
+     ],
+     "counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      3,
+      2,
+      145
+     ]
+    }
+   },
+   "parent_box_iou_with_gt": {
+    "n": 152,
+    "mean": 0.5028689787596016,
+    "min": 0.04205762591838541,
+    "max": 0.7326284776998861,
+    "q": {
+     "0.05": 0.30236638730860765,
+     "0.25": 0.4269495299585499,
+     "0.5": 0.5108134244295413,
+     "0.75": 0.5889320477779607,
+     "0.95": 0.6788828980221502
+    },
+    "hist": {
+     "edges": [
+      0.0,
+      0.1,
+      0.2,
+      0.30000000000000004,
+      0.4,
+      0.5,
+      0.6000000000000001,
+      0.7000000000000001,
+      0.8,
+      0.9,
+      1.0
+     ],
+     "counts": [
+      1,
+      0,
+      6,
+      22,
+      40,
+      48,
+      33,
+      2,
+      0,
+      0
+     ]
+    }
+   },
+   "parent_box_iou_with_gt_ge_0.5_share": 0.5460526315789473,
+   "object_masks_among_parent_descendants": {
+    "n": 152,
+    "mean": 1.0,
+    "min": 1.0,
+    "max": 1.0,
+    "q": {
+     "0.05": 1.0,
+     "0.25": 1.0,
+     "0.5": 1.0,
+     "0.75": 1.0,
+     "0.95": 1.0
+    },
+    "hist": {
+     "edges": [
+      0.5,
+      1.5,
+      2.5,
+      3.5,
+      4.5,
+      5.5,
+      6.5,
+      7.5,
+      8.5,
+      9.5,
+      10.5
+     ],
+     "counts": [
+      152,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ]
+    }
+   }
+  }
+ }
+}

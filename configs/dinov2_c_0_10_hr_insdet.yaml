@@ -1,0 +1,29 @@
+dataset: hr_insdet
+encoder: dinov2
+variant: c_0_10
+seg_long_side: 2048
+crop_n_layers: 1
+points_per_batch: 16
+crop_size: 448
+blur_sigma_frac: 0.05
+blur_work_side: 1792
+pool_long_side: 2048
+debias_r: 500
+debias_noise_seed: 20260918
+encoder_batch: 16
+batch_rule: маски одного изображения в порядке записи кеша; батч не пересекает границу
+  изображения
+gallery_protocols:
+- full
+- one_per_class
+hnsw:
+  M: 32
+  efConstruction: 200
+  efSearch_min: 64
+eps:
+- 0.05
+- 0.01
+delta: 0.1
+max_dets: 1000
+bootstrap: 1000
+seed: 20260918

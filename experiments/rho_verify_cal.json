@@ -1,0 +1,426 @@
+{
+ "what": "сверка ρ (целочисленная арифметика, cache/rho/) с аналитикой §2.3 (rule_neardup, float)",
+ "dataset": "hr_insdet",
+ "split": "cal",
+ "n_scenes": 40,
+ "code_commit": "1099588c9e6aa30cdfc890ec8b9638dce73a7693",
+ "code_dirty": false,
+ "written_utc": "2026-09-21T17:15:08+00:00",
+ "rho": {
+  "theta": "9/10",
+  "gamma": "4/5",
+  "rule": "neardup_min_area_v1",
+  "cache": "cache/rho/hr_insdet/auto_cnl1_ls2048_ppb16_sam2-2b90b9f_26872978__theta9-10_gamma4-5"
+ },
+ "analysis": {
+  "script": "scripts/analyze_rho_cal.py",
+  "rule": "neardup_0.8",
+  "theta": 0.9,
+  "a": 0.8,
+  "record": "experiments/analysis/rho_rules_part3.json"
+ },
+ "n_scenes_mismatched": 0,
+ "scenes_mismatched": [],
+ "antichain_violations": 0,
+ "n_equal_area_duplicates": 2,
+ "expected_by_tz": {
+  "n_kept": 2498,
+  "n_masks": 4534,
+  "by_role": {
+   "object": 699,
+   "near": 247,
+   "distractor": 1552
+  },
+  "n_gt_found_at_50": 733,
+  "n_gt": 831,
+  "recall_percent": [
+   88.21,
+   78.7,
+   77.22
+  ]
+ },
+ "got": {
+  "n_kept": 2498,
+  "n_masks": 4534,
+  "by_role": {
+   "object": 699,
+   "near": 247,
+   "distractor": 1552
+  },
+  "n_gt_found_at_50": 733,
+  "n_gt": 831,
+  "recall_percent": [
+   88.21,
+   78.7,
+   77.22
+  ]
+ },
+ "totals_vs_analysis_record": {
+  "n_kept": {
+   "rho": 2498,
+   "analysis": 2498,
+   "equal": true
+  },
+  "by_role": {
+   "rho": {
+    "object": 699,
+    "near": 247,
+    "distractor": 1552
+   },
+   "analysis": {
+    "object": 699,
+    "near": 247,
+    "distractor": 1552
+   },
+   "equal": true
+  },
+  "recall_50": {
+   "rho": 0.8820697954271961,
+   "analysis": 0.8820697954271961,
+   "equal": true
+  },
+  "recall_75": {
+   "rho": 0.7870036101083032,
+   "analysis": 0.7870036101083032,
+   "equal": true
+  },
+  "recall_50_95": {
+   "rho": 0.7722021660649819,
+   "analysis": 0.7722021660649819,
+   "equal": true
+  },
+  "n_gt": {
+   "rho": 831,
+   "analysis": 831,
+   "equal": true
+  },
+  "gt_with_2plus_masks_at_50_share": {
+   "rho": 0.00842358604091456,
+   "analysis": 0.00842358604091456,
+   "equal": true
+  }
+ },
+ "passed": true,
+ "per_scene": [
+  {
+   "scene": "easy/meeting_room_001/rgb_000",
+   "n_masks": 111,
+   "n_selected": 73,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_001",
+   "n_masks": 109,
+   "n_selected": 54,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_002",
+   "n_masks": 113,
+   "n_selected": 60,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_003",
+   "n_masks": 117,
+   "n_selected": 66,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_004",
+   "n_masks": 156,
+   "n_selected": 67,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_005",
+   "n_masks": 140,
+   "n_selected": 81,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_006",
+   "n_masks": 125,
+   "n_selected": 68,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_007",
+   "n_masks": 122,
+   "n_selected": 80,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_008",
+   "n_masks": 135,
+   "n_selected": 91,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_009",
+   "n_masks": 134,
+   "n_selected": 75,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_010",
+   "n_masks": 119,
+   "n_selected": 70,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_011",
+   "n_masks": 140,
+   "n_selected": 79,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_012",
+   "n_masks": 114,
+   "n_selected": 64,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_013",
+   "n_masks": 114,
+   "n_selected": 68,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_014",
+   "n_masks": 137,
+   "n_selected": 91,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_015",
+   "n_masks": 150,
+   "n_selected": 85,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_016",
+   "n_masks": 155,
+   "n_selected": 94,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_017",
+   "n_masks": 134,
+   "n_selected": 79,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_018",
+   "n_masks": 171,
+   "n_selected": 110,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/meeting_room_001/rgb_019",
+   "n_masks": 134,
+   "n_selected": 62,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_000",
+   "n_masks": 103,
+   "n_selected": 49,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_001",
+   "n_masks": 111,
+   "n_selected": 63,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_002",
+   "n_masks": 83,
+   "n_selected": 45,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_003",
+   "n_masks": 78,
+   "n_selected": 44,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_004",
+   "n_masks": 84,
+   "n_selected": 43,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_005",
+   "n_masks": 82,
+   "n_selected": 28,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_006",
+   "n_masks": 88,
+   "n_selected": 42,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_007",
+   "n_masks": 87,
+   "n_selected": 37,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_008",
+   "n_masks": 80,
+   "n_selected": 40,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_009",
+   "n_masks": 77,
+   "n_selected": 39,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_010",
+   "n_masks": 70,
+   "n_selected": 38,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_011",
+   "n_masks": 88,
+   "n_selected": 44,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_012",
+   "n_masks": 70,
+   "n_selected": 42,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_013",
+   "n_masks": 97,
+   "n_selected": 54,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_014",
+   "n_masks": 113,
+   "n_selected": 68,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_015",
+   "n_masks": 102,
+   "n_selected": 49,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_016",
+   "n_masks": 123,
+   "n_selected": 74,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_017",
+   "n_masks": 98,
+   "n_selected": 48,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_018",
+   "n_masks": 144,
+   "n_selected": 71,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  },
+  {
+   "scene": "easy/sink/rgb_019",
+   "n_masks": 126,
+   "n_selected": 63,
+   "equal": true,
+   "only_in_rho": [],
+   "only_in_analysis": []
+  }
+ ]
+}
